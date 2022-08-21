@@ -1,0 +1,204 @@
+<html>
+<head>
+    <title>Sharpening Handbook</title>
+
+<!-- ################################################### -->
+<!-- Get the Projection for the WM-xx -->
+    <script>
+	    function calcProjection()    {
+
+			var fAlphaDeg = 0;
+			var fAlphaRad = 0;
+
+			var iGrindStoneDiameter = 0;
+			var iGrindStoneRadius = 0;
+
+	    	var x = document.getElementById("frm1");
+
+		// ###################################################
+		// Get the grindstone radius
+		// This is side a
+		//
+			iGrindStoneDiameter = Number(x.elements[0].value);
+			iGrindStoneRadius = iGrindStoneDiameter / 2;
+
+		// ###################################################
+		// Get the desired Bevel Angle, and add 90°
+		// Note, this has to be converted in to radians for the math function call
+		// This is angle Ɣ (gamma)
+		//
+			fAlphaDeg = Number(x.elements[1].value);
+			fAlphaRad = fAlphaDeg * Math.PI / 180;
+
+		// ###################################################
+		// Calculate the hypotenuse (c).
+		//     c² = a² + b² - 2ab cos(Ɣ)
+		// The projection is 6mm less than this, as the USB is 12 mm in
+		//  diameter, and the calculation is to the centre of the USB.
+		//
+
+			switch (fAlphaDeg) {
+				case 20:
+			    	document.getElementById("Distance").innerHTML = 49;
+				    break;
+				case 25:
+			    	document.getElementById("Distance").innerHTML = 44;
+				    break;
+				case 30:
+			    	document.getElementById("Distance").innerHTML = 38;
+				    break;
+				default:
+		    		document.getElementById("Distance").innerHTML = "n/a";
+			    	break;
+			};
+
+		}
+	</script>
+</head>
+
+<body bgcolor=#E6E6E6 class="" id="" onload='hideTotal()'>
+	<font face="Georgia">
+
+<!-- ################################################### -->
+<!-- Style Sheet for header image max size                                         -->
+<!-- ################################################### -->
+    <style>
+    img.Image { max-width: 1000px;}
+    </style>
+
+<!-- ################################################### -->
+<!-- Header                                                                                           -->
+<!-- ################################################### -->
+    <table width=100%>
+        <tr valign="TOP">
+            <td align="center">
+                <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
+            </td>
+        </td>
+    </table>
+
+    <table width="100%" border=0>
+        <col width="10%">
+        <col width="*">
+        <col width="10%">
+
+        <tr valign="bottom">
+            <td align="left">
+                <a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
+            </td>
+            <td align="center" valign="top">
+                <font face= "Georgia" size="6" color=#191970><b>
+		    	Chisel Projection Calculator
+                </b></font>
+            </td>
+            <td align="right">
+            </td>
+        </tr>
+    </table>
+
+<!-- ################################################### -->
+<!-- Body                                                                                               -->
+<!-- ################################################### -->
+    <hr>
+
+<!-- ################################################### -->
+<!-- Body -->
+	<form id="frm1" action="/action_page.php">
+		<table border="0" align="center">
+			<col width="250">
+        	<col width="60">
+        	<col width="50">
+        	<col width="200">
+
+			<tr bgcolor="LightGrey">
+				<td><label><font color="blue">
+					Grindstone Diameter
+				</font></label></td>
+ 				<td align="right">
+ 					<font face="arial">
+ 					<input 
+	 						type="number"
+ 							style="font-size:14px; text-align: right; width: 60px; background-color:#FFEE9C" 
+ 							name="Diameter" 
+							step='1' 
+							placeholder='0' 
+ 							value=250
+						/>
+ 					</font>
+ 				</td>
+				<td><label>
+					mm
+				</label></td>
+				<td bgcolor=#E6E6E6 rowspan=3 align="right"><label>
+	                <a href="Images/WW-Chisels-3.png" target="_new"><IMG SRC="Images/WW-Chisels-3.png" Width=150></a>
+				</label></td>
+			</tr>
+
+			<tr bgcolor="White">
+				<td><label><font color="blue">
+					Desired Bevel Angle (alpha)
+				</font></label></td>
+ 				<td align="right">
+ 					<font face="arial">
+ 					<input 
+	 						type="number"
+ 							style="font-size:14px; text-align: right; width: 60px; background-color:#FFEE9C" 
+ 							name="AlphaDeg" 
+							step='1' 
+							placeholder='0' 
+ 							value=25
+						/>
+ 					</font>
+   	 			</td>
+				<td><label>
+					deg
+				</label></td>
+			</tr>
+
+			<tr bgcolor="Moccasin">
+				<td><label><font color="blue">
+					Projection
+				</font></label></td>
+ 				<td align="right">
+ 					<font face="arial" color="black">
+   			 		<p id="Distance"></p>
+   			 		</font>
+   			 	</td>
+				<td><label><font color="blue">
+					mm
+				</label></font></td>
+			</tr>
+		</table>
+	</form>
+
+	<center><button autofocus type="button" onclick="calcProjection()" style="font-size:25px; background-color: #0404B4; color: white;">
+		Calculate Projection
+	</button></center>
+
+	<br>
+	<br>
+	<table width="100%">
+		<tr>
+			<td align="center">
+				<IMG SRC="Images/SE-77.png" HEIGHT=350>
+			</td>
+		<tr>
+		<tr>
+			<td align="center">
+				<b>Measuring Projection</b>
+			</td>
+		<tr>
+	</table>
+
+<!-- ################################################### -->
+<!-- Footer                                                                                             -->
+<!-- ################################################### -->
+    <hr>
+    <center><font face= "Georgia" size="3"><a href="indexAbout.html" target="_new">About this site</a></center>
+    <font face= "Georgia" size="2">
+    <b><u>Remember</u></b> :  <i>The goal of sharpening is to produce sharp tools, and these tools can injure you if mishandled.  Safety measures should be followed to protect yourself and those in your shop.  Be sure to read and follow all instructions from the manufacturer, and and utilize proper safety equipment. Never consume alcohol or anything that could impair your judgement before sharpening tools, or using sharp tools.</i>
+    Comments can be sent via eMail to me at <a href="mailto:SharpeningHandbook@Gmail.com?Subject=Sharpening Handbook" target="_new">SharpeningHandbook@Gmail.com</a>.
+    </font>
+
+</body>
+</html>
