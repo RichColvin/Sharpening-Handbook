@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Shop Computer</title>
+</head>
+
+    <!-- ################################################### -->
+    <!-- Style Sheet for Horizontal Rule - Style 1                                        -->
+    <style>
+        hr.style1 {
+            border: 0;
+            height: 3px;
+            background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 255, 0.75),
+                rgba(0, 0, 0, 0));
+        }
+    </style>
+  
+<body class="" id="">
+	<font face="Arial">
+
+<!-- ################################################### -->
+<!-- TItle -->
+	<font  color="blue" size="5" face="Arial"><b>Low Cost Shop Computer</b></font>
+
+<!-- ################################################### -->
+<!-- Body -->
+    
+    <div style="float: right; width: 110px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: left; background-color:White">
+    	<img src="Images/UbuntuMate.png" height=100 />
+	</div>
+    
+    <p>The default system used on a <a href="https://www.raspberrypi.org" target="_new">Raspberry Pi</a> is <a href="https://raspbian.org" target="_new">Raspbian</a>, a computer <a href="https://en.wikipedia.org/wiki/Operating_system" target="_new">operating system</a> based on a variant of <a href="https://en.wikipedia.org/wiki/Linux" target="_new">Linux</a> called <a href="https://en.wikipedia.org/wiki/Debian" target="_new">Debian</a>.  
+    
+    <p>Raspbian works well enough, but there is now a far better option :  <a href="https://ubuntu-mate.org" target="_new">Ubuntu MATE</a> (pronounced "ma" "tay").  Below are the instructions for getting and installing that on your Raspbery Pi.
+    
+    
+<!-- ################################################### -->
+<!-- Step 1  -->
+    <p><hr class="style1">
+    <font  color="blue" size="4" face="Arial"><b>Step 1</b> - Get Ubuntu MATE for the Raspberry Pi</font>
+
+        <ol>
+            <li><b>Download the Ubuntu MATE image</b>.</li>
+                <ol type="a">
+                    <li>On the <a href="https://ubuntu-mate.org" target="_new">Ubuntu MATE</a> web site, click on <b><i>Download</i></b> at the top of the screen, then select Raspberry Pi.</li>
+                    <li>You can try the experimental stuff if you like, but I opt for the stable version.</li>
+                </ol>
+
+            <div style="float: right; width: 260px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: left; background-color:White">
+    	        <img src="Images/MicroSDCards.jpeg" width=250 />
+    	        <br><b><center>Micro SD Cards</center></b>
+	        </div>
+            <br>
+            <li>Once the image file is downloaded, you will need to load it onto the Micro SD card.  The Micro SD card is in the kit with the Raspberry PI, and is tiny.
+
+            <p>Plug the Micro SD card into the adapter (e.g., the IOGear SuperSpeed USB 3.0 SD / MicroSD Card Reader / Writer), and then connect the adapter to your computer.  
+            
+            <p><b><u>Note</u>:</b>  Micro SD cards will only insert fully one way.  
+                <ul>
+                    <li>If it is inserted properly, it will push in quite easily.  No force is necessary.</li>
+                    <li>If it is inserted upside down, it will not seat properly.</li>
+                </ul>
+            </li>
+
+            <br>
+            <li><b>Extract the downloaded file onto the Micro SD card</b>.  Depending on what computer you are using :
+                <ul>
+                    <li><b>Mac OSX</b></li>
+                        <ol>
+                            <li>Download and install <a href="https://www.balena.io/etcher/" target="_new">Etcher</a>.</li>
+                            <li>Select the image file you downloaded earlier and the location of the SD card.</li>
+                            <li>Click "Flash" and watch the pretty progress bar.  This will take a 20 minutes or so.  But be patient:  it is worth the wait.</li>
+                        </ol>
+                    <br>
+                    <li><b>Windows</b></li>
+                        <ol>
+                            <li>Download and install <a href="https://launchpad.net/win32-image-writer" target="_new">Win32DiskImager</a>.</li>
+                            <li>Select the image file you downloaded earlier and the drive letter of the SD card.
+                            <font  color="red" face="Arial"><b>Warning:</b> There is a significant risk you could damage your file system if you select the wrong drive letter. Make sure you get it right!</font></li>
+                            <li>Click "Write" and watch the pretty progress bar.  This will take a 20 minutes or so.  But be patient:  it is worth the wait.</li>
+                        </ol>
+                </ul></li>
+        </ol>
+        
+<!-- ################################################### -->
+<!-- Step 2  -->
+    <p><hr class="style1">
+    <font  color="blue" size="4" face="Arial"><b>Step 2</b> - Assemble the Raspberry Pi</font>
+
+    <p>Put all the physical stuff together.  Don't plug in the power until last.
+        <ol>
+            <li>Put the Raspberry Pi board into the case.</li>
+            <li>Insert the Micro SD Card into the slot on the end of the Raspberry Pi board.</li>
+            <li>Plug the monitor cable into the HDMI jack.  Turn the monitor (or TV) on.</li>
+            <li>Plug the keyboard cable into one of the USB jacks.  It doesn't matter which one.</li>
+            <li>Plug the mouse cable into one of the USB jacks.  It doesn't matter which one.</li>
+            <li>If you are using a wired connection to the netwirk, plug the ethernet cable into the ethernet jack.</li>
+            <li>Plug the power into the power jack, and plug the other end into the electrical outlet.</li>
+        </ol>
+        
+        
+    <p>If you want to see a video of the assembly, you can watch it on the YouTube video below.  It starts about 2:00 into the video, and goes for about a minute.  (There is more here about installing Raspbian, but you can skip that.)
+    
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/wvxCNQ5AYPg?start=120" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+<!-- ################################################### -->
+<!-- Step 3  -->
+    <p><hr class="style1">
+    <font  color="blue" size="4" face="Arial"><b>Step 3</b> - Setup Ubuntu MATE - Part 1</font>
+
+    <p>Now let's power everything on, and get Ubuntu MATE up and running.  Once the Raspberry Pi gets powered on, it will go thru some screens to ask you questions needed for setting it up for you.
+    
+        <ol>
+            <li><font  color="DarkGreen" face="Arial"><b>Welcome</b></font></li>
+                <ol type="a">
+                    <li>Select the language you want to use.  For me, I am using English.</li>
+                    <li>Click <b>Continue.</b></li>
+                </ol>
+
+            <br>
+            <li><font  color="DarkGreen" face="Arial"><b>Keyboard layout</b></font></li>
+                <ol type="a">
+                    <li>Select the keyboard you want to use.  For me, I am using English (US).</li>
+                    <li>Click <b>Continue.</b></li>
+                </ol>
+
+            <br>
+            <li><font  color="DarkGreen" face="Arial"><b>Where are you?</b></font></li>
+                <ol type="a">
+                    <li>Enter the city where you live, or the closest one it can find.  This is to set your computer's timezone.</li>
+                    <li>Click <b>Continue.</b></li>
+                </ol>
+
+            <br>
+            <li><font  color="DarkGreen" face="Arial"><b>Who are you?</b></font></li>
+                <ol type="a">
+                    <li>Enter your name.  I use my first and last name.  (You can change this later if you wish.)</li>
+                    <li>Give your computer a name.  You can use the default it gives, or give it something unique.  I try to make it something descriptive so that when I see the list of machines on my network, I know what it is:  for example, "Rich-RaspberryPi-01".</li>
+                    <li>Enter what you want to use for a user name.  I use my first name, and I use all lower case letters.  This is pretty standard in the Linux community.</li>
+                    <li>Enter what you want to use for a password.  Write it down so you don't forget it.</li>
+                    <li><font  color="red" face="Arial"><b><u>Key Note</u>:</b> be sure to remember your password.  There is no way to reset it, and you'll have to start over if you forget it.</font></li>
+                    <li>Click <b>Continue.</b></li>
+                </ol>
+        </ol>
+
+    <table>
+        <tr>
+            <td><img src="Images/Coffee.png" width=100 /></td>
+            <td valign="top">It's going to run for a while now.  Loads of stuff is happening.  But suffice it to say, you certainly have time to go get a cup of coffee.</td>
+        </tr>
+    </table>
+
+<!-- ################################################### -->
+<!-- Step 4  -->
+    <p><hr class="style1">
+    <font  color="blue" size="4" face="Arial"><b>Step 4</b> - Setup Ubuntu MATE - Part 2</font>
+
+    <p>After Step 3 finishes, the system will reboot itself.  Logon with the user name and password you gave above in Step 3.
+        <ol>
+            <li><font  color="DarkGreen" face="Arial"><b>Reboot again.</b></font></li>
+                <ol type="a">
+                    <li>On the top right hand of the screen, there is a gear icon.  Click on this.
+                    <p><img src="Images/UbuntuMATE-UpperRight.jpeg" /></li>
+                    <li>In the pull-down menu that appears, click <b>Shutdown ...</b>, and then click <b>Restart</b></li>
+                </ol>
+            
+            <p>Logon again to continue ...
+            
+            <li><font  color="DarkGreen" face="Arial"><b>Check / setup your network connection</b></font></li>
+                <ol type="a">
+                    <li>If your network is wired, nothing need be done.</li>
+                    <li>If your network is Wi-Fi :</li>
+                        <ol type="i">
+                            <li>On the upper right part of the screen is an icon that is an up/down arrow <b>↑↓</b>.  Click on this.
+                            <p><img src="Images/UbuntuMATE-UpperRight.jpeg" /></li>
+                            <li>Click on your network below <b>WiFi Networks</b>.  You will then enter your network access code.</li>
+                        </ol>
+                    <li>Test to be sure it works by clicking on the Firefox browser icon which is on the screen in the upper left, and going to a web site not shown.  I recommend something like www.Google.com.</li>
+                </ol>
+                
+            <br>
+            <li><font  color="DarkGreen" face="Arial"><b>Install the latest set of patches</b></font></li>
+                <ol type="a">
+                    <li>A <b>Welcome</b> menu is in the middle of the screen.  Click on the <b>Software</b> button.  This is brings up the <b>Software Boutique</b>.</li>
+                    <li>Click on the check box near the top of the window.  This is for <b>Fixes</b></li>
+                    <li>Click on <b>Update Sources List</b>.  Let that finish.</li>
+                    <li>Click on <b>Upgrade Installed Packages</b>.  Let that finish (it will run 15 mins or more, and you may have to answer a question or two along the way).</li>
+                    <li>Scroll down, then click on <b>Configure Interrupted Packages</b>.  Let that finish.</li>
+                    <li>Click on <b>Resolve Broken Packages</b>.  Let that finish.</li>
+                </ol>
+                
+            <br>
+            <li><font  color="DarkGreen" face="Arial"><b>Reboot again.</b></font></li>
+                <ol type="a">
+                    <li>The system may tell you it needs to restart.  If it does, take that option.</li>
+                    <li>If it does not ... On the top right hand of the screen, there is a gear icon.  Click on this.  
+                    <p><img src="Images/UbuntuMATE-UpperRight.jpeg" />
+                    
+                    <p>Then, in the pull-down menu that appears, click <b>Shutdown ...</b>, and then click <b>Restart</b></li>
+                    <p>Logon again to continue ...
+            
+                    <br>
+                    <li>Click on <b>Menu</b> at the top left of the screen
+                    <p><img src="Images/UbuntuMATE-UpperLeft.jpeg" />
+                    <p>then select <b>Control Center</b> in the pull-down menu that appears.</li>
+                    <li>Click on <b>Software Updater</b>.</li>
+                    <li>You will get a pop-up that there are updates. Update the system as recommended.</li>
+                    <li>Once that finishes, you will probably have to re-boot the system.  If you are not requested to reboot, do so anyway.</li>
+                </ol>
+            
+            <br>
+            <li><font  color="DarkGreen" face="Arial"><b>Setup for automatically patching in the future</b></font></li>
+                <ol type="a">
+                    <li>Click on <b>Menu</b> at the top left of the screen
+                    <p><img src="Images/UbuntuMATE-UpperLeft.jpeg" />
+                    <p>then select <b>Control Center</b> in the pull-down menu that appears.</li>
+                    <li>Click <b>Software and Updates</b></li>
+                    <li>On the <b>Ubuntu Software</b> tab, enable :</li>
+                        <ol type="i">
+                            <li>Canonical-supported free and open-source software (main)</li>
+                            <li>Community-maintained free and open-source software (universe)</li>
+                            <li>Software restricted by copyright or legal issues (multiverse)</li>
+                        </ol>
+                    <li>On the <b>Updates</b>  tab, enable :</li>
+                        <ol type="i">
+                            <li>Important security updates (bionic-security)</li>
+                            <li>Recommended updates (bionic-updates)</li>
+                        </ol>
+                    <li>Click <b>Close</b>, then answer any questions that may appear.</li>
+                    <li>A window will popup saying "The information about available software is out-of-date".  Click <b>Reload</b>.  Let this finish.</li>
+                </ol>
+                
+            <br>
+            
+            <a href="" target="_new">
+            
+            
+            <li><font  color="DarkGreen" face="Arial"><b>Setup <a href="http://www.ntp.org" target="_new">NTP</a> to keep your time correct.</b></font></li>
+                <ol type="a">
+                    <li>In the <b>Welcome</b> menu that is in the middle of the screen, click on the <b>Software</b> button.  This is brings up the <b>Software Boutique</b>.</li>
+                    <li>In the <b>Software Boutique</b> window, open the search by clicking on the magnifying glass in the upper right of the window.  In the search field, enter "NTP", then depress the <b>Enter</b> key.</li>
+                    <li>When you see the message saying "No software matched your key words.", Click on <b>Install a software center</b>.</li>
+                    <li>Take the upper option for <b>Software</b>.  Click the green button labeled <b>Install</b>. button, then the <b>Apply Changes</b> button.  You will have to enter your password to confirm that you want to do this.  Once it completes, click <b>Close</b>.</li>
+
+                    <br>
+                    <li>Click on <b>Menu</b> at the top left of the screen
+                    <p><img src="Images/UbuntuMATE-UpperLeft.jpeg" />
+                    <p>then select <b>System Tools</b> in the pull-down menu that appears, then <b>Software</b>.</li>
+                    <li>Click the magnifying glass at the top of the window, then enter "NTP" and depress <b>Enter</b>.  </li>
+                    <li>Click on <b>ntpcontrol</b>, then click on the <b>Install</b> buttion.  You will have to enter your password to approve the installation of this software.</li>
+                    <li>Click <b>Launch</b>.</li>
+                    <li>Close the window.</li>
+
+                    <br>
+                    <li>Click on <b>Menu</b> at the top left of the screen
+                    <p><img src="Images/UbuntuMATE-UpperLeft.jpeg" />
+                    <p>then select <b>System Tools</b> in the pull-down menu that appears, then <b>MATE Terminal</b>.</li>
+                    <li>Enter the command <b>snap connect ntpcontrol:timeserver-control</b>, and depress the <b>Enter</b> key.  Enter your password.</li>
+                    <li>Enter the command <b>sudo ntpcontrol set ntpserver tick.usno.navy.mil</b>, and depress the <b>Enter</b> key.</li>
+                    <p><b>tick.usno.navy.mil</b> is the <a href="http://www.ntp.org" target="_new">NTP</a> server at the <a href="https://en.wikipedia.org/wiki/United_States_Naval_Observatory" target="_new">U.S. Naval Observatory</a>.  It is my preferred go-to clock.
+                    <li>Enter the command <b>sudo reboot</b>, and depress the <b>Enter</b> key.</li>
+                </ol>
+                
+            <br>
+            <li><font  color="DarkGreen" face="Arial"><b>Secure the Sytem - Turn on the Firewall</b></font></li>
+                <ol type="a">
+                    <li>This is optional, but I recommend doing this.</li>
+                    <li>Click on <b>Menu</b> at the top left of the screen
+                    <p><img src="Images/UbuntuMATE-UpperLeft.jpeg" />
+                    <p>then select <b>Control Center</b>.</li>
+                    <li>Click on <b>Firewall Configuration</b>.</li>
+                        <ol type="i">
+                            <li>Set the <b>Status</b> to On.</li>
+                            <li>Set the <b>Incoming</b> to Deny.</li>
+                            <li>Set the <b>Outgoing</b> to Allow.</li>
+                        </ol>
+                    <li>Close the window.</li>
+                </ol>
+                
+    <div style="float: right; width: 60px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: left; background-color:White">
+    	<img src="Images/BlueTooth.png" width=50 />
+	</div>
+
+            <br>
+            <li><font  color="DarkGreen" face="Arial"><b>Secure the Sytem - Disable Bluetooth</b></font></li>
+                <ol type="a">
+                    <li>This is optional, but if you don't need it I recommend doing this.  It wastes computing power, and enables ports of entry for hackers that you don't need.</li>
+                    <li>To turn it off, click on the bluetooth icon on the upper right part of the screen.  Then in the pull down window, click on <b>Turn Bluetooth Off</b></li>
+                </ol>
+                
+            <br>
+            <li><font  color="DarkGreen" face="Arial"><b>You're Done !</b></font></li>
+                <ol type="a">
+                    <li>Enjoy your low cost shop computer !</li>
+                    <li>Oh, and by the way, once or twice a year, you should reboot it just for good measure.</li>
+                </ol>
+        </ol>
+</body>
+</html>
