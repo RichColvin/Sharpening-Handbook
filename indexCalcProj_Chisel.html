@@ -105,10 +105,10 @@
 <!-- Body -->
 	<form id="frm1" action="/action_page.php">
 		<table border="0" align="center">
-			<col width="250">
+			<col width="200">
         	<col width="60">
         	<col width="50">
-        	<col width="200">
+        	<col width="300">
 
 			<tr bgcolor="LightGrey">
 				<td><label><font color="blue">
@@ -129,14 +129,14 @@
 				<td><label>
 					mm
 				</label></td>
-				<td bgcolor=#E6E6E6 rowspan=3 align="right"><label>
-	                <a href="Images/WW-Chisels-3.png" target="_new"><IMG SRC="Images/WW-Chisels-3.png" Width=150></a>
+				<td><label>
+					&nbsp;
 				</label></td>
 			</tr>
 
 			<tr bgcolor="White">
 				<td><label><font color="blue">
-					Desired Bevel Angle (alpha)
+					Desired Bevel Angle (<b>&alpha;</b>)
 				</font></label></td>
  				<td align="right">
  					<font face="arial">
@@ -144,7 +144,7 @@
 	 						type="number"
  							style="font-size:14px; text-align: right; width: 60px; background-color:#FFEE9C" 
  							name="AlphaDeg" 
-							step='1' 
+							step='5' 
 							placeholder='0' 
  							value=25
 						/>
@@ -152,6 +152,9 @@
    	 			</td>
 				<td><label>
 					deg
+				</label></td>
+				<td><label>
+					Bevel angles (<b>&alpha;</b>) of 20&deg;, 25&deg;, 30&deg; are the only ones setup to be calculated. 
 				</label></td>
 			</tr>
 
@@ -167,6 +170,9 @@
 				<td><label><font color="blue">
 					mm
 				</label></font></td>
+				<td><label>
+					&nbsp;
+				</label></td>
 			</tr>
 		</table>
 	</form>
