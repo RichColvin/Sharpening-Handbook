@@ -59,6 +59,14 @@
 </style>
 
 <!-- ################################################### -->
+<!-- Style Sheet for indented paragraphs.                                             -->
+<!-- ################################################### -->
+<style>
+    .indented { padding-left: 33pt; padding-right: 33pt; }
+</style>
+
+
+<!-- ################################################### -->
 <!-- Header                                                                                           -->
 <!-- ################################################### -->
 <table width=100%>
@@ -98,20 +106,37 @@
 <!-- ################################################### -->
 <!-- Guidance Information -->
 <p>
+
+
 <table border="0" width="100%">
-	<colgroup>
-            <col width="20%">
-            <col width="80%">
-   <colgroup>
-   <tr>
-   	<td>
-      	<center><IMG SRC="Images/GT-DrillBits-Angles.png" HEIGHT=450></center>
-      </td>
-      <td>
-         <center><IMG SRC="Images/GT-DrillBits-Facets.png" HEIGHT=400></center>
-         <center><b>Terminology for multi-facet grinds</b></center>
-      </td>
-   </tr>
+	<col width="20%">
+    <col width="80%">
+    
+    <tr>
+		<td align="center" rowspan=2>
+      		<IMG SRC="Images/GT-DrillBits-Angles.png" HEIGHT=350>
+		</td>
+		<td align="right">
+			<table border=1 style="border: 1px solid grey; border-collapse: collapse; background-color:LightGray ">
+				<tr>
+					<td style="padding: 5px; ">
+						<p style="margin-top: 0; margin-bottom: 0; "><i>No matter how many times I cut this, I can't get it long enough!</I>
+							<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Unknown Old Machinist
+					</td>
+				</tr>
+			</table>
+			
+			<p>&nbsp;
+		</td>
+	</tr>
+
+    <tr>
+		<td align="center">
+         	<IMG SRC="Images/GT-DrillBits-Facets.png" HEIGHT=300>
+         	<br>
+         	<b>Terminology for multi-facet grinds</b>
+		</td>
+	</tr>
 </table>
 
 <!-- ################################################### -->
@@ -551,12 +576,42 @@
 
 <hr class="style3">
 
-<p>For tougher materials, a secondary point angle (SPA) is useful for reducing the stress on the outside cutting lip corners.  (This is well outlined in Joseph Mazoff's document {see below}.)  However, the <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22 Drill Bit Sharpening Attachment</a> is not designed for a grinding SPAs, so it is not outlined here.
+<h4>Tertiary Facets</h4>
 
-<hr class="style3">
+<p>Addition of a tertiary facet can be useful for helping to remove waste as the hole is drilled.  There is no guidance on the angle for these; only that they need to be greater than the secondary facets.  If an angle is needed:
+
+	<ul>
+		<li>Secondary Facet = 20&deg;</li>
+		<li>Tertiary Facet = 45&deg;</li>
+	</ul>
 
 <p>The <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22 Drill Bit Sharpening Attachment</a> is not designed for a 6-facet grind, so values are not shown for it.   A modification to the <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22</a> was made by Janne for 6-facet grinding, and more information can be found on the <a href="https://www.tormek.com/forum/index.php" target="_new">Tormek Forum</a>.
 
+<hr class="style3">
+
+<h4>Secondary Point Angles (SPA)</h4>
+
+<div style="float: right; width: 200px; margin: 5px 5px 5px 5px; padding: 5px; border: 1px solid Darkgray; text-align: center; ">
+    <a href="Images/DrillBitGrinds.jpg" target="_new"><img src="Images/DrillBitGrinds.jpg" width="100%" /></a>
+    <b>SPAs</b>
+</div>
+
+<p>For tougher materials, an SPA is useful for reducing the stress on the outside cutting lip corners.  (This is well outlined in Joseph Mazoff's document {see below}.)  However, the <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22 Drill Bit Sharpening Attachment</a> is not designed for a grinding SPAs, so it is not outlined here.
+
+<p>Experience in using larger drill bits shows that SPAs help to reduce wander when drilling deep holes.  On GadgetBuilder's web site (referenced below), it was noted:
+ 
+<p class="indented"><I>These extra facets cause the drill to have a stronger self centering action and the sharp outer point on the cutting lip is eliminated so the drill remains sharp longer. The chip is weakened by the difference in cutting action between the primary and SPA facets so long spirals are less common because the chips are prone to break. (...) When through drilling the SPA reduces or eliminates the exit burr on most materials.</I>
+ 
+<p>Again, on GadgetBuilder's web site, it was noted:
+ 
+<p class="indented"><I>Secondary Point Angles (SPAs) can be added to extend drill life, improve hole finish and minimize the exit burr on through-drilled holes.</I>
+
+<p><b><u>Notes</u>:</b> 
+	<ul>
+		<li>As symmetry of the grind would dramatically affect the use of the drill bit, be very careful to make them consistent.</li>
+		<li>SPAs are not terribly useful on smaller drill bits.</li>
+		<li>Addition of SPAs to a drill bit does not make this a 6-point grind; only adding tertiary facets does that.  This may seem like a bit of a nomenclature thing, but it is important to be clear.</li>
+	</ul>
 
 <!-- ################################################### -->
 <!-- More Information -->
@@ -565,33 +620,42 @@
 
 <h3>Books &amp; Papers</h3>
 	<ul>
+        <li><a href="Images/Drill_Point_Geometry_nt.pdf" target="_new">Drill Bit Geometry</a>, by Joseph Mazoff.  This is a truly great reference about drill bit geometry and is cited often.</li>
+
+        <br>
         <li><a href="GT-DrillBitSizes.pdf" target="_new">Drill Bit Sizes</a> (Metric, Fractional, Letter, & Number)</li>
+
+        <br>
+        <li><a href="Images/DrillPressUseAndApplication.pdf" target="_new">The Drill Press:  Its Use and Application</a> from Walker-Turner.</li>
+
+        <br>
+        <li><a href="Images/TM 9-867 Care and Use of Hand Tools.pdf" target="_new">TM 9-867 Maintenance and Care of Hand Tools</a> from the U.S. War Department.</li>
+
+        <br>
+        <li><a href="https://archive.org/details/metalcuttingtool00meta" target="_new">Metal Cutting Tool Handbook</a></li>
 
         <br>
         <li><a href="https://littlemachineshop.com/images/gallery/PDF/tapdrillsizes.pdf" target="_new">Tap & Clearance Drill Sizes</a> (Metric & Fractional)</li>
 
         <br>
-        <li>The document, <a href="Images/Drill_Point_Geometry_nt.pdf" target="_new">Drill Bit Geometry</a>, by Joseph Mazoff is a truly great reference about drill bit geometry.</li>
-
-        <br>
-        <li>Another great general reference is the U.S. War Department's <a href="Images/TM 9-867 Care and Use of Hand Tools.pdf" target="_new">TM 9-867 Maintenance and Care of Hand Tools</a>.</li>
-
-        <br>
         <li>Tormek's &quot;User Manual for the DBS-22 Drill Bit Jig&quot; is quite useful.</li>
+
+        <br>
+        <li><a href="Images/TwistDrillsUseandCare.pdf" target="_new">The Use and Care of Twist Drills</a>, from the <a href="https://www.gfii.com/brands/cleveland" target="_new">Cleveland Twist Drill Company</a>. This small booklet (58 pages) is a great read, especially the part starting on pg. 54:  "Common Drill Troubles and Causes".</li>
 	</ul>
 
 <h3>Videos &amp; Presentations</h3>
 	<ul>
-		<li><a href="https://youtu.be/kUrJOQryFEg" target="_new"><b>Tormek Live Sharpening Class - Part 6 - Drill bit sharpening</b></a> (YouTube video).  It's time for drill bit sharpening! Learn how to sharpen your drill bits with maximum precision, to the greatest sharpness. We will show you how to create a 4-facet point which gives the ideal cutting performance.</li>
+		<li><a href="https://youtu.be/KqcMTxrIoPY" target="_new"><b>Sharpen drill bits with Tormek Drill Bit Sharpening Attachment</b></a> (YouTube video) - a video from Tormek</li>
 		
 		<br>
-		<li><a href="https://youtu.be/KqcMTxrIoPY" target="_new"><b>Sharpen drill bits with Tormek Drill Bit Sharpening Attachment</b></a> (YouTube video)</li>
+		<li><a href="https://youtu.be/kUrJOQryFEg" target="_new"><b>Tormek Live Sharpening Class - Part 6 - Drill bit sharpening</b></a> (YouTube video) - a video from Tormek.  It's time for drill bit sharpening! Learn how to sharpen your drill bits with maximum precision, to the greatest sharpness. We will show you how to create a 4-facet point which gives the ideal cutting performance.</li>
 		
 		<br>
-		<li><a href="https://youtu.be/pZO4kAKDcRg" target="_new"><b>Tormek DBS-22</b></a> (YouTube video)</li>
+		<li><a href="https://youtu.be/pZO4kAKDcRg" target="_new"><b>Tormek DBS-22</b></a> (YouTube video) - Jeff Fischer prepared this presentation.  Sharpening bits with this jig could not be easier. Takes a little bit of getting used to, but then it is very simple to do a drill bit in a matter of minutes.</li>
 		
 		<br>
-		<li><a href="https://youtu.be/fSUa1iFUzkM" target="_new"><b>Tormek Drill Bit Sharpening Attachment</b></a> (YouTube video)</li>
+		<li><a href="https://youtu.be/fSUa1iFUzkM" target="_new"><b>Tormek Drill Bit Sharpening Attachment</b></a> (YouTube video) - This short demonstration by Alan Holtham shows the set up and use of the Tormek DBS-22 Drill Bit Sharpening Attachment.  One Tormek user noted that he reviews this video each time he uses the DBS-22 (as he does not use it often).</li>
 	</ul>
 
 <!-- 
@@ -611,6 +675,13 @@
                 <br>
                 <li>Mica Schmid posted a <a href="indexJigs.html#DBS22USB">nice USB spacer jig</a> which makes it easer and faster to set the USB relative to the grindstone, and it also helps ensure the stone is consistently flat relative to the USB.</li>
         	</ul>
+
+        <br>
+        <li><a href="https://gadgetbuilder.com/DrillSharp.html">GadgetBuilder.com</a> - has a page for building drill sharpening jigs.</li>
+        
+        <br>
+        <li><a href="http://www.vikingdrill.com/viking-DrillBitTerms.php">Viking Drill and Tool - Drill Bit Anatomy</a></li>
+        
 	</ul>
 
 <!-- 
