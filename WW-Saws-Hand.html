@@ -171,21 +171,27 @@
 <!-- Guidance Information -->
 	 
 <table width="100%" border=1 align="center">
-    <col width="80px">       <!-- Saw Type -->
+    <col width="120px">       <!-- Saw Type -->
+    <col width="80px">       <!-- Saw Purpose -->
     <col width="90px">       <!-- Rake Range -->
-    <col width="50px">       <!-- Rake Recom. -->
+    <col width="60px">       <!-- Rake Recom. -->
     <col width="90px">       <!-- Fleam Range -->
-    <col width="50px">       <!-- Fleam Recom. -->
-    <col width="50px">       <!-- Drop -->
-    <col width="90px">       <!-- Set -->
-	<col width="*" >             <!-- Comments -->
+    <col width="60px">       <!-- Fleam Recom. -->
+    <col width="60px">       <!-- Drop -->
+    <col width="60px">       <!-- Set -->
+    <col width="*" >             <!-- Comments -->
 
-	<tr>
-    	<th align="center" valign="bottom" bgcolor="moccasin" rowspan=2>
+    <tr>
+	<th align="center" valign="bottom" bgcolor="moccasin" rowspan=2>
             <font color="darkblue">
             <b>Saw Type
             </font>
-	    </th>
+	</th>
+	<th align="center" valign="bottom" bgcolor="moccasin" rowspan=2>
+            <font color="darkblue">
+            <b>Saw Purpose
+            </font>
+	</th>
     	<th align="center" valign="bottom" bgcolor="moccasin" colspan=2>
             <font color="darkblue">
             <b>Rake</b>
@@ -203,22 +209,22 @@
 	    </th>
     	<th align="center" valign="bottom" bgcolor="moccasin" rowspan=2>
             <font color="darkblue">
-            <b>Set</b>
+            <b>Set*</b>
             </font>
 	    </th>
     	<th align="center" valign="bottom" bgcolor="moccasin" rowspan=2>
             <font color="darkblue">
             <b>Comments</b>
             </font>
-	    </th>
-	</tr>
+	</th>
+    </tr>
 
-	<tr>
+    <tr>
     	<th align="center" valign="bottom" bgcolor="moccasin">
             <font color="darkblue">
             <b>Range</b>
             </font>
-	    </th>
+	</th>
     	<th align="center" valign="bottom" bgcolor="moccasin">
             <font color="darkblue">
             <b>Recom.</b>
@@ -237,45 +243,13 @@
 	</tr>
 
 <!-- ################################################### -->
-<!-- Rip Backsaws -->
-	<tr bgcolor="lightgray">
-	    <td align="center" valign="middle">
+<!-- Backsaws Crosscut -->
+	<tr bgcolor="White">
+	    <td align="left" valign="middle" rowspan=2 bgcolor="White">
 		Backsaw
-		<br>
-		Rip
-		<p style="margin-bottom: 0;"><img src="Images/Saw-Rip.png" width="75px">
 	    </td>
-	    <td align="center" valign="middle">
-		-15&deg; to 0&deg;
-	    </td>
-	    <td align="center" valign="middle" bgcolor=#82CAFA>
-		-10&deg;
-		</td>
-	    <td align="center" valign="middle">
-		0&deg;
-	    </td>
-	    <td align="center" valign="middle" bgcolor=#82CAFA>
-		0&deg;
-	    </td>
-	    <td align="center" valign="middle" bgcolor=#82CAFA>
-		0&deg;
-	    </td>
-	    <td align="center" valign="middle" bgcolor=#82CAFA>
-		50% of saw blade's thickness
-	    </td>
-	    <td align="left" valign="top">
-		<p style="margin-top: 0; margin-bottom: 0;">Increased rake makes for a smoother, more accurate cutting action.
-	    </td>
-	</tr>
-
-<!-- ################################################### -->
-<!-- Crosscut Backsaws -->
-	<tr bgcolor="White" >
-	    <td align="center" valign="middle">
-		Backsaw
-		<br>
+	    <td align="left" valign="middle">
 		Crosscut
-		<p style="margin-bottom: 0;"><img src="Images/Saw-Crosscut.png" width="75px">
 	    </td>
 	    <td align="center" valign="middle">
 		-12&deg; to -30&deg;
@@ -293,7 +267,7 @@
 		10&deg;
 	    </td>
 	    <td align="center" valign="middle" bgcolor=#C2DFFF>
-		50% of saw blade's thickness
+		50%
 	    </td>
 	    <td align="left" valign="top">
 		<p style="margin-top: 0; margin-bottom: 0;">Matt Cianci recommends rake = -15&deg;, fleam = 20&deg;, and drop = 0&deg;.
@@ -301,11 +275,58 @@
 	</tr>
 
 <!-- ################################################### -->
-<!-- Rip Saws -->
+<!-- Backsaws Rip -->
 	<tr bgcolor="lightgray">
+	    <td align="left" valign="middle">
+		Rip
+	    </td>
 	    <td align="center" valign="middle">
+		-15&deg; to 0&deg;
+	    </td>
+	    <td align="center" valign="middle" bgcolor=#82CAFA>
+		-10&deg;
+		</td>
+	    <td align="center" valign="middle">
+		0&deg;
+	    </td>
+	    <td align="center" valign="middle" bgcolor=#82CAFA>
+		0&deg;
+	    </td>
+	    <td align="center" valign="middle" bgcolor=#82CAFA>
+		0&deg;
+	    </td>
+	    <td align="center" valign="middle" bgcolor=#82CAFA>
+		50%
+	    </td>
+	    <td align="left" valign="top">
+		<p style="margin-top: 0; margin-bottom: 0;">Increased rake makes for a smoother, more accurate cutting action.
+	    </td>
+	</tr>
+
+<!-- ################################################### -->
+<!-- Compass Saws -->
+	<tr bgcolor="white">
+	    <td align="left" valign="middle" bgcolor="White">
+		Compass Saw
+	    </td>
+	    <td align="left" valign="middle">
+		(all)
+	    </td>
+	    <td align="center" valign="top" colspan=6>
+		<i>(same as for Rip Hand Saws)</i>        
+	    </td>
+	    <td align="left" valign="top" >
+        	&nbsp;
+	    </td>
+	</tr>
+
+<!-- ################################################### -->
+<!-- Hand Saws Rip -->
+	<tr bgcolor="lightgray">
+	    <td align="left" valign="middle" rowspan=2 bgcolor="White">
 		Hand Saw
-		<br>
+	    </td>
+	    <td align="left" valign="middle">
 		Rip
 		<p style="margin-bottom: 0;"><img src="Images/Saw-Rip.png" width="75px">
 	    </td>
@@ -325,7 +346,7 @@
 		5&deg;
 	    </td>
 	    <td align="center" valign="middle" bgcolor=#82CAFA>
-		50% of saw blade's thickness
+		50%
 	    </td>
 	    <td align="left" valign="top">
 		<p style="margin-top: 0; "><b>Rake</b>:  For general, all-around use, set to -5&deg;.  Higher rake angles make the saw's cutting more aggressive (and faster).
@@ -335,11 +356,9 @@
 	</tr>
 
 <!-- ################################################### -->
-<!-- Crosscut Saws -->
+<!-- Hand Saws Crosscut -->
 	<tr bgcolor="White" >
-	    <td align="center" valign="middle">
-		Hand Saw
-		<br>
+	    <td align="left" valign="middle" bgcolor="White">
 		Crosscut
 		<p style="margin-bottom: 0;"><img src="Images/Saw-Crosscut.png" width="75px">
 	    </td>
@@ -359,7 +378,7 @@
 		10&deg;
 	    </td>
 	    <td align="center" valign="middle" bgcolor=#C2DFFF>
-		50% of saw blade's thickness
+		50%
 	    </td>
 	    <td align="left" valign="top">
 		<p style="margin-top: 0; margin-bottom: 0;"><b>Rake</b>:  Higher rake angles make the saw's cutting more aggressive (and faster).  For soft, fibrous woods, consider rake = 45&deg;  and increase <b>Set</b>.
@@ -371,9 +390,9 @@
 	</tr>
 
 <!-- ################################################### -->
-<!-- 2-Man Crosscut Saws -->
+<!-- 2-Man Crosscut Saws
 	<tr bgcolor="lightgray">
-	    <td align="center" valign="middle">
+	    <td align="left" valign="middle" colspan=2>
 		2-Man Crosscut 
 	    </td>
 	    <td align="center" valign="top" colspan=5>
@@ -386,60 +405,33 @@
         	&nbsp;
 	    </td>
 	</tr>
-
-<!-- ################################################### -->
-<!-- Compass Saws -->
-	<tr bgcolor="white">
-	    <td align="center" valign="middle">
-		Compass 
-	    </td>
-	    <td align="center" valign="top" colspan=6>
-		<i>(same as for Rip Saws)</i>        
-	    </td>
-	    <td align="left" valign="top" >
-        	&nbsp;
-	    </td>
-	</tr>
-
-<!-- ################################################### -->
-<!-- Dovetail Saws -->
-	<tr bgcolor="lightgray">
-	    <td align="center" valign="middle">
-		Dovetail 
-	    </td>
-	    <td align="center" valign="top" colspan=5>
-		<i>(same as for Crosscut Saws)</i>        
-	    </td>
-	    <td align="center" valign="top" bgcolor=#82CAFA>
-		0.002&quot;
-	    </td>
-	    <td align="left" valign="top">
-		For backsaws, <b>Set</b> should be 0.005&quot;.
-	    </td>
-	</tr>
-
+ -->
+ 
 <!-- ################################################### -->
 <!-- Reciprocating Saw Blades -->
-	<tr bgcolor="white">
-	    <td align="center" valign="middle">
+	<tr bgcolor="lightgray">
+	    <td align="left" valign="middle" bgcolor="White">
 		Reciprocating Saw Blades
+	    </td>
+	    <td align="left" valign="middle">
+		(all)
 	    </td>
 	    <td align="center" valign="middle">
         	&nbsp;
 	    </td>
-	    <td align="center" valign="middle" bgcolor=#C2DFFF>
+	    <td align="center" valign="middle" bgcolor=#82CAFA>
 		0&deg;
 	    </td>
 	    <td align="center" valign="middle">
 	    </td>
-	    <td align="center" valign="middle" bgcolor=#C2DFFF>
+	    <td align="center" valign="middle" bgcolor=#82CAFA>
 		8&deg;
 	    </td>
-	    <td align="center" valign="middle" bgcolor=#C2DFFF>
+	    <td align="center" valign="middle" bgcolor=#82CAFA>
 		0&deg;
 	    </td>
-	    <td align="center" valign="middle" bgcolor=#C2DFFF>
-		50% of saw blade's thickness
+	    <td align="center" valign="middle" bgcolor=#82CAFA>
+		50%
 	    </td>
 	    <td align="left" valign="top">
         	&nbsp;
@@ -448,26 +440,29 @@
 
 <!-- ################################################### -->
 <!-- Veneer Saws -->
-	<tr bgcolor="lightgray">
-	    <td align="center" valign="middle">
-		Veneer
+	<tr bgcolor="White">
+	    <td align="left" valign="middle" bgcolor="White">
+		Veneer Saw
+	    </td>
+	    <td align="left" valign="middle">
+		(all)
 	    </td>
 	    <td align="center" valign="middle">
         	&nbsp;
 	    </td>
-	    <td align="center" valign="middle" bgcolor=#82CAFA>
+	    <td align="center" valign="middle" bgcolor=#C2DFFF>
 		0&deg;
 	    </td>
 	    <td align="center" valign="middle">
         	&nbsp;
 	    </td>
-	    <td align="center" valign="middle" bgcolor=#82CAFA>
+	    <td align="center" valign="middle" bgcolor=#C2DFFF>
 		0&deg;
 	    </td>
-	    <td align="center" valign="middle" bgcolor=#82CAFA>
+	    <td align="center" valign="middle" bgcolor=#C2DFFF>
 		0&deg;
 	    </td>
-	    <td align="center" valign="middle" bgcolor=#82CAFA>
+	    <td align="center" valign="middle" bgcolor=#C2DFFF>
 		0
 	    </td>
 	    <td align="left" valign="top" >
@@ -475,6 +470,8 @@
 	    </td>
 	</tr>
 </table>
+
+<p>* <b>Set</b> is expressed as a percentage of the saw blade's thickness
 
 <table width="100%">
 <tr><td>
