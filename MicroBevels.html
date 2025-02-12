@@ -6,109 +6,145 @@
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
+<body bgcolor=#E6E6E6 class="" id="">
+<font face="Arial" size="3">
+
 <!-- ################################################### -->
-<!-- Style Sheet for indented paragraphs                                             -->
+<!-- Style Sheet for header image max size               -->
+<!-- ################################################### -->
 <style>
-    .indented { padding-left: 33pt; padding-right: 33pt; }
+    img.Image { max-width: 1000px;}
 </style>
 
-<body bgcolor=#E6E6E6 class="" id="">
-	<font face="Arial">
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
 
 <!-- ################################################### -->
-<!-- Style Sheet for header image max size                                         -->
-<!-- ################################################### -->
-    <style>
-    img.Image { max-width: 1000px;}
-    </style>
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-Horizontal-Rules.html"></div> 
+<script>
+includeHTML();
+</script> 
 
 <!-- ################################################### -->
 <!-- Header                                                                                           -->
 <!-- ################################################### -->
-    <table width=100%>
-        <tr valign="TOP">
-            <td align="center">
-                <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
-            </td>
+<table width=100%>
+    <tr valign="TOP">
+        <td align="center">
+            <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
         </td>
-    </table>
+    </td>
+</table>
 
-     <table width="100%" border=0>
-        <col width="10%">
-        <col width="*">
-        <col width="10%">
+<table width="100%" border=0>
+    <col width="10%">
+    <col width="*">
+    <col width="10%">
 
-        <tr valign="bottom">
-            <td align="left">
-                <a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
-            </td>
-            <td align="center" valign="top">
-                <font face="Arial" size="6" color=#191970><b>
-               Micro Bevel Angles
-                </b></font>
-            </td>
-            <td align="right">
-            </td>
-        </tr>
-    </table>
+    <tr valign="bottom">
+        <td align="left">
+            <a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
+        </td>
+        <td align="center" valign="top">
+            <font face="Arial" size="6" color=#191970><b>
+            Micro Bevel Angles
+            </b></font>
+        </td>
+        <td align="right">
+            &nbsp;
+        </td>
+    </tr>
+</table>
 
 <!-- ################################################### -->
-<!-- Body                                                                                               -->
+<!-- Body                                                -->
 <!-- ################################################### -->
-    <hr>
+<hr>
 
-    <div style="float: right; width:510px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
-        <center><IMG SRC="Images/MicroBevel-HighAngle.png" Width=500></center>
-        <center><b>High Angle Micro Bevel</b></center>
+<div style="float: right; width:510px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
+    <center><IMG SRC="Images/MicroBevel-HighAngle.png" Width=500></center>
+    <center><b>High Angle Micro Bevel</b></center>
+
+    <br>
+    <br>
+    <center><IMG SRC="Images/MicroBevel-LowAngle.png" Width=500></center>
+    <center><b>Low Angle Micro Bevel</b></center>
+</div>
+
+<font face="Arial" size="4" color="blue"><b>Why use a Micro Bevel (also known as a secondary bevel)?</b></a></font>
+
+<p>The sharpening process is typically multi-step :
+    <ol>
+        <li>The tool is sharpened on a grindstone which is "rougher" -- a grit in the range of 600 - 1,000.</li>
 
         <br>
+        <li>The tool is then honed on a grindstone (or other media) with a much higher grit -- something in 4,000 grit and finer range (some hone on grindstones up to 13,000 grit).</li>
+    </ol>
+
+<p>The honing step can be quite onerous if the size of the surface to be honed is large (every mm<sup>2</sup> counts).  Fortunately, by increasing the angle for the honing step, the area needing to be honed can be kept small.
+
+<p>Micro bevels thusly are used to make sharpening (and re-sharpening) of the tool faster, getting the craftsman back to work sooner.
+
+<p>&nbsp;
+<p><font face="Arial" size="4" color="blue"><b>What Micro Bevel angle should you use?</b></a></font>
+
+<p>The selection of the Micro Bevel angle is not critical for the tool's sharpness, but it does impact the time required for re-honing the tool.
+    <ul>
+        <li>There are some who opt for Micro Bevels which are very close to the primary bevel (a low increase) -- angles increased in the range of +1&deg; to +2&deg;.</li>
+
         <br>
-        <center><IMG SRC="Images/MicroBevel-LowAngle.png" Width=500></center>
-        <center><b>Low Angle Micro Bevel</b></center>
-    </div>
+        <li>Others opt for Micro Bevels which are a greater increase to the primary bevel -- angles increased in the area of +5&deg;, even up to +10&deg;.</li>
 
-    <font face="Arial" size="4" color="blue"><b>Why use a Micro Bevel (also known as a secondary bevel)?</b></a></font>
+        <br>
+        <li>I generally use +2&deg; to +5&deg;, with higher bevel angles on harder steels.</li>
+    </ul>
 
-    <p>The sharpening process is typically multi-step :
-        <ol>
-            <li>The tool is sharpened on a grindstone which is "rougher" -- a grit in the range of 600 - 1,000.</li>
+<p>The tool edge depicted on the right has a Micro Bevel, and shows dashed lines for the next 4 times it will be honed.  As is shown, the lower angle Micro Bevel makes for a larger surface area as the re-honing activities proceed.  It is a bit exaggerated, but does show how the Micro Bevel angle affects the re-honing activity.
 
-            <br>
-            <li>The tool is then honed on a grindstone (or other media) with a much higher grit -- something in 4,000 grit and finer range (some hone on grindstones up to 13,000 grit).</li>
-        </ol>
-
-    <p>The honing step can be quite onerous if the size of the surface to be honed is large (every mm<sup>2</sup> counts).  Fortunately, by increasing the angle for the honing step, the area needing to be honed can be kept small.
-
-    <p>Micro bevels thusly are used to make sharpening (and re-sharpening) of the tool faster, getting the craftsman back to work sooner.
-
-    <br>
-    <br>
-    <p><font face="Arial" size="4" color="blue"><b>What Micro Bevel angle should you use?</b></a></font>
-
-    <p>The selection of the Micro Bevel angle is not critical for the tool's sharpness, but it does impact the time required for re-honing the tool.
-        <ul>
-            <li>There are some who opt for Micro Bevels which are very close to the primary bevel (a low increase) -- angles increased in the range of +1&deg; to +2&deg;.</li>
-
-            <br>
-            <li>Others opt for Micro Bevels which are a greater increase to the primary bevel -- angles increased in the area of +5&deg;, even up to +10&deg;.</li>
-
-            <br>
-            <li>I generally use +2&deg; to +5&deg;, with higher bevel angles on harder steels.</li>
-        </ul>
-
-    <p>The tool edge depicted on the right has a Micro Bevel, and shows dashed lines for the next 4 times it will be honed.  As is shown, the lower angle Micro Bevel makes for a larger surface area as the re-honing activities proceed.  It is a bit exaggerated, but does show how the Micro Bevel angle affects the re-honing activity.
-
-    <br>
-    <br>
-    <p><font face="Arial" size="4" color="blue"><b>Want more information on honing?</b></a></font>
-    <p>There is a very good guide on honing which was written by <a href="https://en.wikipedia.org/wiki/Holtzapffel" target="_new">Charles Holtzapffel</a> titled, <a href="https://archive.org/details/turningmechanica03holtuoft/page/n8" target="_new">Turning and Mechanical Manipulation, Vol. 3 - Abrasive and Other Processes not Accomplished with Cutting Tools</a>.  This was originally published in 1850 by Charles Holtzapffel, and was later updated by Charles' son, John Jacob Holtzapffel in 1894.  The 2d edition has 796 pages, of which 300 were revised from the first edition by John Jacob.
+<p>&nbsp;
+<p><font face="Arial" size="4" color="blue"><b>Want more information on honing?</b></a></font>
+<p>There is a very good guide on honing which was written by <a href="https://en.wikipedia.org/wiki/Holtzapffel" target="_new">Charles Holtzapffel</a> titled, <a href="https://archive.org/details/turningmechanica03holtuoft/page/n8" target="_new">Turning and Mechanical Manipulation, Vol. 3 - Abrasive and Other Processes not Accomplished with Cutting Tools</a>.  This was originally published in 1850 by Charles Holtzapffel, and was later updated by Charles' son, John Jacob Holtzapffel in 1894.  The 2d edition has 796 pages, of which 300 were revised from the first edition by John Jacob.
 
 <!-- ################################################### -->
-<!-- Footer                                                                                             -->
+<!-- Footer                                              -->
 <!-- ################################################### -->
-    <hr>
-    <center><font face="Arial" size="3"><a href="indexAbout.html" target="_new">About this site</a></center>
-    <font face="Arial" size="2"><b><u>Remember</u></b> :  <i>The goal of sharpening is to produce sharp tools, and these tools can injure you if mishandled.  Safety measures should be followed to protect yourself and those in your shop.  Be sure to read and follow all instructions from the manufacturer, and and utilize proper safety equipment. Never consume alcohol or anything that could impair your judgement before sharpening tools, or using sharp tools.</i>  Comments can be sent via eMail to me at <a href="mailto:SharpeningHandbook@Gmail.com?Subject=Sharpening Handbook" target="_new">SharpeningHandbook@Gmail.com</a>.</font>
-
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
 </body>
 </html>

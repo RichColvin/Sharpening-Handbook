@@ -6,48 +6,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
-<!-- ################################################### -->
-<!-- Style Sheet for Horizontal Rule - Style 1           -->
-<!-- ################################################### -->
-<style>
-hr.style1 {
-    border: 0;
-    height: 3px;
-    background-image: linear-gradient(to right,
-	rgba(0, 0, 0, 0),
-	rgba(0, 0, 255, 0.75),
-	rgba(0, 0, 0, 0));
-	}
-</style>
-
-<!-- ################################################### -->
-<!-- Style Sheet for Horizontal Rule - Style 2           -->
-<!-- ################################################### -->
-<style>
-hr.style2 {
-    border: 0;
-    height: 1.5px;
-    background-image: linear-gradient(to right,
-	rgba(0, 0, 0, 0),
-	rgba(0, 0, 255, 0.75),
-	rgba(0, 0, 0, 0));
-	}
-</style>
-
-<!-- ################################################### -->
-<!-- Style Sheet for Horizontal Rule - Style 3           -->
-<!-- ################################################### -->
-<style>
-hr.style3 {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right,
-	rgba(0, 0, 0, 0),
-	rgba(0, 0, 255, 0.75),
-	rgba(0, 0, 0, 0));
-	}
-</style>
-
 <body bgcolor=#E6E6E6 class="" id="">
 <font face="Arial" size="3">
 
@@ -57,6 +15,49 @@ hr.style3 {
 <style>
     img.Image { max-width: 1000px;}
 </style>
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-Horizontal-Rules.html"></div> 
+<script>
+includeHTML();
+</script> 
 
 <!-- ################################################### -->
 <!-- Header                   				 -->
@@ -263,46 +264,10 @@ hr.style3 {
 
 <!-- ################################################### -->
 <!-- Ongoing Maintenance -->
-<hr class="style1">
-<div style=" float: right; width: 75px; margin: 5px 5px 5px 5px; padding: 5px; border: 1px solid grey; text-align: center; ">
-    <img src="Images/CamelliaOil.png" width="100%" />
-    <br>
-    <font size=2>Camellia Oil Spray Bottle</font>
-</div>
-
-<h3 style="margin-bottom: 0;">Ongoing Maintenance</h3>
-
-<p style="margin-top: 0;">Be sure to remove all caked-on dirt and sap.  A wire brush or putty knife can be useful for this.  A well-kept tool will last your lifetime, and will still be usable by your children (and maybe your grandkids).
-
-<hr class="style3">
-
-<p>Sap can be removed using a solvent.  Acetone works well, but be sure to wear protective clothing as this is not kind to your body, and be sure the area is well ventilated.  Isopropyl alcohol also works well, and is less harsh.
-
-<p>Another recommendation is to use Crean Mate which is a small block used for cleaning resin, rust, and other gunk from your tool.  A green scrub pad works well for removing many stuck-on materials.
-
-<p><font color="darkred">Do NOT use bleach or trisodium phosphate.</font> Both are oxidizers which will cause your tools to rust.
-
-<hr class="style2">
-
-<h4 style="margin-bottom: 0;">Exposure to Diseased Plants or Soil</h3>
-<p style="margin-top: 0;">If the tool was exposed to any diseased plants or soil which is infected with pests, give it a quick wash with isopropyl alcohol.  Be sure to rinse with water and then dry afterwards.  Finally, apply a thin coat of camellia oil.
-
-<p>As noted above, the recommendation by some for using bleach or trisodium phosphate is not followed here.  Those products can damage the metal in the tool.
-
-<hr class="style2">
-
-<h4 style="margin-bottom: 0;">Apply a Light Coat of Oil</h4>
-<p style="margin-top: 0;">After using any solvent, be sure to apply a thin coat of camellia oil to the tool.  I like the spray bottle of camellia oil sold by <a href="https://toolsforworkingwood.com" target="_new">Tools for Working Wood</a>.
-
-<p>In lieu of camellia oil, jojoba oil or cedar oil are recommended by some.
-	
-<p><font color="darkred">Do NOT use boiled linseed oil (BLO).</font> Some advocate using BLO, but BLO often has heavy metals or other bad chemicals added for drying agents, and these are not good for you to handle, nor would they be good for the plants on which you might use this tool.
-
-<!-- ################################################### -->
-<!-- Tools in Storage -->
-<hr class="style1">
-<h3 style="margin-bottom: 0;">Tools in Storage</h3>
-<p style="margin-top: 0;">Tools in storage need a thin coating of camellia oil applied the sharpened surface.  (Indeed, all unpainted surfaces would benefit from this.)
+<div w3-include-html="include-GT-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
 
 <!-- ################################################### -->
 <!-- More Information -->
@@ -346,13 +311,11 @@ hr.style3 {
  -->
 
 <!-- ################################################### -->
-<!-- Footer                            			         -->
+<!-- Footer                                              -->
 <!-- ################################################### -->
-<hr>
-<center><font face= "Palatino" size="3"><a href="indexAbout.html" target="_new">About this site</a></center>
-<font face= "Palatino" size="2">
-<b><u>Remember</u></b> :  <i>The goal of sharpening is to produce sharp tools, and these tools can injure you if mishandled.  Safety measures should be followed to protect yourself and those in your shop.  Be sure to read and follow all instructions from the manufacturer, and and utilize proper safety equipment. Never consume alcohol or anything that could impair your judgement before sharpening tools, or using sharp tools.</i>
-Comments can be sent via eMail to me at <a href="mailto:SharpeningHandbook@Gmail.com?Subject=Sharpening Handbook" target="_new">SharpeningHandbook@Gmail.com</a>.
-</font>
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
 </body>
 </html>

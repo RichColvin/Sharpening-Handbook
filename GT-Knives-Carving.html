@@ -6,48 +6,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
-<!-- ################################################### -->
-<!-- Style Sheet for Horizontal Rule - Style 1           -->
-<!-- ################################################### -->
-<style>
-    hr.style1 {
-	border: 0;
-	height: 3px;
-	background-image: linear-gradient(to right,
-	    rgba(0, 0, 0, 0),
-	    rgba(0, 0, 255, 0.75),
-	    rgba(0, 0, 0, 0));
-	}
-</style>
-
-<!-- ################################################### -->
-<!-- Style Sheet for Horizontal Rule - Style 2           -->
-<!-- ################################################### -->
-<style>
-    hr.style2 {
-	border: 0;
-	height: 1.5px;
-	background-image: linear-gradient(to right,
-	    rgba(0, 0, 0, 0),
-	    rgba(0, 0, 255, 0.75),
-	    rgba(0, 0, 0, 0));
-	}
-</style>
-
-<!-- ################################################### -->
-<!-- Style Sheet for Horizontal Rule - Style 3           -->
-<!-- ################################################### -->
-<style>
-    hr.style3 {
-	border: 0;
-	height: 1px;
-	background-image: linear-gradient(to right,
-	    rgba(0, 0, 0, 0),
-	    rgba(0, 0, 255, 0.75),
-	    rgba(0, 0, 0, 0));
-	}
-</style>
-
 <body bgcolor=#E6E6E6 class="" id="">
 <font face="Arial" size="3">
 
@@ -57,6 +15,49 @@
 <style>
     img.Image { max-width: 1000px;}
 </style>
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-Horizontal-Rules.html"></div> 
+<script>
+includeHTML();
+</script> 
 
 <!-- ################################################### -->
 <!-- Header                                              -->
@@ -331,6 +332,13 @@ There are a number of <a href="indexCalc.html" target="iMain">online calculators
 <p>When using flat stones for final sharpening (e.g., grits >2000), a hollow grind can make this easier.  As shown in the picture to the left, the two points circled in red provide positive locations for setting the grinding action.  It also reduces the amount of grinding needed as there is less metal meeting the grindstone.
 
 <!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-WW-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
 <!-- More Information -->
 <hr class="style1">
 <h2>More Information</h2>
@@ -407,18 +415,8 @@ There are a number of <a href="indexCalc.html" target="iMain">online calculators
 			<li><a href="https://youtu.be/AcWAkQmoU8c" target="_new">Herman Trivilino showing the use of a platform jig</a> (YouTube video)</li>
 		    </ul>
 
-	    </ul>
-	</td>
-	<td width="50%">
-	    <ul>
 		<li><b>Tormek's Videos</b></li>
 		    <ul>
-			<li><a href="https://youtu.be/zFmGfDULpiQ" target="_new">Tormek AngleMaster WM-200</a> (YouTube video)</li>
-
-			<br>
-			<li><a href="https://youtu.be/JFHqQg5wZEg" target="_new">Tormek's Centering Knife Jigs KJ-45 &amp; KJ-140</a> (YouTube video)</li>
-
-			<br>
 			<li><a href="https://youtu.be/R2ifZQOJA7k" target="_new">Tormek Live Sharpening Class - Part 1. Knife sharpening</a> (YouTube video).  Wolfgang and S&egrave;bastian from Tormek talk about different techniques for knife sharpening.</li>
 
 			<br>
@@ -427,8 +425,13 @@ There are a number of <a href="indexCalc.html" target="iMain">online calculators
 			<p>The commentary that starts at 10:40 about setup of the <a href="https://www.tormek.com/" target="_new">Tormek</a>  <a href="https://www.tormek.com/International/en/grinding-jigs/svm-00-small-knife-holder/" target="_new">SVM-00 Small Knife Holder Jig</a> are excellent.
 
 			<p style="margin-bottom: 0;">Around 24:00, there is a discussion on sharpening hook knives (with the grind on the outside edge).  Sharpening the inside edge must be done by hand, or using the method advocated in <a href="https://www.amazon.com/Complete-Guide-Sharpening-Fine-Woodworking-ebook/dp/B004WYO83U/ref=sr_1_1?ie=UTF8&qid=1545845706&sr=8-1&keywords=The+Complete+Guide+to+Sharpening" target="_new">The Complete Guide to Sharpening (1996)</a> by <a href="https://en.wikipedia.org/wiki/Leonard_Lee" target="_new">Leonard Lee</a>.</li>
-
-			<br>
+			</ul>
+	    </ul>
+	</td>
+	<td width="50%">
+	    <ul>
+		<li><b>Tormek's Videos</b> (continued)</li>
+		    <ul>
 			<li><a href="https://youtu.be/R2ifZQOJA7k" target="_new">Tormek Live Sharpening Class - Part 9 - Sharpen a flat bevel with Tormek MB-100 on a diamond wheel</a> (YouTube video).  In this episode we learn how to use the Tormek MB-100 Multi Base to sharpen a completely flat bevel &#9660;, on the side of Tormek's diamond wheels DC-250, DF-250 and DE-250. For some tools, such as  	&#x1f3bb; luthier knives,&#x1F52A; Kiridashi knives, v-tools, chip carving knives and Japanese plane irons, a completely flat surface on the bevel is preferred over a slightly concave, which you get when you sharpen on the rounded part of the grinding wheel. For some people this is more of a personal preference.
 
 			<p style="margin-bottom: 0;">Regardless of what might be the reason to want a flat bevel, S&egrave;bastian and Wolfgang show how to achieve it with your Tormek wet sharpening system,  They will also touch upon the differences between the different types of bevels.</li>
@@ -441,6 +444,12 @@ There are a number of <a href="indexCalc.html" target="iMain">online calculators
 
 			<br>
 			<li><a href="https://www.youtube.com/live/5T4wtZSi4rE?si=hFKmKLi4pUVK9MG2" target="_new">Tormek Live Sharpening Class - Part 24. KS-123 Knife Angle Setter</a> (YouTube video)</li>
+
+			<br>
+			<li><a href="https://youtu.be/JFHqQg5wZEg" target="_new">Tormek's Centering Knife Jigs KJ-45 &amp; KJ-140</a> (YouTube video)</li>
+
+			<br>
+			<li><a href="https://youtu.be/Of6KqiwaCP4" target="_new">Tormek Small Knife Holder SVM-00</a> (YouTube video)</li>
 				
 			<br>
 			<li><a href="https://youtu.be/4k5VAW3qOu4" target="_new">Tormek Knife Jig SVM-45</a> (YouTube video)</li>
@@ -449,7 +458,7 @@ There are a number of <a href="indexCalc.html" target="iMain">online calculators
 			<li><a href="https://youtu.be/z4-HArUSCJo" target="_new">Tormek Long Knife Jig SVM-140</a> (YouTube video)</li>
 
 			<br>
-			<li><a href="https://youtu.be/Of6KqiwaCP4" target="_new">Tormek Small Knife Holder SVM-00</a> (YouTube video)</li>
+			<li><a href="https://youtu.be/zFmGfDULpiQ" target="_new">Tormek AngleMaster WM-200</a> (YouTube video)</li>
 		    </ul>
 	    </ul>
 	</td>
@@ -495,20 +504,11 @@ There are a number of <a href="indexCalc.html" target="iMain">online calculators
  -->
 
 <!-- ################################################### -->
-<!-- Copyrights -->
-<p><hr class="style1">
-    
-<p>Tormek is a copyrighted logo of Tormek AB.  Its presentation on this site is used to help the user quickly understand when specific Tormek tools, jigs, or setting are being used.  For specific information regarding Tormek AB, or its products, please refer to the <a href="https://www.tormek.com/" target="_new">www.Tormek.com</a>.
-
-<!-- ################################################### -->
 <!-- Footer                                              -->
 <!-- ################################################### -->
-
-<hr>
-<center><font face= "Palatino" size="3"><a href="indexAbout.html" target="_new">About this site</a></center>
-<font face= "Palatino" size="2">
-<b><u>Remember</u></b> :  <i>The goal of sharpening is to produce sharp tools, and these tools can injure you if mishandled.  Safety measures should be followed to protect yourself and those in your shop.  Be sure to read and follow all instructions from the manufacturer, and and utilize proper safety equipment. Never consume alcohol or anything that could impair your judgement before sharpening tools, or using sharp tools.</i>
-Comments can be sent via eMail to me at <a href="mailto:SharpeningHandbook@Gmail.com?Subject=Sharpening Handbook" target="_new">SharpeningHandbook@Gmail.com</a>.
-</font>
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
 </body>
 </html>

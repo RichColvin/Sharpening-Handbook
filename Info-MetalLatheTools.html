@@ -6,35 +6,58 @@
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
-<!-- ################################################### -->
-<!-- Style Sheet for Horizontal Rule - Style 1                                        -->
-<!-- ################################################### -->
- <style>
-    hr.style1 {
-        border: 0;
-        height: 3px;
-        background-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 255, 0.75),
-            rgba(0, 0, 0, 0));
-    }
-</style>
-
-<!-- ################################################### -->
-<!-- Style Sheet for indented paragraphs                                             -->
-<style>
-    .indented { padding-left: 5pt; padding-right: 5pt; }
-</style>
-
 <body bgcolor=#E6E6E6 class="" id="">
-	<font face="Arial" size="3">
+<font face="Arial" size="3">
 
 <!-- ################################################### -->
-<!-- Style Sheet for header image max size                                         -->
+<!-- Style Sheet for header image max size               -->
 <!-- ################################################### -->
-    <style>
+<style>
     img.Image { max-width: 1000px;}
-    </style>
+</style>
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-Horizontal-Rules.html"></div> 
+<script>
+includeHTML();
+</script> 
 
 <!-- ################################################### -->
 <!-- Header                     -->
@@ -181,5 +204,12 @@
     </td></tr>
 </table>
 
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
 </body>
 </html>

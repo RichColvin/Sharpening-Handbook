@@ -1,53 +1,63 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
+<body bgcolor=#E6E6E6 class="" id="">
+<font face="Arial" size="3">
+
 <!-- ################################################### -->
-<!-- Style Sheet for Horizontal Rule - Style 1           -->
+<!-- Style Sheet for header image max size               -->
 <!-- ################################################### -->
 <style>
-hr.style1 {
-    border: 0;
-    height: 3px;
-    background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 255, 0.75),
-        rgba(0, 0, 0, 0));
+    img.Image { max-width: 1000px;}
+</style>
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
     }
-</style>
+  }
+}
+</script> 
 
 <!-- ################################################### -->
-<!-- Style Sheet for Horizontal Rule - Style 2 -->
-<!-- ################################################### -->
-<style>
-hr.style2 {
-    border: 0;
-    height: 1.5px;
-    background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 128, 0, 0.75),
-        rgba(0, 0, 0, 0));
-    }
-</style>
-
-<!-- ################################################### -->
-<!-- Style Sheet for indented paragraphs -->
-<!-- ################################################### -->
-<style>
-    .indented { padding-left: 10pt; }
-</style>
-
-<!-- ################################################### -->
-<body background="Images/Background.png">
-<font face="Arial">
-
-<!-- ################################################### -->
-<!-- Style Sheet for header image max size -->
-<!-- ################################################### -->
-<style>
-img.Image { max-width: 1000px;}
-</style>
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-Horizontal-Rules.html"></div> 
+<script>
+includeHTML();
+</script> 
 
 <!-- ################################################### -->
 <!-- Header -->
@@ -662,15 +672,11 @@ img.Image { max-width: 1000px;}
 </table>
 
 <!-- ################################################### -->
-<!--Footer -->
+<!-- Footer                                              -->
 <!-- ################################################### -->
-    <hr>
-    <center><font face= "Palatino" size="3"><a href="indexAbout.html">About this site</a></center>
-    <font face= "Palatino" size="2">
-    <p><b><u>Remember</u></b> :  <i>The goal of sharpening is to produce sharp tools, and these tools can injure you if mishandled.  Safety measures should be followed to protect yourself and those in your shop.  Be sure to read and follow all instructions from the manufacturer, and and utilize proper safety equipment. Never consume alcohol or anything that could impair your judgement before sharpening tools, or using sharp tools.</i>
-    
-    <p style="margin-bottom: 0;">Comments can be sent via eMail to me at <a href="mailto:SharpeningHandbook@Gmail.com?Subject=Sharpening Handbook">SharpeningHandbook@Gmail.com</a>.
-    </font>
-
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
 </body>
 </html>
