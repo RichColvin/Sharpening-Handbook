@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body bgcolor=#E6E6E6 class="" id="">
+<font face="Arial" size="3">
+
+<!-- ################################################### -->
+<!-- Style Sheet for header image max size               -->
+<!-- ################################################### -->
+<style>
+    img.Image { max-width: 1000px;}
+</style>
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-Horizontal-Rules.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table width=100%>
+    <tr valign="TOP">
+   	<td align="center">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
+      </td>
+   </tr>
+</table>
+
+<table width="100%" border=0>
+    <col width="10%">
+    <col width="*">
+    <col width="10%">
+
+    <tr valign="bottom">
+	<td align="left">
+	    <a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
+	</td>
+	<td align="center" valign="top">
+	    <font face= "Palatino" size="6" color=#191970><b>
+	    Slotted Screw Drivers
+	    </b></font>
+	</td>
+	<td align="right">
+	    &nbsp;
+	</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+
+<hr>
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<div style=" float: right; width: 350px; 
+	margin-left: 5px; margin-right: 0px;
+	margin-top: 0px; margin-bottom: 5px;
+	padding-left: 5px; padding-right: 0px;
+	padding-top: 5px; padding-bottom: 5px;
+	border: 0px solid grey; text-align: left; ">
+    <img src="Images/GT-Screwdrivers-05.png" width="100%"  align="right"/>
+    <b>Grinding Angle</b>
+    <p>
+    <img src="Images/GT-Screwdrivers-04.png" width="80%" align="right"/>
+    <br>&nbsp;
+    <br>&nbsp;
+    <br>&nbsp;
+    <br>&nbsp;
+    <b>Tip Thickness</b>
+</div>
+
+<p><b>Slotted Screwdrivers</b> are sometimes called &ldquo;flat head screwdrivers&rdquo;, however purists argue that &ldquo;flat head&rdquo; is an improper terminology for this tool, noting that &ldquo;flat head&rdquo; refers to a type of screw shape. 
+
+<p></p>Guidelines shown below are for <b>Included Angles</b> (<font color="darkblue" face="Garamond"><b>&alpha;</b></font>) and tip thicknesses.
+
+<p><hr class="style2">
+
+<p>A screwdriver can easily have the tip damaged, especially when the screwdriver is used as a prying tool.  Fortunately, these can be re-ground.  Using a Tormek makes this an easy task, and helps to ensure you do not soften the metal.  If re-grinding on a bench grinder, care must be taken to ensure the metal is not overheated, weakening it.
+
+<p><hr class="style2">
+
+<p><font color="darkred"><u>Note</u>:</font> Some toolmakers will not harden the entire shaft of the screwdriver, only the tip and a bit up from there.  If grinding off too much of the metal, the sharpener may find that the exposed metal is not hardened.  Hardening that metal is difficult to do as most handles will be damaged in the process.
+
+<div style=" float: left; width: 350px; margin: 5px 5px 5px 5px; padding: 5px; border: 1px solid grey; text-align: left; background-color: LightGray ">
+    <p style="margin-top: 0; margin-bottom: 0; "><i>A workman who wants to do his work well must first prepare his tools.</I>
+	<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Confucius
+</div>
+
+<p>If the user wishes to retain the tool in a working state (e.g., for historical purposes), then the handle can be replaced after re-hardening the tool's steel.  
+The <u>Machinery's Handbook</u> addresses hardening of metals, as does the <u>American Machinists' Handbook</u>.
+
+<!-- ################################################### -->
+<!-- General Guidelines -->
+
+<p>
+<table width="100%" align="center" style="border-collapse: collapse; ">
+    <col width="150px">
+    <col width="85px">
+    <col width="130px">
+    <col width="*">
+
+    <tr bgcolor="Moccasin" valign="bottom">
+	<th colspan="999" style="border-style: solid; border-color: black; 
+		border-top-width: thick; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: thick; ">
+	    <font face="Arial" size="5" color="Blue"><b>General Guidelines</b></font>
+	</th>
+    </tr>
+    <tr bgcolor="Moccasin" valign="bottom">
+	<th style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: medium; ">
+	    <font face="Arial" color="Blue">
+	    Type
+	    </font>
+	</th>
+	<th style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    <font color="blue" face="Garamond" size=5><b>&alpha;</b></font>
+	</th>
+	<th style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    <font face="Arial" color="Blue">
+	    Tip Thickness
+	    </font>
+	</th>
+	<th style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <font face="Arial" color="Blue">Notes</font>
+	</th>
+    </tr>
+
+<!-- 1/16" -->
+    <tr bgcolor="White" valign="top">
+	<td valign="middle" style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: medium; 
+		padding-left: 5px; ">
+	    <sup>1</sup>/<sub>16</sub>&rdquo; Slotted
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    10&deg;
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    0.015&rdquo; - 0.020&rdquo;
+	</td>
+	<td align="LEFT" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <p style="margin-top: 0; margin-bottom: 0">&nbsp;
+	</td>
+    </tr>
+
+<!-- 1/8" -->
+    <tr bgcolor="#e5e4e2" valign="top">
+	<td valign="middle" style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: medium; 
+		padding-left: 5px; ">
+	    <sup>1</sup>/<sub>8</sub>&rdquo; Slotted
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    10&deg;
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    0.020&rdquo; - 0.025&rdquo;
+	</td>
+	<td align="LEFT" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <p style="margin-top: 0; margin-bottom: 0">&nbsp;
+	</td>
+    </tr>
+
+<!-- 5/32" -->
+    <tr bgcolor="White" valign="top">
+	<td valign="middle" style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: medium; 
+		padding-left: 5px; ">
+	    <sup>5</sup>/<sub>32</sub>&rdquo; Slotted
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    10&deg;
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    0.025&rdquo; - 0.030&rdquo;
+	</td>
+	<td align="LEFT" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <p style="margin-top: 0; margin-bottom: 0">&nbsp;
+	</td>
+    </tr>
+
+<!-- 3/16" -->
+    <tr bgcolor="#e5e4e2" valign="top">
+	<td valign="middle" style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: medium; 
+		padding-left: 5px; ">
+	    <sup>3</sup>/<sub>16</sub>&rdquo; Slotted
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    10&deg;
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    0.035&rdquo; - 0.040&rdquo;
+	</td>
+	<td align="LEFT" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <p style="margin-top: 0; margin-bottom: 0">&nbsp;
+	</td>
+    </tr>
+
+
+<!-- 1/4" -->
+    <tr bgcolor="White" valign="top">
+	<td valign="middle" style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: medium; 
+		padding-left: 5px; ">
+	    <sup>1</sup>/<sub>4</sub>&rdquo; Slotted
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    10&deg;
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    0.040&rdquo; - 0.045&rdquo;
+	</td>
+	<td align="LEFT" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <p style="margin-top: 0; margin-bottom: 0">&nbsp;
+	</td>
+    </tr>
+
+<!-- 5/16" -->
+    <tr bgcolor="#e5e4e2" valign="top">
+	<td valign="middle" style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: medium;  
+		padding-left: 5px; ">
+	    <sup>5</sup>/<sub>16</sub>&rdquo;  Slotted
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    10&deg;
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    0.050&rdquo; - 0.055&rdquo;
+	</td>
+	<td align="LEFT" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <p style="margin-top: 0; margin-bottom: 0">&nbsp;
+	</td>
+    </tr>
+    
+<!-- 3/8" -->
+    <tr bgcolor="White" valign="top">
+	<td valign="middle" style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: medium;  
+		padding-left: 5px; ">
+	    <sup>3</sup>/<sub>8</sub>&rdquo;  Slotted
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    10&deg;
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    0.060&rdquo; - 0.065&rdquo;
+	</td>
+	<td align="LEFT" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <p style="margin-top: 0; margin-bottom: 0">&nbsp;
+	</td>
+    </tr>
+
+<!-- Jeweler's -->
+    <tr bgcolor="#e5e4e2" valign="top">
+	<td valign="middle" style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: thick; 
+		border-left-width: thick; 
+		border-right-width: medium;  
+		padding-left: 5px; ">
+	    Jeweler's
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: thick; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    25&deg; - 35&deg;
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: thick; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    0.010&rdquo; - 0.015&rdquo;
+	</td>
+	<td align="LEFT" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: thick; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <div style=" float: right; width: 250px; 
+		    margin-left: 5px; margin-right: 0px;
+		    margin-top: 0px; margin-bottom: 5px;
+		    padding-left: 5px; padding-right: 5px;
+		    padding-top: 5px; padding-bottom: 5px;
+		    border: 1px solid grey; text-align: center; ">
+		<img src="Images/JewelerScrewdriver.png" width="100%"  align="right"/>
+		<b>Jeweler's Screwdriver</b>
+	    </div>
+
+	    <p style="margin-top: 0; ">Jeweler's screwdrivers like those seen in the picture to the right can easily have the tip damaged, especially when the tool is used (improperly) as a prying tool.  Fortunately, these can be re-ground.
+	    
+	    <p>I found that it is best to hold the screwdriver in a jig which allows the sides to be easily ground opposite each other.  The Tormek SVM-45 knife jig works well to hold the tool by the knurled sides.
+
+	    <p style="margin-bottom: 0">The thicker angle for &alpha; provides for more strength at the tip.  The tip is ground down to a minimal thickness to allow fitting the tool into the screw's slot.
+	</td>
+    </tr>
+
+</table>
+
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<h2>Notes &amp; Comments</h2>
+
+<div style="float: right; width:160px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
+    <center><a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" Width=150></a></center>
+    <center><a href="Grindstones.html">Information regarding Grindstones</a></center>
+</div>
+
+<!-- ################################################### -->
+<!-- Grind Shape & Experience -->
+<h3 style="margin-bottom: 0;">Grind Shape &amp; Experience</h3>
+<p style="margin-top: 0;">
+
+<!-- ################################################### -->
+<!-- Tip Shape -->
+
+<table border=1 align="left" style="width: 200px;
+	margin-left: 0px; margin-right: 5px;
+	margin-top: 0px; margin-bottom: 5px;
+	padding-left: 0px; padding-right: 5px;
+	padding-top: 0px; padding-bottom: 5px;
+	border-collapse: collapse; ">
+    <col width="*">
+    <col width="85px">
+
+    <tr bgcolor=#dffde0>
+    	<td align="left" style="
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 0px; margin-bottom: 0px;
+		padding-left: 0px; padding-right: 3px;
+		padding-top: 3px; padding-bottom: 0px;
+		">
+            <IMG SRC="Images/GT-Screwdrivers-06.png" width="100%">
+            <p style="margin-top: 0; margin-bottom: 0;"><b>Flat</b>
+	</td>
+    	<td style="padding: 5px;" valign="Middle" align="Center" rowspan=3>
+            <font color="DarkGreen" size="5">
+            <b>Good</b>
+            </font>
+	</td>
+    </tr>
+    <tr bgcolor=#dffde0>
+    	<td align="left" style="
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 0px; margin-bottom: 0px;
+		padding-left: 0px; padding-right: 3px;
+		padding-top: 3px; padding-bottom: 0px;
+		">
+            <IMG SRC="Images/GT-Screwdrivers-01.png" width="100%">
+            <p style="margin-top: 0; margin-bottom: 0;"><b>Concave</b>
+	</td>
+    </tr>
+    <tr bgcolor=#dffde0>
+    	<td align="left" style="
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 0px; margin-bottom: 0px;
+		padding-left: 0px; padding-right: 3px;
+		padding-top: 3px; padding-bottom: 0px;
+		">
+            <IMG SRC="Images/GT-Screwdrivers-02.png" width="100%">
+            <p style="margin-top: 0; margin-bottom: 0;"><b>Concave</b>
+	</td>
+    </tr>
+    <tr bgcolor=#fddfec>
+    	<td align="left" style="
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 0px; margin-bottom: 0px;
+		padding-left: 0px; padding-right: 3px;
+		padding-top: 3px; padding-bottom: 0px;
+		">
+            <IMG SRC="Images/GT-Screwdrivers-03.png" width="100%">
+            <p style="margin-top: 0; margin-bottom: 0;"><b>Convex</b>
+	</td>
+    	<td style="padding: 5px;" align="Center">
+            <font color="red" size="5">
+            <b>Bad</b>
+            </font>
+	</td>
+    </tr>
+</table>
+
+<h3 style="margin-bottom: 0;">Tip Shape</h3>
+<p style="margin-top: 0;">The best shape for the tip is slightly concave or flat.
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-MW-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+
+<hr class="style1">
+<h2>More Information</h2>
+
+<h3>Books &amp; Papers</h3>
+    <ul>
+	<li><u>American Machinists&rsquo; Handbook</u>, by Colvin and Stanley</li>
+	
+	<br>
+	<li><u>Machinery&rsquo;s Handbook</u>, published by Industrial Press</li>
+	
+	<br>
+	<li><a href="Documents/TM 9-867 Care and Use of Hand Tools.pdf" target="_new">Maintenance and Care of Hand Tools</a>, 1945 Edition <font size=2>(PDF)</font>, from the U.S. War Department</li>
+	
+	<br>
+	<li><a href="Documents/TM 9-243 Care and Use of Hand and Measuring Tools 2004.pdf" target="_new">Use and Care of Hand Tools and Measuring Tools</a>, 2004 Edition <font size=2>(PDF)</font>, from the U.S. Dept. of Defense</li>
+	
+	<br>
+	<li><a href="Documents/TM 9-243 Care and Use of Hand and Measuring Tools 2020.pdf" target="_new">Use and Care of Hand Tools and Measuring Tools</a>, 2020 Edition <font size=2>(PDF)</font>, from the U.S. Dept. of Defense</li>
+    </ul>
+
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Published Articles</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Web Sites</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Other</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
