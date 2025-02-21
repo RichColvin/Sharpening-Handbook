@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Style Sheet for header image max size               -->
+<!-- ################################################### -->
+<style>
+    img.Image { max-width: 1000px;}
+</style>
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+   	<td style="text-align: center; vertical-align: text-bottom; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" style="width: 100%;" class="Image" ;></a>
+      </td>
+   </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <col width="10%">
+    <col width="*">
+    <col width="10%">
+
+    <tr style="vertical-align: text-bottom; ">
+	<td style="text-align: left; ">
+	    &nbsp;
+	</td>
+	<td style="vertical-align: text-top;  text-align: center; ">
+	    <p class="TextXL" style="margin-top: 0; margin-bottom: 0; color: #191970; "><b>What to Upgrade on an Old Tormek</b></p>
+	</td>
+	<td style="text-align: right; ">
+	    &nbsp;
+	</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+
+<hr>
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<p>Now that you are the owner of an old Tormek, you should consider what you might do to make it even better.  As Robert Pirsig outlined in his masterpiece, <u>Zen and the Art of Motorcycle Maintenance</u>, each of these slight improvements will make the machine different, and better.
+
+<p>There is also a reference to the known Tormek parts below so that you can know what you may have gotten.
+
+<!-- ################################################### -->
+<!-- Base Machine                                        -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2>The Base Machine</h2>
+
+<!-- ################################################### -->
+<!-- The Original Drive Shaft -->
+<h3>Original Drive Shaft</h3>
+<p style="margin-top: 0;">The original shaft may be in bad shape due to disuse or poor storage methods.  Replacing it with the newer stainless steel shaft which also has the EzyLock nut is a definite improvement.  That part is 
+	<ul>
+		<li>MSK-250 Stainless Steel Shaft with EzyLock</li>
+	</ul>
+
+<p>First, remove the shaft from the machine.  You can remove the honing wheel and then pull the shaft out from the other side.  The grindstone does not have to be removed to do this.  
+
+<p>This is recommended as the machine was not designed for a log of jocking around to remove the nut on the end of the shaft, and it is best to minimize damage by doing this.
+
+<p>Sometimes, removing the nut from the old shaft may be difficult.  Try some penetrating oil or other means to losten it before taking to using a hammer on the end of your wrench.  When you do use a hammer, a dead blow is recommended.
+
+<p>By the way, I don't think I would try to loosen the rust using a torch.
+
+<p>If the shaft is damaged badly (or bent), replace it with the MSK-250.  I believe the new drive shaft comes with new nylon bearings. If not, I recommend you also replace the old ones.
+
+<!-- ################################################### -->
+<!-- The Original Grindstone -->
+<hr class="style2">
+<h3>Original Grindstone</h3>
+<p style="margin-top: 0;">The original grindstone may be also in poor shape (or you may break it when trying to remove the old shaft).  There is a great debate on which grindstone / grinding wheel is best, but I advise to stay with the tried and true original one until you become comfortable using the Tormek.  
+
+<p>If you do need to replace it, <a href="Grindstones-Tormek.html">this web page</a> outlines the varous Tormek options.  Some basic ideas are:
+	<ul>
+		<li>If you are sharpening tools with very hard steels, consider purchasing a diamond grinding wheel.  The DE-250 Diamond Grinding Wheel Fine is a great starting point.</li>
+		
+		<br>
+		<li>Otherwise, the SG-250 Original Grindstone works superbly.</li>
+	</ul>
+	
+
+<!-- ################################################### -->
+<!-- Drive Wheel -->
+<hr class="style2">
+<h3>Original Drive Wheel</h3>
+<p style="margin-top: 0;">Behind the honing wheel is the drive wheel.  The original ones were plastic with a rubberized edge which engaged with the motor's shaft.  
+
+<p>If it is glazed over and slips on the motor, very lightly sand it to remove the glazing.  This is usually all that is needed.
+
+<p>If the wheel or wheel's edge is damaged, you should replace it.  The newer one is a metal wheel and much more stought.
+That part is 
+	<ul>
+		<li>R-23 Drive Wheel with Rubber Ring</li>
+	</ul>
+
+<!-- ################################################### -->
+<!-- Water Trough -->
+<hr class="style2">
+<h3>Original Water Trough</h3>
+<p style="margin-top: 0;">Usually, the water trough is not in bad shape.  But if you need to replace it, the newer model is much nicer.  That part is 
+	<ul>
+		<li>AWT-250 Water Trough</li>
+	</ul>
+
+<!-- ################################################### -->
+<!-- Universal Support Bar -->
+<hr class="style2">
+<h3>Original Universal Support Bar</h3>
+<p style="margin-top: 0;">Usually, the original USB had both legs as smooth rods.  These work fine, but at some time, consider adding the newer one.  That part is 
+	<ul>
+		<li>US-105 Universal Support with Micro Adjust </li>
+	</ul>
+
+<p>The micro adjust makes a lot of operations much easier, especially retruing the grindstone.
+
+<p>Do not discard the old USB; re-purpose it.  You can add a 12mm collar to it and have it set for a single purpose for use on the diamond grinding wheels.  
+
+<p>I have two which are set at the A and B holes on the TTS-100.  These make resharping woodturning tools quite easy and fast.  
+
+<p>I have another which has an SVD-110 tool rest permanently attached to it.  This makes resharpening scrapers easy and fast.
+
+<!-- ################################################### -->
+<!-- Consummables	                                     -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2>Consummables</h2>
+<p style="margin-top: 0;">These are listed alphabetically, not by any choice or other preference.  Where they are grouped together, it is because they are related in use.
+
+
+	<ul>
+		<li><b>ACC-150 Anti-Corrosion Concentrate</b> - this is the stuff you add to the water when using the diamond grinding wheels.  Some people recommend other additives, but for the cost of the wheels, I use this.  
+		
+		<p style="margin-bottom: 0; ">ACC-150 is needed as the Tormek wheels are made from steel not aluminium.</li>
+		
+		<br>
+		<li><b>EM-15 Edge Marker</b> - I just use Sharpies (I prefer the red ones).</li>
+		
+		<br>
+		<li><b>PA-70 Honing Compound</b> - this is used with the leather honing wheels.
+		
+		<p style="margin-bottom: 0; ">There are some who advocate using other compounds, but this one has been used by many sharpeners for years and works quite well.
+		
+		<p style="margin-bottom: 0; ">It does break down with use, so you need to re-charge the honing wheel periodically.  Do note that when it is &ldquo;dried up&rdquo; on the wheel (white like icing on a cake), it still works quite well.</li>
+		<br>
+		
+		<li><b>PL-01 Profile Labels</b> - These are used for noting the machine setups for the jigs used.  A label is wrapped around the tool's collar, providing an easy reference when resharpening the tool.  They are very useful.</li>
+		
+		<br>
+		<li><b>PP-10 Profile Pen</b> - this is used with the PL-01 lables.  Or, you can use a different permanet marker (it just will not have the cool Tormek logo on it).</li>
+				
+		<br>
+		<li><b>SP-650 Stone Grader</b> - this is used to re-grade the SG-250 grindstone.  Some say that it does not work as well on the SB-250 black grindstone.</li>
+	</ul>
+
+<!-- ################################################### -->
+<!-- Honing Wheels                                       -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2>Honing Wheels</h2>
+<p style="margin-top: 0;">These are listed alphabetically, not by any choice or other preference.  Where they are grouped together, it is because they are related in use.
+
+	<ul>
+		<li><b>CW-220 Composite Honing Wheel</b> - this is not a replacement for the LA-220; rather it is a different approach.  If you don't like the mess of the PA-70 honing compound when using the LA-220, consider this.
+		
+		<p style="margin-bottom: 0; ">Some advocate that the leather honing wheel with the PA-70 works better to produce a finely honed edge.  Both are similar, so it's more about which one you prefer.</li>
+				
+		<br>
+		<li><b>LA-100 Profiled Leather Honing Wheel</b> - This is the original leather honing wheel used for honing the inside edges of curved tools (e.g., gouges).  It was replaced by LA-120, but I would not replace it; the LA-100 works quite well.</li>
+		
+		<br>
+		<li><b>LA-120 Profiled Leather Honing Wheel</b> - This is used for honing the inside edges of curved tools (e.g., gouges).</li>
+		<li><b>LA-122 replacement discs</b> - these are the replacement discs for the LA-120.</li>
+		
+		<br>
+		<li><b>LA-121 Profiled Leather Honing Wheel with narrow discs</b> - this is similar to the LA-120; only the leather discs are narrower.</li>
+		<li><b>LA-124 narrow profiled replacement discs</b> - these are the replacement discs for the LA-121.</li>
+		
+		<br>
+		<li><b>LA-145 Leather Honing Wheel (200mm)</b> - this is used on the 200mm machines (T-1200, T3, &amp; T-4).</li>
+		
+		<br>
+		<li><b>LA-220 Leather Honing Wheel (250mm)</b> - this is the honing wheel used on the 250mm machines (T-2000, T-7, &amp; T-8).
+		
+		<p style="margin-bottom: 0; ">If you need to clean it, the edge of a scraper held perpendicular to the wheel when it is turning works well.
+		
+		<p style="margin-bottom: 0; ">If it is new or completely dried out, you can re-oil it, but be sure to not add too much.  All you need is about an ounce.</li>
+		
+	</ul>
+
+<!-- ################################################### -->
+<!-- Jigs                                                -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2>Jigs</h2>
+<p style="margin-top: 0;">These are listed alphabetically, not by any choice or other preference.  Where they are grouped together, it is because they are related in use.
+
+
+<h3>Axes</h3>
+	<ul>
+		<li><b>AX-40 Axe Jig</b> - this is the new one.  It replaced the SVA-170, and is a really nice improvement.</li>
+		
+		<br>
+		<li><b>SVA-170 Axe Jig</b> - this was replaced by AX-40 which is vastly superior.  That said, I used one for years and though this seems simplistic, it does work well.  I would keep this one as there may be a tool you sharpen where this works better.</li>
+	</ul>
+		
+<h3>Knives &amp; Kitchen</h3>
+	<ul>
+		<li><b>KJ-45 Centering Knife Jig</b> - this is the new model.  It works quite well, especially for thicker knives.  It works quite well with the KS-123 Knife Angle Setter.</li>
+		<li><b>KJ-140 Wide Centering Knife Jig</b> - this is also the new jig.  As with the KJ-45, it works well for thicker knives.  It also works quite well with the KS-123 Knife Angle Setter.</li>
+		
+		<br>
+		<li><b>KS-123 Knife Angle Setter</b> - This accessory (not a jig) was designed to work with the KJ-45 and KJ-140 knife jigs.  It is a very useful accessory for setting angles when sharpening knives.
+		
+		<p style="margin-bottom: 0; ">Keep the manual in the drawer with it for a while until you get the hang of it.  It is not hard to use; rather, it is just different than you might expect.  And once you get it's use ingrained in your brain, you will realize the beauty it presents to the process.</li>
+		
+		<br>
+		<li><b>RBS-140 Round Blade Sharpening Attachment</b> - this is only for the T-2 machine.</li>
+
+		<br>
+		<li><b>SVM-00 Small Knife Jig</b> - this is the newest model.  It comes in quite handy for some purposes, such as sharpening marking knives.</li>
+		
+		<br>
+		<li><b>SVM-45 Knife Jig</b> - this was replaced by the KJ-45.  I still use mine for sharpening other stuff like gardening tools.</li>
+		<li><b>SVM-100 Long Knife Jig</b> - this was replaced by KJ-140.  As with the SVM-45, it is still useful though.</li>
+		<li><b>SVM-140 Long Knife Jig</b> - this was also replaced by KJ-140.  As with the SVM-45, it is still useful though.</li>
+	</ul>
+
+<h3>Woodworking</h3>
+	<ul>
+		<li><b>SE-76 Square Edge Jig</b> - this is an older model which has been replaced by the SE-77.  It is still quite good, and you should keep it.  With a fixed head which does not support cambering of the blades, this may be easier to use than the SE-77 for sharpening some tools. Consider also getting an SQ-90 Small Square accessory.</li>
+		<li><b>SE-77 Square Edge Jig</b> - this is the newest model.  It is really good, especially if you need to add a camber to the blade's edge (e.g., on plane blades).  Consider also getting an SQ-90 Small Square accessory.</li>
+		
+		<br>
+		<li><b>SVD-110 Tool Rest</b> - this is greatly useful for sharpening skews and woodturning scrapers.</li>
+		
+		<br>
+		<li><b>SVD-180 Gouge Jig</b> - this is the original gouge jig, and was replaced by SVD-185 (which has been also replaced).  Keep it though:  you can lock it into a fixed position for quick use (e.g., setup for the bowl gouge).  This approach is one advocated by Glen Lucas where he puts a coloured tape on the gouge which matches the coloured tape on the respective gouge jig.  There is an SVD-005 Upgrade kit which added the ability to sharpen carbide cutters to jig.  Rather than purchasing this, purchase the SVD-186R.</li>
+		<li><b>SVD-185 Gouge Jig</b> - this jig replaced the SVD-180, but was later replaced by the SVD-186.  As with the SVD-180, keep it.  Also, if you sharpen carbide bits (e.g., for hollowing rigs), you can dedicate this jig to that purpose.</li>
+		<li><b>SVD-186 Gouge Jig</b> - this was a great improvement over the SVD-185 due to the click-stops for the jig settings.  These click-stops make setting the tool up faster and more consistent when making changes.  This jig was replaced by SVD-186R, but is still quite useful.</li>
+		<li><b>SVD-186R Gouge Jig</b> - this is the newest model.  It added some functionality for use when grinding on the side of the grinding wheel (i.e., when using the MB-100/102).</li>
+		
+		<br>
+		<li><b>SVH-60 Straight Edge Jig</b> - this was replaced by the SE-77; however do not get rid of it.  This jig is great for tools which are short (e.g., chisels which have been ground down quite a ways).  I use it often when resharpening chisels which were passed down to me from my grandfather and father.</li>
+		
+		<br>
+		<li><b>SVH-320 Planer Blade Attachment</b> - this is the only model.</li>
+		<br>
+		<li><b>SVP-80 Moulding Knife Attachment</b> - this is the only model.</li>
+		
+		<br>
+		<li><b>SVS-32 Short Tool Jig</b> - this was replaced by the SVS-38, but is still quite useful.  Unless you need the additional width (extra 6mm), I would stay with this one.</li>
+		<li><b>SVS-38 Short Tool Jig</b> - this is the newest model.</li>
+		
+		<br>
+		<li><b>SVS-50 Multi-Jig</b> - this is the only model.  I recommend you purchase an extra housing (p/n 2200) for it as it is rather a pain to switch between the open seat and the closed seat.  Having the extra housing allows you to have one setup with the open seat, and the other for the closed seat.  This allows for quicker use, especially for woodturning tools.</li>
+	</ul>
+
+<h3>Other</h3>
+	<ul>
+		<li><b>DBS-22 Drill Bit Sharpening Attachment</b> - if you come across one of these, you have hit the mother lode.  This is probably the greatest jig made by Tormek.</li>
+		
+		<br>
+		<li><b>SVD-110 Tool Rest</b> - this is greatly useful!  I use it often, and especially on the bench grinder (with the BGM-100) when reshaping tools.</li>
+
+		<br>
+		<li><b>SVX-150 Scissors Jig</b> - this is the only model.</li>
+	</ul>
+
+
+<!-- ################################################### -->
+<!-- Accessories                                         -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2>Accessories</h2>
+<p style="margin-top: 0;">These are listed alphabetically, not by any choice or other preference.  Where they are grouped together, it is because they are related in use.
+
+	<ul>
+		<li><b>ADV-50D Diamond Truing Tool (replaced by TT-50)</b> - This should be replaced as fast as you can.  As the old Army video noted, "don't walk, run" to replace this.  I was never able to re-true my grindstones with it, and found that, once I had the TT-50, the problem was not with me.</li>
+		
+		<br>
+		<li><b>ADV-D Exchange Diamond Bit for TT-50</b> - this is the diamond part used for re-truing the grindstone.  It is used on the TT-50 (or the ADV-50D).</li>
+		
+		<br>
+		<li><b>AWT-250 Advanced Water Trough</b> - this is a nice improvement over the older, original water trough, as it reduces the water spilt onto your workbench.</li>
+		
+		<br>
+		<li><b>BGM-100 Bench Grinder Mounting Set</b> - if you have a bench grinder, this allows you to use the Tormek jigs on that machine.  I use it when reshaping a tool where the heat is less of an issue (e.g., a new HSS bowl gouge).  Using the Tormek jig on the bench grinder ensures the resulting ground surface is very close to what will be achieved on the Tormek.</li>
+		
+		<br>
+		<li><b>HB-10 Tormek Handbook</b> - every machine comes with one.  If the you don't have one for your machine, you can register your machine at the Tormek site, and then they will provide you a link to a PDF copy.  It is a very useful handbook.</li>
+		
+		<br>
+		<li><b>HTK-00 Storage Tray for Hand Tool Kit</b> - this is an insert for the TC-800 Tormek Case and TS-740 Sharpening Station.</li>
+		
+<!-- ################################################### -->
+<!-- I don't want to cover these in this document.
+
+		<br>
+		<li><b>HTK-806 Hand Tool Kit</b> - this is a set of jigs used for sharpening hand tools.  This kit was discontinued and is replaced by the HTK-906.</li>
+		<li><b>HTK-906 Hand Tool Kit</b> - this is a set of jigs used for sharpening hand tools.  It includes the jigs, the insert (HTK-00), and the case (TC-800).</li>
+-->
+		
+		<br>
+		<li><b>MB-100 Multi-Base</b> - a nice accessory if you need flat grinds.  It was  replaced by MB-102.  The big improvement in the MB-102 is the front vertical base capability (which is quite nice).  You really don't need both, but I would not discard this one if you add the MB-102:  it is useful to have two so they can be setup differently if that is needed.</li>
+		<li><b>MB-102 Multi-Base</b> - this is used to enable use of the Tormek jigs on the side of the grinding wheel.  It also enables functionality like the front vertical base.  A nice accessory if you need flat grinds.</li>
+		
+		<br>
+		<li><b>MH-380 Machine Cover</b> - whilst not necessary, it is a nice accessory for keeping your machine more dust-free, especially in a woodworking shop.</li>
+		
+		<br>
+		<li><b>MSK-250 / MSK-200 Stainless Steel Shaft</b> - this is the replacement shaft for the older machines.  Definite improvement.</li>
+		
+		<br>
+		<li><b>OWC-1 Tormek Converter</b> - This allows use of Tormek jigs on bench grinder with a Wolverine style system.  It is similar to the BGM-100.</li>
+		
+		<br>
+		<li><b>RB-180 Rotating Base</b> - this is a nice accessory.  It enables the machine to be rotated much easier, allowing the sharpener to switch between the horizontal and vertical positions in a snap.</li>
+		
+		<br>
+		<li><b>RM-533 Rubber Work Mat</b> - This helps keep water off the platform on which your Tormek sits.</li>
+		
+		<br>
+		<li><b>SQ-90 Small Square</b> - this little tool is more handy than it looks.  It is great for ensuring the blades are set squarely in the SE-77 (among other things).</li>
+		
+		<br>
+		<li><b>SVD-005 Upgrade kit for SVD-180</b> - this added the ability to sharpen carbide cutters to the SVD-180.  Rather than purchasing this, purchase the SVD-186R.</li>
+		
+		<br>
+		<li><b>T8-00 Storage Tray for Tormek T-8 Accessaries</b> - this is an insert for the TC-800 Tormek Case and TS-740 Sharpening Station.</li>
+		
+		<br>
+		<li><b>TC-800 Tormek Case</b> - this is a case which uses the standard Tormek inserts.  It is useful if your approach to tool management and storage uses such approaches (like the Festool Systainer).</li>
+		
+		<br>
+		<li><b>TNT-00 Storage Tray for Woodturner’s Kit</b> - this is an insert for the TC-800 Tormek Case and TS-740 Sharpening Station.</li>
+		
+<!-- ################################################### -->
+<!-- I don't want to cover these in this document.
+		<br>
+		<li><b>TNT-300 Woodturner’s Instruction Box</b> - this was a set of instructions for sharpening woodturning tools on the Tormek.  I don't think it is available any more.</li>
+		
+		<br>
+		<li><b>TNT-808 Woodturner’s kit</b> - this is a set of jigs used for sharpening woodturning tools. It includes the jigs, the insert (HTK-00), and the case (TC-800).</li>
+-->
+		
+		<br>
+		<li><b>TS-740 Sharpening Station</b> - this is like the old Craftsman tool boxes, only designed specifically for the Tormek.  It is especially useful if you have a shop with limited space as you can fit most everything into it, and hang your extra grinding wheels on the outside.  The inserts (e.g, HTK-00, T8-00,  &amp; TNT-00) fit into it, making storage of your tools neater.</li>
+		
+		<br>
+		<li><b>TT-50 Truing Tool</b> - if you use the grindstones (not diamond), this is a necessary.  It is a HUGE upgrade from the ADV-50D.</li>
+		
+		<br>
+		<li><b>TTS-100 turning tool setter</b> - this was developed for the woodturner, but has uses far beyond that. It is used for setting the distance from the grinding wheel to the universal support bar at one of two standard distances.  It is a great accessory.</li>
+		
+		<br>
+		<li><b>US-103 universal support for T-3 & T-4</b> - this is the USB for the 200mm machines, but can be used in the 250mm machines also:  it just has legs which are 10mm shorter.  It includes the threaded leg for micro adjust.</li>
+		<li><b>US-105 universal support for T-7 & T-8</b> - this is the USB for the 250mm machines.  It includes the threaded leg for micro adjust.</li>
+		
+		<br>
+		<li><b>US-430 Universal Support Extended</b> - this USB has a longer horizontal bar, and is used when sharpening longer knives and machetes.</li>
+		
+		<br>
+		<li><b>WM-200 AngleMaster</b> - this is the original accessory used to set the grinding angle, compensating for the wear of the grinding wheel.  It is pooh-poohed by many as being a bit crude, but it useful when a quick-and-dirty sharpening is needed.  If something more accurate is needed, then the sharpie method is preferred.  I also like that this accessory has the notches along the edges to quickly assess the edge angle.  Be sure to mark lines on the outside edge of the wheels so you can more easily tell if they are turning.</li>
+		
+		<br>
+		<li><b>WT-200 Water Trough</b> - this is the original water trough.  It was replaced by AWT-250.</li>
+		
+		<br>
+		<li><b>XB-100 Support Base</b> - this accessory was designed for the original T-2000s which only had the vertical supports for the USB.  If you have one of those, you should add this functionality.  Also, some later T-2000s had a base which only had one thumb screw.  This can replace that part, providing two thumb screws. Finally, some have used this to make front vertical bases, but the MB-102 is better for that now.</li>
+	</ul>
+
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
