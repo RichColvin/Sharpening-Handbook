@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Style Sheet for header image max size               -->
+<!-- ################################################### -->
+<style>
+    img.Image { max-width: 1000px;}
+</style>
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+       	<td style="text-align: center; vertical-align: text-bottom; ">
+	        <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" style="width: 100%;" class="Image" ;></a>
+      </td>
+   </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <col width="10%">
+    <col width="*">
+    <col width="10%">
+
+    <tr style="vertical-align: text-bottom; ">
+    	<td style="text-align: left; ">
+	        &nbsp;
+    	</td>
+	    <td style="vertical-align: text-top;  text-align: center; ">
+	        <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Saw Chain Values Lookup</b></p>
+    	</td>
+	    <td style="text-align: right; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+    
+<hr>
+
+<!-- ################################################### -->
+<!-- Get the values needed -->
+<script>
+    function calcValues()    {
+	    var x = document.getElementById("frm1");
+
+	// ###################################################
+	// Get the saw chain values
+	//
+        rPitch = Number(x.elements['Pitch'].value);
+		rGauge = Number(x.elements['Gauge'].value);
+
+	// ###################################################
+	// Identify the Values
+	//
+		var Fleam = 0;
+	    var Drop = 0;
+	    var Rake = 0;
+		var ChipThicknessImp = 0.001;
+	    var ChipThicknessMetric = 0.01;
+	    var sComments = "";
+
+        sDeg05 = "5" + String.fromCharCode(176);
+		sDeg10 = "10" + String.fromCharCode(176);
+		sDeg15 = "15" + String.fromCharCode(176);
+		sDeg20 = "20" + String.fromCharCode(176);
+		sDeg25 = "25" + String.fromCharCode(176);
+		sDeg30 = "30" + String.fromCharCode(176);
+		sDeg35 = "35" + String.fromCharCode(176);
+		sDeg40 = "40" + String.fromCharCode(176);
+		sDeg45 = "45" + String.fromCharCode(176);
+		sDeg50 = "50" + String.fromCharCode(176);
+		sDeg55 = "55" + String.fromCharCode(176);
+		sDeg60 = "60" + String.fromCharCode(176);
+		sDegNA = "n/a";
+        
+        sThick025 = "0.025\"";
+        sThick030 = "0.030\"";
+        sThickNA  = "n/a";
+        
+        sGrindwheel18  = "1/8\"";
+        sGrindwheel316 = "3/16\"";
+        sGrindwheelNA  = "n/a";
+        
+        sCommentsNA = "Not a known option";
+		    
+	// ###################################################
+	// Set the Fleam
+	//
+		if (rPitch == 0.25) {
+		    sFleam            = sDeg30;
+		    sDrop             = sDeg55;
+		    sRake             = sDeg10;
+            sChipThicknessImp = sThick025;
+            sGrindwheel       = sGrindwheel18;
+		} else if (rPitch == 0.325 && rGauge === 0.050) {
+		    sFleam            = sDeg30;
+		    sDrop             = sDeg55;
+		    sRake             = sDeg10;
+            sChipThicknessImp = sThick025;
+            sGrindwheel       = sGrindwheel18;
+    	} else {
+		    sFleam            = sDegNA;
+		    sDrop             = sDegNA;
+		    sRake             = sDegNA;
+            sChipThicknessImp = sThickNA;
+            sGrindwheel       = sGrindwheelNA;
+            sComments         = sCommentsNA;
+        }
+
+        document.getElementById("Fleam").innerHTML = sFleam;
+	    document.getElementById("Drop").innerHTML = sDrop;
+	    document.getElementById("Rake").innerHTML = sRake;
+        document.getElementById("ChipThicknessImp").innerHTML = sChipThicknessImp;
+	    document.getElementById("Grindwheel").innerHTML = sGrindwheel;
+	    document.getElementById("Comments").innerHTML = sComments;
+	}
+</script>
+</head>
+
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+
+<body bgcolor=#E6E6E6 class="" id="" onload='hideTotal()'>
+
+<font face="Georgia">
+
+Use this page to lookup the values for use on saw chain grinders.
+
+<p>Input fields are <span style="background-color: #FFEE9C"><b>&nbsp;colored&nbsp;</b></span>.
+
+<form id="frm1">
+<table style="width: 100%; border-collapse: collapse; ">
+	<col width="175px">
+	<col width="*">
+
+    <tr>
+    	<th colspan=6 style="background-color: #d3d3d3; 
+        		vertical-align: bottom; text-align: center; 
+    	        border-style: solid; border-color: black; 
+	        	border-top-width: thick; border-bottom-width: medium; 
+		        border-right-width: thick; border-left-width: thick; ">
+    	    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextLG"><b>Fixed Values</b></p>
+    	</th>
+    </tr>
+
+    <tr>
+        <td style="background-color: #FFEE9C; 
+        		vertical-align: middle; text-align: left; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: medium; 
+        		border-right-width: medium; border-left-width: thick; ">
+			Saw chain pitch
+		</td>
+
+        <td style="background-color: #FFEE9C; 
+        		vertical-align: middle; text-align: left; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: medium; 
+        		border-right-width: thick; border-left-width: medium; ">
+        		
+                <input type="radio" id="Pitch250" name="Pitch" value="0.250">
+                <label for="Pitch250"><sup>1</sup>/<sub>4</sub>&rdquo;</label>
+                    
+                <input type="radio" id="Pitch325" name="Pitch" value="0.325">
+                <label for="Pitch325">0.325&rdquo;</label>
+                    
+                <input type="radio" id="Pitch375" name="Pitch" value="0.375">
+                <label for="Pitch375"><sup>3</sup>/<sub>8</sub>&rdquo;</label>
+                    
+                <input type="radio" id="Pitch37590" name="Pitch" value="0.37590">
+                <label for="Pitch37590"><sup>3</sup>/<sub>8</sub>&rdquo; (90&deg;)</label>
+                    
+                <input type="radio" id="Pitch404" name="Pitch" value="0.404">
+                <label for="Pitch404">0.404&rdquo;</label>
+                    
+                <input type="radio" id="Pitch750" name="Pitch" value="0.750">
+                <label for="Pitch750"><sup>3</sup>/<sub>4</sub>&rdquo;</label>
+ 			</td>
+		</tr>
+
+    <tr>
+        <td style="background-color: #FFEE9C; 
+        		vertical-align: middle; text-align: left; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: thick; 
+        		border-right-width: medium; border-left-width: thick; ">
+				Saw chain gauge
+		</td>
+        <td style="background-color: #FFEE9C; 
+        		vertical-align: middle; text-align: left; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: thick; 
+        		border-right-width: thick; border-left-width: medium; ">
+        		
+            <input type="radio" id="043" name="Gauge" value="0.043">
+            <label for="043">0.043&rdquo; / 1.1mm</label>
+                    
+            <input type="radio" id="050" name="Gauge" value="0.050">
+            <label for="050">0.050&rdquo; / 1.3mm</label>
+                    
+            <input type="radio" id="058" name="Gauge" value="0.058">
+            <label for="058">0.058&rdquo; / 1.5mm</label><br>
+                    
+            <input type="radio" id="063" name="Gauge" value="0.063">
+            <label for="063">0.063&rdquo; / 1.6mm</label>
+                    
+            <input type="radio" id="080" name="Gauge" value="0.080">
+            <label for="080">0.080&rdquo; / 2.0mm</label>
+                    
+            <input type="radio" id="122" name="Gauge" value="0.122">
+            <label for="122">0.122&rdquo; / 3.1mm</label>
+		</td>
+	</tr>
+</table>
+
+<br>
+
+<table style="width: 100%; border-collapse: collapse; ">
+    <col width="90px">     <!-- Grindwheel Thickness -->
+    <col width="90px">     <!-- Fleam -->
+    <col width="90px">     <!-- Drop -->
+    <col width="90px">     <!-- Rake -->
+    <col width="90px">     <!-- Chip Thickness -->
+    <col width="*">        <!-- Comments -->
+
+    <tr>
+    	<th colspan=6 style="background-color: #FFE4B5; 
+        		vertical-align: bottom; text-align: center; 
+    	        border-style: solid; border-color: black; 
+	        	border-top-width: thick; border-bottom-width: medium; 
+		        border-right-width: thick; border-left-width: thick; ">
+    	    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextLG"><b>Grinder Setup Values</b></p>
+    	</th>
+    </tr>
+    <tr>
+        <th rowspan=2 style="background-color: #FFE4B5; 
+        		vertical-align: bottom; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: medium; 
+        		border-right-width: medium; border-left-width: thick; ">
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Grindwheel Thickness</b></p>
+        </th>
+        <th style="background-color: #FFE4B5; 
+        		vertical-align: bottom; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: medium; border-color: black; 
+		        border-top-width: thick; border-bottom-width: thin; 
+        		border-right-width: medium; border-left-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Fleam</b></p>
+        </th>
+        <th style="background-color: #FFE4B5; 
+		        vertical-align: bottom; text-align: center; 
+        		padding-left: 5px; padding-right: 5px; 
+		        border-style: solid; border-color: black; 
+        		border-top-width: medium; border-bottom-width: thin; 
+		        border-right-width: medium; border-left-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Drop</b></p>
+        </th>
+        <th style="background-color: #FFE4B5; 
+        		vertical-align: bottom; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: thin; 
+        		border-right-width: medium; border-left-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Rake</b></p>
+        </th>
+        <th align="center" valign="bottom" bgcolor="moccasin" 
+        <th style="background-color: #FFE4B5; 
+        		vertical-align: bottom; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: thin; 
+        		border-right-width: medium; border-left-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Chip Thickness</b></p>
+        </th>
+        <th rowspan=2 style="background-color: #FFE4B5; 
+        		vertical-align: bottom; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: medium;
+        		border-right-width: thick; border-left-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Comments</b></p>
+        </th>
+    </tr>
+
+   <tr>
+        <td style="background-color: #c4deea; 
+        		vertical-align: bottom; text-align: center; 
+		        padding-left: 5px; padding-right: 5px;
+        		border-style: solid; border-color: black; 
+		        border-top-width: thin; border-bottom-width: medium; 
+        		border-right-width: medium; border-left-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">A - Vise Rotate Angle</p>
+        </td>
+        <td style="background-color: #c4deea; 
+        		vertical-align: bottom; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: thin; border-bottom-width: medium; 
+        		border-right-width: medium; border-left-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">B - Down Angle</p>
+        </td>
+        <td style="background-color: #c4deea; 
+        		vertical-align: bottom; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: thin; border-bottom-width: medium;
+        		border-right-width: medium; border-left-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">C - Head Tilt Angle</p>
+        </td>
+        <td style="background-color: #c4deea; 
+        		vertical-align: bottom; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: thin; border-bottom-width: medium;
+        		border-right-width: medium; border-left-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">D - Depth Gauge</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="background-color: #ffffff; 
+        		vertical-align: middle; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: thin; border-bottom-width: thick; 
+        		border-right-width: medium; border-left-width: thick; ">
+            <p id="Grindwheel" style="margin: 0px; padding: 0px;"></p>
+        </td>
+        <td style="background-color: #ffffff; 
+        		vertical-align: middle; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: thick; 
+        		border-right-width: medium; border-left-width: medium; ">
+            <p id="Fleam" style="margin: 0px; padding: 0px;"></p>
+        </td>
+        <td rowspan="3" style="background-color: #ffffff; 
+		        vertical-align: middle; text-align: center; 
+        		padding-left: 5px; padding-right: 5px; 
+		        border-style: solid; border-color: black; 
+        		border-top-width: medium; border-bottom-width: thick; 
+		        border-right-width: medium; border-left-width: medium; ">
+            <p id="Drop" style="margin: 0px; padding: 0px;"></p>
+        </td>
+        <td rowspan="3" style="background-color: #ffffff; 
+        		vertical-align: middle; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: thick; 
+        		border-right-width: medium; border-left-width: medium; ">
+            <p id="Rake" style="margin: 0px; padding: 0px;"></p>
+        </td>
+        <td rowspan="3" style="background-color: #ffffff; 
+        		vertical-align: middle; text-align: center; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: thick; 
+        		border-right-width: medium; border-left-width: medium; ">
+            <p id="ChipThicknessImp" style="margin: 0px; padding: 0px;"></p>
+            <p id="ChipThicknessMetric" style="margin: 0px; padding: 0px;"></p>
+        </td>
+        <td rowspan=3 style="background-color: #ffffff; 
+        		vertical-align: top; text-align: left; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: thick; 
+        		border-right-width: thick; border-left-width: medium; ">
+            <p id="Comments" style="margin: 0px; padding: 0px;">&nbsp;</p>
+        </td>
+    </tr>
+</table>
+</form>
+
+<p>
+<center><button autofocus type="button" onclick="calcValues()" style="font-size:20px; background-color: #0404B4; color: white;">Get Values</button></center>
+
+</body>
+</html>
