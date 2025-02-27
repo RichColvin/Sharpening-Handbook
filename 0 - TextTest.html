@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Style Sheet for header image max size               -->
+<!-- ################################################### -->
+<style>
+    img.Image { max-width: 1000px;}
+</style>
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<p class="TextSM">This is TextSM</p>
+<p class="TextSMImage">This is TextSMImage</p>
+<p class="TextMedSM">This is TextMedSM</p>
+<p class="TextNorm">This is TextNorm</p>
+<p class="TextTableHdrNorm">This is TextTableHdrNorm</p>
+<p class="TextMedLG">This is TextMedLG</p>
+<p class="TextLG">This is TextLG</p>
+<p class="TextTableHdrLg">This is TextTableHdrLg</p>
+<p class="TextXL">This is TextXL</p>
+<p class="TextPageTitle">This is TextPageTitle</p>
+
+<h1>This is H1</h1>
+<p class="TextNorm">This is TextNorm</p>
+
+<h2>This is H2</h2>
+<p class="TextNorm">This is TextNorm</p>
+
+<h3>This is H3</h3>
+<p class="TextNorm">This is TextNorm</p>
+
+<h4>This is H4</h4>
+<p class="TextNorm">This is TextNorm</p>
+
+<h5>This is H5</h5>
+<p class="TextNorm">This is TextNorm</p>
+
+<h6>This is H6</h6>
+<p class="TextNorm">This is TextNorm</p>
+
+</body>
+</html>
