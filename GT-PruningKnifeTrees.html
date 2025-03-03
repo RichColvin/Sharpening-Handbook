@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: text-bottom; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: text-bottom; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+	<td style="vertical-align: text-top;  text-align: center; ">
+	    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Pruning Knife for Trees</b></p>
+    	</td>
+	<td style="text-align: right; width: 10%; ">
+	    &nbsp;
+    	</td>
+    </tr>
+</table>
+    
+<hr>
+
+<!-- ################################################### -->
+<!-- Body                  			         			 -->
+<!-- ################################################### -->
+
+<!-- ################################################### -->
+<!-- Guidance Information -->
+<div style="float: left; width: 300px;
+        margin-left: 0px; margin-right: 5px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 5px; 
+        padding-top: 5px; padding-bottom: 5px; 
+        border: 1px solid darkgray; text-align: left; 
+        ">
+    <img src="Images/GT-PruningKnifeTree.png" alt="Vicomte de Courval's Improved Pruning Knife" style="width: 100%; " />
+    <p class="TextSMImage"><b><i>Vicomte de Courval's Improved Pruning Knife</i></b></p>
+</div>
+
+<div style=" float: right; Width: 300px; 
+        margin-left: 5px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 0px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 1px solid darkgray; text-align: left;  ">
+    <img src="Images/Angle.png" alt="Edge Angle" style="Width:100%; " />
+    <p class="TextSMImage"><b><i>Edge Angle</i></b></p>
+</div>
+
+<p>The <b>Pruning Knife</b> is used by the arborist to prune tree limbs.  
+
+<p>This style of tool was developed by Vicomte de Courval in the late 1800's.  The blade's design with a raised rib and weight (2 lbs. 12 oz. to 3 lbs. 6 oz.) concentrated the user's effort for removing larger branches and improving the tree's growth.
+
+
+<hr class="style2">
+
+<p>Sharpen the outside edges (shown in red in the picture above), and deburr them from the bottom.
+
+usage in a way as to make the tool's use problematic.
+
+<div style=" float: right; width: 450px; margin: 5px 5px 5px 5px; padding: 5px; border: 1px solid grey; text-align: left; background-color:#b5edb5 ">
+    <p style="margin-top: 0; margin-bottom: 0; "><i>My green thumb came only as a result of the mistakes I made while learning to see things from the plant's point of view.</I></p>
+	<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">H. Fred Dale</p>
+</div>
+
+<hr class="style2">
+
+<p>A 6&quot; smooth cut <a href="Hand-File-Identification.html" target="new">machinist&rsquo;s hand file</a> is useful to carry in your gardening tools box.  Use it to resharpen the hoe as needed throughout the gardening activity.
+
+<p>&nbsp;
+
+<!-- ################################################### -->
+<!-- General Guidelines -->
+<table style="border-collapse: collapse; ">
+
+    <tr>
+    	<th colspan=3 style="width: 100%;
+        		vertical-align: top; text-align: center;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 0px; padding-bottom: 0px; 
+        		background-color: #FFE4B5;
+				border-style: solid; 
+    			border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: thick; ">
+		     <p class="TextTableHdrLg" style="color: #191970; margin-top: 0; margin-bottom: 0; "><b>General Guidelines</b></p>
+		</th>
+    </tr>
+    <tr>
+    	<th colspan=2 style="border-style: solid; 
+    			width: 80px;
+        		vertical-align: bottom; text-align: center;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 0px; padding-bottom: 0px; 
+        		background-color: #FFE4B5;
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+		     <p style="font: 24px Garamond; margin-top: 0; margin-bottom: 0; "><b>&alpha;</b></p>
+		</th>
+        <th rowspan=2 style="border-style: solid; 
+        		vertical-align: bottom; text-align: center;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 0px; padding-bottom: 0px; 
+        		background-color: #FFE4B5;
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+		    <p class="TextMedLG" style="color: #191970; margin-top: 0; margin-bottom: 0; "><b>Notes</b></p>
+		</th>
+    </tr>
+    <tr>
+    	<th style="border-style: solid; 
+    			width: 70px;
+        		vertical-align: bottom; text-align: center;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 0px; padding-bottom: 0px; 
+        		background-color: #FFE4B5;
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; ">
+			<p style="color: #191970; margin-top: 0; margin-bottom: 0; "><b>Softer Woods</b></p>
+		</th>
+        <th style="border-style: solid; 
+    			width: 70px;
+        		vertical-align: bottom; text-align: center;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 0px; padding-bottom: 0px; 
+        		background-color: #FFE4B5;
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+		    <p style="color: #191970; margin-top: 0; margin-bottom: 0; "><b>Harder Woods</b></p>
+		</th>
+    </tr>
+
+    <tr>
+    	<td style="
+        		vertical-align: middle; text-align: center;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 5px; padding-bottom: 5px; 
+        		background-color: #ffffff;
+				border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+		    25&deg;
+		</td>
+    	<td style="
+        		vertical-align: middle; text-align: center;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 5px; padding-bottom: 5px; 
+        		background-color: #ffffff;
+				border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+		    30&deg;
+		</td>
+		<td style="
+        		vertical-align: top; text-align: left;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 5px; padding-bottom: 5px; 
+        		background-color: #ffffff;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+		    <p style="margin-top: 0; ">Narrower angles are useful for trees with softer wood (e.g., fruit trees), whilst higher angles are useful for trees with harder wood (e.g., ash and oak).
+		    
+		    <p style="margin-bottom: 0; ">For general use, 30&deg; is recommended.
+		</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<h2>Notes &amp; Comments</h2>
+
+<table style="float: right; border-collapse: collapse; 
+        margin-left: 5px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 5px; 
+		">
+	<tr>
+		<td style="width: 300px;
+        		vertical-align: top; text-align: center;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 5px; padding-bottom: 0px; 
+				border-style: solid; 
+    			border-color: darkgray; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thin; 
+				border-right-width: thin; 
+				">
+		    <img src="Images/GT-PruningKnifeTree-Carrying-Back.png" alt="Aborist carrying a Pruning Knife in a leather sheath held over the shoulder" style="width: 45%" />
+		    &nbsp; &nbsp; &nbsp;
+		    <img src="Images/GT-PruningKnifeTree-Carrying-Side.png" alt="Aborist carrying a Pruning Knife in a leather sheath held over the shoulder" style="width: 31%" />
+    		<p class="TextSMImage"><b><i>Aborist carrying a Pruning Knife in a leather sheath held over the shoulder</i></b></p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 300px;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 5px; padding-bottom: 0px; 
+				border-style: solid; 
+    			border-color: darkgray; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thin; 
+				border-right-width: thin; 
+				">
+		    <img src="Images/GT-PruningKnifeTree-Back.png" alt="Back Side of the Pruning Knife" style="width: 100%" />
+    		<p class="TextSMImage"><b><i>Back Side of the Pruning Knife</i></b></p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 300px;
+		        padding-left: 5px; padding-right: 5px; 
+        		padding-top: 5px; padding-bottom: 0px; 
+				border-style: solid; 
+    			border-color: darkgray; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thin; 
+				border-right-width: thin; 
+				">
+		    <img src="Images/GT-PruningKnifeTree-Back2.png" alt="Back Side of the Pruning Knife with Relief Area" style="width: 100%" />
+    		<p class="TextSMImage"><b><i>Back Side of the Pruning Knife with Relief Area</i></b></p>
+		</td>
+	</tr>
+</table>
+
+
+<!-- ################################################### -->
+<!-- Historical Notes -->
+<h3 style="margin-bottom: 0;">Historical Notes</h3>
+<p style="margin-top: 0;">Vicomte de Courval's innovations in pruning tools and techniques were highly influential.  He emphasized careful pruning to enhance tree health and timber value, demonstrating these methods at agricultural exhibitions in Paris (1861) and London(1862).  
+
+<hr class="style2">
+
+<!-- ################################################### -->
+<!-- The Back -->
+<h3 style="margin-bottom: 0;">The Back</h3>
+<p style="margin-top: 0;">The back side of the blade is where the final sharpening takes place.  This is where the burr is removed, and as with chisels, a flattened back will make the arborist's job much easier as it allows the tool to be swung flat against the limb or trunk of the tree.
+
+<p>The bottom picture on the right shows an area in the center of the back where the surface has been relieved below the surface of the back.  This is like done on Japanese chisel and plane blades, and makes the sharpening easier as the surface area which needs to be addressed is significantly smaller.  This is denoted in the red and blue colouring:  the blue is the relieved area, and the red is the part which needs to be addressed.
+
+<hr class="style2">
+
+<p>For removing large nicks in the edge, a Tormek grinder or a 12-14&quot; bastard file machinist&rsquo;s hand file will work sufficiently well.  Hopefully the arborist has not hit on too large a metal object within the tree.
+ 
+<p>Using a bench or angle grinder is not recommended as this will surely overheat the tool, removing the temper from the edge.  Additionally, the shaping of the edge is difficult to control.
+
+<!-- ################################################### -->
+<!-- Sharpening the edge -->
+<hr class="style1">
+<h3 style="margin-bottom: 0;">Sharpening the edge</h3>
+<p style="margin-top: 0;"><b>If using a Tormek</b>, 
+
+	<ul>
+		<li>The SVD-110 Tool Rest jigs is recommended</li>
+		<li>The Tormek SG-250 grindstone works well</li>
+		<li>Grinding the outside edge using the Tormek's vertical position (with the grindstone rotating towards the edge) is recommended</li>
+	</ul>
+
+    
+<p><b>If you choose to use a machinist&rsquo;s hand file</b>,
+    <ol>
+	<li>Start with a 8-10&quot; medium (or second cut) file.</li>
+	<li>Finish with a 6&quot; smooth cut file, then use this file to remove the burr.</li>
+    </ol>
+
+<hr class="style2">
+
+<p><b>Micro bevel Notes</b>:
+            
+<p>A micro bevel is not recommended: It is not needed.
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-GT-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<hr class="style1">
+<a id="MoreInformation" ></a>
+<h2>More Information</h2>
+
+<h3>Books &amp; Papers</h3>
+    <ul>
+        <li style="margin-bottom: 10px"><a href="https://archive.org/details/treepruningtreat00descuoft/page/n5/mode/2up" target="new">A Treatise on Pruning Forest and Ornamental Trees</a> (1881), by A. des Cars.  This pruning knife is shown on pg. 22.</li>
+
+        <li><a href="https://archive.org/details/pruningbookmonog00bail/page/304/mode/2up" target="new">The Pruning Manual</a> (1916), by Liberty Hyde Bailey.  This pruning knife is shown on pg. 303-305.</li>
+    </ul>
+
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+    <ul>
+    	<li><a href="https://youtu.be/xKB1gqhfB7o?si=g9k4HKdaT5h2b4Vw" target="new">Oregon 520-120 and 410-120 Electric Chain Grinder Instructions</a> (YouTube video)</li>
+    </ul>
+ -->
+
+<h3>Published Articles</h3>
+    <ul>
+        <li style="margin-bottom: 10px"><a href="https://pubs.cif-ifc.org/doi/abs/10.5558/tfc13380-2" target="new">An Historical Review of Artificial Forest Pruning</a>, published in &ldquo;The Forestry Chronicle&rdquo;, Vol. 13, No. 2, pp. 380 - 395  (June, 1937), by James D. Curtis, M.C.S.F.E.</li>
+
+    </ul>
+
+<!-- 
+<h3>Web Sites</h3>
+    <ul>
+    	<li><a href="https://www.educatedclimber.com/how-saw-chain-works/" target="new">How Saw Chain Works</a>, by Educated Climber</li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Other</h3>
+    <ul>
+    	<li></li>
+    </ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
