@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- Header                                                                                           -->
+<!-- ################################################### -->
+<table style="width: 100%;">
+    <tr>
+        <td style="        		
+        		vertical-align: top; 
+        		text-align: center;
+        		">
+            <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+        </td>
+    </tr>
+</table>
+
+<table style="width: 100%;">
+    <tr>
+        <td style="width: 10%;      		
+        		vertical-align: top; 
+        		text-align: left;
+        		">
+      		&nbsp;
+        </td>
+        <td style="  		
+        		vertical-align: top; 
+        		text-align: center;
+        		">
+                <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Weed Cutters</b></p>
+        </td>
+        <td style="width: 10%;      		
+        		vertical-align: top; 
+        		text-align: right;
+        		">
+      		&nbsp;
+        </td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+
+<hr>
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<div style=" float: right; Width: 350px; 
+        margin-left: 5px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 0px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 1px solid darkgray; text-align: left;  ">
+    <img src="Images/GT-Knives2.png" Width="100%" />
+    <p style="margin-top: 0; margin-bottom: 0; text-align: left; padding-left: 2pt; "><font size=2><b><i>Edge Angle</i></b></font>
+</div>
+
+<p>Guidelines shown below are for <b>Included Angles</b> (<font color="darkblue" face="Garamond"><b>&alpha;</b></font>).
+
+<div style="float: left; width: 350px; 
+        margin-left: 0px; margin-right: 0px; 
+        margin-top: 5px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 5px; 
+        padding-top: 5px; padding-bottom: 5px; 
+	border: 1px solid grey; text-align: left; background-color:#b5edb5 ">
+    <p style="margin-top: 0; margin-bottom: 0; "><i>Gardeners learn by trowel and error.</I>
+	<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Anonymous
+</div>
+
+<!-- ################################################### -->
+<!-- General Guidelines -->
+
+<p>
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+
+    <tr>
+		<th colspan="3" style="background-color: #FFE4B5;
+				text-align: center; 
+				vertical-align: text-bottom; 
+				padding-left: 5px; padding-right: 5px; 
+				border-style: solid; border-color: black; 
+				border-top-width: thick; border-bottom-width: medium; 
+				border-left-width: thick; border-right-width: thick; 
+				">
+	    	<p style="margin-top: 0; margin-bottom: 0; font: 24px Arial; color: #191970"><b>General Guidelines</b></p>
+		</th>
+    </tr>
+    <tr>
+		<th style="width: 150px; background-color: #FFE4B5;
+				text-align: center; 
+				vertical-align: text-bottom; 
+				padding-left: 5px; padding-right: 5px; 
+				border-style: solid; border-color: black; 
+				border-top-width: medium; border-bottom-width: medium; 
+				border-left-width: thick; border-right-width: medium; ">
+	    	<p style="margin-top: 0; margin-bottom: 0; font: 18px Arial; color: #191970"><b>Type</b></p>
+		</th>
+		<th style="width: 75px; background-color: #FFE4B5;
+				text-align: center; 
+				vertical-align: text-bottom; 
+				padding-left: 5px; padding-right: 5px; 
+				border-style: solid; border-color: black; 		
+				border-top-width: medium; border-bottom-width: medium; 
+				border-left-width: medium; border-right-width: medium; ">
+	    	<p style="margin-top: 0; margin-bottom: 0; font: 26px Garamond; color: #191970"><b>&alpha;</b></p>
+		</th>
+		<th style="background-color: #FFE4B5;
+				text-align: center; 
+				vertical-align: text-bottom; 
+				padding-left: 5px; padding-right: 5px; 
+				border-style: solid; border-color: black; 
+				border-top-width: medium; border-bottom-width: medium; 
+				border-left-width: medium; border-right-width: thick; ">
+		    <p style="margin-top: 0; margin-bottom: 0; font: 18px Arial; color: #191970"><b>Notes</b></p>
+		</th>
+    </tr>
+
+<!-- General -->
+    <tr>
+		<td style="background-color: #d8ecff;
+				text-align: left; 
+				vertical-align: text-bottom; 
+				padding-left: 5px; padding-right: 5px; 
+				border-style: solid; border-color: black; 
+				border-top-width: medium; border-bottom-width: thick; 
+				border-left-width: thick; border-right-width: medium; ">
+	    	<p style="margin-top: 0; margin-bottom: 0; font: 18px Arial; color: #0000ff">General</p>
+		</td>
+		<td style="background-color: #d8ecff;
+				text-align: center; 
+				vertical-align: text-bottom; 
+				padding-left: 5px; padding-right: 5px; 
+				border-style: solid; border-color: black; 
+				border-top-width: medium; border-bottom-width: thick; 
+				border-left-width: medium; border-right-width: medium; ">
+		    <p style="margin-top: 0; margin-bottom: 0; font: 18px Arial; color: #0000ff">(TBD)&deg;</p>
+		</td>
+		<td style="background-color: #d8ecff;
+				text-align: left; 
+				vertical-align: text-bottom; 
+				padding-left: 5px; padding-right: 5px; 
+				border-style: solid; border-color: black; 
+				border-top-width: medium; border-bottom-width: thick; 
+				border-left-width: medium; border-right-width: thick; ">
+		    <p style="margin-top: 0; margin-bottom: 0; font: 18px Arial; color: #0000ff">&nbsp;</p>
+		</td>
+    </tr>
+
+</table>
+
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<h2>Notes &amp; Comments</h2>
+
+<div style="float: right; width:160px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
+    <a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="Grindstone picture" style="Width: 150px; "></a>
+    <a href="Grindstones.html">Information regarding Grindstones</a>
+</div>
+
+<!-- ################################################### -->
+<!-- Grind Shape & Experience -->
+<h3>Grind Shape &amp; Experience</h3>
+<p style="margin-top: 0;">The shape of the grind used is a call best made by the tool's use, based on your own experience.  Additional notes are available on separate web pages for <a href="GrindProfiles.html">Grind Profiles</a>, and <a href="MicroBevels.html">Micro / Secondary Bevels</a>.
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-GT-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<!-- 
+<hr class="style1">
+<h2>More Information</h2>
+ -->
+<!-- 
+<h3>Books &amp; Papers</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Published Articles</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Web Sites</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Other</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
