@@ -1,20 +1,12 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Sharpening Handbook</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
-<body bgcolor=#E6E6E6 class="" id="">
-<font face="Arial" size="3">
-
-<!-- ################################################### -->
-<!-- Style Sheet for header image max size               -->
-<!-- ################################################### -->
-<style>
-    img.Image { max-width: 1000px;}
-</style>
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
 
 <!-- ################################################### -->
 <!-- Code for Including Standard HTML files on the 	 -->
@@ -53,40 +45,34 @@ function includeHTML() {
 </script> 
 
 <!-- ################################################### -->
-<!-- Standard horizontal rule definitions		 -->
+<!-- Standard horizontal rule definitions		  		 -->
 <div w3-include-html="include-SiteStandards.html"></div> 
 <script>
 includeHTML();
-</script> 
+</script>
 
 <!-- ################################################### -->
 <!-- Header                                              -->
 <!-- ################################################### -->
-<table width=100%>
-    <tr valign="TOP">
-        <td align="center">
-            <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
-        </td>
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: bottom; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+	</td>
     </tr>
 </table>
 
-<table width="100%" border=0>
-    <col width="10%">
-    <col width="*">
-    <col width="10%">
-
-    <tr valign="bottom">
-        <td align="left">
-            <a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
-        </td>
-        <td align="center" valign="top">
-            <font face= "Palatino" size="6" color=#191970><b>
-            Tormek Grinding Wheels
-            </b></font>
-        </td>
-        <td align="right">
-            &nbsp;
-        </td>
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: bottom; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+	    <td style="vertical-align: top;  text-align: center; ">
+	        <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Tormek Grinding Wheels</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
     </tr>
 </table>
     
@@ -99,330 +85,495 @@ includeHTML();
 <!-- Diamond vs. Traditional Grindstones                 -->
 <!-- ################################################### -->
 <p>
-<table width="100%" align="center" style="border-collapse: collapse; ">
-    <col width="250px">     <!-- Grinding Wheel -->
-    <col width="100px">     <!-- Grit -->
-    <col width="150px">     <!-- Material -->
-    <col width="75px">      <!-- Knoop Hardness -->
-    <col width="*">         <!-- Comments -->
-    
-    <thead>
-    <tr bgcolor="Gray" valign="bottom">
-        <th colspan=1 style="border-style: 
-		solid; border-color: black; 
-		border-top-width: thick; 
-		border-bottom-width: medium; 
-		border-left-width: thick; 
-		border-right-width: medium; ">
-            <font face="Arial" color="White"><b>Grinding Wheel</b></font>
+<table style="border-collapse: collapse; width: 100%; ">
+    <tr>
+        <th style="
+        		width: 250px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>Grinding Wheel</b></p>
         </th>
-        
-        <th colspan=1 style="border-style: 
-		solid; border-color: black; 
-		border-top-width: thick; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
-            <font face="Arial" color="White"><b>Grit</b></font>
+        <th style="
+        		width: 100px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>Grit</b></p>
         </th>
-        
-        <th colspan=1 style="border-style: 
-		solid; border-color: black; 
-		border-top-width: thick; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
-            <font face="Arial" color="White"><b>Material</b></font>
+        <th style="
+        		width: 150px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>Material</b></p>
         </th>
-        
-        <th colspan=1 style="border-style: 
-		solid; border-color: black; 
-		border-top-width: thick; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
-            <font face="Arial" color="White"><b><a href="https://en.wikipedia.org/wiki/Knoop_hardness_test" target="_new">Knoop Hardness</a></b></font>
+        <th style="
+        		width: 75px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>Knoop Hardness</b></p>
         </th>
-        
-        <th colspan=1 style="border-style: 
-		solid; border-color: black; 
-		border-top-width: thick; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: thick; ">
-            <font face="Arial" color="White"><b>Comments</b></font>
+        <th style="
+        		width: 250px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>Comments</b></p>
         </th>
     </tr>
-    </thead>
-
-
-    <tbody>
 <!-- ################################################### -->
 <!-- SG Original Grindstone                               -->
-    <tr valign="top">
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: thick; 
-		border-right-width: medium; ">
+    <tr>
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: middle; 
+				">
             SG - Original Grindstone
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    220-1,000
         </td>
-        <td align="left" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
-		    <a href="https://en.wikipedia.org/wiki/Aluminium_oxide" target="_new">Aluminum Oxide</a>
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+		    <a href="https://en.wikipedia.org/wiki/Aluminium_oxide" target="new">Aluminum Oxide</a>
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    2,200
         </td>
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: thick; ">
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: left; 
+				vertical-align: top; 
+				">
 		    &nbsp;
         </td>
     </tr>
 
 <!-- ################################################### -->
 <!-- SB Blackstone Silicon                               -->
-    <tr valign="top" bgcolor="LightGray">
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: thick; 
-		border-right-width: medium; ">
+    <tr>
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: middle; 
+				">
             SB - Blackstone Silicon
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    220-1,000
         </td>
-        <td align="left" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
-		    <a href="https://en.wikipedia.org/wiki/Silicon_carbide" target="_new">Silicon Carbide</a>
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+		    <a href="https://en.wikipedia.org/wiki/Silicon_carbide" target="new">Silicon Carbide</a>
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    2,700
         </td>
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: thick; ">
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: left; 
+				vertical-align: top; 
+				">
 		    <p style="margin-top: 0; margin-bottom: 0; ">Targeted for use on high speed steel (HSS) and other high alloy steels.
         </td>
     </tr>
 
 <!-- ################################################### -->
 <!-- SJ Japanese Waterstone                              -->
-    <tr valign="top">
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: thick; 
-		border-right-width: medium; ">
+    <tr>
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: middle; 
+				">
             SJ - Japanese Waterstone
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    4,000
         </td>
-        <td align="left" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
-		    <a href="https://en.wikipedia.org/wiki/Aluminium_oxide" target="_new">Aluminum Oxide</a>
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+		    <a href="https://en.wikipedia.org/wiki/Aluminium_oxide" target="new">Aluminum Oxide</a>
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    2,200
         </td>
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: medium; 
-		border-right-width: thick; ">
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: left; 
+				vertical-align: top; 
+				">
 		    <p style="margin-top: 0; margin-bottom: 0; ">Excellent for adding <a href="MicroBevels.html">Micro Bevels</a>.
         </td>
     </tr>
 
 <!-- ################################################### -->
 <!-- DC Diamond Wheel Course                             -->
-    <tr valign="top" bgcolor="LightGray">
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: thick; 
-		border-right-width: medium; ">
+    <tr>
+        <td style="
+        		background-color: Lightgray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: middle; 
+				">
             DC - Diamond Wheel Course
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: Lightgray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    360
         </td>
-        <td align="left" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: Lightgray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    Diamond on steel
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: Lightgray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    8,800
         </td>
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: thick; ">
+        <td style="
+        		background-color: Lightgray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: left; 
+				vertical-align: top; 
+				">
 		    &nbsp;
         </td>
     </tr>
 
 <!-- ################################################### -->
 <!-- DF Diamond Wheel Fine                               -->
-    <tr valign="top">
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: thick; 
-		border-right-width: medium; ">
+    <tr>
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: middle; 
+				">
             DF - Diamond Wheel Fine
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    600
         </td>
-        <td align="left" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    Diamond on steel
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    8,800
         </td>
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: thick; ">
+        <td style="
+        		background-color: White;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: left; 
+				vertical-align: top; 
+				">
 		    &nbsp;
         </td>
     </tr>
 
 <!-- ################################################### -->
 <!-- DE Diamond Wheel Extra Fine                         -->
-    <tr valign="top" bgcolor="LightGray">
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: thick; 
-		border-right-width: medium; ">
+    <tr>
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: middle; 
+				">
             DE - Diamond Wheel Extra Fine
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    1,200
         </td>
-        <td align="left" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    Diamond on steel
         </td>
-        <td align="middle" style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: medium; 
-		border-right-width: medium; ">
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
 		    8,800
         </td>
-        <td style="border-style: 
-		solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: medium; 
-		border-right-width: thick; ">
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: left; 
+				vertical-align: top; 
+				">
 		    &nbsp;
         </td>
     </tr>
