@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Sharpening Handbook</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
-<body style="background-color: #E6E6E6; font: 16px Arial; ">
-
-<!-- ################################################### -->
-<!-- Style Sheet for header image max size               -->
-<!-- ################################################### -->
-<style>
-    img.Image { max-width: 1000px;}
-</style>
+<body style="background-color: #E6E6E6; font: 16px Arial; " onload='hideTotal()'>
 
 <!-- ################################################### -->
 <!-- Code for Including Standard HTML files on the 	 -->
@@ -59,31 +52,39 @@ includeHTML();
 </script> 
 
 <!-- ################################################### -->
-<!-- Header                                              -->
+<!-- Header                                                                                           -->
 <!-- ################################################### -->
-<table style="width: 100%; ">
+<table style="width: 100%;">
     <tr>
-       	<td style="text-align: center; vertical-align: text-bottom; ">
-	        <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" style="width: 100%;" class="Image" ;></a>
-      </td>
-   </tr>
+        <td style="        		
+        		vertical-align: top; 
+        		text-align: center;
+        		">
+            <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+        </td>
+    </tr>
 </table>
 
-<table style="width: 100%; text-align: center; border-collapse: collapse; ">
-    <col width="10%">
-    <col width="*">
-    <col width="10%">
-
-    <tr style="vertical-align: text-bottom; ">
-    	<td style="text-align: left; ">
-	        &nbsp;
-    	</td>
-	    <td style="vertical-align: text-top;  text-align: center; ">
-	        <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Saw Chain Values Lookup</b></p>
-    	</td>
-	    <td style="text-align: right; ">
-	        &nbsp;
-    	</td>
+<table style="width: 100%;">
+    <tr>
+        <td style="width: 10%;      		
+        		vertical-align: top; 
+        		text-align: left;
+        		">
+      		&nbsp;
+        </td>
+        <td style="  		
+        		vertical-align: top; 
+        		text-align: center;
+        		">
+                <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Saw Chain Values Lookup</b></p>
+        </td>
+        <td style="width: 10%;      		
+        		vertical-align: top; 
+        		text-align: right;
+        		">
+      		&nbsp;
+        </td>
     </tr>
 </table>
     
@@ -167,16 +168,11 @@ includeHTML();
 	    document.getElementById("Comments").innerHTML = sComments;
 	}
 </script>
-</head>
-
 
 <!-- ################################################### -->
 <!-- Body                                                -->
 <!-- ################################################### -->
 
-<body bgcolor=#E6E6E6 class="" id="" onload='hideTotal()'>
-
-<font face="Georgia">
 
 Use this page to lookup the values for use on saw chain grinders.
 
@@ -184,11 +180,9 @@ Use this page to lookup the values for use on saw chain grinders.
 
 <form id="frm1">
 <table style="width: 100%; border-collapse: collapse; ">
-	<col width="175px">
-	<col width="*">
 
     <tr>
-    	<th colspan=6 style="background-color: #d3d3d3; 
+    	<th colspan=2 style="background-color: #d3d3d3; 
         		vertical-align: bottom; text-align: center; 
     	        border-style: solid; border-color: black; 
 	        	border-top-width: thick; border-bottom-width: medium; 
@@ -199,6 +193,8 @@ Use this page to lookup the values for use on saw chain grinders.
 
     <tr>
         <td style="background-color: #FFEE9C; 
+        width: 175px;
+        
         		vertical-align: middle; text-align: left; 
 		        padding-left: 5px; padding-right: 5px; 
         		border-style: solid; border-color: black; 
@@ -274,12 +270,6 @@ Use this page to lookup the values for use on saw chain grinders.
 <br>
 
 <table style="width: 100%; border-collapse: collapse; ">
-    <col width="90px">     <!-- Grindwheel Thickness -->
-    <col width="90px">     <!-- Fleam -->
-    <col width="90px">     <!-- Drop -->
-    <col width="90px">     <!-- Rake -->
-    <col width="90px">     <!-- Chip Thickness -->
-    <col width="*">        <!-- Comments -->
 
     <tr>
     	<th colspan=6 style="background-color: #FFE4B5; 
@@ -291,88 +281,145 @@ Use this page to lookup the values for use on saw chain grinders.
     	</th>
     </tr>
     <tr>
-        <th rowspan=2 style="background-color: #FFE4B5; 
-        		vertical-align: bottom; text-align: center; 
+        <th rowspan=2 style="width: 90px;
+	       	 	background-color: #FFE4B5; 
+        		vertical-align: bottom; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: medium; border-bottom-width: medium; 
-        		border-right-width: medium; border-left-width: thick; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: medium; 
+		        border-bottom-width: medium; 
+        		border-left-width: thick; 
+        		border-right-width: medium; 
+        		">
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Grindwheel Thickness</b></p>
         </th>
-        <th style="background-color: #FFE4B5; 
-        		vertical-align: bottom; text-align: center; 
+        <th style="width: 90px;
+      	  		background-color: #FFE4B5; 
+        		vertical-align: bottom; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: medium; border-color: black; 
-		        border-top-width: thick; border-bottom-width: thin; 
-        		border-right-width: medium; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: medium; 
+		        border-bottom-width: thin; 
+        		border-left-width: medium; 
+        		border-right-width: medium; 
+        		">
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Fleam</b></p>
         </th>
-        <th style="background-color: #FFE4B5; 
-		        vertical-align: bottom; text-align: center; 
+        <th style="width: 90px;
+	       	 	background-color: #FFE4B5; 
+		        vertical-align: bottom; 
+		        text-align: center; 
         		padding-left: 5px; padding-right: 5px; 
-		        border-style: solid; border-color: black; 
-        		border-top-width: medium; border-bottom-width: thin; 
-		        border-right-width: medium; border-left-width: medium; ">
-            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Drop</b></p>
+		        border-style: solid; 
+		        border-color: black; 
+        		border-top-width: medium; 
+        		border-bottom-width: thin; 
+		        border-left-width: medium; 
+		        border-right-width: medium; 
+		        ">
+            <p style="width: 90px;
+	       	 	margin-top: 0; margin-bottom: 0; 
+	       	 	font: 16px Arial; color: #191970"><b>Drop</b></p>
         </th>
-        <th style="background-color: #FFE4B5; 
-        		vertical-align: bottom; text-align: center; 
+        <th style="width: 90px;
+	       	 	background-color: #FFE4B5; 
+        		vertical-align: bottom; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: medium; border-bottom-width: thin; 
-        		border-right-width: medium; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: medium; 
+		        border-bottom-width: thin; 
+        		border-left-width: medium; 
+        		border-right-width: medium; 
+        		">
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Rake</b></p>
         </th>
-        <th align="center" valign="bottom" bgcolor="moccasin" 
-        <th style="background-color: #FFE4B5; 
-        		vertical-align: bottom; text-align: center; 
+        <th style="width: 90px;
+	       	 	background-color: #FFE4B5; 
+        		vertical-align: bottom; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: medium; border-bottom-width: thin; 
-        		border-right-width: medium; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: medium; 
+		        border-bottom-width: thin; 
+        		border-left-width: medium; 
+        		border-right-width: medium; 
+        		">
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Chip Thickness</b></p>
         </th>
-        <th rowspan=2 style="background-color: #FFE4B5; 
-        		vertical-align: bottom; text-align: center; 
+        <th rowspan=2 style="width: 90px;
+	       	 	background-color: #FFE4B5; 
+        		vertical-align: bottom; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: medium; border-bottom-width: medium;
-        		border-right-width: thick; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: medium; 
+		        border-bottom-width: medium;
+        		border-left-width: medium; 
+        		border-right-width: thick; 
+        		">
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Comments</b></p>
         </th>
     </tr>
 
    <tr>
         <td style="background-color: #c4deea; 
-        		vertical-align: bottom; text-align: center; 
+        		vertical-align: bottom; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px;
-        		border-style: solid; border-color: black; 
-		        border-top-width: thin; border-bottom-width: medium; 
-        		border-right-width: medium; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: thin; 
+		        border-bottom-width: medium; 
+        		border-left-width: medium; 
+        		border-right-width: medium; 
+        		">
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">A - Vise Rotate Angle</p>
         </td>
         <td style="background-color: #c4deea; 
-        		vertical-align: bottom; text-align: center; 
+        		vertical-align: bottom; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: thin; border-bottom-width: medium; 
-        		border-right-width: medium; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: thin; 
+		        border-bottom-width: medium; 
+        		border-left-width: medium; 
+        		border-right-width: medium; 
+        		">
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">B - Down Angle</p>
         </td>
         <td style="background-color: #c4deea; 
-        		vertical-align: bottom; text-align: center; 
+        		vertical-align: bottom; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: thin; border-bottom-width: medium;
-        		border-right-width: medium; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: thin; 
+		        border-bottom-width: medium;
+        		border-left-width: medium; 
+        		border-right-width: medium; 
+        		">
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">C - Head Tilt Angle</p>
         </td>
         <td style="background-color: #c4deea; 
-        		vertical-align: bottom; text-align: center; 
+        		vertical-align: bottom; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: thin; border-bottom-width: medium;
-        		border-right-width: medium; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: thin; 
+		        border-bottom-width: medium;
+        		border-left-width: medium; 
+        		border-right-width: medium; 
+        		">
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">D - Depth Gauge</p>
         </td>
     </tr>
@@ -381,50 +428,78 @@ Use this page to lookup the values for use on saw chain grinders.
         <td style="background-color: #ffffff; 
         		vertical-align: middle; text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: thin; border-bottom-width: thick; 
-        		border-right-width: medium; border-left-width: thick; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: thin; 
+		        border-bottom-width: thick; 
+        		border-left-width: thick; 
+        		border-right-width: medium; 
+        		">
             <p id="Grindwheel" style="margin: 0px; padding: 0px;"></p>
         </td>
         <td style="background-color: #ffffff; 
         		vertical-align: middle; text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: medium; border-bottom-width: thick; 
-        		border-right-width: medium; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: medium; 
+		        border-bottom-width: thick; 
+        		border-left-width: medium; 
+        		border-right-width: medium; 
+        		">
             <p id="Fleam" style="margin: 0px; padding: 0px;"></p>
         </td>
-        <td rowspan="3" style="background-color: #ffffff; 
-		        vertical-align: middle; text-align: center; 
+        <td style="background-color: #ffffff; 
+		        vertical-align: middle; 
+		        text-align: center; 
         		padding-left: 5px; padding-right: 5px; 
-		        border-style: solid; border-color: black; 
-        		border-top-width: medium; border-bottom-width: thick; 
-		        border-right-width: medium; border-left-width: medium; ">
+		        border-style: solid; 
+		        border-color: black; 
+        		border-top-width: medium; 
+        		border-bottom-width: thick; 
+		        border-left-width: medium; 
+		        border-right-width: medium; 
+		        ">
             <p id="Drop" style="margin: 0px; padding: 0px;"></p>
         </td>
-        <td rowspan="3" style="background-color: #ffffff; 
-        		vertical-align: middle; text-align: center; 
+        <td style="background-color: #ffffff; 
+        		vertical-align: middle; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: medium; border-bottom-width: thick; 
-        		border-right-width: medium; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: medium; 
+		        border-bottom-width: thick; 
+        		border-left-width: medium; 
+        		border-right-width: medium; 
+        		">
             <p id="Rake" style="margin: 0px; padding: 0px;"></p>
         </td>
-        <td rowspan="3" style="background-color: #ffffff; 
-        		vertical-align: middle; text-align: center; 
+        <td style="background-color: #ffffff; 
+        		vertical-align: middle; 
+        		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: medium; border-bottom-width: thick; 
-        		border-right-width: medium; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: medium; 
+		        border-bottom-width: thick; 
+        		border-left-width: medium; 
+        		border-right-width: medium; 
+        		">
             <p id="ChipThicknessImp" style="margin: 0px; padding: 0px;"></p>
             <p id="ChipThicknessMetric" style="margin: 0px; padding: 0px;"></p>
         </td>
-        <td rowspan=3 style="background-color: #ffffff; 
-        		vertical-align: top; text-align: left; 
+        <td style="background-color: #ffffff; 
+        		vertical-align: top; 
+        		text-align: left; 
 		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: medium; border-bottom-width: thick; 
-        		border-right-width: thick; border-left-width: medium; ">
+        		border-style: solid; 
+        		border-color: black; 
+		        border-top-width: medium; 
+		        border-bottom-width: thick; 
+        		border-left-width: medium; 
+        		border-right-width: thick; 
+        		">
             <p id="Comments" style="margin: 0px; padding: 0px;">&nbsp;</p>
         </td>
     </tr>
@@ -432,7 +507,6 @@ Use this page to lookup the values for use on saw chain grinders.
 </form>
 
 <p>
-<center><button autofocus type="button" onclick="calcValues()" style="font-size:20px; background-color: #0404B4; color: white;">Get Values</button></center>
-
+<p style="text-align: center;"><button autofocus type="button" onclick="calcValues()" style="font-size:20px; background-color: #0404B4; color: white;">Get Values</button></p>
 </body>
 </html>
