@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: middle; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	    &nbsp;
+    	</td>
+	<td style="vertical-align: text-top;  text-align: center; ">
+		<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Pen Mill</b></p>
+    	</td>
+	<td style="text-align: right; width: 10%; ">
+	    &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<hr>
+
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<div style=" float: left; Width: 200px; 
+        margin-left: 0px; margin-right: 5px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 5px; 
+        padding-top: 5px; padding-bottom: 5px; 
+        border: 1px solid darkgray; text-align: left;  ">
+		    <img src="Images/WW-PenMill-06.png" alt="no image file" style="Width: 100%;" />
+		    <p class="TextSMImage"><b><i>Edge Angles</i></b></p>
+</div>
+
+
+
+<div style=" float: right; Width: 100px; 
+        margin-left: 5px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 5px; 
+        padding-top: 5px; padding-bottom: 5px; 
+        border: 1px solid darkgray; text-align: left;  ">
+    <img src="Images/WW-PenMill-01.png" alt="no image file" style="Width: 100%;" />
+    <p class="TextSMImage"><b><i>Edges Ground</i></b></p>
+</div>
+
+<p>Guidelines shown below are for the <b>Bevels&rsquo; Angles</b>. The ground edges are shown in the picture to the right as red.
+
+<p><hr class="style2">
+
+<p>The leading edges of the cutting surfaces must be coplanar.  As shown in the picture to the left, this is the edge next to the flat side, not the angled or curved side. 
+
+This ensures that all four cutting edges engage with the flat surface of the wood at the same time.  (If the pen blank's surface is not perpendicular to the tube, it will be after milling it down.)
+
+<p><hr class="style2">
+
+<p>The side edge angle of the cutting surfaces must be perpendicular to the axis of rotation.  This ensures a flat surface for the pen's end.  If it is not perpendicular, the surface left will be conical (either convex or concave).
+
+<table style="width: 350px; float: right; border: 1px solid grey; border-collapse: collapse;  background-color:#DFD7C8; margin-top: 12px; margin-bottom: 12px;">
+    <tr>
+		<td>
+		    <p style="margin-top: 0; margin-bottom: 0; "><i>You will find something more in woods than in books. Trees and stones will teach you that which you can never learn from masters.</i>
+	    	    <p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Saint Berna
+		</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- General Guidelines -->
+<table style="width: 100%; border-collapse: collapse; ">
+    <tr>
+		<th colspan=3 style="border-style: solid; 
+				background-color: Moccasin;
+        		text-align: center; 
+        		vertical-align: bottom; 
+	        	border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: thick; ">
+		    <p class="TextTableHdrLg"><b>General Guidelines</b></p>
+		</th>
+    </tr>
+    <tr>
+		<th style="width: 60px;
+				border-style: solid; 
+				background-color: Moccasin;
+        		text-align: center; 
+        		vertical-align: bottom; 
+	        	border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	<span style="color: #191970; font: 24px Garamond"><b>&alpha;</b></span>
+		</th>
+		<th style="width: 60px;
+				border-style: solid; 
+				background-color: Moccasin;
+        		text-align: center; 
+        		vertical-align: bottom; 
+	        	border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<span style="color: #191970; font: 24px Garamond"><b>&beta;</b></span>
+		</th>
+		<th style="border-style: solid; 
+				background-color: Moccasin;
+        		text-align: center; 
+        		vertical-align: bottom; 
+	        	border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+		    <p class="TextTableHdrNorm"><b>Notes</b></p>
+		</th>
+    </tr>
+
+    <tr>
+		<td style="border-style: solid; 
+				background-color: White;
+        		text-align: center; 
+        		vertical-align: middle; 
+	        	border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+		    10&deg;
+		</td>
+		<td style="border-style: solid; 
+				background-color: White;
+        		text-align: center; 
+        		vertical-align: middle; 
+	        	border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+		    90&deg;
+		</td>
+		<td style="border-style: solid; 
+				border-style: solid; 
+				background-color: White;
+        		text-align: center; 
+        		vertical-align: middle; 
+	        	border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+	    	&nbsp;
+		</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<h2>Notes &amp; Comments</h2>
+
+<div style="float: right; width:160px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
+    <a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="no image file" style="Width: 100%;" ></a>
+    <a href="Grindstones.html">Information regarding Grindstones</a>
+</div>
+
+<!-- ################################################### -->
+<!-- Holding the Tool for Sharpening -->
+<h3 style="margin-bottom: 0;">Holding the Tool for Sharpening</h3>
+
+<div style=" float: left; Width: 250px; 
+        margin-left: 0px; margin-right: 5px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 5px; 
+        padding-top: 5px; padding-bottom: 5px; 
+        border: 1px solid darkgray; text-align: left;  ">
+    <img src="Images/WW-PenMill-03.png" alt="no image file" style="Width: 100%;" />
+    <p class="TextSMImage"><b><i>Tool Holding for Sharpening</i></b></p>
+</div>
+
+<p style="margin-top: 0;">The tool should be held in a way where all four edges can be ground consistently.  The black piece shown in the image to the left can be used with the <a href="Jigs-Goniostat.html">3D-printed goniostat</a>.
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-WW-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<!-- 
+<hr class="style1">
+<h2>More Information</h2>
+ -->
+
+<!-- 
+<h3>Books &amp; Papers</h3>
+    <ul>
+        <li><u>How to Sharpen Every Blade in Your Workshop</u>, by Don Geary</li>
+
+        <br>
+	<li><u>Taunton's Complete Illustrated Guide to Sharpening</u>, by Thomas Lie-Nielsen</li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+    <ul>
+		<li><a href="https://youtu.be/PBCrOCVzfE4?si=3TnerMrgaf_XOSDO" target="_new">Sharpening a Wooden Bodied Spokeshave</a> by Chris Buchanan (YouTube).  Chris has a playlist for sharpening all forms of chairmaking tools..</li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Published Articles</h3>
+    <ul>
+		<li><a href="https://www.sharpeningsupplies.com/blogs/articles/what-are-slip-stones" target="_new">What are Slip Stones?</a></li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Web Sites</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Other</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
