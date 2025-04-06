@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
 <head>
     <title>Sharpening Handbook</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
-<body bgcolor=#E6E6E6 class="" id="">
-<font face="Arial" size="3">
-
-<!-- ################################################### -->
-<!-- Style Sheet for header image max size               -->
-<!-- ################################################### -->
-<style>
-    img.Image { max-width: 1000px;}
-</style>
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
 
 <!-- ################################################### -->
 <!-- Code for Including Standard HTML files on the 	 -->
@@ -53,40 +49,34 @@ function includeHTML() {
 </script> 
 
 <!-- ################################################### -->
-<!-- Standard horizontal rule definitions		 -->
+<!-- Standard horizontal rule definitions		  		 -->
 <div w3-include-html="include-SiteStandards.html"></div> 
 <script>
 includeHTML();
-</script> 
+</script>
 
 <!-- ################################################### -->
 <!-- Header                                              -->
 <!-- ################################################### -->
-<table width=100%>
-    <tr valign="TOP">
-	<td align="center">
-	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: middle; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
 	</td>
     </tr>
 </table>
 
-<table width="100%" border=0>
-    <col width="10%">
-    <col width="*">
-    <col width="10%">
-
-    <tr valign="bottom">
-	<td align="left">
-	    <a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
-	</td>
-	<td align="center" valign="top">
-	    <font face= "Palatino" size="6" color=#191970><b>
-	    Brad Point Drill Bit
-	    </b></font>
-	</td>
-	<td align="right">
-	    &nbsp;
-	</td>
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+    	<td style="vertical-align: text-top;  text-align: center; ">
+		    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Brad Point Drill Bit</b></p>
+    	</td>
+	    <td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
     </tr>
 </table>
 
@@ -97,28 +87,39 @@ includeHTML();
 
 <!-- ################################################### -->
 <!-- Guidance Information -->
-<table width="100%">
-    <tr valign="top">
-        <td>
-            <div style="float: left; 
-                    margin-left: 0px; margin-right: 5px; 
-                    margin-top: 0px; margin-bottom: 5px; 
-                    padding-left: 0px; padding-right: 0px; 
-                    padding-top: 0px; padding-bottom: 5px; 
-                    border: 0px solid darkgray; text-align: left; 
-                    ">
-                <img SRC="Images/LeonardLeeSharpeningBook.jpg" height=300 />
-            </div>
+
+<table>
+    <tr>
+        <td style="width: 300px;
+        		text-align: left; 
+        		vertical-align: top; 
+        		margin-left: 0px; margin-right: 5px;
+        		margin-top: 0px; margin-bottom: 5px;
+        		padding-left: 0px; padding-right: 0px;
+        		padding-top: 0px; padding-bottom: 0px;
+        	">
+            <img SRC="Images/LeonardLeeSharpeningBook.jpg" alt="no image file" style="width: 100%;" />
         </td>
-        <td>
-            <div style=" float: right; Width: 250px; 
-                    margin-left: 5px; margin-right: 0px; 
-                    margin-top: 0px; margin-bottom: 5px; 
-                    padding-left: 5px; padding-right: 0px; 
-                    padding-top: 5px; padding-bottom: 0px; 
-                    border: 1px solid darkgray; text-align: left;  ">
-                <img src="Images/Drill-Bit-Brad-Point.png" Width="100%" />
-                <font size=2><b><i>One variety of brad point drill bits</i></b></font>
+        <td style="
+        		text-align: left; 
+        		vertical-align: top; 
+        		margin-left: 0px; margin-right: 5px;
+        		margin-top: 0px; margin-bottom: 5px;
+        		padding-left: 0px; padding-right: 0px;
+        		padding-top: 0px; padding-bottom: 0px;
+        	">
+			<div style=" float: right; Width: 250px; 
+	        		text-align: left; 
+    	    		vertical-align: top; 
+			        margin-left: 5px; margin-right: 0px; 
+        			margin-top: 0px; margin-bottom: 5px; 
+			        padding-left: 5px; padding-right: 5px; 
+    			    padding-top: 5px; padding-bottom: 5px; 
+        			border: 1px solid darkgray; 
+        			text-align: left;  
+        			">
+ 	           <img src="Images/Drill-Bit-Brad-Point.png" alt="no image file" style="width: 100%;" />
+    		   <p class="TextSMImage"><b><i>Auger Drill</i></b></p>
             </div>
 
             <p style="margin-top: 0;">The absolute best source for sharpening this tool is Leonard Lee's book, <u>The Complete Guide to Sharpening</u>, Chapter 15.   (This is a must-have for any sharpener's library.)
@@ -128,25 +129,24 @@ includeHTML();
                 <ul>
 	                <li>Ensure both shoulders are the same height.</li>
 		            <li>Ensure both spurs are the same height.</li>
-            	    <li>Ensure brad point extends beyond the spurs.</li>
+            	    <li style="margin-bottom: 12px;" >Ensure brad point extends beyond the spurs.</li>
 
-        		    <br>
-	                <li>DO NOT change </li>
+	                <li style="margin-bottom: 12px;" >DO NOT change
                 		<ol>
 			                <li>the center point of the drill bit, or</li>
             			    <li>the diameter of the drill bit.</li>
 			            </ol>
 
-                    <table border=1 width="250px" align="right" style="border: 1px solid grey; border-collapse: collapse; background-color:LightGray ">
-                    	<tr>
-                    	    <td align="left" style="padding: 5px; ">
-                    		<p style="margin-top: 0; margin-bottom: 0; "><i>A handmade wooden object can't be mass-produced.</I>
-                    		    <p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Unknown Old Woodworker
+                    <table style="float: right; width: 250px; border: 1px solid grey; border-collapse: collapse; background-color:LightGray ">
+						<tr>
+							<td style="padding: 5px; ">
+								<p style="margin-top: 0; margin-bottom: 0; "><i>A handmade wooden object can't be mass-produced.</I>
+								<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Unknown Old Woodworker
                     	    </td>
                     	</tr>
                     </table>
+                    </li>
                     
-                    <br>
                     <li>Grind the minimum off the bit.</li>
             	</ul>
 	    </td>
@@ -156,60 +156,72 @@ includeHTML();
 <!-- ################################################### -->
 <!-- General Guidelines -->
 <p>
-<table width="100%" align="center" style="border-collapse: collapse; ">
-    <col width="10%"> 	<!-- Point Angle - Recom. -->
-    <col width="*"> 	<!-- Notes -->
-        
-    <thead>
-    <tr bgcolor="Moccasin" valign="bottom">
-	<th colspan="999" style="border-style: solid; border-color: black; 
-	border-top-width: thick; 
-	border-bottom-width: medium; 
-	border-left-width: thick; 
-	border-right-width: thick; ">
-	    <font face="Arial" color="Blue" size="5"><b>General Guidelines</b></font>
-	</th>
+<table style="width: 100%; border-collapse: collapse; ">
+    <tr>
+		<th colspan="2" style="border-style: solid; 				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: thick; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: thick; ">
+	    	<p class="TextTableHdrLg"><b>General Guidelines</b></p>
+		</th>
     </tr>
-    <tr bgcolor=Moccasin valign="bottom">
-	<th style="border-style: solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: thick; 
-		border-right-width: medium; ">
-	    <font face="Arial" color="Blue">Point Angle</font>
+    <tr>
+		<th style="width: 65px; 
+				background-color: moccasin;
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+		    <p class="TextTableHdrNorm"><b>Point Angle</b></p>
 	</th>
-	<th style="border-style: solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: medium; 
-		border-left-width: medium; 
-		border-right-width: thick; ">
-	    <font face="Arial" color="Blue">Notes</font>
-	</th>
+	<th style="
+				background-color: moccasin;
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+	    	<p class="TextTableHdrNorm"><b>Notes</b></p>
+		</th>
     </tr>
-    </thead>
 
-    <tbody>
-
-    <tr bgcolor="White" valign="top">
-	<td align="CENTER" style="border-style: solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: thick; 
-		border-right-width: medium; ">
-	    40&deg;
-	</td>
-	<td align="LEFT" style="border-style: solid; border-color: black; 
-		border-top-width: medium; 
-		border-bottom-width: thick; 
-		border-left-width: medium; 
-		border-right-width: thick; ">
-	    &nbsp;
-	</td>
+    <tr>
+		<td style="
+				background-color: white;
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+		    40&deg;
+		</td>
+		<td style="
+				background-color: white;
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+		    &nbsp;
+		</td>
     </tr>
-    </tbody>
-</table>
-
-</td></tr>
 </table>
 
 <!-- ################################################### -->
@@ -217,12 +229,12 @@ includeHTML();
 <h2>Notes &amp; Comments</h2>
 
 <div style="float: right; width:160px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
-	<a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" Width=150></a>
+	<a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="no image file" style="Width: 100%; "></a>
 	<br>
    <a href="Grindstones.html">Information regarding Grindstones</a>
 </div>
 
-<p>Probably best to stay with the drill bit's geometry as supplied by the manufacturer, though furniture maker <a href="http://www.michaelfortune.com" target="_new">Michael Fortune</a> does advocate changing it.  His recommendations are referenced in the Videos &amp; Presentations, below.
+<p>Probably best to stay with the drill bit's geometry as supplied by the manufacturer, though furniture maker <a href="http://www.michaelfortune.com" target="new">Michael Fortune</a> does advocate changing it.  His recommendations are referenced in the Videos &amp; Presentations, below.
 
 <!-- ################################################### -->
 <!-- Ongoing Maintenance -->
@@ -238,17 +250,16 @@ includeHTML();
 
 <h3>Books &amp; Papers</h3>
     <ul>
-    	<li>Leonard Lee's book, <u>The Complete Guide to Sharpening</u>, Chapter 15.</li>
+    	<li style="margin-bottom: 12px;" >Leonard Lee's book, <u>The Complete Guide to Sharpening</u>, Chapter 15.</li>
 
-        <br>
-        <li>U.S. War Department's <a href="Documents/TM 9-867 Care and Use of Hand Tools.pdf" target="_new">TM 9-867 Maintenance and Care of Hand Tools</a>.</li>
+        <li>U.S. War Department's <a href="Documents/TM%209-867%20Care%20and%20Use%20of%20Hand%20Tools.pdf" target="new">TM 9-867 Maintenance and Care of Hand Tools</a>.</li>
     </ul>
 
 <h3>Videos &amp; Presentations</h3>
     <ul>
-	<li><a href="https://www.finewoodworking.com/2015/02/11/sharpen-your-own-hybrid-drill-bits" target="_new">Sharpen Your Own Hybrid Drill Bits</a> - Furniture maker <a href="http://www.michaelfortune.com" target="_new">Michael Fortune</a> demonstrates his homegrown method for sharpening a brad point bit (he calls them <I>hybrid twist drill bits</I>;  this is a web page with an embedded FineWoodworking video).
+		<li><a href="https://www.finewoodworking.com/2015/02/11/sharpen-your-own-hybrid-drill-bits" target="new">Sharpen Your Own Hybrid Drill Bits</a> - Furniture maker <a href="http://www.michaelfortune.com" target="new">Michael Fortune</a> demonstrates his homegrown method for sharpening a brad point bit (he calls them <I>hybrid twist drill bits</I>;  this is a web page with an embedded FineWoodworking video).
 		
-	<p style="margin-bottom: 0;">This is an interesting video, but one needs to be very careful when using such hand sharpening approaches and ensure that the rules noted above are not violated.</li>
+		<p style="margin-bottom: 0;">This is an interesting video, but one needs to be very careful when using such hand sharpening approaches and ensure that the rules noted above are not violated.</li>
     </ul>
 
 <!-- 
@@ -260,7 +271,7 @@ includeHTML();
 
 <h3>Web Sites</h3>
     <ul>
-	<li>Nick Engler's <a href="https://workshopcompanion.com" target="_new">Workshop Companion</a> page on <a href="https://workshopcompanion.com/KnowHow/Tools/Sharpening/9_Sharpening_Drill_Bits/9_Sharpening_Drill_Bits.htm" target="_new">Sharpening Drill Bits</a>.</li>
+		<li>Nick Engler's <a href="https://workshopcompanion.com" target="new">Workshop Companion</a> page on <a href="https://workshopcompanion.com/KnowHow/Tools/Sharpening/9_Sharpening_Drill_Bits/9_Sharpening_Drill_Bits.htm" target="new">Sharpening Drill Bits</a>.</li>
     </ul>
 
 <!-- 

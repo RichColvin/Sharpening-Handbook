@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
 <head>
     <title>Sharpening Handbook</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
-<body bgcolor=#E6E6E6 class="" id="">
-<font face="Arial" size="3">
-
-<!-- ################################################### -->
-<!-- Style Sheet for header image max size               -->
-<!-- ################################################### -->
-<style>
-    img.Image { max-width: 1000px;}
-</style>
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
 
 <!-- ################################################### -->
 <!-- Code for Including Standard HTML files on the 	 -->
@@ -53,42 +49,35 @@ function includeHTML() {
 </script> 
 
 <!-- ################################################### -->
-<!-- Standard horizontal rule definitions		 -->
+<!-- Standard horizontal rule definitions		  		 -->
 <div w3-include-html="include-SiteStandards.html"></div> 
 <script>
 includeHTML();
-</script> 
+</script>
 
 <!-- ################################################### -->
-<!-- Header                                                                                           -->
+<!-- Header                                              -->
 <!-- ################################################### -->
-<table width=100%>
-	<tr valign="TOP">
-   	<td align="center">
-      	<a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
-      </td>
-   </td>
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: middle; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+	</td>
+    </tr>
 </table>
 
-<table width="100%" border=0>
-	<colgroup>
-   	<col width="10%">
-      <col width="*">
-      <col width="10%">
-   </colgroup>
-
-   <tr valign="bottom">
-   	<td align="left">
-      	<a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
-      </td>
-      <td align="center" valign="top">
-         <font face= "Palatino" size="6" color=#191970><b>
-         Twist Drill Bit
-         </b></font>
-      </td>
-      <td align="right">
-      </td>
-   </tr>
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+    	<td style="vertical-align: text-top;  text-align: center; ">
+		    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Twist Drill Bit</b></p>
+    	</td>
+	    <td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
 </table>
 
 <!-- ################################################### -->
@@ -106,8 +95,8 @@ includeHTML();
         padding-top: 0px; padding-bottom: 5px; 
         border: 1px solid darkgray; text-align: left; 
         ">
-    <img src="Images/GT-DrillBits-Angles.png" Width="100%" />
-    <font size=2><b><i>Key Angles</i></b></font>
+    <img src="Images/GT-DrillBits-Angles.png" alt="no image file" style="width: 100%; " />
+    <p class="TextSMImage"><b><i>Key Angles</i></b></p>
 </div>
 
 <div style=" float: right; Width: 600px; 
@@ -116,8 +105,8 @@ includeHTML();
         padding-left: 5px; padding-right: 0px; 
         padding-top: 5px; padding-bottom: 0px; 
         border: 1px solid darkgray; text-align: left;  ">
-    <img src="Images/GT-DrillBits-Facets.png" Width="100%" />
-    <font size=2><b><i>Terminology for multi-faceted grinds</i></b></font>
+    <img src="Images/GT-DrillBits-Facets.png" alt="no image file" style="width: 100%; " />
+    <p class="TextSMImage"><b><i>Terminology for multi-faceted grinds</i></b></p>
 </div>
 
 <p>Twist drill bits are sharpened according to the table below.
@@ -126,7 +115,7 @@ includeHTML();
 
 <p>The Tormek DBS-22 Drill Bit Sharpening Jig works very well for those drill bits which it can hold (0.125&rdquo; - 0.875&rdquo; / 3 - 22 mm). 
 
-<table border=1 align="right" style="border: 1px solid grey; border-collapse: collapse; background-color:LightGray ">
+<table style="float: right; width: 250px; border: 1px solid grey; border-collapse: collapse; background-color:LightGray ">
 	<tr>
 		<td style="padding: 5px; ">
 			<p style="margin-top: 0; margin-bottom: 0; "><i>No matter how many times I cut this, I can't get it long enough!</I>
@@ -138,436 +127,2660 @@ includeHTML();
 <!-- ################################################### -->
 <!-- General Guidelines -->
 <p>
-<table width="100%" style="border-collapse: collapse; border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: thick; ">
-   <col width="70px"> <!-- Metric -->
-   <col width="70px"> <!-- Fraction -->
-   <col width="70px"> <!-- Wire Number -->
-   <col width="70px"> <!-- Letter -->
-   <col width="70px"> <!-- Decimal -->
-
-   <col width="70px"> <!-- Point Angle -->
-   <col width="70px"> <!-- Clearance Angle, Soft -->
-   <col width="70px"> <!-- Clearance Angle, Hard -->
-
-   <col width="*"> <!-- Notes -->
-	
-   <thead>
-   <tr bgcolor="Moccasin" valign="bottom">
-      <th colspan="999">
-         <font face="Arial" size="5" color="Blue">
-         <b>General Guidelines for 4-Facet Grind</b></font>
-      </th>
-   </tr>
-   <tr bgcolor="Moccasin" valign="bottom">
-      <th colspan="5" style=" border-style: solid; border-color: black; border-right-width: medium; border-top-width: medium; border-bottom-width: thin">
-         <font face="Arial" color="Blue">Drill Bit Size</font>
-      </th>
-      <th rowspan="2" style=" border-style: solid; border-color: black; border-left-width: medium; border-right-width: medium; border-bottom-width: thick; border-top-width: medium;">
-         <font face="Arial" color="Blue">Point Angle</font>
-      </th>
-      <th colspan="2" style=" border-style: solid; border-color: black; border-left-width: medium; border-right-width: medium; border-top-width: medium;">
-         <font face="Arial" color="Blue">Clearance Angle</font>
-      </th>
-      <th rowspan="2" style="border-style: solid; border-color: black; border-bottom-width: thick; border-top-width: medium; border-right-width: thick; ">
-         <font face="Arial" color="Blue">Notes & Recommended Tormek Jig</font>
-      </th>
-   </tr>
-   <tr bgcolor="Moccasin" valign="bottom">
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: thin; ">
-         <font face="Arial" color="Blue">Inch<br>Decimal</font>
-      </th>
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-left-width: thin;  border-right-width: thin;">
-         <font face="Arial" color="Blue">Inch<br>Fraction</font>
-      </th>
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-left-width: thin;  border-right-width: thin;">
-         <font face="Arial" color="Blue">Metric (mm)</font>
-      </th>
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-left-width: thin;  border-right-width: thin;">
-         <font face="Arial" color="Blue">Wire Number</font>
-      </th>
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-left-width: thin; ">
-         <font face="Arial" color="Blue">Letter</font>
-      </th>
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick;">
-         <font face="Arial" color="Blue">Mild Metal, Wood</font>
-      </th>
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-right-width: medium; border-bottom-width: thick;">
-         <font face="Arial" color="Blue">Hard Steel</font>
-      </th>
-   </tr>
-   </thead>
-
-   <tbody>
+<table style="width: 100%; border-collapse: collapse; ">
+    <tr>
+		<th colspan="9" style="
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: thick; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: thick; ">
+	    	<p class="TextTableHdrLg"><b>General Guidelines for 4-Facet Grind</b></p>
+		</th>
+	</tr>
+   	<tr>
+		<th colspan="5" style="
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Drill Bit Size</b></p>
+		</th>
+      	<th rowspan="2" style="width: 65px;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Point Angle</b></p>
+		</th>
+		<th colspan="2" style="
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Clearance Angle</b></p>
+		</th>
+     	<th rowspan="2" style="
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+	    	<p class="TextTableHdrNorm"><b>Notes & Recommended Tormek Jig</b></p>
+		</th>
+	</tr>
+	<tr>
+    	<th style="width: 65px;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Inch<br>Decimal</b></p>
+		</th>
+		<th style="width: 65px;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Inch<br>Fraction</b></p>
+		</th>
+		<th style="width: 65px;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Metric (mm)</b></p>
+		</th>
+		<th style="width: 65px;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Wire Number</b></p>
+		</th>
+		<th style="width: 65px;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Letter</b></p>
+		</th>
+		<th style="width: 65px;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Mild Metal, Wood</b></p>
+		</th>
+		<th style="width: 65px;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				background-color: moccasin;
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Hard Steel</b></p>
+		</th>
+	</tr>
    	<!-- 0.0 - 2.9 mm -->
-      <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium;  border-bottom-width: medium; ">
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: thin; "><font face="Arial" color="DarkGray">< 0.125</font></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "><font face="Arial" color="DarkGray">< <sup>1</sup>/<sub>8</sub></font></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "><font face="Arial" color="DarkGray">< 3.0</font></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "><font face="Arial" color="DarkGray">> 31</font></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: medium; "></td>
-
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium; border-right-width: medium; "><font face="Arial" color="DarkGray">118&deg;</font></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: medium; "><font face="Arial" color="DarkGray">14&deg;</font></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: medium; "><font face="Arial" color="DarkGray">11&deg;</font></td>
-         <td align="LEFT" style="border-style: solid; border-color: black; border-left-width: medium; border-right-width: thick; ">
-         	Can't use the <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22 Drill Bit Sharpening Attachment</a> with these bits -- they are too small. (See also Note 1, below)
+	<tr>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;">&lt; 0.125</span>
+		</td>
+        <td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;">&lt; <sup>1</sup>/<sub>8</sub></span>
+		</td>
+        <td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;">&lt; 3.0</span>
+		</td>
+        <td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;">&gt;> 31</span>
+		</td>
+        <td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			<span style="color: DarkGray;">&nbsp;</span>
+		</td>
+        <td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			<span style="color: DarkGray;">118&deg;</span>
+		</td>
+        <td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			<span style="color: DarkGray;">14&deg;</span>
+		</td>
+        <td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			<span style="color: DarkGray;">11&deg;</span>
+		</td>
+        <td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+			<p style="margin-top: 0; margin-bottom: 0;">Can't use the Tormek DBS-22 Drill Bit Sharpening Attachment with these bits -- they are too small. (See also Note 1, below)
          </td>
       </tr>
 
       <!-- 3.0 - 6.0 mm -->
-      <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium;  border-bottom-width: medium; ">
-      	<td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: thin; ">0.125 - 0.250</td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "><sup>1</sup>/<sub>8</sub> - <sup>1</sup>/<sub>4</sub></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; ">3.0 - 6.0</td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; ">31 - 1</td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: medium; ">A - E</td>
-
-         <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-left-width: medium; border-right-width: medium; ">118&deg;<br></td>
-         <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: medium; ">14&deg;<br></td>
-         <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: medium; ">11&deg;<br></td>
-         <td align="LEFT" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: thick; ">
-         	Bits as small as <sup>1</sup>/<sub>8</sub> inch can be held in the <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22</a>, but they can flex easily. A pin vice can assist with reducing this flex.
+	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: thin; ">
+			0.125 - 0.250
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			<sup>1</sup>/<sub>8</sub> - <sup>1</sup>/<sub>4</sub>
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			3.0 - 6.0
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			31 - 1
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			A - E
+		</td>
+        <td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			118&deg;
+		</td>
+        <td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			14&deg;
+		</td>
+        <td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			11&deg;
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+			Bits as small as <sup>1</sup>/<sub>8</sub> inch can be held in the Tormek DBS-22, but they can flex easily. A pin vice can assist with reducing this flex.
          </td>
       </tr>
 
       <!-- 6.5 - 12.0 mm -->
-      <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium;  border-bottom-width: medium; ">
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: thin; ">0.250 - 0.500</td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "><sup>1</sup>/<sub>4</sub> - <sup>1</sup>/<sub>2</sub></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; ">6.5 - 12.0</td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: medium; ">F - Z</td>
-
-         <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-left-width: medium; border-right-width: medium; ">118&deg;<br></td>
-         <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: medium; ">11&deg;<br></td>
-         <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: medium; ">9&deg;<br></td>
-         <td align="LEFT" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: thick; "></td>
-      </tr>
+	<tr>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: thin; ">
+			0.250 - 0.500
+		</td>
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			<sup>1</sup>/<sub>4</sub> - <sup>1</sup>/<sub>2</sub>
+		</td>
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			6.5 - 12.0
+		</td>
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			&nbsp;
+		</td>
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			F - Z
+		</td>
+        <td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			118&deg;
+		</td>
+        <td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			11&deg;
+		</td>
+        <td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			9&deg;
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
+  	</tr>
 
       <!-- 12.5 - 22.0 mm -->
-      <tr bgcolor="LightGrey" valign="middle">
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: thin; ">0.500 - 0.875</td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "><sup>1</sup>/<sub>2</sub> - <sup>7</sup>/<sub>8</sub></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; ">12.5 - 22.0</td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: medium; "></td>
-
-         <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-left-width: medium; border-right-width: medium; ">118&deg;<br></td>
-         <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: medium; ">9&deg;<br></td>
-         <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: medium; ">7&deg;<br></td>
-         <td align="LEFT" style="border-style: solid; border-color: black; border-left-width: medium;   border-right-width: thick;"></td>
-      </tr>
+	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: thin; ">
+			0.500 - 0.875
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			<sup>1</sup>/<sub>2</sub> - <sup>7</sup>/<sub>8</sub>
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			12.5 - 22.0
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			&nbsp;
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			&nbsp;
+		</td>
+        <td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			118&deg;
+		</td>
+        <td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			9&deg;
+		</td>
+        <td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			7&deg;
+		</td>
+        <td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
+  	</tr>
 
       <!-- >22.0 mm -->
-      <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium;  border-bottom-width: medium; ">
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: thin; "><font face="Arial" color="DarkGray">> 0.875</font></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "><font face="Arial" color="DarkGray">> <sup>7</sup>/<sub>8</sub></font></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "><font face="Arial" color="DarkGray">> 22.0</font></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: thin; "></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: thin;  border-right-width: medium; "></td>
-
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium; border-right-width: medium; "><br></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: medium; "><br></td>
-         <td align="CENTER" style="border-style: solid; border-color: black; border-left-width: medium;  border-right-width: thick; "><br></td>
-         <td align="LEFT" style="border-style: solid; border-color: black; border-left-width: medium; border-right-width: thick; ">Can't use the <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22 Drill Bit Sharpening Attachment</a> with these bits -- they are too large</td>
+	<tr>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thick; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;">&gt; 0.875</span>
+		</td>
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;">&gt; <sup>7</sup>/<sub>8</sub></span>
+		</td>
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;">&gt; 22.0</span>
+		</td>
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thin; 
+				border-right-width: thin; ">
+			&nbsp;
+		</td>
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			&nbsp;
+		</td>
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			&nbsp;
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			&nbsp;
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+			&nbsp;
+        <td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+			Cannot use the Tormek DBS-22 Drill Bit Sharpening Attachment with these bits -- they are too large</td>
       </tr>
    </tbody>
 </table>
 
 <p><b><u>Notes</u>:</b>
 	<ol>
-		<li>One sharpener has used a precision pen vice (like the <a href="https://www.starrett.com/metrology/product-detail/166C" target="_new">Starrett 166C </a>) with the <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22</a> to hold bits as small as wire number 61 (&equals; 0.0390&quot; &asymp; <sup>5</sup>/<sub>128</sub>&quot; &asymp; 1 mm).</li>
+		<li>One sharpener has used a precision pen vice (like the Starrett 166C) with the Tormek DBS-22 to hold bits as small as wire number 61 (&equals; 0.0390&quot; &asymp; <sup>5</sup>/<sub>128</sub>&quot; &asymp; 1 mm).</li>
 	</ol>
 
 <!-- ################################################### -->
 <!-- Materials-Based Guidelines -->
 <br>
-<table width="100%" style="border-collapse: collapse; border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: thick; ">
-   <col width="25%"> <!-- Material -->
-   <col width="8%"> <!-- Point Angle - Recom. -->
-   <col width="8%"> <!-- Point Angle - Range -->
-   <col width="8%"> <!-- Clearance Angle - Recom. -->
-   <col width="8%"> <!-- Clearance Angle - Range -->
-   <col width="43%"> <!-- Notes -->
-   
-   <thead>
-   <tr bgcolor=#E8ADAA valign="bottom" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; border-right-width: thick; border-left-width: medium; ">
-      <th colspan="7">
-         <font face="Arial" size="5" color="Blue"><b>Material-Based Guidelines</b></font>
+<table style="width: 100%; border-collapse: collapse; ">
+    <tr>
+		<th colspan="6" style="
+				background-color: #E8ADAA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-top-width: thick; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: thick; ">
+	    	<p class="TextTableHdrLg"><b>General Guidelines for 4-Facet Grind</b></p>
+		</th>
+	</tr>
+   	<tr>
+		<th rowspan="2" style="width: 180px;
+				background-color: #E8ADAA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Material Type</b></p>
+		</th>
+		<th colspan="2" style="
+				background-color: #E8ADAA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Point Angle</b></p>
+		</th>
+		<th colspan="2" style="
+				background-color: #E8ADAA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Clearance Angle</b></p>
+		</th>
+		<th rowspan="2" style="
+				background-color: #E8ADAA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+	    	<p class="TextTableHdrNorm"><b>Notes</b></p>
       </th>
    </tr>
-   <tr bgcolor=#E8ADAA valign="bottom">
-      <th rowspan="2" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: thick; border-right-width: medium; border-left-width: thick; ">
-         <font face="Arial" color="Blue">Material Type</font>
+   <tr>
+		<th style="width: 65px;
+				background-color: #E8ADAA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+	    	<p class="TextTableHdrNorm"><b>Recom.</b></p>
+		</th>
+		<th style="width: 115px;
+				background-color: #E8ADAA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Range</b></p>
       </th>
-      <th colspan="2" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
-         <font face="Arial" color="Blue">Point Angle</font>
-      </th>
-      <th colspan="2" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
-         <font face="Arial" color="Blue">Clearance Angle</font>
-      </th>
-      <th rowspan="2" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: thick; border-right-width: medium; border-left-width: medium; border-right-width: thick; ">
-         <font face="Arial" color="Blue">Notes</font>
-      </th>
-   </tr>
-   <tr bgcolor=#E8ADAA valign="bottom">
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
-         <font face="Arial" color="Blue">Recom.</font>
-      </th>
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; ">
-         <font face="Arial" color="Blue">Range</font>
-      </th>
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
-         <font face="Arial" color="Blue">Recom.</font>
-      </th>
-      <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; ">
-         <font face="Arial" color="Blue">Range</font>
-      </th>
-   </tr>
-   </thead>
-
-   <tbody>
+		<th style="width: 90px;
+				background-color: #E8ADAA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+	    	<p class="TextTableHdrNorm"><b>Recom.</b></p>
+		</th>
+		<th style="width: 75px;
+				background-color: #E8ADAA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: bottom; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Range</b></p>
+    	</th>
+	</tr>
 
    <!-- Aluminium -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Aluminium</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">118&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">90 - 130&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; "><i><font face="Arial" color="Gray">(as above)</font></i><br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: thin; ">12 - 15&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: thin; ">Clearance angles based on drill bit size should be used.</td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Aluminium
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			118&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			90&deg; - 130&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;"><i>(as above)</i></span>
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			12&deg; - 15&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			Clearance angles based on drill bit size should be used.</td>
    </tr>
 
    <!-- Armour Plate -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Armour Plate</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">135&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">135 - 140&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">7&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">6 - 9&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: thin; ">&nbsp; </td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Armour Plate
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			135&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			135&deg; - 140&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			7&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			6&deg; - 9&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Brass -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Brass</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">118&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">118&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; "><i><font face="Arial" color="Gray">(as above)</font></i><br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">12 - 15&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: thin; ">Clearance angles based on drill bit size should be used.</td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Brass
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			118&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			118&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;"><i>(as above)</i></span>
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			12&deg; - 15&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			Clearance angles based on drill bit size should be used.
+		</td>
    </tr>
 
    <!-- Bronze -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Bronze</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">118&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">110 - 118&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; "><i><font face="Arial" color="Gray">(as above)</font></i><br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">12 - 15&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: thin; ">Clearance angles based on drill bit size should be used.</td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Bronze
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			118&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			110&deg; - 118&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;"><i>(as above)</i></span>
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			12&deg; - 15&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			Clearance angles based on drill bit size should be used.
+		</td>
    </tr>
 
    <!-- Bronze, High Tensile -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Bronze, High Tensile</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">105&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">100 - 110&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; "><i><font face="Arial" color="Gray">(as above)</font></i><br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">12 - 15&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: thin; ">Clearance angles based on drill bit size should be used.</td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Bronze, High Tensile
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			105&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			100&deg; - 110&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;"><i>(as above)</i></span>
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			12&deg; - 15&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			Clearance angles based on drill bit size should be used.
+		</td>
    </tr>
 
    <!-- Cast Iron, Soft -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Cast Iron, Soft</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">95&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">90 - 100&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; "><i><font face="Arial" color="Gray">(as above)</font></i><br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">12 - 15&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: thin; ">Clearance angles based on drill bit size should be used.</td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Cast Iron, Soft
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			95&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			90&deg; - 100&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;"><i>(as above)</i></span>
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			12&deg; - 15&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			Clearance angles based on drill bit size should be used.</td>
    </tr>
 
    <!-- Cast Iron, Medium -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Cast Iron, Medium</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">105&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">100 - 110&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; "><i><font face="Arial" color="Gray">(as above)</font></i><br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">12 - 15&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: thin; ">Clearance angles based on drill bit size should be used.</td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Cast Iron, Medium
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			105&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			100&deg; - 110&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			<span style="color: DarkGray;"><i>(as above)</i></span>
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			12&deg; - 15&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			Clearance angles based on drill bit size should be used.
+		</td>
    </tr>
 
    <!-- Cast Iron, Hard -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Cast Iron, Hard</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">110&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: thin; ">100 - 118&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">9&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">8 - 12&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; ">&nbsp;</td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Cast Iron, Hard
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			110&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			100&deg; - 118&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			9&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			8&deg; - 12&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Cast Iron, Chilled -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Cast Iron, Chilled</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">118&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">118 - 135&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">7&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">5 - 9&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Cast Iron, Chilled
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			118&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			118&deg; - 135&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			7&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			5&deg; - 9&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Copper -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Copper</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">118&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">100 - 118&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">14&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">12 - 15&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Copper
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			118&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			100&deg; - 118&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			14&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			12&deg; - 15&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Iron, Malleable -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Iron, Malleable</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">95&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">90 - 100&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">14&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">12 - 15&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Iron, Malleable
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			95&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			90&deg; - 100&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			14&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			12&deg; - 15&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Magnesium and Alloys -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Magnesium and Alloys</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">95&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">70 - 118&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">14&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">12 - 15&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Magnesium and Alloys
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			95&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			70&deg; - 118&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			14&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			12&deg; - 15&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Monel Nickel -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Monel Nickel</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; "120&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">118 - 125&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">11&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">10 - 12&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Monel Nickel
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			120&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			118&deg; - 125&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			11&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			10&deg; - 12&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
    
    <!-- Nickel Alloys -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Nickel Alloys</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">135&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">135 - 140&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">7&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">5 - 7&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Nickel Alloys
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			135&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			135&deg; - 140&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			7&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			5&deg; - 7&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Plastic, Hot Set -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Plastic, Hot Set</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">90&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">60 - 90&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">11&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">10 - 12&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; ">Minimum point angle on the <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">Tormek DBS-22 Drill Bit Sharpening Attachment</a> is 90&deg;.</td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Plastic, Hot Set
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			90&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			60&deg; - 90&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			11&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			10&deg; - 12&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			Minimum point angle on the Tormek DBS-22 Drill Bit Sharpening Attachment is 90&deg;.
+		</td>
    </tr>
 
    <!-- Plastic, Cold Set -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Plastic, Cold Set</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">125&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">118 - 135&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">14&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">12 - 20&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Plastic, Cold Set
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			125&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			118&deg; - 135&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			14&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			12&deg; - 20&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Steel, Low Carbon -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Steel, Low Carbon</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">118&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">110 - 118&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">9&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">7 - 9&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Steel, Low Carbon
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			118&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			110&deg; - 118&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			9&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			7&deg; - 9&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Steel, Medium Carbon -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Steel, Medium Carbon</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">118&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">118 - 125&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">9&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">7 - 9&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Steel, Medium Carbon
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			118&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			118&deg; - 125&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			9&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			7&deg; - 9&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Steel, High Carbon -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Steel, High Carbon</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">130&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">118 - 145&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">9&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">7 - 9&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Steel, High Carbon
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			130&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			118&deg; - 145&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			9&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			7&deg; - 9&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Steel, Forged -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Steel, Forged</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">130&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">118 - 145&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">11&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">7 - 12&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Steel, Forged
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			130&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			118&deg; - 145&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			11&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			7&deg; - 12&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Steel, Alloy -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Steel, Alloy</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">118&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">118 - 125&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">11&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">10 - 12&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Steel, Alloy
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			118&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			118&deg; - 125&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			11&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			10&deg; - 12&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Steel, Stainless -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Steel, Stainless</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">115&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">110 - 118&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">11&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">8 - 12&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Steel, Stainless
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			115&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			110&deg; - 118&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			11&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			8&deg; - 12&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Steel, Stainless, Hard -->
-   <tr bgcolor="White" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Steel, Stainless, Hard</td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">125&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">118 - 135&deg;<br></td>
-      <td align="CENTER" bgcolor=#C2DFFF style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">7&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">6 - 8&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
+   	<tr>
+		<td style="
+				background-color: White;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Steel, Stainless, Hard
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			125&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			118&deg; - 135&deg;
+	    </td>
+		<td style="
+				background-color: #C2DFFF;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			7&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			6&deg; - 8&deg;
+	    </td>
+		<td style="
+				background-color: white;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
    </tr>
 
    <!-- Steel, Manganese -->
-   <tr bgcolor="LightGrey" valign="middle" style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: medium; ">
-      <td>Steel, Manganese</td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">145&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">140 - 150&deg;<br></td>
-      <td align="CENTER" bgcolor=#82CAFA style="border-style: solid; border-color: black; border-right-width: thin; border-left-width: medium; ">9&deg;<br></td>
-      <td align="CENTER" style="border-style: solid; border-color: black; border-right-width: medium; border-left-width: thin; ">7 - 10&deg;<br></td>
-      <td align="LEFT" style="border-style: solid; border-color: black; border-right-width: thick; border-left-width: medium; "></td>
-   </tr>
-	</tbody>
+   	<tr>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	Steel, Manganese
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			145&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			140&deg; - 150&deg;
+	    </td>
+		<td style="
+				background-color: #82CAFA;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+			9&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: center; 
+    	    	vertical-align: middle; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+			7&deg; - 10&deg;
+	    </td>
+		<td style="
+				background-color: LightGray;
+				border-style: solid;
+				border-color: black; 
+	        	text-align: left; 
+    	    	vertical-align: top; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thin; 
+				border-right-width: thick; ">
+			&nbsp;
+		</td>
+	</tr>
 </table>
 
 <!-- ################################################### -->
@@ -575,22 +2788,24 @@ includeHTML();
 <h2>Notes &amp; Comments</h2>
 
 <div style="float: right; width:160px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
-	<center><a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" Width=150></a></center>
-   <center><a href="Grindstones.html">Information regarding Grindstones</a></center>
+	<a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="no image file" style="Width: 100%; "></a>
+	<br>
+   <a href="Grindstones.html">Information regarding Grindstones</a>
 </div>
+
 
 <!-- ################################################### -->
 <!-- Small Bits -->
 <h3 style="margin-bottom: 0;">Small Bits</h3>
-<p style="margin-top: 0;">If you pursue sharpening small bits (< <sup>1</sup>/<sub>8</sub> in / < 3.0 mm),
+<p style="margin-top: 0;">If you pursue sharpening small bits (&lt; <sup>1</sup>/<sub>8</sub> in / &lt; 3.0 mm),
     <ul>
-		<li>A pin vice like the <a href="https://www.starrett.com/metrology/product-detail/166C" target="_new">Starrett 166C</a> is recommended.  Having the pin vice's handle being larger than the knurled area allows the <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22</a> to hold the pin vice without it shifting.  (Yes, that is something I learned the hard way.)</li>
+		<li>A pin vice like the <a href="https://www.starrett.com/metrology/product-detail/166C" target="new">Starrett 166C</a> is recommended.  Having the pin vice's handle being larger than the knurled area allows the <a href="https://www.tormek.com/" target="new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="new">DBS-22</a> to hold the pin vice without it shifting.  (Yes, that is something I learned the hard way.)</li>
 		
 		<li>You will need a good magnifying glass and good light.  These are difficult to see with the naked eye (especially in poor light).</li>
 		
 		<li>Care must be taken when grinding the secondary facet on bits this small. It is very easy to over grind this.  Check after each pass on the grindstone.</li>
 		
-		<li>Consider honing the primary grind with a high grit stone (e.g., <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/usa/en/accessories/grindstones/sj-250-tormek-japanese-waterstone/" target="_new">SJ-250 Japanese Waterstone</a>).  There is no need to hone the secondary facet as it is merely to allow space for chip evacuation.</li>
+		<li>Consider honing the primary grind with a high grit stone (e.g., <a href="https://www.tormek.com/" target="new">Tormek</a> <a href="https://www.tormek.com/usa/en/accessories/grindstones/sj-250-tormek-japanese-waterstone/" target="new">SJ-250 Japanese Waterstone</a>).  There is no need to hone the secondary facet as it is merely to allow space for chip evacuation.</li>
 	</ul>
 
 <!-- ################################################### -->
@@ -604,7 +2819,7 @@ includeHTML();
 		<li>Tertiary Facet = 45&deg;</li>
 	</ul>
 
-<p>The <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22 Drill Bit Sharpening Attachment</a> is not designed for a 6-facet grind, so values are not shown for it.   A modification to the <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22</a> was made by Janne for 6-facet grinding, and more information can be found on the <a href="https://www.tormek.com/forum/index.php" target="_new">Tormek Forum</a>.
+<p>The <a href="https://www.tormek.com/" target="new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="new">DBS-22 Drill Bit Sharpening Attachment</a> is not designed for a 6-facet grind, so values are not shown for it.   A modification to the <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="new">DBS-22</a> was made by Janne for 6-facet grinding, and more information can be found on the <a href="https://www.tormek.com/forum/index.php" target="new">Tormek Forum</a>.
 
 <!-- ################################################### -->
 <!-- Secondary Point Angles (SPA) -->
@@ -612,12 +2827,12 @@ includeHTML();
 <h3 style="margin-bottom: 0;">Secondary Point Angles (SPA)</h3>
 
 <div style="float: right; width: 200px; margin: 5px 5px 5px 5px; padding: 5px; border: 1px solid Darkgray; text-align: center; ">
-    <a href="Images/DrillBitGrinds.jpg" target="_new"><img src="Images/DrillBitGrinds.jpg" width="100%" /></a>
-    <b>SPAs</b>
+    <a href="Images/DrillBitGrinds.jpg" target="new"><img src="Images/DrillBitGrinds.jpg" alt="no image file" style="width: 100%; " /></a>
+    <p class="TextSMImage"><b><i>SPAs</i></b></p>
 </div>
 
 <p style="margin-top: 0;">
-For tougher materials, an SPA is useful for reducing the stress on the outside cutting lip corners.  (This is well outlined in Joseph Mazoff's document {see below}.)  However, the <a href="https://www.tormek.com/" target="_new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="_new">DBS-22 Drill Bit Sharpening Attachment</a> is not designed for a grinding SPAs, so it is not outlined here.
+For tougher materials, an SPA is useful for reducing the stress on the outside cutting lip corners.  (This is well outlined in Joseph Mazoff's document {see below}.)  However, the <a href="https://www.tormek.com/" target="new">Tormek</a> <a href="https://www.tormek.com/international/en/grinding-jigs/dbs-22-drill-bit-sharpening-attachment/" target="new">DBS-22 Drill Bit Sharpening Attachment</a> is not designed for a grinding SPAs, so it is not outlined here.
 
 <p>Experience in using larger drill bits shows that SPAs help to reduce wander when drilling deep holes.  On GadgetBuilder's web site (referenced below), it was noted:
  
@@ -648,42 +2863,32 @@ includeHTML();
 
 <h3>Books &amp; Papers</h3>
 	<ul>
-        <li><a href="Documents/Drill_Point_Geometry_nt.pdf" target="_new">Drill Bit Geometry</a>, by Joseph Mazoff.  This is a truly great reference about drill bit geometry and is cited often.</li>
+        <li style="margin-bottom: 12px;"><a href="Documents/Drill_Point_Geometry_nt.pdf" target="new">Drill Bit Geometry</a>, by Joseph Mazoff.  This is a truly great reference about drill bit geometry and is cited often.</li>
 
-        <br>
-        <li><a href="Documents/GT-DrillBitSizes.pdf" target="_new">Drill Bit Sizes</a> (Metric, Fractional, Letter, & Number)</li>
+        <li style="margin-bottom: 12px;"><a href="Documents/GT-DrillBitSizes.pdf" target="new">Drill Bit Sizes</a> (Metric, Fractional, Letter, & Number)</li>
 
-        <br>
-        <li><a href="Documents/DrillPressUseAndApplication.pdf" target="_new">The Drill Press:  Its Use and Application</a> from Walker-Turner.</li>
+        <li style="margin-bottom: 12px;"><a href="Documents/DrillPressUseAndApplication.pdf" target="new">The Drill Press:  Its Use and Application</a> from Walker-Turner.</li>
 
-        <br>
-        <li><a href="Documents/TM 9-867 Care and Use of Hand Tools.pdf" target="_new">TM 9-867 Maintenance and Care of Hand Tools</a> from the U.S. War Department.</li>
+        <li style="margin-bottom: 12px;"><a href="Documents/TM%209-867%20Care%20and%20Use%20of%20Hand%20Tools.pdf" target="new">TM 9-867 Maintenance and Care of Hand Tools</a> from the U.S. War Department.</li>
 
-        <br>
-        <li><a href="https://archive.org/details/metalcuttingtool00meta" target="_new">Metal Cutting Tool Handbook</a></li>
+        <li style="margin-bottom: 12px;"><a href="https://archive.org/details/metalcuttingtool00meta" target="new">Metal Cutting Tool Handbook</a></li>
 
-        <br>
-        <li><a href="https://littlemachineshop.com/images/gallery/PDF/tapdrillsizes.pdf" target="_new">Tap & Clearance Drill Sizes</a> (Metric & Fractional)</li>
+        <li style="margin-bottom: 12px;"><a href="https://littlemachineshop.com/images/gallery/PDF/tapdrillsizes.pdf" target="new">Tap & Clearance Drill Sizes</a> (Metric & Fractional)</li>
 
-        <br>
-        <li>Tormek's &quot;User Manual for the DBS-22 Drill Bit Jig&quot; is quite useful.</li>
+        <li style="margin-bottom: 12px;">Tormek's &quot;User Manual for the DBS-22 Drill Bit Jig&quot; is quite useful.</li>
 
-        <br>
-        <li><a href="Documents/TwistDrillsUseandCare.pdf" target="_new">The Use and Care of Twist Drills</a>, from the <a href="https://www.gfii.com/brands/cleveland" target="_new">Cleveland Twist Drill Company</a>. This small booklet (58 pages) is a great read, especially the part starting on pg. 54:  "Common Drill Troubles and Causes".</li>
+        <li><a href="Documents/TwistDrillsUseandCare.pdf" target="new">The Use and Care of Twist Drills</a>, from the <a href="https://www.gfii.com/brands/cleveland" target="new">Cleveland Twist Drill Company</a>. This small booklet (58 pages) is a great read, especially the part starting on pg. 54:  "Common Drill Troubles and Causes".</li>
 	</ul>
 
 <h3>Videos &amp; Presentations</h3>
 	<ul>
-		<li><a href="https://youtu.be/KqcMTxrIoPY" target="_new">Sharpen drill bits with Tormek Drill Bit Sharpening Attachment</a> (YouTube video) - a video from Tormek</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/KqcMTxrIoPY" target="new">Sharpen drill bits with Tormek Drill Bit Sharpening Attachment</a> (YouTube video) - a video from Tormek</li>
 		
-		<br>
-		<li><a href="https://youtu.be/kUrJOQryFEg" target="_new">Tormek Live Sharpening Class - Part 6 - Drill bit sharpening</a> (YouTube video) - a video from Tormek.  It's time for drill bit sharpening! Learn how to sharpen your drill bits with maximum precision, to the greatest sharpness. We will show you how to create a 4-facet point which gives the ideal cutting performance.</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/kUrJOQryFEg" target="new">Tormek Live Sharpening Class - Part 6 - Drill bit sharpening</a> (YouTube video) - a video from Tormek.  It's time for drill bit sharpening! Learn how to sharpen your drill bits with maximum precision, to the greatest sharpness. We will show you how to create a 4-facet point which gives the ideal cutting performance.</li>
 		
-		<br>
-		<li><a href="https://youtu.be/pZO4kAKDcRg" target="_new">Tormek DBS-22</a> (YouTube video) - Jeff Fischer prepared this presentation.  Sharpening bits with this jig could not be easier. Takes a little bit of getting used to, but then it is very simple to do a drill bit in a matter of minutes.</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/pZO4kAKDcRg" target="new">Tormek DBS-22</a> (YouTube video) - Jeff Fischer prepared this presentation.  Sharpening bits with this jig could not be easier. Takes a little bit of getting used to, but then it is very simple to do a drill bit in a matter of minutes.</li>
 		
-		<br>
-		<li><a href="https://youtu.be/fSUa1iFUzkM" target="_new">Tormek Drill Bit Sharpening Attachment</a> (YouTube video) - This short demonstration by Alan Holtham shows the set up and use of the Tormek DBS-22 Drill Bit Sharpening Attachment.  One Tormek user noted that he reviews this video each time he uses the DBS-22 (as he does not use it often).</li>
+		<li><a href="https://youtu.be/fSUa1iFUzkM" target="new">Tormek Drill Bit Sharpening Attachment</a> (YouTube video) - This short demonstration by Alan Holtham shows the set up and use of the Tormek DBS-22 Drill Bit Sharpening Attachment.  One Tormek user noted that he reviews this video each time he uses the DBS-22 (as he does not use it often).</li>
 	</ul>
 
 <!-- 
@@ -695,19 +2900,15 @@ includeHTML();
 
 <h3>Web Sites</h3>
 	<ul>
-        <li><a href="indexJigs.html">Jigs, Fixtures, & Modifications for the Tormek</a></li>
-    	    <br>
+        <li style="margin-bottom: 12px;"><a href="indexJigs.html">Jigs, Fixtures, & Modifications for the Tormek</a>
     	    <ul>
-                <li>Some <a href="indexJigs.html#DBS22">DBS-22 Drill Bit Sharpener Modifications</a> are outlined.</li>
+                <li style="margin-bottom: 12px;">Some <a href="indexJigs.html#DBS22">DBS-22 Drill Bit Sharpener Modifications</a> are outlined.</li>
 
-                <br>
-                <li>Mica Schmid posted a <a href="indexJigs.html#DBS22USB">nice USB spacer jig</a> which makes it easer and faster to set the USB relative to the grindstone, and it also helps ensure the stone is consistently flat relative to the USB.</li>
-        	</ul>
+                <li style="margin-bottom: 12px;">Mica Schmid posted a <a href="indexJigs.html#DBS22USB">nice USB spacer jig</a> which makes it easer and faster to set the USB relative to the grindstone, and it also helps ensure the stone is consistently flat relative to the USB.</li>
+        	</ul></li>
 
-        <br>
-        <li><a href="https://gadgetbuilder.com/DrillSharp.html">GadgetBuilder.com</a> - has a page for building drill sharpening jigs.</li>
+        <li style="margin-bottom: 12px;"><a href="https://gadgetbuilder.com/DrillSharp.html">GadgetBuilder.com</a> - has a page for building drill sharpening jigs.</li>
         
-        <br>
         <li><a href="http://www.vikingdrill.com/viking-DrillBitTerms.php">Viking Drill and Tool - Drill Bit Anatomy</a></li>
         
 	</ul>
