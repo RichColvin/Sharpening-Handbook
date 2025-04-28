@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
 <head>
     <title>Sharpening Handbook</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
-<body bgcolor=#E6E6E6 class="" id="">
-<font face="Arial" size="3">
-
-<!-- ################################################### -->
-<!-- Style Sheet for header image max size               -->
-<!-- ################################################### -->
-<style>
-    img.Image { max-width: 1000px;}
-</style>
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
 
 <!-- ################################################### -->
 <!-- Code for Including Standard HTML files on the 	 -->
@@ -60,33 +56,39 @@ includeHTML();
 </script> 
 
 <!-- ################################################### -->
-<!-- Header               			         -->
+<!-- Header                                                                                           -->
 <!-- ################################################### -->
-<table width=100%>
-    <tr valign="TOP">
-   	<td align="center">
-	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
-	</td>
+<table style="width: 100%;">
+    <tr>
+        <td style="        		
+        		vertical-align: top; 
+        		text-align: center;
+        		">
+            <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+        </td>
     </tr>
 </table>
 
-<table width="100%" border=0>
-    <col width="10%">
-    <col width="*">
-    <col width="10%">
-
-    <tr valign="bottom">
-	<td align="left">
-	    <a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
-	</td>
-	<td align="center" valign="top">
-	    <font face= "Palatino" size="6" color=#191970><b>
-	    Harvest Knives
-	    </b></font>
-	</td>
-	<td align="right">
-	    &nbsp;
-	</td>
+<table style="width: 100%;">
+    <tr>
+        <td style="width: 10%;      		
+        		vertical-align: top; 
+        		text-align: left;
+        		">
+      		&nbsp;
+        </td>
+        <td style="  		
+        		vertical-align: top; 
+        		text-align: center;
+        		">
+                <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Harvest Knives</b></p>
+        </td>
+        <td style="width: 10%;      		
+        		vertical-align: top; 
+        		text-align: right;
+        		">
+      		&nbsp;
+        </td>
     </tr>
 </table>
 
@@ -102,10 +104,11 @@ includeHTML();
         margin-top: 0px; margin-bottom: 5px; 
         padding-left: 0px; padding-right: 5px; 
         padding-top: 5px; padding-bottom: 5px; 
-        border: 1px solid darkgray; text-align: left; 
+        border: 1px solid darkgray; 
+        text-align: left; 
         ">
-    <img src="Images/GT-HarvestKnife.png" width="100%" />
-    <font size=2><b><i>Harvest Knife with edges colour coded</i></b></font>
+    <img src="Images/GT-HarvestKnife.png" alt="no image file" style="width: 100%;" />
+    <p class="TextSMImage"><b><i>Harvest Knife with edges colour coded</i></b></p>
 </div>
 
 <div style=" float: right; Width: 350px; 
@@ -113,14 +116,16 @@ includeHTML();
         margin-top: 0px; margin-bottom: 5px; 
         padding-left: 5px; padding-right: 5px; 
         padding-top: 5px; padding-bottom: 5px; 
-        border: 1px solid darkgray; text-align: left;  ">
-    <img src="Images/GT-Knives2.png" Width="100%" />
-    <font size=2><b><i>Edge Angles</i></b></font>
+        border: 1px solid darkgray; 
+        text-align: left;  
+        ">
+    <img src="Images/GT-Knives2.png" alt="no image file" style="width: 100%;" />
+    <p class="TextSMImage"><b><i>Edge Angles</i></b></p>
 </div>
 
 <p><b>Harvest Knives</b> are used for harvesting vegetables and fruit in the garden.
 
-<p>Guidelines shown below are for <b>Included Angles (<font color="darkblue" face="Garamond"><b>&alpha;</b></font>)</b> for both the <font color="red"><b>red</b></font> and the <font color="blue"><b>blue</b></font> edges.  The two edges are discussed separately as they may be sharpened differently.
+<p>Guidelines shown below are for <b>Included Angles (<span style="margin-top: 0; margin-bottom: 0; font: 18px Garamond; color: #191970"><b>&alpha;</b></span>)</b> for both the <span style="color: red;"><b>red</b></span> and the <span style="color: blue;"><b>blue</b></span> edges.  The two edges are discussed separately as they may be sharpened differently.
 
 <div style=" float: left; width: 375px; margin: 5px 5px 5px 5px; padding: 5px; border: 1px solid grey; text-align: left; background-color:#DFD7C8 ">
     <p style="margin-top: 0; margin-bottom: 0; "><i>I cultivate my garden, and my garden cultivates me.</I>
@@ -129,127 +134,229 @@ includeHTML();
 
 <!-- ################################################### -->
 <!-- General Guidelines -->
-<table width="100%" align="center" style="border-collapse: collapse; ">
-    <col width="100px">
-    <col width="75px">
-    <col width="75px">
-    <col width="*">
-
-    <thead>
-    <tr bgcolor="Moccasin" valign="bottom">
-      	<th colspan="999" style="border-style: solid; border-color: black; 
-		border-top-width: thick; border-bottom-width: medium; 
-		border-left-width: thick; border-right-width: thick; ">
-	    <font face="Arial" size="5" color="Blue"><b>
-	    General Guidelines
-	    </b></font>
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr>
+		<th colspan="4" style="background-color: #FFE4B5;
+				text-align: center; 
+				vertical-align: bottom; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: thick; 
+				">
+	    	<p class="TextTableHdrLg"><b>General Guidelines</b></p>
+		</th>
+    </tr>
+    <tr>
+		<th rowspan=2 style="width: 75px; 
+				background-color: #FFE4B5;
+				text-align: center; 
+				vertical-align: bottom; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	<p class="TextTableHdrNorm"><b>Blade Section</b></p>
+		</th>
+		<th colspan=2 style="border-style: solid;
+				background-color: #FFE4B5;
+				text-align: center; 
+				vertical-align: bottom; 
+				padding-left: 5px; padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium; 
+				border-right-width: medium; 
+				">
+		    <p style="margin-top: 0; margin-bottom: 0; font: 26px Garamond; color: #191970"><b>&alpha;</b></p>
+		</th>
+        <th rowspan=2 style="
+				background-color: #FFE4B5;
+				text-align: center; 
+				vertical-align: bottom; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+	    <p class="TextTableHdrNorm"><b>Comments</b></p>
 	</th>
     </tr>
 
-    <tr bgcolor="Moccasin" valign="bottom">
-	<th rowspan=2 style="border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: medium; 
-		border-left-width: thick; border-right-width: medium; ">
-	    <font face="Arial" color="Blue">
-	    Blade Section
-	    </font>
-	</th>
-	<th colspan=2 style="border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: thin; 
-		border-left-width: medium; border-right-width: medium; ">
-	    <font color="Blue" face="Garamond" size=5><b>&alpha;</b></font>
-	</th>
-        <th rowspan=2 style="border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: medium; 
-		border-left-width: medium; border-right-width: thick; ">
-	    <font face="Arial" color="Blue">
-	    Comments
-	    </font>
-	</th>
+    <tr>
+		<th style="width: 65px;
+				background-color: #FFE4B5;
+				text-align: center; 
+				vertical-align: bottom; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; 
+				">
+			<p class="TextTableHdrNorm"><b>Recom.</b></p>
+		</th>
+		<th style="width: 65px;
+				background-color: #FFE4B5;
+				text-align: center; 
+				vertical-align: bottom; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; 
+				">
+			<p class="TextTableHdrNorm"><b>Range</b></p>
+		</th>
     </tr>
-
-    <tr bgcolor="Moccasin" valign="bottom">
-	<th style="border-style: solid; border-color: black; 
-		border-top-width: thin; border-bottom-width: medium; 
-		border-left-width: medium; border-right-width: thin; ">
-	    <font face="Arial" color="Blue">
-	    Recom.
-	    </font>
-	</th>
-	<th style="border-style: solid; border-color: black; 
-		border-top-width: thin; border-bottom-width: medium; 
-		border-left-width: thin; border-right-width: medium; ">
-	    <font face="Arial" color="Blue">
-	    Range
-	    </font>
-	</th>
-    </tr>
-    </thead>
-
-    <tbody>
 
 <!-- Red section -->
-    <tr bgcolor="#FDDEDE" valign="top">
-	<td valign="middle" align="CENTER" style="
-		border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: medium; 
-		border-left-width: thick; border-right-width: medium; ">
-	    <font color="red"><b>Red</b></font>
-	    <br>
-	    <i>(End)</i>
-	</td>
-	<td valign="middle" align="CENTER" style="
-		border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: medium; 
-		border-left-width: medium; border-right-width: thin; ">
-	    <b>24&deg;</b>
-	</td>
-	<td valign="middle" align="CENTER" style="
-		border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: medium; 
-		border-left-width: thin; border-right-width: medium; ">
-	    24&deg; - 30&deg;
-	</td>
-	<td align="LEFT" style="
-		border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: medium; 
-		border-left-width: medium; border-right-width: thick; ">
-	    <p style="margin-top: 0; margin-bottom: 0; ">This part of the knife is used with a push stroke, and a sharp edge will help move it quickly through the plant's stem which is holding the part you want to harvest.
-	</td>
+    <tr>
+		<td style="
+				background-color: #FDDEDE;
+				text-align: center; 
+				vertical-align: middle; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+	    	<span style="color: red;"><b>Red</b></span>
+		    <br>
+		    <i>(End)</i>
+		</td>
+		<td style="
+				background-color: #FDDEDE;
+				text-align: center; 
+				vertical-align: middle; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thin; 
+				">
+		    <b>24&deg;</b>
+		</td>
+		<td style="
+				background-color: #FDDEDE;
+				text-align: center; 
+				vertical-align: middle; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin; 
+				border-right-width: medium; 
+				">
+		    24&deg; - 30&deg;
+		</td>
+		<td style="
+				background-color: #FDDEDE;
+				text-align: left; 
+				vertical-align: top; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+		    <p style="margin-top: 0; margin-bottom: 0; ">This part of the knife is used with a push stroke, and a sharp edge will help move it quickly through the plant's stem which is holding the part you want to harvest.
+		</td>
     </tr>
 
 <!-- Blue section -->
-    <tr bgcolor="#DEE1FD" valign="top">
-	<td valign="middle" align="CENTER" style="
-		border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: thick; 
-		border-left-width: thick; border-right-width: medium; ">
-	    <font color="blue"><b>Blue</b></font>
-	    <br>
-	    <i>(Side)</i>
-	</td>
-	<td valign="middle" align="CENTER" style="
-		border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: thick; 
-		border-left-width: medium; border-right-width: thin; ">
-	    <b>30&deg;</b>
-	</td>
-	<td valign="middle" align="CENTER" style="
-		border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: thick; 
-		border-left-width: thin; border-right-width: medium; ">
-	    30&deg; - 40&deg;
-	</td>
-	<td align="LEFT" style="
-		border-style: solid; border-color: black; 
-		border-top-width: medium; border-bottom-width: thick; 
-		border-left-width: medium; border-right-width: thick; ">
-	    <p style="margin-top: 0; ">This part of the knife is typically used with a pulling motion to cut thru a tougher part of the plant.
+    <tr>
+		<td style="
+				background-color: #DEE1FD;
+				text-align: center; 
+				vertical-align: middle; 
+				border-style: solid; 
+				border-color: black; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thick; 
+				border-right-width: medium; 
+				">
+		    <span style="color: blue;"><b>Blue</b></span>
+		    <br>
+	    	<i>(Side)</i>
+		</td>
+		<td style="
+				background-color: #DEE1FD;
+				text-align: center; 
+				vertical-align: middle; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thin; 
+				">
+		    <b>30&deg;</b>
+		</td>
+		<td style="
+				background-color: #DEE1FD;
+				text-align: center; 
+				vertical-align: middle; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thin; 
+				border-right-width: medium; ">
+		    30&deg; - 40&deg;
+		</td>
+		<td style="
+				background-color: #DEE1FD;
+				text-align: left; 
+				vertical-align: top; 
+				padding-left: 5px; 
+				padding-right: 5px; 
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+		    <p style="margin-top: 0; ">This part of the knife is typically used with a pulling motion to cut thru a tougher part of the plant.
 
-	    <p style="margin-bottom: 0; ">Some of these knives are sold with serrated edges, so the guidance for <a href="GT-Knives-Serrated.html">serrated knifes</a> may be useful.
-	</td>
+		    <p style="margin-bottom: 0; ">Some of these knives are sold with serrated edges, so the guidance for <a href="GT-Knives-Serrated.html">serrated knifes</a> may be useful.
+		</td>
     </tr>
-    </tbody>
 </table>
 
 <!-- ################################################### -->
@@ -260,8 +367,8 @@ includeHTML();
 <h2>Notes &amp; Comments</h2>
 
 <div style="float: right; width:160px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
-    <center><a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" Width=150></a></center>
-    <center><a href="Grindstones.html">Information regarding Grindstones</a></center>
+    <a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="no image file" style="Width: 100%; "></a>
+    <a href="Grindstones.html">Information regarding Grindstones</a>
 </div>
 
 <h3 style="margin-bottom:0px; ">Tormek SVD-110 Notes</h3>

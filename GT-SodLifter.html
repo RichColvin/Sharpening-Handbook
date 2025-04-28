@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: bottom; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: bottom; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+	    <td style="vertical-align: top;  text-align: center; ">
+	        <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Sod Lifters</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<hr>
+
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<div style=" float: right; Width: 350px; 
+        margin-left: 5px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 0px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 1px solid darkgray; text-align: left;  ">
+				<img src="Images/GT-Knives2.png" alt="no image file" style="width: 100%;" />
+    <p class="TextSMImage"><b><i>Edge Angle</i></b></p>
+</div>
+
+<p>Sharpening this tool with the same angle on the top as the bottom helps ensure the tool does not drive up or down when pushing it "horizontally" under the sod.
+
+<hr class="style2">
+
+<table style="width: 230px; 
+		text-align: left; vertical-align: bottom;
+		padding: 5px; 
+		border: 1px solid grey; 
+		border-collapse: collapse;
+		background-color:#b5edb5 
+		">
+    <tr>
+    	<td style="padding: 5px; ">
+		    <p style="margin-top: 0; margin-bottom: 0; "><i>A flower is an educated weed.</i></p>
+				<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Luther Burbank</p>
+		</td>
+    </tr>
+</table>
+                
+<p>A 6&quot; smooth cut <a href="Hand-File-Identification.html" target="new">machinist&rsquo;s hand file</a> is useful to carry in your gardening tools box.  Use it to resharpen the shovel as needed throughout the tool's usage for the day.
+
+<!-- ################################################### -->
+<!-- General Guidelines -->
+<table style="width: 100%; 
+		border-collapse: collapse; ">
+    <tr>
+		<th colspan=4 style=" 
+				background-color: moccasin;
+				text-align: center;
+				vertical-align: bottom;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: thick; 
+				">
+	    	<p class="TextTableHdrLg"><b>General Guidelines</b></p>
+		</th>
+    </tr>
+    <tr>
+		<th style="width: 60px; 
+				background-color: moccasin;
+				text-align: center;
+				vertical-align: bottom;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				">
+		    <span style="color: #191970; font: 24px Garamond; "><b>&alpha;</b></span>
+		</th>
+		<th style="width: 60px;
+				background-color: moccasin;
+				text-align: center;
+				vertical-align: bottom;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				">
+		    <span style="color: #191970; font: 24px Garamond; "><b>&beta;</b></span><sub>Top</sub>
+		</th>
+		<th style="width: 60px;
+				background-color: moccasin;
+				text-align: center;
+				vertical-align: bottom;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				">
+		    <span style="color: #191970; font: 24px Garamond; "><b>&beta;</b></span><sub>Bottom</sub>
+		</th>
+		<th style="
+				background-color: moccasin;
+				text-align: center;
+				vertical-align: bottom;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+		    <p class="TextTableHdrNorm"><b>Notes</b></p>
+		</th>
+    </tr>
+
+<!-- *************************************************** -->
+<!-- Sod Lifters -->
+    <tr>
+		<td style="
+				border-style: solid; 
+				border-color: black; 
+				background-color: #e0e0e0;
+				text-align: center;
+				vertical-align: middle;
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thick; 
+				border-right-width: medium; 
+				">
+		    45&deg;
+		</td>
+		<td style="
+				border-style: solid; 
+				border-color: black; 
+				background-color: #e0e0e0;
+				text-align: center;
+				vertical-align: middle;
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: medium; 
+				">
+		    22.5&deg;
+		</td>
+		<td style="
+				border-style: solid; 
+				border-color: black; 
+				background-color: #e0e0e0;
+				text-align: center;
+				vertical-align: middle;
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: medium; 
+				">
+		    22.5&deg;
+		</td>
+		<td style="
+				border-style: solid; 
+				border-color: black; 
+				background-color: #e0e0e0;
+				text-align: left;
+				vertical-align: middle;
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+			&nbsp;
+		</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<h2>Notes &amp; Comments</h2>
+
+<div style="float: right; width:160px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
+    <a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="no image file" style="Width: 150px;"></a>
+    <a href="Grindstones.html">Information regarding Grindstones</a>
+</div>
+
+<p>These tools are typically stamped ouf of metals which are not terribly hard.  Consider this when selecting sharpening tools:  if too much heat is generated in the sharpening activity, this can easily remove whatever temper was added to the metal.
+
+<!-- ################################################### -->
+<!-- Shaping the edge -->
+<hr class="style1">
+<h3 style="margin-bottom: 0;">Shaping the edge</h3>
+<p style="margin-top: 0;">Shaping the edge:  New shovels I have purchased have an angle (<span style="color: #191970; font: 16px Garamond; "><b>&alpha;</b></span>) of 90&deg;.  Therefore, initial shaping of the edge is to be expected.
+
+<p>A machinist&rsquo;s hand file such as a 12-14&quot; bastard file is often sufficient for this task.
+
+<p>If you use an angle grinder, consider using a 120 grit flap disc.  A metal grinding wheel may be needed for large-scale shaping.  In either case, be sure to not overheat the metal too much:  it weakens the metal.
+    
+<!-- ################################################### -->
+<!-- Sharpening the edge -->
+<hr class="style1">
+<h3 style="margin-bottom: 0;">Sharpening the edge</h3>
+<p style="margin-top: 0;">Use a machinist&rsquo;s hand file.
+    <ol>
+	<li>Start with a 8-10&quot; medium (or second) cut file.</li>
+        <li>Finish with a 6&quot; smooth cut file, then use this file to remove the burr.</li>
+    </ol>
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-GT-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<hr class="style1">
+<h2>More Information</h2>
+
+<h3>Books &amp; Papers</h3>
+    <ul>
+        <li>U.S. War Department's <a href="Documents/TM%209-867%20Care%20and%20Use%20of%20Hand%20Tools.pdf" target="new">TM 9-867 Maintenance and Care of Hand Tools</a>.</li>
+    </ul>
+
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+    <ul>
+		<li><a href="https://youtu.be/R2ifZQOJA7k" target="new"><b>Tormek Live Sharpening Class - Part 1. Knife sharpening</b></a> (YouTube video).</li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Published Articles</h3>
+    <ul>
+		<li></li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Web Sites</h3>
+    <ul>
+		<li></li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Other</h3>
+    <ul>
+		<li></li>
+    </ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
