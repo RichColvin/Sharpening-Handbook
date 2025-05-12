@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
 <head>
     <title>Sharpening Handbook</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
 
-<body bgcolor=#E6E6E6 class="" id="">
-<font face="Arial" size="3">
-
-<!-- ################################################### -->
-<!-- Style Sheet for header image max size               -->
-<!-- ################################################### -->
-<style>
-    img.Image { max-width: 1000px;}
-</style>
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
 
 <!-- ################################################### -->
 <!-- Code for Including Standard HTML files on the 	 -->
@@ -53,42 +49,37 @@ function includeHTML() {
 </script> 
 
 <!-- ################################################### -->
-<!-- Standard horizontal rule definitions		 -->
+<!-- Standard horizontal rule definitions		  		 -->
 <div w3-include-html="include-SiteStandards.html"></div> 
 <script>
 includeHTML();
-</script> 
+</script>
 
 <!-- ################################################### -->
 <!-- Header                                              -->
 <!-- ################################################### -->
-<table width=100%>
-    <tr valign="TOP">
-        <td align="center">
-            <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
-        </td>
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: middle; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+	</td>
     </tr>
 </table>
 
-<table width="100%" border=0>
-    <col width="10%">
-    <col width="*">
-    <col width="10%">
-
-    <tr valign="bottom">
-        <td align="left">
-            <a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
-        </td>
-        <td align="center" valign="top">
-            <font face= "Palatino" size="6" color=#191970><b>
-            Wood Chisel
-            </b></font>
-        </td>
-        <td align="right">
-        	&nbsp;
-        </td>
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	    &nbsp;
+    	</td>
+	<td style="vertical-align: text-top;  text-align: center; ">
+		<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Wood Chisels</b></p>
+    	</td>
+	<td style="text-align: right; width: 10%; ">
+	    &nbsp;
+    	</td>
     </tr>
 </table>
+
 
 <!-- ################################################### -->
 <!-- Body                                                -->
@@ -98,10 +89,7 @@ includeHTML();
 <!-- ################################################### -->
 <!-- Guidance Information -->
 
-<table align="right" width="400px">
-	<col width="50%">
-	<col width="50%">
-
+<table style="float: right; width: 400px; ">
 	<tr>
     	<td>
 			<div style=" float: left; Width: 400px; 
@@ -110,8 +98,8 @@ includeHTML();
         			padding-left: 5px; padding-right: 0px; 
         			padding-top: 5px; padding-bottom: 0px; 
         			border: 1px solid darkgray; text-align: left;  ">
-    			<img src="Images/WW-Chisels-1.png" Width="100%" />
-			    <p style="margin-top: 0; margin-bottom: 0; text-align: left; padding-left: 2pt; "><font size=2><b><i>Primary & Secondary Bevels both ground on a wheel</i></b></font>
+    			<img src="Images/WW-Chisels-1.png" alt="no image file" style="Width: 100%; " />
+			    <p class="TextSMImage"><b><i>Primary & Secondary Bevels both ground on a wheel</i></b></p>
 			</div>
     	</td>
     </tr>
@@ -123,9 +111,9 @@ includeHTML();
         			padding-left: 5px; padding-right: 0px; 
         			padding-top: 5px; padding-bottom: 0px; 
         			border: 1px solid darkgray; text-align: left;  ">
-    			<img src="Images/WW-Chisels-2.png" Width="100%" />
-			    <p style="margin-top: 0; margin-bottom: 0; text-align: left; padding-left: 2pt; "><font size=2><b><i>Primary Bevel ground on a wheel
-                <br>Secondary Bevels ground on a flat stone</i></b></font>
+    			<img src="Images/WW-Chisels-2.png" alt="no image file" style="Width: 100%; " />
+			    <p class="TextSMImage"><b><i>Primary Bevel ground on a wheel
+                <br>Secondary Bevels ground on a flat stone</i></b></p>
 			</div>
     	</td>
     </tr>
@@ -145,16 +133,18 @@ includeHTML();
         padding-left: 5px; padding-right: 0px; 
         padding-top: 5px; padding-bottom: 0px; 
         border: 1px solid darkgray; text-align: left;  ">
-    <img src="Images/WW-ChiselSkew.png" Width="100%" />
-    <p style="margin-top: 0; margin-bottom: 0; text-align: left; padding-left: 2pt; "><font size=2><b><i>Skewed edge angle</i></b></font>
+    <img src="Images/WW-ChiselSkew.png" alt="no image file" style="Width: 100%; " />
+    <p class="TextSMImage"><b><i>Skewed edge angle</i></b></p>
 </div>
 
-<p>If this chisel is to have a skewed end (as shown to the right), it is recommended that <font color="darkblue" face="Garamond"><b>&beta;</b></font> not be greater than 20&deg;.  A more acute angle will cause the chisel to drift to the side when using it.  15&deg; is a better target for the maximum.
+<p>If this chisel is to have a skewed end (as shown to the left), it is recommended that <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span> not be greater than 20&deg;.  A more acute angle will cause the chisel to drift to the side when using it.  <b>15&deg;</b> is a better target for the maximum value for <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span>.
 
-    
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
 <p>&nbsp;
 
-<p><table border=1 width="350px" align="left" style="border: 1px solid grey; border-collapse: collapse;  background-color:#DFD7C8 ">
+<p><table border=1 width="300px" align="left" style="border: 1px solid grey; border-collapse: collapse;  background-color:#DFD7C8 ">
 	<tr>
 		<td align="left">
 			<p style="margin-top: 0; margin-bottom: 0; "><i>There are two men inside the artist, the poet and the craftsman. One is born a poet. One becomes a craftsman.</I>
@@ -169,53 +159,90 @@ includeHTML();
 <p>&nbsp;
 
 <table width="100%" style="border-collapse: collapse; ">
-    <col width="15%">
-    <col width="8%">
-    <col width="10%">
-    <col width="10%">
-    <col width="*">
-    <col width="275px">
-
-    <thead>
-    <tr bgcolor="Moccasin" valign="bottom">
-        <th colspan=999 style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: medium; border-right-width: thick; border-left-width: thick; ">
-            <font face="Arial" size="5" color="Blue">
-            <b>General Guidelines</b></font>
+    <tr style="background-color: Moccasin;">
+        <th colspan=5 style="
+        		text-align: center; 
+        		vertical-align: bottom; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium; 
+				border-left-width: thick;
+				border-right-width: thick; ">
+	    	<p class="TextTableHdrLg"><b>General Guidelines</b></p>
         </th>
     </tr>
-    <tr bgcolor="Moccasin" valign="bottom">
-        <th rowspan=2 style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: thick; border-right-width: medium; border-left-width: thick; ">
-            <font face="Arial" color="Blue">
-            Type
-            </font>
+    <tr style="background-color: Moccasin;">
+        <th rowspan=2 style="width: 175px;
+        		text-align: center; 
+        		vertical-align: bottom; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick;
+				border-right-width: medium; ">
+		    <p class="TextTableHdrNorm"><b>Type</b></p>
         </th>
-        <th colspan=2 style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
-            <font color="blue" face="Garamond" size=5><b>&alpha;</b></font>
+        <th colspan=2 style="
+        		text-align: center; 
+        		vertical-align: bottom; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            <span style="color: #191970; font: 24px Garamond; "><b>&alpha;</b></span>
         </th>
-        <th style="border-style: solid; border-color: black; border-top-width: medium; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
-            <font face= "Garamond" size="5" color="Blue">&beta;</font>
+        <th style="
+        		text-align: center; 
+        		vertical-align: bottom; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            <span style="color: #191970; font: 24px Garamond; "><b>&beta;</b></span>
         </th>
-        <th rowspan=2 colspan=2 style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: thick; border-left-width: medium; ">
-            <font face="Arial" color="Blue">
-            Notes
-            </font>
+        <th rowspan=2 style="
+        		text-align: center; 
+        		vertical-align: bottom; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thick; ">
+		    <p class="TextTableHdrNorm"><b>Notes</b></p>
         </th>
     </tr>
-    <tr bgcolor="Moccasin" valign="bottom">
-        <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
-            <font face="Arial" color="Blue">
-            Primary Bevel
-            </font>
+    <tr style="background-color: Moccasin;">
+        <th style="width: 75px;
+        		text-align: center; 
+        		vertical-align: bottom; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thin; ">
+		    <p class="TextTableHdrNorm"><b>Primary Bevel</b></p>
         </th>
-        <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; "> 
-            <font face="Arial" color="Blue">
-            Secondary (Micro) Bevel
-            </font>
+        <th style="width: 85px;
+        		text-align: center; 
+        		vertical-align: bottom; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: thin;
+				border-right-width: medium; ">
+		    <p class="TextTableHdrNorm"><b>Secondary (Micro) Bevel</b></p>
         </th>
-        <th style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: medium; ">
-            <font face="Arial" color="Blue">
-            Skew
-            </font>
+        <th style="width: 75px;
+        		text-align: center; 
+        		vertical-align: bottom; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+		    <p class="TextTableHdrNorm"><b>Skew</b></p>
         </th>
     </tr>
     </thead>
@@ -223,56 +250,163 @@ includeHTML();
     <tbody>
 
 <!-- Bench Chisels -->
-    <tr bgcolor="White" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: White;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <b>Bench Chisels</b>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             20&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             2&deg; - 5&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: medium; ">
             0&deg; - 15&deg;
         </td>
-        <td align="LEFT" colspan=2 style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: medium; ">
+        <td  style="
+        		text-align: left; 
+        		vertical-align: top; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thick; ">
             &nbsp;
         </td>
     </tr>
 
 <!-- Corner Chisels -->
-    <tr bgcolor="LightGrey" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: thick; "><b>Corner Chisels</b></td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
+    <tr style="background-color: LightGray;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick;
+				border-right-width: medium; ">
+            <b>Corner Chisels</b>
+        </td>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             35&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; ">
-            <font color="DarkGray"><i>n/a</i></font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin;
+				border-right-width: medium; ">
+            <font color="DarkGray"><i>n/a</i></span>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: medium; ">
-            <font color="DarkGray"><i>n/a</i></font>
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            <font color="DarkGray"><i>n/a</i></span>
         </td>
-        <td align="LEFT" colspan=2 style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: medium; ">
+        <td  style="
+        		text-align: left; 
+        		vertical-align: top; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thick; ">
             A mill file (or some other form of safe edge file) is used to sharpen the inside corner of the chisel.
         </td>
     </tr>
 
 <!-- Firmer Chisels -->
-    <tr bgcolor="White" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: White;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <b>Firmer Chisels</b>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             &nbsp;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             &nbsp;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: medium; ">
             &nbsp;
         </td>
-        <td align="LEFT" rowspan=3 colspan=2 style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: thick; border-left-width: medium; ">
+        <td rowspan=3  style="
+        		text-align: left; 
+        		vertical-align: top; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thick; ">
             The secondary bevel needs to be wider :  
             
             <p style="margin-top: 0; margin-bottom: 0;  padding-left: 33pt; padding-right: 33pt; " ><sup>1</sup>/<sub>16</sub>&quot; (0.0625&quot; / 1.5 mm) &nbsp; &nbsp; to 
@@ -280,187 +414,493 @@ includeHTML();
         </td>
     </tr>
 
-    <tr bgcolor="White" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: White;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <i>&nbsp; &nbsp; - Soft Woods</i>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             25&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             2&deg; - 5&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
-            <font color="DarkGray"><i>n/a</i></font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin ; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            <font color="DarkGray"><i>n/a</i></span>
         </td>
     </tr>
 
-    <tr bgcolor="White" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: White;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <i>&nbsp; &nbsp; - Hard Woods</i>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             30&deg;<br>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             2&deg; - 5&deg;<br>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: medium; ">
-            <font color="DarkGray"><i>n/a</i></font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            <font color="DarkGray"><i>n/a</i></span>
         </td>
     </tr>
 
 <!-- Mortise Chisels -->
-    <tr bgcolor="LightGrey" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: LightGrey;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <b>Mortise Chisels</b>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             &nbsp;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             &nbsp;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: medium; ">
             &nbsp;
         </td>
-        <td align="LEFT" rowspan=3 colspan=2 style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: medium; ">
-            The secondary bevel needs to be wider :  
-            
-            <p style="margin-top: 0; margin-bottom: 0;  padding-left: 33pt; padding-right: 33pt; " ><sup>1</sup>/<sub>16</sub>&quot; (0.0625&quot; / 1.5 mm) &nbsp; &nbsp; to 
-            <br><sup>1</sup>/<sub>8</sub>&quot; (0.1250&quot; / 3 mm)
-                    
-            <br>
-
-			<div style=" float: right; Width: 150px; 
-			        margin-left: 5px; margin-right: 0px; 
+        <td rowspan=3  style="
+        		text-align: left; 
+        		vertical-align: top; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thick; ">
+			<div style=" float: right; Width: 125px; 
+			        margin-left: 5px; margin-right: 5px; 
 			        margin-top: 0px; margin-bottom: 5px; 
 			        padding-left: 5px; padding-right: 0px; 
     			    padding-top: 5px; padding-bottom: 0px; 
         			border: 1px solid darkgray; text-align: left;  ">
-    			<img src="Images/WW-Chisel-Mortise.png" Width="100%" />
-    			<p style="margin-top: 0; margin-bottom: 0; text-align: left; padding-left: 2pt; "><font size=2><b><i>Corner to round off</i></b></font>
+    			<img src="Images/WW-Chisel-Mortise.png" alt="no image file" style="width: 100%;" />
+    			<p class="TextSMImage"><b><i<b><i>Corner to round off</i></b></p>
 			</div>
 
-            <br>In <u>The Complete Guide to Sharpening</u>, Leonard Lee recommends rounding off the corner where the sharpened edge meets the top of the chisel.  This allows for easier levering of the waste out of the hole.
-
+            <p style="margin-top: 0;">The secondary bevel needs to be wider :  
+            
+            <p style="margin-top: 0; margin-bottom: 0;  padding-left: 33pt; padding-right: 33pt; " ><sup>1</sup>/<sub>16</sub>&quot; (0.0625&quot; / 1.5 mm) &nbsp; &nbsp; to 
+            <br><sup>1</sup>/<sub>8</sub>&quot; (0.1250&quot; / 3 mm)
+                    
+            <p style="margin-bottom: 0;">In <u>The Complete Guide to Sharpening</u>, Leonard Lee recommends rounding off the corner where the sharpened edge meets the top of the chisel.  This allows for easier levering of the waste out of the hole.
         </td>
     </tr>
 
-    <tr bgcolor="LightGrey" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: LightGrey;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <i>&nbsp; &nbsp; - Soft Woods</i>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             30&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             2&deg; - 5&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: medium; ">
             2&deg; - 5&deg;
         </td>
     </tr>
 
-    <tr bgcolor="LightGrey" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: LightGrey;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <i>&nbsp; &nbsp; - Hard Woods</i>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             35&deg;<br>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             2&deg; - 5&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: medium; ">
             2&deg; - 5&deg;
         </td>
     </tr>
 
 <!-- Paring Chisels -->
-    <tr bgcolor="White" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: White;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <b>Paring Chisels</b>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             &nbsp;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             &nbsp;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            &nbsp;
         </td>
-        <td align="LEFT" rowspan=3 colspan=2 style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
+        <td  rowspan=3 style="
+        		text-align: left; 
+        		vertical-align: top; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thick; ">
             These are typically used without a mallet (i.e., using only hand pressure).
         </td>
     </tr>
 
-    <tr bgcolor="White" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: White;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <i>&nbsp; &nbsp; - General Use</i>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             20&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             2&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: medium; ">
             0&deg; - 15&deg;
         </td>
     </tr>
 
-    <tr bgcolor="White" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: White;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <i>&nbsp; &nbsp; - Fine work</i>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             15&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             2&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: medium; ">
             0&deg; - 15&deg;
         </td>
     </tr>
 
 <!-- Scraping Chisels -->
-    <tr bgcolor="LightGrey" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: LightGrey;">
+        <th style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <b>Scraping Chisels</b>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             70&deg; - 75&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; ">
-            <font color="DarkGray"><i>n/a</i></font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin;
+				border-right-width: medium; ">
+            <font color="DarkGray"><i>n/a</i></span>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: medium; ">
-            <font color="DarkGray"><i>n/a</i></font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            <font color="DarkGray"><i>n/a</i></span>
         </td>
-        <td align="LEFT" colspan=2 style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: medium; ">
+        <td  style="
+        		text-align: left; 
+        		vertical-align: top; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thick; ">
             Could be as high as 90&deg;.
         </td>
     </tr>
 
 <!-- Slick Chisels -->
-    <tr bgcolor="White" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: thick; ">
+    <tr style="background-color: White;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thick;
+				border-right-width: medium; ">
             <b>Slick Chisels</b>
             <br>
             (large paring chisels)
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             20&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             2&deg;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: medium; border-left-width: medium; ">
-            <font color="DarkGray"><i>n/a</i></font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            <font color="DarkGray"><i>n/a</i></span>
         </td>
-        <td align="LEFT" colspan=2 style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: medium; ">
+        <td style="
+        		text-align: left; 
+        		vertical-align: top; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium; 
+				border-left-width: medium;
+				border-right-width: thick; ">
             When used for dovetail work, they are sharpened flat across.  Otherwise, they are sharpened with a slight crown.
             <br>
             <br>
@@ -469,99 +909,201 @@ includeHTML();
     </tr>
 
 <!-- Utility Chisels -->
-    <tr bgcolor="#d8ecff" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: thick; ">
-            <b><font color="Blue">Utility Chisels<font></b>
+    <tr style="background-color: #d8ecff;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: thick;
+				border-right-width: medium; ">
+            <b><span style="color: DarkBlue;">Utility Chisels</span></b>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: thin; ">
             &nbsp;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: thin; border-left-width: thin; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: thin;
+				border-right-width: medium; ">
             &nbsp;
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: medium; ">
             &nbsp;
         </td>
-        <td align="LEFT" style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thin; border-right-width: 0; border-left-width: thin; ">
-            The projection jig shown to the right is a great, quick-and-dirty tool that can help to quickly re-sharpen utility chisels.
-        </td>
-        <td align="CENTER" rowspan=4 style="border-style: solid; border-color: black; border-top-width: thick; border-bottom-width: thick; border-right-width: thick; border-left-width: 0; ">
-			
-			<div style=" float: right; Width: 250px; 
-			        margin-left: 5px; margin-right: 0px; 
-        			margin-top: 0px; margin-bottom: 5px; 
+        <td rowspan=4 style="
+        		text-align: left; 
+        		vertical-align: top; 
+        		border-style: solid; border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium;
+				border-right-width: thick; ">
+			<div style=" float: right; Width: 150px; 
+			        margin-left: 5px; margin-right: 5px; 
+        			margin-top: 5px; margin-bottom: 5px; 
         			padding-left: 5px; padding-right: 5px; 
         			padding-top: 5px; padding-bottom: 0px; 
         			border: 1px solid darkgray; text-align: left;  ">
-    			<a href="indexJigs.html#ProjJigTTS100" target="_new"><img src="Images/TTS-100 ProjJig Orth sm.png" width="100%" /></a>
-    			<p style="margin-top: 0; margin-bottom: 0; text-align: left; padding-left: 2pt; "><font size=2><b><i>Projection Jig for using the TTS-100 with the SE-77</i></b></font>
+    			<a href="Jigs-ProjectionTTS-100.html" target="_new"><img src="Images/TTS-100 ProjJig Orth sm.png" alt="no image file" style="width: 100%;" /></a>
+    			<p class="TextSMImage"><b><i<b><i>Projection Jig for using the TTS-100 with the SE-77</i></b></span>
 			</div>
+            <p style="margin-top: 0;">The projection jig shown to the right is a great, quick-and-dirty tool that can help to quickly re-sharpen utility chisels (click on the image to get to the details for this jig).
+            
+                <ul>
+                    <li>Narrow = &lt; <sup>3</sup>/<sub>8</sub>&quot; wide</li>
+                    <li>Standard = <sup>3</sup>/<sub>8</sub> - 1&quot; wide</li>
+                    <li>Wide = &gt; 1&quot; wide</li>
+                </ul>
+
         </td>
     </tr>
 
-    <tr bgcolor="#d8ecff" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: thick; ">
-            <font color="Blue">
-            <i>&nbsp; &nbsp; - Narrow</i>
-            </font>
+    <tr style="background-color: #d8ecff;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thick;
+				border-right-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; padding-left: 15pt; color: DarkBlue;">Narrow</p>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
-            <font color="Blue">
-            30&deg;
-            <font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: thin; ">
+            <span style="color: DarkBlue;">30&deg;</span>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: thin; ">
-            <font color="Blue">2&deg; - 5&deg;<br></font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thin;
+				border-right-width: medium; ">
+            <span style="color: DarkBlue;">2&deg; - 5&deg;</span>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
-            <font color="Blue">0&deg; - 15&deg;</font>
-        </td>
-        <td align="LEFT" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
-            < <sup>3</sup>/<sub>8</sub>&quot; (8 mm) wide
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            <span style="color: DarkBlue;">0&deg; - 15&deg;</span>
         </td>
     </tr>
 
-    <tr bgcolor="#d8ecff" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: thick; ">
-            <font color="Blue">
-            <i>&nbsp; &nbsp; - Standard</i>
-            </font>
+    <tr style="background-color: #d8ecff;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thick;
+				border-right-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; padding-left: 15pt; color: DarkBlue;">Standard</p>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
-            <font color="Blue">
-            25&deg;
-            </font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: thin; ">
+            <span style="color: DarkBlue;">25&deg;</span>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: thin; ">
-            <font color="Blue">2&deg; - 5&deg;<br></font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: thin;
+				border-right-width: medium; ">
+            <span style="color: DarkBlue;">2&deg; - 5&deg;<br></span>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: medium; border-left-width: medium; ">
-            <font color="Blue">0&deg; - 15&deg;</font>
-        </td>
-        <td align="LEFT" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thin; border-right-width: thin; border-left-width: medium; ">
-            <sup>3</sup>/<sub>8</sub> - 1&quot; (8 - 25 mm) wide
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            <span style="color: DarkBlue;">0&deg; - 15&deg;</span>
         </td>
     </tr>
 
-    <tr bgcolor="#d8ecff" valign="top">
-        <td style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thick; ">
-            <font color="Blue">
-            <i>&nbsp; &nbsp; - Wide</i>
-            </font>
+    <tr style="background-color: #d8ecff;">
+        <td style="
+        		text-align: left; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thick; 
+				border-left-width: thick;
+				border-right-width: medium; ">
+            <p style="margin-top: 0; margin-bottom: 0; padding-left: 15pt; color: DarkBlue;">Wide</p>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
-            <font color="Blue">
-            20&deg;
-            </font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thick; 
+				border-left-width: medium;
+				border-right-width: thin; ">
+            <span style="color: DarkBlue;">20&deg;</span>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: thin; ">
-            <font color="Blue">2&deg; - 5&deg;<br></font>
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thick; 
+				border-left-width: thin;
+				border-right-width: medium; ">
+            <span style="color: DarkBlue;">2&deg; - 5&deg;</span>
         </td>
-        <td align="CENTER" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: medium; border-left-width: medium; ">
-            <font color="Blue">0&deg; - 15&deg;</font>
-        </td>
-        <td align="LEFT" style="border-style: solid; border-color: black; border-top-width: thin; border-bottom-width: thick; border-right-width: thin; border-left-width: medium; ">
-            > 1&quot; (25 mm) wide
+        <td style="
+        		text-align: center; 
+        		vertical-align: middle; 
+        		border-style: solid; border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thick; 
+				border-left-width: medium;
+				border-right-width: medium; ">
+            <span style="color: DarkBlue;">0&deg; - 15&deg;</span>
         </td>
     </tr>
     </tbody>
@@ -591,22 +1133,22 @@ includeHTML();
  
 <hr class="style3">
 
-<table width="100%">
-	<tr valign="top">
-		<td width="50%">
+<table style="width: 100%;  ">
+	<tr>
+        <td style="width: 50%;
+        		text-align: left; 
+        		vertical-align: top;">
 			<h3>SE-77 Square Edge Jig</h3>
-
-			    <div style="float: right; width:175px; 
-			        	margin-left: 5px; margin-right: 0px; 
-    				    margin-top: 0px; margin-bottom: 5px; 
-        				padding-left: 5px; padding-right: 5px; 
-        				padding-top: 5px; padding-bottom: 5px; 
-        				border: 1px solid darkgray; 
-        				text-align: left;  ">
-			        <IMG SRC="Images/SE-77c.png" width="100%">
-				    <p style="margin-top: 0; margin-bottom: 0; text-align: left; padding-left: 2pt; "><font size=2><b><i>SE-77 square edge jig</i></b></font>
-			    </div>
-
+		    <div style="float: right; width:175px; 
+		        	margin-left: 5px; margin-right: 0px; 
+   				    margin-top: 0px; margin-bottom: 5px; 
+       				padding-left: 5px; padding-right: 5px; 
+       				padding-top: 5px; padding-bottom: 5px; 
+       				border: 1px solid darkgray; 
+       				text-align: left;  ">
+		        <IMG SRC="Images/SE-77c.png" alt="no image file" style="width: 100%;">
+			    <p class="TextSMImage"><b><i<b><i>SE-77 square edge jig</i></b></span>
+		    </div>
     		<p style="margin-top: 0;">Some have mentioned that it is a bit tricky to get the alignment correct for chisels using this jig.  That said, this jig is very useful for cambering plane blades, so it is useful to have if you sharpen those also.
             
     		<p>Shorter chisels won't always work in this jig. The MB-102 Multi Base can alleviate this issue. 
@@ -618,19 +1160,20 @@ includeHTML();
         		    <li>SE-77 with the MB-100</li>
 		        </ul>
 		</td>
-		<td width="50%">
+        <td style="width: 50%;
+        		text-align: left; 
+        		vertical-align: top;">
 			<h3>SE-76 Square Edge Jig</h3>
-
-			    <div style="float: right; width:165px; 
-			        	margin-left: 5px; margin-right: 0px; 
-    				    margin-top: 0px; margin-bottom: 5px; 
-        				padding-left: 5px; padding-right: 5px; 
-        				padding-top: 5px; padding-bottom: 5px; 
-        				border: 1px solid darkgray; 
-        				text-align: left;  ">
-			        <IMG SRC="Images/SE-76.png" width="100%">
-				    <p style="margin-top: 0; margin-bottom: 0; text-align: left; padding-left: 2pt; "><font size=2><b><i>SE-76 square edge jig</i></b></font>
-			    </div>
+		    <div style="float: right; width:165px; 
+		        	margin-left: 5px; margin-right: 0px; 
+   				    margin-top: 0px; margin-bottom: 5px; 
+       				padding-left: 5px; padding-right: 5px; 
+       				padding-top: 5px; padding-bottom: 5px; 
+       				border: 1px solid darkgray; 
+       				text-align: left;  ">
+		        <IMG SRC="Images/SE-76.png" alt="no image file" style="width: 100%;">
+			    <p class="TextSMImage"><b><i<b><i>SE-76 square edge jig</i></b></span>
+		    </div>
 
    			<p style="margin-top: 0;">This is a great jig to use for sharpening chisels, including skewed edges.  However shorter chisels won't always work in this jig.  If you have some of your grandfather's old chisels around which you want to use (other to open paint cans), consider using the SVH-60.
             
@@ -644,38 +1187,39 @@ includeHTML();
     		<p style="margin-bottom: 0;">The SE-77 has replaced this jig and the SE-76 is hard to find.
 		</td>
 	</tr>
-	<tr valign="top">
-		<td>
+	<tr>
+        <td style="
+        		text-align: left; 
+        		vertical-align: top;">
 			<h3>SVS-38 Short Tool Jig</h3>
-
-
-			    <div style="float: right; width:80px; 
-			        	margin-left: 5px; margin-right: 0px; 
-    				    margin-top: 0px; margin-bottom: 5px; 
-        				padding-left: 5px; padding-right: 5px; 
-        				padding-top: 5px; padding-bottom: 5px; 
-        				border: 1px solid darkgray; 
-        				text-align: left;  ">
-			        <IMG SRC="Images/SVS-38a.png" width="100%">
-				    <p style="margin-top: 0; margin-bottom: 0; text-align: left; padding-left: 2pt; "><font size=2><b><i>SVS-38 short tool jig</i></b></font>
-			    </div>
+		    <div style="float: right; width:80px; 
+		        	margin-left: 5px; margin-right: 0px; 
+   				    margin-top: 0px; margin-bottom: 5px; 
+       				padding-left: 5px; padding-right: 5px; 
+       				padding-top: 5px; padding-bottom: 5px; 
+       				border: 1px solid darkgray; 
+       				text-align: left;  ">
+		        <IMG SRC="Images/SVS-38a.png" alt="no image file" style="width: 100%;">
+			    <p class="TextSMImage"><b><i<b><i>SVS-38 short tool jig</i></b></span>
+		    </div>
 
     		<p style="margin-top: 0; margin-bottom: 0; ">This jig is also useful for sharpening chisels where there is not enough length to use either of the two jigs listed above.
 		</td>
 		
-		<td>
+        <td style="
+        		text-align: left; 
+        		vertical-align: top;">
 			<h3>SVH-60 Straight Edge Jig</h3>
-
-			    <div style="float: right; width:175px; 
-			        	margin-left: 5px; margin-right: 0px; 
-    				    margin-top: 0px; margin-bottom: 5px; 
-        				padding-left: 5px; padding-right: 5px; 
-        				padding-top: 5px; padding-bottom: 5px; 
-        				border: 1px solid darkgray; 
-        				text-align: left;  ">
-			        <IMG SRC="Images/SVH-60.png" width="100%">
-				    <p style="margin-top: 0; margin-bottom: 0; text-align: left; padding-left: 2pt; "><font size=2><b><i>SVH-60 straight edge jig</i></b></font>
-			    </div>
+		    <div style="float: right; width:175px; 
+		        	margin-left: 5px; margin-right: 0px; 
+   				    margin-top: 0px; margin-bottom: 5px; 
+       				padding-left: 5px; padding-right: 5px; 
+       				padding-top: 5px; padding-bottom: 5px; 
+       				border: 1px solid darkgray; 
+       				text-align: left;  ">
+		        <IMG SRC="Images/SVH-60.png" alt="no image file" style="width: 100%;">
+			    <p class="TextSMImage"><b><i<b><i>SVH-60 straight edge jig</i></b></span>
+		    </div>
 
     		<p style="margin-top: 0;">This is the original jig for sharpening chisels and plane blades.  It is no longer being made which is unfortunate as it is really great for holding shorter chisels.  If you have shorter chisels, consider getting one from the used tools market.
             
@@ -698,50 +1242,41 @@ includeHTML();
 
 <h3>Books &amp; Papers</h3>
 	<ul>
-        <li><u>The Complete Guide to Sharpening</u>, by Leonard Lee (2003).  This is an excellent reference, and is recommended for every sharpener's library.</li>
+        <li style="margin-bottom: 12px;"><u>The Complete Guide to Sharpening</u>, by Leonard Lee (2003).  This is an excellent reference, and is recommended for every sharpener's library.</li>
 
-        <br>
-        <li>U.S. War Department's <a href="Documents/TM 9-867 Care and Use of Hand Tools.pdf" target="_new">TM 9-867 Maintenance and Care of Hand Tools</a>.  Setup of the plane for various uses is nicely done.</li>
+        <li style="margin-bottom: 12px;">&ldquo;New Breed of Grinding Wheels&rdquo;, by Chris Gochnour in  &ldquo;Fine Woodworking&rdquo;. May/June 2025.  Chris tested the sharpening of plane blades and chisels, comparing the use of traditional grindstones (on a high speed grinder) vs. CBN wheels.</li>
 
-        <br>
+        <li style="margin-bottom: 12px;">U.S. War Department's <a href="Documents/TM 9-867 Care and Use of Hand Tools.pdf" target="_new">TM 9-867 Maintenance and Care of Hand Tools</a>.  Setup of the plane for various uses is nicely done.</li>
+
         <li><u>Sharpen This</u>, by Christopher Schwarz (2022).  This is unique as it was written by a woodworker from the reference of his own sharpening.</li>
  	</ul>
 
 <h3>Videos &amp; Presentations</h3>
 	<ul>
-		<li><a href="https://youtu.be/QlScXCdisAo" target="_new">Tormek Live Sharpening Class - Part 3 - Chisels, plane irons & Tormek grinding wheels</a> (YouTube video).  Sebastien and Wolfgang offer some great tips on the sharpening of chisels & plane irons using the various Tormek grinding wheels, including the use of the diamond wheels.</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/QlScXCdisAo" target="_new">Tormek Live Sharpening Class - Part 3 - Chisels, plane irons & Tormek grinding wheels</a> (YouTube video).  Sebastien and Wolfgang offer some great tips on the sharpening of chisels & plane irons using the various Tormek grinding wheels, including the use of the diamond wheels.</li>
 			<ul>
 				<li>At 00:46, there is a great explanation of sharpening a tool with a radiused end using the SE-77 Square Edge Jig.</li>
 				<li>At 00:52, there is a great explanation of how to use the MB-100 Multi Base.</li>
 			</ul>
 		
-		<br>
-		<li><a href="https://youtu.be/3r_1mZ9XjIs" target="_new">Tormek Live Sharpening Class - Part 9 - Sharpen a flat bevel with Tormek MB-100 on a diamond wheel</a> (YouTube video).  In this episode we learn how to use the Tormek MB-100 Multi Base to sharpen a completely flat bevel &#9660;, on the side of Tormek's diamond wheels DC-250, DF-250 and DE-250. For some tools, such as  	&#x1f3bb; luthier knives,&#x1F52A; Kiridashi knives, v-tools, chip carving knives and Japanese plane irons, a completely flat surface on the bevel is preferred over a slightly concave, which you get when you sharpen on the rounded part of the grinding wheel. For some people this is more of a personal preference.
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/3r_1mZ9XjIs" target="_new">Tormek Live Sharpening Class - Part 9 - Sharpen a flat bevel with Tormek MB-100 on a diamond wheel</a> (YouTube video).  In this episode we learn how to use the Tormek MB-100 Multi Base to sharpen a completely flat bevel &#9660;, on the side of Tormek's diamond wheels DC-250, DF-250 and DE-250. For some tools, such as  	&#x1f3bb; luthier knives,&#x1F52A; Kiridashi knives, v-tools, chip carving knives and Japanese plane irons, a completely flat surface on the bevel is preferred over a slightly concave, which you get when you sharpen on the rounded part of the grinding wheel. For some people this is more of a personal preference.
 
         	<p style="margin-bottom: 0;">Regardless of what might be the reason to want a flat bevel, S&egrave;bastian and Wolfgang show how to achieve it with your Tormek wet sharpening system,  They will also touch upon the differences between the different types of bevels.</li>
 
-		<br>
-		<li><a href="https://youtu.be/Sd7ARqci4GY" target="_new">Chisel Sharpening</a> (YouTube video).  Vincent Chicone owns a cabinet making shop and uses an old Tormek 2000 to sharpen his tools. This video is really good at showing how he flattens the back on the side of the SG grindstone.</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/Sd7ARqci4GY" target="_new">Chisel Sharpening</a> (YouTube video).  Vincent Chicone owns a cabinet making shop and uses an old Tormek 2000 to sharpen his tools. This video is really good at showing how he flattens the back on the side of the SG grindstone.</li>
 
-		<br>
-		<li><a href="https://youtu.be/5yj16u7udlw" target="_new">Sharpening with Garrett Hack - Hollow Grinding on Chisels and Plane Blades</a> (YouTube video)</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/5yj16u7udlw" target="_new">Sharpening with Garrett Hack - Hollow Grinding on Chisels and Plane Blades</a> (YouTube video)</li>
 
-		<br>
-		<li><a href="https://youtu.be/gpYnZi77mcw" target="_new">Hollow-grinding a chisel with a Dremel tool</a> (YouTube video)</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/gpYnZi77mcw" target="_new">Hollow-grinding a chisel with a Dremel tool</a> (YouTube video)</li>
 
-		<br>
-		<li><a href="https://youtu.be/KZ07gPtB6pg" target="_new">Tormek SE-76 Square Edge Jig</a> (YouTube video)</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/KZ07gPtB6pg" target="_new">Tormek SE-76 Square Edge Jig</a> (YouTube video)</li>
 
-		<br>
-		<li><a href="https://youtu.be/FCV1EkboiGo" target="_new">Using the SE-77 Jig to Camber a Plane Blade on the Tormek Sharpener</a> (YouTube video)</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/FCV1EkboiGo" target="_new">Using the SE-77 Jig to Camber a Plane Blade on the Tormek Sharpener</a> (YouTube video)</li>
 
-		<br>
-		<li><a href="https://youtu.be/6lJHxoQWO8U" target="_new">Tormek SVH-60 Straight Edge Jig</a> (YouTube video).  This jig is no longer sold, but is quite useful for short tools.</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/6lJHxoQWO8U" target="_new">Tormek SVH-60 Straight Edge Jig</a> (YouTube video).  This jig is no longer sold, but is quite useful for short tools.</li>
 
-		<br>
-		<li><a href="https://youtu.be/zFmGfDULpiQ" target="_new">Tormek AngleMaster WM-200</a> (YouTube video)</li>
+		<li style="margin-bottom: 12px;"><a href="https://youtu.be/zFmGfDULpiQ" target="_new">Tormek AngleMaster WM-200</a> (YouTube video)</li>
 
-		<br>
 		<li><a href="https://youtu.be/hpsxVg8SFF4" target="_new">Tormek Turning Tool Setter TTS-100</a> (YouTube video)</li>
 	</ul>
 
