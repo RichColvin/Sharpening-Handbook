@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: bottom; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: bottom; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+	<td style="vertical-align: top;  text-align: center; ">
+	    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Crack Weeder</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	    &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                  			         -->
+<!-- ################################################### -->
+<hr>
+
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<table style="width: 100%;
+	margin-left: 5px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 5px; 
+	">
+    <tr>
+	<td rowspan=3 style="width: 175px;
+		text-align: left; 
+		vertical-align: top; 
+		">
+	    <div style="width: 90%;
+		    margin-left: 0px; margin-right: 0px; 
+		    margin-top: 0px; margin-bottom: 5px; 
+		    padding-left: 5px; padding-right: 0px; 
+		    padding-top: 0px; padding-bottom: 5px; 
+		    border: 1px solid darkgray; text-align: left; 
+		    text-align: left; 
+		    vertical-align: top; 
+		    ">
+		<img src="Images/GT-CrackWeeder.png" alt="no image" style="width: 100%;" />
+		<p class="TextSMImage"><b><i>Crack Weeder</i></b></p>
+	    </div>
+	</td>
+
+	<td rowspan=3 style="
+		text-align: left; 
+		vertical-align: top; 
+		">
+	    <p style="margin-top: 0;">The <b>Crack Weeder</b> is used for uprooting weeds in bricks and other minor activities in the garden.  
+		<ul>
+		    <li>The hooked side is used to drag between the bricks, and is not sharpened, though it may need to be re-ground to not have the edges rounded over.</li>
+		    <li>The back edge (bottom, right in the picture to the left) may be sharpened for use as needed. Guidelines shown below are for <b>Included Angles</b> (<span style="font: 16px Garamond;"><b>&alpha;</b></span>).  The two edges could be sharpened differently, but that is not typically done.</li>
+		</ul>
+
+	    <hr class="style2">
+
+	    <p>There can be a debate about how sharp the back side knife should be.  Notes regarding this are below in the <b>Notes &amp; Comments</b> section.
+	</td>
+
+	<td style="width: 350px;
+		border-style: solid; 
+		border-color: darkgray; 
+		border-top-width: thin; 
+		border-bottom-width: thin;
+		border-left-width: thin; 
+		border-right-width: thin; 
+		padding-left: 5px; 
+		padding-right: 0px; 
+		padding-top: 5px; 
+		padding-bottom: 5px; 
+		">
+	    <img src="Images/GT-Knives.png" alt="no image file" style="width: 100%;" />
+	    <p class="TextSMImage"><b><i>Edge Angles</i></b></p>
+	</td>
+    </tr>
+
+    <tr>
+	<td>
+	    &nbsp;
+	</td>
+    </tr>
+
+    <tr>
+	<td style="
+		border-style: solid; 
+		border-color: darkgray; 
+		border-top-width: thin; 
+		border-bottom-width: thin;
+		border-left-width: thin; 
+		border-right-width: thin; 
+		padding-left: 5px; 
+		padding-right: 5px; 
+		padding-top: 5px; 
+		padding-bottom: 5px;
+		background-color:#b5edb5; 
+		">
+	    <p style="margin-top: 0; margin-bottom: 0; "><i>Dandelions, like all things in nature, are beautiful when you take the time to pay attention to them.</I>
+		<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">June Stoyer
+	</td>
+    </tr>
+</table>
+
+
+
+<!-- ################################################### -->
+<!-- General Guidelines -->
+<table style="border-collapse: collapse; width: 100%; ">
+    <tr>
+        <th colspan=2 style="
+		background-color: Moccasin;
+        	border-style: solid; 
+        	border-color: black; 
+		border-top-width: thick; 
+		border-bottom-width: medium;
+		border-left-width: thick; 
+		border-right-width: thick; 
+		text-align: center; 
+		vertical-align: bottom; 
+		">
+	    <p class="TextTableHdrLg"><b>General Guidelines</b></p>
+	</th>
+    </tr>
+    <tr>
+        <th style="
+		width: 75px;
+        	background-color: Moccasin;
+        	border-style: solid; 
+        	border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium;
+		border-left-width: thick; 
+		border-right-width: medium; 
+		text-align: center; 
+		vertical-align: bottom; 
+		">
+	    <span style="font: 30px Garamond; color: #191970; "><b>&alpha;</b></span>
+	</th>
+        <th style="
+        	background-color: Moccasin;
+        	border-style: solid; 
+        	border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium;
+		border-left-width: medium; 
+		border-right-width: thick; 
+		text-align: center; 
+		vertical-align: bottom; 
+		">
+	    <p class="TextTableHdrNorm"><b>Notes</b></p>
+	</th>
+    </tr>
+
+    <tr>
+        <td style="
+       		width: 50px;
+       		background-color: White;
+       		border-style: solid; 
+       		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: thick;
+		border-left-width: thick; 
+		border-right-width: medium; 
+		text-align: center; 
+		vertical-align: middle; 
+		">
+	    35&deg; - 40&deg;
+	</td>
+        <td style="
+       		background-color: White;
+       		border-style: solid; 
+       		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: thick;
+		border-left-width: medium; 
+		border-right-width: thick; 
+		text-align: left; 
+		vertical-align: bottom; 
+		">
+	    <p style="margin-top: 0; margin-bottom: 0; ">This edge will get banged around a bit, so it could even be ground up to 45&deg; or 50&deg;.
+	</td>
+    </tr>
+</table>
+
+
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<!-- 
+<hr class="style1">
+ -->
+<h2>Notes &amp; Comments</h2>
+
+<div style="float: right; width:160px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
+    <a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="no image" style="width: 150px;" ></a>
+    <a href="Grindstones.html">Information regarding Grindstones</a>
+</div>
+
+<!-- ################################################### -->
+<!-- How Sharp? -->
+<h3 style="margin-bottom: 0;">How Sharp Should a Crack Weeder Be?</h3>
+<p style="margin-top: 0;  margin-bottom: 6px;">The gardener needs to decide how sharp the back edge of the Crack Weeder should be based on the activities for which the tool will be used.  But in general, it should less sharp than tools like hoes.
+
+<!-- ################################################### -->
+<!-- Tormek Notes -->
+<p><hr class="style2">
+<h3 style="margin-bottom: 0;">Tormek Notes</h3>
+<p style="margin-top: 0;">The Tormek SG-250 grindstone works well for sharpening this tool.  Also, grinding the outside edge using the Tormek's vertical position (with the grindstone rotating towards the edge) is recommended. 
+
+<p>Because the blade is curved, the KS-123 does not work for this application.
+
+<!-- ################################################### -->
+<!-- Bench Grinders -->
+<p><hr class="style2">
+<h3 style="margin-bottom: 0;">Bench &amp; Angle Grinders</h3>
+<p style="margin-top: 0;">Using a bench or angle grinder is not recommended as this will surely overheat the tool, removing the temper from the edge.  Additionally, the shaping of the edge is difficult to control.
+
+<!-- ################################################### -->
+<!-- Sharpening the Edge -->
+<p><hr class="style2">
+<h3 style="margin-bottom: 0;">Sharpening the Edge</h3>
+
+<div style="float: left; width: 120px;
+        margin-left: 0px; margin-right: 5px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 0px; padding-right: 0px; 
+        padding-top: 0px; padding-bottom: 5px; 
+        border: 1px solid darkgray; text-align: left; 
+        ">
+    <img src="Images/KJ-45%20Bottom%20Stop.png" alt="no image" style="width: 100%;" />
+    <p class="TextSMImage"><b><i>KJ-45 Bottom Stop</i></b></p>
+</div>
+
+<p style="margin-top: 0;"><b>If using a Tormek</b> with the KJ-45 jig, the bottom stop is recommended (as indicated in the picture to the left). This makes setting the angle far easier.
+
+<p>The picture on the right shows a Japanese weeding sickle being sharpened on a Tormek (the blue piece behind the grinding wheel is a <a href="indexJigs.html#DripTray">drip tray</a>).
+<hr class="style2">
+    
+<p><b>If you choose to use a machinist&rsquo;s hand file</b>,
+    <ol>
+	<li>Start with a 8-10&quot; medium (or second cut) file.</li>
+	<li>Finish with a 6&quot; smooth cut file, then use this file to remove the burr.</li>
+    </ol>
+
+<!-- ################################################### -->
+<!-- Micro Bevel Notes -->
+<p><hr class="style2">
+<h3 style="margin-bottom: 0;">Micro Bevel Notes</h3>
+<p style="margin-top: 0;">The <a href="MicroBevels.html">micro bevel</a> makes the resharpening of this tool easier.  If you sharpen the tool using a machinist's hand file, this is recommended.  It is less critical if you use a Tormek grinder for the sharpening.
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-GT-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<!-- 
+<hr class="style1">
+<h2>More Information</h2>
+ -->
+
+<!-- 
+<h3>Books &amp; Papers</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Web Sites</h3>
+    <ul>
+	<li><a href="https://www.gardenninja.co.uk/hori-hori-japanese-gardening-knife-guide/" target="new">Hori Hori Explained: The Best Japanese Gardening Knife Guide</a> - the BBC's Lee Burkhill explains a lot about these tools, and has some great videos on how to use them.</li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+    <ul>
+	<li><a href="https://youtu.be/P-yCM0iHpyM?si=Tg_Jpk-KG8m3nFFq" target="new">Hori Hori Japanese Gardening Knife Guide </a> - The Garden Ninja, Lee Burkhill, shows you how to use a Hori Hori Japanese gardening knife.</li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Published Articles</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Other</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
