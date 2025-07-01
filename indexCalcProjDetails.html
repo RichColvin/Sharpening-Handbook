@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
 <head>
     <title>Sharpening Handbook</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+
+<script type="text/javascript" async src="path-to-MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
 </head>
 
-<body bgcolor=#E6E6E6 class="" id="">
-<font face="Arial" size="3">
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
 
-<!-- ################################################### -->
-<!-- Style Sheet for header image max size               -->
-<!-- ################################################### -->
-<style>
-    img.Image { max-width: 1000px;}
-</style>
 
 <!-- ################################################### -->
 <!-- Code for Including Standard HTML files on the 	 -->
@@ -53,86 +52,83 @@ function includeHTML() {
 </script> 
 
 <!-- ################################################### -->
-<!-- Standard horizontal rule definitions		 -->
+<!-- Standard horizontal rule definitions		  		 -->
 <div w3-include-html="include-SiteStandards.html"></div> 
 <script>
 includeHTML();
-</script> 
+</script>
 
 <!-- ################################################### -->
-<!-- Header                                                                                           -->
+<!-- Header                                              -->
 <!-- ################################################### -->
-    <table width=100%>
-        <tr valign="TOP">
-            <td align="center">
-                <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
-            </td>
-        </td>
-    </table>
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: middle; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+	</td>
+    </tr>
+</table>
 
-    <table width="100%" border=0>
-        <col width="10%">
-        <col width="*">
-        <col width="10%">
-
-        <tr valign="bottom">
-            <td align="left">
-                <a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
-            </td>
-            <td align="center" valign="top">
-                <font face= "Palatino" size="6" color=#191970><b>
-                Calculations used for calculating SVM Knife Projection
-                </b></font>
-            </td>
-            <td align="right">
-            </td>
-        </tr>
-    </table>
-
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+    	<td style="vertical-align: text-top;  text-align: center; ">
+		    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Calculations used for calculating SVM Knife Projection</b></p>
+    	</td>
+	    <td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+    
 <!-- ################################################### -->
-<!-- Body                                                                                               -->
+<!-- Body                                                -->
 <!-- ################################################### -->
-    <hr>
+<hr>
 
 <!-- ################################################### -->
 <!-- TItle -->
 
-    <table width="100%">
-        <tr>
-            <td align="right" valign="top">
-        	    <IMG SRC="Images/IndexCalcProjDetails.png" HEIGHT=400>
-            </td>
-            <td align="left" valign="top">
-                <b>Definitions</b>
-                <br>
-                    <ol>
-                        <li>Grindwheel Radius (GwR) = Grindwheel Diameter / 2</li>
-                        <br>
-                        <li>SVM-x Knife Jig Projection = SVMxP</li>
-                    </ol>
-
-                <b>Assumptions</b>
-                <br>
-                    <ol>
-                        <li>USB diameter (USBD) = 12mm
-                        <br>USB radius (USBR) = 6mm</li>
-                        <br>
-                        <li>SVMx shaft diameter (SVMxD) = 12mm
-                        <br>SVMx shaft radius (SVMxR) = 6mm</li>
-                    </ol>
+<table style="width: 100%; ">
+    <tr>
+        <td align="right" valign="top">
+            <IMG SRC="Images/IndexCalcProjDetails.png" alt="no image file" 
+                style="
+                    width: 450px;
+                    margin-right: 25px;  
+                    ">
+        </td>
+        <td align="left" valign="top">
+        
+            <b>Definitions</b>
+                <ol>
+                    <li style="margin-bottom: 12px;">Grindwheel Radius (<b>GwR</b>) = Grindwheel Diameter / 2</li>
                     
-                <b>Calculations</b>
-                <br>
-                    <ol>
-                        <li>L1<sup>2</sup> = SVMxP<sup>2</sup> + GwR<sup>2</sup> - 2(SVMxP x GwR x cos(&beta; + 90))</li>
-                        <br>
-                        <li>L2 = SVMxR + USBD = 18mm</li>
-                        <br>
-                        <li>Distance from Grindstone to USB = L1 - L2</li>
-                    </ol>
-            </td>
-        </tr>
-    </table>
+                    <li><b>SVMxP</b> = SVM-x Knife Jig Projection</li>
+                </ol>
+
+            <b>Assumptions</b>
+                <ol>
+                    <li style="margin-bottom: 12px;">USB diameter (<b>USBD</b>) = 12mm
+                    <br>USB radius (<b>USBR</b>) = 6mm</li>
+
+                    <li>SVMx shaft diameter (<b>SVMxD</b>) = 12mm
+                    <br>SVMx shaft radius (<b>SVMxR</b>) = 6mm</li>
+                </ol>
+                    
+            <b>Calculations</b>
+                <ol>
+                    <li style="margin-bottom: 12px;"><b>L1<sup>2</sup></b> = SVMxP<sup>2</sup> + GwR<sup>2</sup> - 2(SVMxP x GwR x cos(&beta; + 90))</li>
+
+                    <li style="margin-bottom: 12px;"><b>L2</b> = SVMxR + USBD = 18mm</li>
+
+                    <li><b>Distance from Grindstone to USB</b> = L1 - L2 - GwR</li>
+                </ol>
+        </td>
+    </tr>
+</table>
 
 <!-- ################################################### -->
 <!-- Footer                                              -->

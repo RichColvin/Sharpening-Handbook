@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body bgcolor=#E6E6E6 class="" id="">
+<font face="Arial" size="3">
+
+<!-- ################################################### -->
+<!-- Style Sheet for header image max size               -->
+<!-- ################################################### -->
+<style>
+    img.Image { max-width: 1000px;}
+</style>
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table width=100%>
+    <tr valign="TOP">
+   	<td align="center">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" width="100%" class="Image" ;></a>
+      </td>
+   </tr>
+</table>
+
+<table width="100%" border=0>
+    <col width="10%">
+    <col width="*">
+    <col width="10%">
+
+    <tr valign="bottom">
+	<td align="left">
+	    <a href = "javascript:history.back()"><img src="Images/BackButton.png" width="25px"></a>
+	</td>
+	<td align="center" valign="top">
+	    <font face= "Palatino" size="6" color=#191970><b>
+	    Soil Tester Probe
+	    </b></font>
+	</td>
+	<td align="right">
+	    &nbsp;
+	</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+
+<hr>
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<img src="Images/GT-Knives2.png" style="float: right; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center; " height=200px />
+
+<p><b>Soil Testers / Soil Probes</b> are used to collect soil samples for testing them.
+
+<p>Guidelines shown below are for <b>Included Angles</b> (<font color="darkblue" face="Garamond"><b>&alpha;</b></font>).
+
+<!-- 
+<p><hr class="style2">
+ -->
+
+<div style=" float: left; width: 350px; margin: 5px 5px 5px 5px; padding: 5px; border: 1px solid grey; text-align: left; background-color:#b5edb5 ">
+    <p style="margin-top: 0; margin-bottom: 0; "><i>Gardeners learn by trowel and error.</I>
+	<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Anonymous
+</div>
+
+<!-- ################################################### -->
+<!-- General Guidelines -->
+
+<p>
+<table width="100%" align="center" style="border-collapse: collapse; ">
+    <col width="150px">
+    <col width="75px">
+    <col width="*">
+
+    <tr bgcolor="Moccasin" valign="bottom">
+	<th colspan="999" style="border-style: solid; border-color: black; 
+		border-top-width: thick; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: thick; ">
+	    <font face="Arial" size="5" color="Blue"><b>General Guidelines</b></font>
+	</th>
+    </tr>
+    <tr bgcolor="Moccasin" valign="bottom">
+	<th style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: thick; 
+		border-right-width: medium; ">
+	    <font face="Arial" color="Blue">
+	    Type
+	    </font>
+	</th>
+	<th style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    <font color="blue" face="Garamond" size=5><b>&alpha;</b></font>
+	</th>
+	<th style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: medium; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <font face="Arial" color="Blue">Notes</font>
+	</th>
+    </tr>
+
+<!-- General -->
+    <tr bgcolor="#d8ecff" valign="top">
+	<td valign="middle" style="border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: thick; 
+		border-left-width: thick; 
+		border-right-width: medium; ">
+	    <b><font face="Arial" color="Blue">General</font></b>
+	</td>
+	<td valign="middle" align="CENTER" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: thick; 
+		border-left-width: medium; 
+		border-right-width: medium; ">
+	    <font face="Arial" color="Blue">(TBD)&deg;</font>
+	</td>
+	<td align="LEFT" style="
+		border-style: solid; 
+		border-color: black; 
+		border-top-width: medium; 
+		border-bottom-width: thick; 
+		border-left-width: medium; 
+		border-right-width: thick; ">
+	    <p style="margin-top: 0; margin-bottom: 0">&nbsp;
+	</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<h2>Notes &amp; Comments</h2>
+
+<div style="float: right; width:160px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
+    <center><a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" Width=150></a></center>
+    <center><a href="Grindstones.html">Information regarding Grindstones</a></center>
+</div>
+
+<!-- ################################################### -->
+<!-- Grind Shape & Experience -->
+<h3 style="margin-bottom: 0;">Grind Shape &amp; Experience</h3>
+<p style="margin-top: 0;">The shape of the grind used is a call best made by the tool's use, based on your own experience.  Additional notes are available on separate web pages for <a href="GrindProfiles.html">Grind Profiles</a>, and <a href="MicroBevels.html">Micro / Secondary Bevels</a>.
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-GT-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<!-- 
+<hr class="style1">
+<h2>More Information</h2>
+ -->
+<!-- 
+<h3>Books &amp; Papers</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Published Articles</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Web Sites</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Other</h3>
+    <ul>
+	<li></li>
+    </ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
