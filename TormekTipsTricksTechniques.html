@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- Header                                                                                           -->
+<!-- ################################################### -->
+<table style="width: 100%;">
+    <tr>
+		<td style="
+				vertical-align: top; 
+				text-align: center;
+				">
+			<a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+        </td>
+    </tr>
+</table>
+
+<table style="width: 100%;">
+    <tr>
+        <td style="width: 10%;      		
+				vertical-align: top; 
+				text-align: left;
+				">
+			&nbsp;
+        </td>
+        <td style="  		
+				vertical-align: top; 
+				text-align: center;
+				">
+			<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Tormek Tips Tricks and Techniques</b></p>
+        </td>
+        <td style="width: 10%;      		
+				vertical-align: top; 
+				text-align: right;
+				">
+			&nbsp;
+        </td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<hr>
+
+<p style="margin-bottom: 0;">Using a Tormek is like driving an automobile with a manual gearbox (&ldquo;stick shift&rdquo; for us on this side of the pond).  There is a bit of a learning curve, one which thousands of users have completed successfully. Here is our advice to develop your &ldquo;clutch foot&rdquo;.
+
+<table style="width: 100%; margin-top: 0;">
+    <tr style="vertical-align: top; ">
+    	<td style="text-align: left; width: 50%; ">
+            <ul>
+                <li style="margin-bottom: 12px;"><a href="#Information_Resources">Information Resources</a></li>
+
+                <li style="margin-bottom: 12px;"><a href="#Permanent_Marker">Keep a Permanent Marker Handy</a></li>
+
+                <li style="margin-bottom: 12px;"><a href="#Grindstone_Mindset">Get a Mindset for the Grindstone</a></li>
+
+                <li style="margin-bottom: 12px;"><a href="#Grinding_Wheels">Types of Grinding Wheels</a></li>
+
+                <li style="margin-bottom: 12px;"><a href="#Grindstone_Rotation_Direction">Grindstone Rotation Direction</a></li>
+
+                <li style="margin-bottom: 12px;"><a href="#Leather_Wheels">Leather Honing Wheels</a></li>
+            </ul>
+        </td>
+
+    	<td style="text-align: left; width: 50%; ">
+            <ul>
+                <li style="margin-bottom: 12px;"><a href="#Sharpening_Chisels">Learn to Sharpen a Chisel First</a></li>
+
+                <li style="margin-bottom: 12px;"><a href="#Sharpening_Knives">Practice on Second-Hand Knives</a></li>
+
+                <li style="margin-bottom: 12px;"><a href="#QuantifySharp">Identify a Way to Quantify Sharp</a></li>
+
+                <li style="margin-bottom: 12px;"><a href="#WaterTray">The Water Tray</a></li>
+
+                <li style="margin-bottom: 12px;"><a href="#GrindAngle">Setting the Grind Angle</a></li>
+
+                <li style="margin-bottom: 12px;"><a href="#FVB">Why Use an FVB?</a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Information Resources                               -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="Information_Resources" style="margin-bottom: 0px;">Information Resources</h2>
+<p style="margin-top: 6px;">Spend some time becoming very familiar with the videos from Tormek. You may have found them before even purchasing your Tormek.  
+
+<p>Read your Tormek Handbook; do not be afraid to make it your own by highlighting and marking it up, and be sure to keep it nearby.
+
+<!-- ################################################### -->
+<!-- Keep a Permanent Marker Handy                       -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="Permanent_Marker" style="margin-bottom: 0px;">Keep a Permanent Marker Handy</h2>
+<p style="margin-top: 6px;">Every Tormek user should have a permanent marker (e.g., a Sharpie). The permanent marker, as shown in the videos and handbook, allows the user to quickly verify grinding angles.  
+
+<p>Some prefer black markers; others prefer red.  You should try both to determine which you prefer (I prefer red).
+
+<p>This is an essential tool which should be in your toolkit.
+
+<!-- ################################################### -->
+<!-- Get a Mindset for the Grindstone                    -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="Grindstone_Mindset" style="margin-bottom: 0px;">Get a Mindset for the Grindstone</h2>
+<p style="margin-top: 6px;">All too often, new users of the Tormek approach the grindstone with a sense of reverence and a believe that they should preserve it.  Whilst proper use is important, it should be remembered that the grindstone is designed to be worn away during use.  Look at the grindstone as you would a set of good tires or brake linings.  Good care extends its useful life, however, they are designed to be worn out.
+
+<p>The Tormek SG grindstone is designed to be used as either a coarse wheel or a finer wheel, depending on how the grading stone is used.  The wheel actually has a third grading when freshly dressed with the TT-50 diamond dresser (more coarse).   
+
+<table style="float: right; border-collapse: collapse; 
+		margin-right: 5px; margin-left: 0;
+		margin-top: 5px; margin-bottom: 5px;
+		">   
+    <tr>
+        <th rowspan=2 style="
+        		width: 75px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>Machine</b></p>
+        </th>
+        <th colspan=2 style="
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: thin;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>Diameter</b></p>
+        </th>
+    </tr>
+
+    <tr>
+        <th style="
+        		width: 75px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thin; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>Starting</b></p>
+        </th>
+        <th style="
+        		width: 75px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium;
+				border-left-width: thin; 
+				border-right-width: thick; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>Minimum</b></p>
+        </th>
+    </tr>
+
+    <tr>
+        <td style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: thin; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+            T-2000
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thin; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                250 mm
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thin; 
+				border-right-width: thick; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                180 mm
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: thin; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+                T-7
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: thin; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+			T-8
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+            T-1200
+        </td>
+        <td rowspan=3 style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: thin; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+            200 mm
+        </td>
+        <td rowspan=3 style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: thin; 
+				border-right-width: thick; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+            130 mm
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+            T-3<br>
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thick;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+			T-4
+		</td>
+    </tr>
+</table>
+
+<h3>Truing the Grindstone</h3>
+<p style="margin-top: 6px;">Do not try to squeeze a bit more life out of your wheel or a bit of time off the sharpening operation by skipping the grading operation.  Proper use of the TT-50 grader is well covered in the videos and Tormek Handbook.  Follow these instructions!
+
+<h3>Getting the Most From Your Grindstones</h3>
+<p style="margin-top: 6px;">There are some other techniques you can use for <a href="Grindstones-StoneLife.html">getting more life from your grindstones</a>, and they are worth reviewing.  At the end of the day though, the minimum diameters for the grindstones are shown in the table to the right.
+
+<!-- ################################################### -->
+<!-- Types of Grinding Wheels                            -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="Grinding_Wheels" style="margin-bottom: 0px;">Types of Grinding Wheels</h2>
+<p style="margin-top: 6px;">Tormek offers 6 grinding wheels.
+
+<table style="float: right; border-collapse: collapse; 
+		margin-right: 5px; margin-left: 0;
+		margin-top: 5px; margin-bottom: 5px;
+		">   
+    <tr>
+        <td colspan=7 style="
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: thick; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrLg"><b>Grinding Wheel Availability</b></p>
+		</td>
+    </tr>
+    <tr>
+        <th style="
+                width: 75px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>Machine</b></p>
+        </th>
+        <th style="
+                width: 40px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>SG</b></p>
+        </th>
+        <th style="
+                width: 40px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>SB</b></p>
+        </th>
+        <th style="
+                width: 40px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>SJ</b></p>
+        </th>
+        <th style="
+                width: 40px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>DC</b></p>
+        </th>
+        <th style="
+                width: 40px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>DF</b></p>
+        </th>
+        <th style="
+                width: 40px;
+        		background-color: Moccasin;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: center; 
+				vertical-align: bottom; 
+				">
+			<p class="TextTableHdrNorm"><b>DE</b></p>
+        </th>
+    </tr>
+
+    <tr>
+        <td style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: thin; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+            T-2000
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: thin; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+                T-7
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: thin; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+			T-8
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+            T-1200
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#128308;
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+        <td rowspan=3 style="
+        		background-color: white;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				text-align: center; 
+				vertical-align: middle; 
+				">
+                &#x2705;
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+            T-3<br>
+        </td>
+    </tr>
+    <tr>
+        <td style="
+        		background-color: LightGray;
+        		border-style: solid; 
+        		border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: thick;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				text-align: left; 
+				vertical-align: bottom; 
+				">
+			T-4
+		</td>
+    </tr>
+</table>
+
+
+<h3 style="margin-bottom: 0px;">Traditional Grindstones</h3>
+
+<h4 style="margin-bottom: 0px;">SG Original Grindstone</h4>
+<p style="margin-top: 6px;">This is an aluminum oxide grindstone which was introduced to replace the natural grindstone originally sold by Tormek.
+    
+<p>The SG is a good, all-around use grindstone and meets the needs for use for sharpening most tools.
+    
+<p>The SP-650 Stone Grader is used to set the effective grit on this grindstone (&ldquo;<i>grading</i>&rdquo; the grindstone), and can set that grit to 220, or 1,000, or some measure in between.
+    
+<p>The TT-50 Truing Tool should be used to dress the SG grindstone as necessary.
+    
+<h4 style="margin-bottom: 0px;">SB Blackstone Silicone Grindstone</h4>
+<p style="margin-top: 6px;">This is a silicon carbide grindstone which was introduced to help with sharpening tools made from harder steels (e.g., HSS).
+    
+<p style="margin-bottom: 0;">The SB grindstone is only available in a 250mm diameter, so it is only for use on the T-2000, T-7, &amp; T-8.  That said, if you can &ldquo;<i>inherit</i>&rdquo; a used SB grindstone (&le;200mm diameter) from another Tormek user, it will fit on the smaller Tormek machines.  
+
+<p>It has been said by some that the SP-650 Stone Grader can be used to set the effective grit on this grindstone.  I have not seen that to be the case.  Instead, I use a DMT D8X extra course diamond plate.  
+    
+<p>The TT-50 Truing Tool should be used to dress the SB grindstone as necessary.
+
+<h4 style="margin-bottom: 0px;">SJ Japanese Waterstone</h4>
+<p style="margin-top: 6px;">This is also an aluminum oxide grindstone.  This grindstone is 4,000 grit and is excellent for adding <a href="MicroBevels.html" target="new">micro bevels</a>.
+    
+<p>A Nagura stone may be useful to remove any embedded grit.
+    
+<p>The TT-50 Truing Tool should be used to dress the SJ grindstone as necessary.
+    
+<p>The smooth side of the SP-650 Stone Grader can be used to round over the edges of the SJ grindstone, helping to deter chipping at the edge.
+    
+<h3 style="margin-bottom: 0px;">Diamond Grinding wheels</h3>
+<p style="margin-top: 6px;">Diamond grinding wheels have diamonds affixed to a steel wheel.  With use, the diamonds will be dislodged from the wheel, and over time they will need to be replaced.  This is expected to be a very long time though.
+
+<p>The advantage provided by the diamond wheels is that they do not change diameter when used.  This makes changing the wheel used easy as the jig does not have to be reset.
+
+<p>When using these grinding wheels, it is imperative that you use a rust preventative.  The Tormek ACC-150 Anti-Corrosion Concentrate is one option, and there are others.
+
+<h4 style="margin-bottom: 0px;">DC Diamond Wheel Course</h4>
+<p style="margin-top: 6px;">This grinding wheel has a 360 grit.
+    
+<h4 style="margin-bottom: 0px;">DC Diamond Wheel Fine</h4>
+<p style="margin-top: 6px;">This grinding wheel has a 600 grit.
+    
+<h4 style="margin-bottom: 0px;">DC Diamond Wheel Extra Fine</h4>
+<p style="margin-top: 6px;">This grinding wheel has a 1,200 grit.
+
+<p>More information is available on the page in this site, <a href="Grindstones-Tormek.html" target="new">Tormek Grinding Wheels</a>.
+
+<!-- ################################################### -->
+<!-- Grindstone Rotation Direction                       -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="Grindstone_Rotation_Direction" style="margin-bottom: 0px;">Grindstone Rotation Direction</h2>
+<p style="margin-top: 6px;">Should you have the grindstone rotate towards you, or away from you?
+
+<p>When you grind with the wheel rotating away from you you will get a bigger burr that takes more effort to properly remove. 
+
+<p>I sharpen most things with the wheel rotating towards me and have not had issues with it removing too much material. Some well known sharpeners also use the wheel rotating away from them, and swear by it. It is your choice. 
+
+<p>The front vertical base (FVB) is useful for burr removal.  That is generally no longer availabile, but the Tormek MB-102 Multi Base is an replacement jig which provides the same functionality.
+
+<p>There is a book written by the late Dr. Vadim Kraichuk, <i>Knive Deburring</i> (available at most bookstores).  If you want to dive deeper on this topic, this is an excellent resource.
+
+<!-- ################################################### -->
+<!-- Leather Wheels                                      -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="Leather_Wheels" style="margin-bottom: 0px;">Leather Honing Wheels</h2>
+<p style="margin-top: 6px;">Tormek offers two standard honing wheels:  
+<ul>
+    <li style="margin-bottom: 12px;">the traditional leather honing wheel which uses the Tormek PA-70 Honing Compound (8,000 grit), and</li>
+    
+    <li>a composite honing wheel (2,000 - 2,500 grit).</li>
+</ul>
+
+<p>If you choose to go the route of the composite honing wheel, you do not need to apply the honing compound, but you should periodically clean it.  Alcohol is the recommended liquid to use.
+
+<p>As it regards the leather wheels, there are more options.
+<ul>
+    <li style="margin-bottom: 12px;">A traditional honing wheel in sizes for both the larger machines and smaller machines.</li>
+    
+    <li style="margin-bottom: 12px;">Profiled honing wheels used for honing turning and carving tools.  There are also some narrow discs which can be swapped out for the reguular discs.</li>
+</ul>
+
+<!-- ################################################### -->
+<!-- Oiling the Leather Wheels                           -->
+<!-- ################################################### -->
+<hr class="style3">
+<h3 style="margin-bottom: 0px;">Oiling the Leather Wheels</h3>
+<p style="margin-top: 6px;">New leather wheels need to be oiled before use.  Do not saturate the surface; add only enough oil to evenly discolor the entire surface.
+
+<p>Several years ago, a staff member of the US Tormek importer noted that putting oil on a new leather honing wheel was unnecessary, as one of the ingredients in the honing compound was oil. He meant well, but was mistaken. Without the initial oil, you will not get proper adhesion of the honing compound, and instead you will get flakes.
+
+<p>If you do over-oil, you can use a dull metal blade (e.g., as a scraper) to scrape it off.  
+
+<!-- ################################################### -->
+<!-- Adding Compound to Leather Wheels                   -->
+<!-- ################################################### -->
+<hr class="style3">
+<h3 style="margin-bottom: 0px;">Adding Compound to Leather Wheels</h3>
+<p style="margin-top: 6px;">You only need to apply a pea-sized amount of the honing compound to the leather honing wheel.  Eventually you'll get a feel for how much compound to apply.  It is not catastrophic if you add too much, but it is a waste of the honing compound as it will just come off on the edges of your tools. 
+
+<!-- ################################################### -->
+<!-- Learn to Sharpen a Chisel First                     -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="Sharpening_Chisels" style="margin-bottom: 0px;">Learn to Sharpen a Chisel First</h2>
+<p style="margin-top: 6px;">The first tool you should learn to sharpen is a chisel.  Regardless of what your intended use for your Tormek, if you can sharpen a chisel proficiently and fluently, you can learn other tools. A chisel is the  simplest edge to grind:  
+<ul>
+    <li style="margin-bottom: 12px;">It is ground square, not angled.</li>
+    
+    <li style="margin-bottom: 12px;">The bevel angle of 25&deg; to 30&deg; is an easy range to duplicate.</li>
+    
+    <li style="margin-bottom: 12px;">Unlike most knives, only one bevel is ground.</li>
+    
+    <li style="margin-bottom: 12px;">Because the ground edge is larger than a knife, it is easy to see what is happening.</li>
+    
+    <li style="margin-bottom: 12px;">The full range of the Tormek is used in sharpening a chisel, initial grinding with the stone graded coarse; finer grinding with the stone graded fine; and finally, stropped with the leather honing wheel.</li>
+</ul>
+
+<p>An excellent first chisel is the Irwin &frac34;&rdquo; Blue Chip chisel.  Why an Irwin &frac34;&rdquo; Blue Chip chisel?  During various posts on this forum, &frac34;&rdquo; has emerged as the most practical width chisel for learning how to use the Tormek.  The Blue Chip chisel has enough blade length to be a very usable first learning tool. The steel is good carbon steel. The sides are also ground square to the back of the blade with no rounding over (which would interfere with preparing the back for sharpening).  Irwin acquired Joseph Marples, the fine company which had made these good chisels for a very long time.  And, on a very practical level, these chisels are very reasonably priced.  At this writing they are available on Amazon for $8.51.  A set of four (&frac14;&rdquo; to 1&rdquo; is also available for about $25 for those who would like several practice chisels.  They are also working standard tools in many shops.  Your choice of chisel brand is completely up to you, but consider the Blue Chip as a starting reference guide.
+
+<p>Do not just sharpen this chisel once before moving on.  Blunt the edge with a hammer or file several times and restore the edge until you become proficient.  During these practice sessions you will learn a lot about machine.  Learn to listen to the sound of the grinding.  Learn to become sensitive to the feel of the  grinding.  Learn to be consistent in setting up your machine.  Learn what a truly sharp edge is, and what it can do. There are several methods of testing for sharpness.  Jeff's paper method (as shown on the sharptoolsusa.com videos) is a good starting place.
+
+<p>Even if you do not intend to do woodworking, go through these exercises with your chisel.  And keep the chisel nearby.  Eventually a day come when your sharpening is going badly. On that day, you can return to sharpening your chisel. This will simplify your troubleshooting.  If you can match your initial sharpening, your basic machine and wheel are functioning properly.  If not, this exercise will point you in the correct direction to solve the problem.
+
+<p>Learning to sharpen a chisel provides the new user with an opportunity to master most of the basic Tormek skills. One learns how to set up and maintain the water trough; how to use the basic jigs, including how to properly set the bevel angle angle using the anglemaster, a marking pen, or a kenjig; how to maintain the grinding wheel with the truing tool and stone grader; how to set up and use the leather honing wheel; how to check for squareness of the grind. One becomes familiar with the feel and sound of the Tormek during grinding. With practice (repetition), the new user will become quite comfortable with his new Tormek and ready to branch out to sharpening other tools. A chisel has only one straight, flat, and large enough to be easily seen bevel. Learning how to sharpen the humble chisel gives the new user a solid foundation.
+
+<p>There is another method that works really well to keep a square edge too.  If you take a sharpie and a small engineers square and use them to mark the BACK of the chisel.  Do it right up close to the edge.  Once the chisel is mounted (which if you use Jan's method will be square) you can now see your line on the reverse.  As you grind, regularly pull the chisel out of the water interference to examine if your freshly ground edge remains parallel to the sharpie line (or cambered to it depending on the grind you're aiming for).  There is no question that uneven grinding is a common problem and if you think about it, the centre of the blade gets twice as much grinding as the corners if you're sliding it across the stone because with each pass the corners go off the edge of the stone but the middle remains. The net effect over time means the edge will start to resemble a concave profile.  The worst of all worlds for a plane blade because you want it either dead square or convex (to stop the corners digging in whilst planing).
+
+<p>So to compensate, one typically leans more heavily or grinds for longer on the high spots ie the corners which in turn starts to throw out the middle.  If you keep that sharpie line on the back you have a visual reference so on pretty much every pass you can keep correcting the high spots until the bevel is complete and the edge describes the profile you're after.
+
+<!-- ################################################### -->
+<!-- Practice on Second-Hand Knives                      -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="Sharpening_Knives" style="margin-bottom: 0px;">Practice on Second-Hand Knives</h2>
+<p style="margin-top: 6px;">Once you have mastered sharpening a chisel, it is time to move on to knives.  Rather than potentially messing up your expensive kitchen knives, get some inexpensive ones to which you are not attached.
+
+<p>Thrift stores are great sources for purchasing knives at a very low cost.  These are great to use when practicing your skills.
+
+<!-- ################################################### -->
+<!-- Identify a Way to Quantify Sharp                    -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="QuantifySharp" style="margin-bottom: 0px;">Identify a Way to Quantify Sharp</h2>
+<p style="margin-top: 6px;">Many ways have been proposed:
+<ul>
+    <li>Does the edge catch on your fingernail?</li>
+    <li>Will it shave calloused skin? (A dangerous test if you're not fairly confident in your edge and your dexterity.)</li>
+    <li>Will it easily shave the hair off your arm? (no spit, no pressing, just glide)</li>
+    <li>Does it cut standard 20 lb printer paper without leaving a ragged edge?</li>
+    <li>Can you change direction of the cut in the paper whilst cutting?</li>
+    <li>Can it cut across the end grain of a piece of open-grained soft wood without tearing (balsa and fir are best test)?</li>
+</ul>
+
+<p>Those are all interesting techniques, but not measurable.  That is ok if you are only looking to be a hobbyist.  But if you are wanting to become a professional sharpener, then the BESS Sharpness Tester is worth investing in.
+<!-- ################################################### -->
+<!-- The Water Tray                                      -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="WaterTray" style="margin-bottom: 0px;">The Water Tray</h2>
+<p style="margin-top: 6px;">The water tray on all machines except the T-8 have to be lifted to lower it.  This will often splash the water out. One very effective way to address this is to use a turkey baster to remove water from the tray before lifting it.  
+
+<p>If you have concerns with water dripping onto the Tormek machine, one user designed a <a href="Jigs-DripTray.html">drip tray</a> which returns the spilt water back to the water tray.
+
+<!-- ################################################### -->
+<!-- Setting the Grind Angle                             -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="GrindAngle" style="margin-bottom: 0px;">Setting the Grind Angle</h2>
+<p style="margin-top: 6px;">Historically, the WM-200 AngleMaster was the way the edge angle was set for sharpening.  That is a fairly crude tool, so a number of people came up with calculators to better achieve the desired edge angle (the known <a href="indexCalc.html">calculators for the sharpener</a> are listed).
+
+<p>The calculators work well, but there are now good options for setting the sharpening angle.  The Tormek KS-123 Knife Angle Setter was introduced in 2025 and works exceptionally well.  This is an easy tool to use, and is quite useful when switching between grindstones (e.g., starting the sharpening on the SG grindstone, and then switching to the SJ Japanese waterstone).
+
+<!-- ################################################### -->
+<!-- Why Use an FVB?                                     -->
+<!-- ################################################### -->
+<hr class="style1">
+<h2 id="FVB" style="margin-bottom: 0px;">Why Use an FVB?</h2>
+<p style="margin-top: 6px;">The <a href="Jigs-FVB.html">front vertical base</a> (FVB) is quite useful for grinding the knife's edge very accurately, and repeatably.  
+
+<p>You can make one yourself, or use the the Tormek MB-102 MultiBase.  The MV-102 jig provides that functionality, and much more.
+
+<!-- ################################################### -->
+<!-- More Information -->
+<!-- 
+<hr class="style1">
+<h2>More Information</h2>
+ -->
+<!-- 
+<h3>Books &amp; Papers</h3>
+    <ul>
+    	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+    <ul>
+	    <li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Published Articles</h3>
+    <ul>
+    	<li></li>
+    </ul>
+ -->
+<!-- 
+<h3>Web Sites</h3>
+    <ul>
+	    <li><a href="https://scienceofsharp.com" target="new">Science of Sharp</a></li>
+    </ul>
+ -->
+<!-- 
+<h3>Other</h3>
+    <ul>
+	    <li></li>
+    </ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-FooterMin.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
+
