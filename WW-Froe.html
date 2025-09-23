@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: middle; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+    	    &nbsp;
+    	</td>
+	    <td style="vertical-align: text-top;  text-align: center; ">
+		    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Froes</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<hr>
+
+<!-- ################################################### -->
+<!-- Guidance Information -->
+<div style="float: right; width: 450px; 
+	margin-left: 5px; margin-right: 0px;
+	margin-top: 5px; margin-bottom: 15px; 
+	padding-left: 5px; padding-right: 0px; 
+	padding-top: 0px; padding-bottom: 0px; 
+	border: 1px solid darkgray; text-align: left;">
+    <img src="Images/GT-Knives.png" alt="no image file" style="width: 100%;" />
+    <p class="TextSMImage"><b><i>Edge Angles</i></b></p>
+</div>
+
+<p>Guidelines shown below are for <b>Included Angles (<span style="color: #191970; font: 18px Garamond"><b>&alpha;</b></span>)</b>.</p>
+
+<p>Notes are also available on a different web page for <a href="MicroBevels.html">Micro / Secondary Bevels</a>.</p>
+
+<div style="float: left; width: 350px; 
+		margin-top: 15px; margin-bottom: 5px;
+		margin-left: 0px; margin-right: 5px; 
+		padding: 5px; border: 1px solid grey; text-align: left; background-color:#DFD7C8;
+		">
+    <p style="margin-top: 0; margin-bottom: 0; "><i>People love chopping wood. In this activity one immediately sees results.</i>
+	<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Albert Einstein
+</div>
+
+<!-- ################################################### -->
+<!-- General Guidelines -->
+<table style="width: 100%; border-collapse: collapse; 
+		margin-top: 15px; margin-bottom: 0px;
+		margin-left: 0px; margin-right: 0px; 
+		">
+    <tr style="background-color: Moccasin;">
+        <td colspan=3 style="
+                border-style: solid;
+            	text-align: center; 
+        	    vertical-align: bottom; 
+            	border-color: black; 
+	        	border-top-width: thick;
+        		border-bottom-width: medium; 
+		        border-left-width: thick; 
+        		border-right-width: thick; ">
+	        <p class="TextTableHdrLg"><b>General Guidelines</b></p>
+    	</td>
+    </tr>
+    
+    <tr style="background-color: Moccasin;">
+        <th style="width: 70px;
+                border-style: solid;
+		        text-align: center; 
+            	vertical-align: bottom; 
+            	border-color: black; 
+		        border-top-width: medium; 
+        		border-bottom-width: medium; 
+		        border-left-width: thick; 
+        		border-right-width: medium; ">
+            <span style="color: #191970; font: 24px Garamond"><b>&alpha;</b></span>
+    	</th>
+        <th style="width: 70px;
+                border-style: solid;  
+            	text-align: center; 
+            	vertical-align: bottom; 
+        	    border-color: black; 
+        		border-top-width: medium; 
+		        border-bottom-width: medium; 
+        		border-left-width: medium; 
+		        border-right-width: medium; ">
+            <p class="TextTableHdrNorm"><b>Secon-dary Bevel</b></p>
+    	</th>
+        <th style="
+                border-style: solid;
+            	text-align: center; 
+            	vertical-align: bottom; 
+        	    border-color: black; 
+        		border-top-width: medium; 
+		        border-bottom-width: medium; 
+        		border-left-width: medium; 
+		        border-right-width: thick; ">
+            <p class="TextTableHdrNorm"><b>Notes</b></p>
+    	</th>
+    </tr>
+
+<!-- 
+    <tr style="background-color: #e0e0e0; ">
+ -->
+
+<!-- General -->
+     <tr style="background-color: white; ">
+        <td style="border-style: solid;
+    	   		text-align: center; 
+       			vertical-align: middle; 
+       			border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: thick; 
+				border-right-width: medium; ">
+		    30&deg;
+		</td>
+        <td style="border-style: solid;
+    	    	text-align: center; 
+        		vertical-align: middle; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thin; ">
+		    +5&deg;
+		</td>
+        <td style="border-style: solid;
+    	    	text-align: left; 
+        		vertical-align: top; 
+        		border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick; 
+				border-left-width: medium; 
+				border-right-width: thick; ">
+	    	Froes do not need to be razor sharp, but they should not be terribly dull either.  In particular, the edge should be consistent with no damage.
+		</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<h2>Notes &amp; Comments</h2>
+
+<div style="float: right; width:160px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
+    <a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="no image file" style="Width: 150px;" ></a>
+    <a href="Grindstones.html">Information regarding Grindstones</a>
+</div>
+
+<!-- ################################################### -->
+<!-- Shaping the edge -->
+<h3 style="margin-bottom: 0;">Shaping the edge</h3>
+<p style="margin-top: 0;">New froes are probably sharp, but the woodworker may want the angle on the edge(s) adjusted to match those in the table above. Thusly, initial shaping of the edge is to be quite probable.
+
+<h4 style="margin-bottom: 0;">Option A:  Use a Tormek</h4>
+    <p style="margin-top: 0; padding-left: 33pt;">Shape the froe blade edge(s) on the Tormek using the SVD-110 platform jig and the SG-250 grindstone graded coarse, or the DC-250 grinding wheel.
+
+    <p style="padding-left: 33pt;"><b>Rotation of the Grindstone</b>:  When sharpening froes, use the vertical position with the grindstone rotating towards the blade.  This keeps the froe jig properly aligned to the grindstone.  (If you use the horizontal position, the grindstone will tend to pull the froe away from the jig.)  Also, the vertical position sharpens faster.
+
+<h4 style="margin-bottom: 0;">Option B:  Use a Machinist&rsquo;s Hand File</h4>
+    <p style="margin-top: 0; padding-left: 33pt;">The sharpener can use machinist&rsquo;s 12-14&quot; bastard file.
+
+<h4 style="margin-bottom: 0;">Option C:  Use an Angle Grinder</h4>
+    <p style="margin-top: 0; padding-left: 33pt;">Alternatively, an angle grinder can be used with a 120 grit flap disc.  If this method is used, the sharpener must be sure to not overheat the edge, removing the temper from the steel and weakening the edge.
+
+<hr class="style3">
+<p><span style="color: DarkRed; ">High speed bench grinders are NOT recommended</span>.  It is too easy to take the temper out of the blade, and if the temper is lost, the user will get very poor service from the froe.  
+
+<p>If the sharpener does not have access to a wet grinding system, then a file or stone approach should be used (as outlined in the manual noted below).  Angle grinders with flap discs don't cause such a build-up of heat if used in a limited fashion (e.g., for sharpening and not shaping the angle).
+   
+<!-- ################################################### -->
+<!-- Sharpening the edge -->
+<hr class="style1">
+<h3 style="margin-bottom: 0;">Sharpening the edge</h3>
+
+<h4 style="margin-bottom: 0;">Option A:  Use a Tormek</h4>
+    <p style="margin-top: 0; padding-left: 33pt;">Shape the froe blade edge(s) on the Tormek using the SVD-110 platform jig and the SG-250 grindstone grade finely, or the DF-250 or DE-250 grinding wheels.
+
+<h4 style="margin-bottom: 0;">Option B:  Use Machinist&rsquo;s Hand Files</h4>
+    <p style="margin-top: 0; padding-left: 33pt;">The sharpener can use machinist&rsquo;s hand files.  Consider starting with a 8-10&quot; medium (or second) cut file.  Finish with a 6&quot; smooth cut file, then use this file to remove the burr.
+
+<h4 style="margin-bottom: 0;">Option C:  Use a Whetstone</h4>
+    <p style="margin-top: 0; padding-left: 33pt;">Whetstones are available in many options for sharpening froes.
+
+<hr class="style3">
+
+<!-- ################################################### -->
+<!-- Convex Grind -->
+<h3 style="margin-bottom: 0;">Convex Grind</h3>
+<p style="margin-top: 0;">There are some who recommend that the overall grind be convex.  I have found that using a secondary bevel removes that need, but that can be achieved using the SVD-110 platform jig.
+
+<!-- ################################################### -->
+<!-- Other Maintenance -->
+<hr class="style1">
+
+<h3 style="margin-bottom: 0;">Other Maintenance</h3>
+<p style="margin-top: 0;">If the froe's back edge has gotten mushroomed out or otherwise damaged, it needs to be cleaned up.  Leaving the mushroomed surface will make for danger when using the froe, just as with cold chisels.
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-WW-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<hr class="style1">
+<h2>More Information</h2>
+
+<h3>Books &amp; Papers</h3>
+    <ul>
+		<li style="margin-bottom: 12px;"><u>The Complete Guide to Sharpening</u>, by Leonard Lee.</li>
+	</ul>
+
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+    <ul>
+		<li style="margin-bottom: 12px;"></li>
+    </ul>
+-->
+
+<!-- 
+<h3>Published Articles</h3>
+    <ul>
+		<li></li>
+    </ul>
+-->
+
+<!-- 
+<h3>Web Sites</h3>
+    <ul>
+        <li style="margin-bottom: 12px;"></li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Other</h3>
+    <ul>
+        <li style="margin-bottom: 12px;"></li>
+    </ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>

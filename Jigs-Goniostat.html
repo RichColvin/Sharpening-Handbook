@@ -162,21 +162,39 @@ includeHTML();
 <!-- More Current Approach -->
 <!-- *************************************************** -->
 <hr class="style3">
-<h2>More Current Approach</h2>
-
-<div style="float: right; width: 500px; margin: 0 0 5px 5px; padding: 5px; border: 1px solid darkgray; text-align: center;">
-    <img src="Images/Goniostat.png" alt="no image file" style="width: 100%;" />
-    <p class="TextSMImage"><b><i>3D-printed Goniostat</i></b></p>
+<div style="float: right; width: 250px; 
+		margin-left: 5px; margin-right: 0px; 
+		margin-top: 0px; margin-bottom: 5px; 
+		padding: 5px; border: 1px solid darkgray; text-align: left;">
+	<b>Goniostat Parts</b>
+	<ul style="margin-top: 0; margin-bottom: 0;">
+		<li><a href="#Goniostat-Base">Goniostat Base</a></li>
+		<li><a href="#Goniostat-ToolHolders">Tool Holders</a></li>
+		<li><a href="#Goniostat-ToolHoldersPenMill">Tool Holder for Pen Mills</a></li>
+		<li><a href="#Goniostat-FixedBase">Fixed Base for Tool Holders</a></li>
+	</ul>
 </div>
 
-<p>This jig is mostly 3D printed.
+<h2>More Current Approach</h2>
+
+<p>This jig is mostly 3D printed. 
+
+<p><a href="Goniostat/Goniostat%20User%20Manual.pdf" download>Instructions</a> (PDF file) for using it.
+
+<!-- *************************************************** -->
+<!-- Base -->
+<!-- *************************************************** -->
+<h3 id="Goniostat-Base">Base</h3>
+<div style="float: right; width: 500px; margin: 0 0 5px 5px; padding: 5px; border: 1px solid darkgray; text-align: center;">
+    <a href="ShowPicture.html?ImgNm=Images/Goniostat.png"><img src="Images/Goniostat.png" alt="no image file" style="width: 100%;" /></a>
+    <p class="TextSMImage"><b><i>3D-printed goniostat base with tool holders</i></b></p>
+</div>
 
 <p>It requires an SVD-110 as the base on which it slides, and a WM-200 for setting the angle.
 
-<p>The files for making this jig are below:
+<p>The files for making the base jig are below:
 
 	<ul>
-		<li style="margin-bottom: 12px;"><a href="Goniostat/Tormek%20Goniostat.pdf" download>Instructions</a> (PDF file)</li>
 
 		<li style="margin-bottom: 12px;"><a href="Goniostat/Base%20Plate.stl" download>Base Plate.stl</a> (the blue part in the picture to the right)</li>
 
@@ -185,7 +203,15 @@ includeHTML();
 		<li style="margin-bottom: 12px;"><a href="Goniostat/Depth%20Stop%20-%2015mm.stl" download>Depth Stop - 15mm.stl</a> (the left yellow part in the picture to the right)</li>
 
 		<li style="margin-bottom: 12px;"><a href="Goniostat/Depth%20Stop%20-%2025mm.stl" download>Depth Stop - 25mm.stl</a> (the right yellow part in the picture to the right)</li>
+	</ul>
 
+<!-- *************************************************** -->
+<!-- Tool Holders -->
+<!-- *************************************************** -->
+<hr class="style3">
+<h3 id="Goniostat-ToolHolders">Tool Holders</h3>
+
+	<ul>
 		<li style="margin-bottom: 12px;"><b>Imperial Sizes</b> (the green parts in the picture to the right)
 			<ul>
 				<li><a href="Goniostat/Tool%20Holder%20-%200.125in.stl" download>Tool Holder - 0.125in.stl</a> - <sup>1</sup>/<sub>8</sub> inch</li>
@@ -202,53 +228,122 @@ includeHTML();
 				<li><a href="Goniostat/Tool%20Holder%20-%2010mm.stl" download>Tool Holder - 10mm.stl</a></li>
 			</ul></li>
 
-		<li><b>Generic tool holders</b> (the green parts in the picture to the right) - use these to make your own tool holders using a 3D CAD program (e.g., <a href="https://www.autodesk.com/" target="new">Autodesk</a>'s <a href="https://www.autodesk.com/products/fusion-360/" target="new">Fusion 360</a>)
+		<li><b>Generic tool holders</b> (the green parts in the picture to the right) - use these to make your own tool holders using a 3D CAD program (e.g., <a href="https://www.autodesk.com/products/fusion-360/" target="new">Fusion 360</a>)
 			<ul>
 				<li><a href="Goniostat/Tool%20Holder%20-%20Generic%2015mm.stl" download>Tool Holder - Generic 15mm.stl</a> - Smaller Tool Holder (15mm square)</li>
 				<li><a href="Goniostat/Tool%20Holder%20-%20Generic%2025mm.stl" download>Tool Holder - Generic 25mm.stl</a> - Larger Tool Holder (25mm square)</li>
 			</ul></li>
 	</ul>
 
+<!-- *************************************************** -->
+<!-- Tool Holder for Pen Mills -->
+<!-- *************************************************** -->
 <hr class="style3">
+<h3 id="Goniostat-ToolHoldersPenMill">Tool Holder for Pen Mills</h3>
 
-<div style="float: right; width: 200px; 
+<div style="float: right; width: 150px; 
 		margin-left: 5px; margin-right: 0px;
 		margin-top: 0px; margin-bottom: 5px; 
-		padding-left: 0px; padding-right: 0px; 
-		padding-top: 0px; padding-bottom: 0px; 
-		border: 0px solid darkgray; text-align: right;">
-    <table style="width: 100%; ">
-	<tr>
-	    <td style="float: right; 
-		    padding-left: 5px; padding-right: 5px; 
-		    padding-top: 5px; padding-bottom: 0px; 
-		    border: 1px solid darkgray; text-align: right;">
-		<img src="Images/WW-PenMillReamerToolHolder.png" alt="no image file" style="width: 95%;" />
-		<p class="TextSMImage" style="text-align: left; "><b><i>Tool holder for the pen mill reamer</i></b></p>
-	    </td>
-	</tr>
-	<tr>
-	    <td style="float: right; 
-		    padding-left: 5px; padding-right: 5px; 
-		    padding-top: 5px; padding-bottom: 0px; 
-		    border: 1px solid darkgray; text-align: right;">
-		<img src="Images/WW-PenMill-03a.png" alt="no image file" style="width: 100%;" />
-		<p class="TextSMImage" style="text-align: left; "><b><i>Tool holder holding a pen mill reamer</i></b></p>
-	    </td>
-	</tr>
-    </table>
+		padding-left: 5px; padding-right: 5px; 
+		padding-top: 5px; padding-bottom: 0px; 
+		border: 1px solid darkgray; text-align: right;">
+	<a href="ShowPicture.html?ImgNm=Images/Goniostat-PenMillReamerToolHolder.png"><img src="Images/Goniostat-PenMillReamerToolHolder.png" alt="no image file" style="width: 100%;" /></a>
+	<p class="TextSMImage" style="text-align: left; "><b><i>Tool holder holding a pen mill reamer</i></b></p>
 </div>
 
+<p style="margin-top: 0;">When sharpening a pen mill, this part will be useful.  The Fusion 360 file is included so you can modify it as necessary to fit your pen mill (i.e., changing the diameter of the tenon projecting out onto which the pen mill is attached).
 
+<p>Note that there are witness marks in the top part to help with ensuring the pen mill's cutters are aligned correctly.
 	<ul>
-		<li><b>Tool holder for pen mills</b> - When sharpening a pen mill, this will be useful.  The Fusion 360 file is included so you can modify it as necessary to fit your pen mill (i.e., changing the diameter of the part projecting out to the left in the picture on the right).
-		<p>Note that there are alignment marks in the top part to help with ensuring the pen mill's cutters are aligned correctly.
-			<ul>
-				<li><a href="Goniostat/WW-PenMillReamerToolHolder.3mf" download>PenMillReamerToolHolder.3mf</a></li>
-				<li><a href="Goniostat/WW-PenMillReamerToolHolder.f3d" download>PenMillReamerToolHolder.f3d</a></li>
-			</ul></li>
+		<li><a href="Goniostat/WW-PenMillReamerToolHolder.3mf" download>PenMillReamerToolHolder.3mf</a></li>
+		<li><a href="Goniostat/WW-PenMillReamerToolHolder.f3d" download>PenMillReamerToolHolder.f3d</a></li>
 	</ul>
 
+<!-- *************************************************** -->
+<!-- Fixed Base for Tool Holders -->
+<!-- *************************************************** -->
+<hr class="style3">
+<h3 id="Goniostat-FixedBase">Fixed Base for Tool Holders</h3>		
+<div style="float: right; width: 200px; 
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 0px; margin-bottom: 5px; 
+		padding-left: 5px; padding-right: 5px; 
+		padding-top: 5px; padding-bottom: 0px; 
+		border: 1px solid darkgray; text-align: right;">
+	<a href="ShowPicture.html?ImgNm=Images/Goniostat-FixedBase.png"><img src="Images/Goniostat-FixedBase.png" alt="no image file" style="width: 100%;" /></a>
+	<p class="TextSMImage" style="text-align: left; "><b><i>Fixed base with tool holder atop an SVD-110</i></b></p>
+</div>
+
+<p style="margin-top: 0;">When sharpening a fly cutter for rose engine work, there are some standard angles which get used often:  30&deg;, 60&deg;, 90&deg;, &amp; 120&deg;.  These fixed bases allow for sharpening at one of those angles without having to fiddle around with setting the fence, sharpen one side, and then swap the fence around for sharpening the other side.
+
+<p>They are particularly useful if you want to swap grinding wheels and continue to use higher and higher grits.
+
+<p>All of the tool holders outlined above can be used with any of these.
+
+<p>The instructions for the <a href="WW-RoseEngineFlyCutter-Rod.html">Rose Engine Fly Cutter, Round Rod</a> outline a setting for both <span style="font: 16px Garamond; color: #191970;"><b>&alpha;</b></span> and <span style="font: 16px Garamond; color: #191970;"><b>&beta;</b></span>.  These bases are set for the <span style="font: 16px Garamond; color: #191970;"><b>&alpha;</b></span> angles.
+
+<table style="width: 100%;  border-collapse: collapse; ">
+	<tr style="vertical-align: bottom; ">
+		<td style="width: 25%;
+			    padding-left: 5px; padding-right: 5px; 
+	    		padding-top: 5px; padding-bottom: 0px; 
+				border: 1px solid darkgray; 
+			    text-align: center;">
+			<a href="ShowPicture.html?ImgNm=Images/Goniostat-FixedBase-30.png"><img src="Images/Goniostat-FixedBase-30.png" alt="no image file" style="width: 100%;" /></a>
+			<p class="TextSMImage" style="text-align: left; "><b><i>Fixed base for 30&deg; bevel</i></b></p>
+	    </td>
+		<td style="width: 25%;
+			    padding-left: 5px; padding-right: 5px; 
+	    		padding-top: 5px; padding-bottom: 0px; 
+				border: 1px solid darkgray; 
+			    text-align: center;">
+			<a href="ShowPicture.html?ImgNm=Images/Goniostat-FixedBase-60.png"><img src="Images/Goniostat-FixedBase-60.png" alt="no image file" style="width: 100%;" /></a>
+			<p class="TextSMImage" style="text-align: left; "><b><i>Fixed base for 60&deg; bevel</i></b></p>
+	    </td>
+		<td style="width: 25%;
+			    padding-left: 5px; padding-right: 5px; 
+	    		padding-top: 5px; padding-bottom: 0px; 
+				border: 1px solid darkgray; 
+			    text-align: center;">
+			<a href="ShowPicture.html?ImgNm=Images/Goniostat-FixedBase-90.png"><img src="Images/Goniostat-FixedBase-90.png" alt="no image file" style="width: 100%;" /></a>
+			<p class="TextSMImage" style="text-align: left; "><b><i>Fixed base for 90&deg; bevel</i></b></p>
+	    </td>
+		<td style="width: 25%;
+			    padding-left: 5px; padding-right: 5px; 
+	    		padding-top: 5px; padding-bottom: 0px; 
+				border: 1px solid darkgray; 
+			    text-align: center;">
+			<a href="ShowPicture.html?ImgNm=Images/Goniostat-FixedBase-120.png"><img src="Images/Goniostat-FixedBase-120.png" alt="no image file" style="width: 100%;" /></a>
+			<p class="TextSMImage" style="text-align: left; "><b><i>Fixed base for 120&deg; bevel</i></b></p>
+	    </td>
+		
+	</tr>
+</table>
+
+<div style="float: right; width: 250px; 
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 12px; margin-bottom: 5px; 
+		padding-left: 5px; padding-right: 5px; 
+		padding-top: 5px; padding-bottom: 0px; 
+		border: 1px solid darkgray; text-align: right;">
+	<a href="ShowPicture.html?ImgNm=Images/Goniostat-SettingBeta.png"><img src="Images/Goniostat-SettingBeta.png" alt="no image file" style="width: 100%;" /></a>
+	<p class="TextSMImage" style="text-align: left; "><b><i>75&deg; setup block for <span style="font: 14px Garamond; color: #191970;"><b><i>&beta;</i></b></span></i></b></p>
+</div>
+
+	<ul>
+		<li><a href="Goniostat/Goniostat-FixedBase-30.stl" download>Goniostat-FixedBase-30.stl</a></li>
+		<li><a href="Goniostat/Goniostat-FixedBase-30.stl" download>Goniostat-FixedBase-60.stl</a></li>
+		<li><a href="Goniostat/Goniostat-FixedBase-30.stl" download>Goniostat-FixedBase-90.stl</a></li>
+		<li><a href="Goniostat/Goniostat-FixedBase-30.stl" download>Goniostat-FixedBase-120.stl</a></li>
+	</ul>
+
+<p>A setup block used to set the fixed base at a <span style="font: 16px Garamond; color: #191970;"><b>&beta;</b></span> of 75&deg; is also available to be printed.  
+
+<p>It is used as shown in the picture to the right, and makes setting this angle easier than using the WM-200.
+
+	<ul>
+		<li><a href="Goniostat/Goniostat-FixedBase-SetupBlock-75.stl" download>Goniostat-FixedBase-SetupBlock-75.stl</a></li>
+	</ul>
 
 <!-- *************************************************** -->
 <!-- More Information -->
