@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+	<td style="text-align: center; vertical-align: middle; ">
+	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+		    &nbsp;
+    	</td>
+		<td style="vertical-align: text-top;  text-align: center; ">
+			<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Time Saving Tips for the Tormek</b></p>
+	    </td>
+		<td style="text-align: right; width: 10%; ">
+	    	&nbsp;
+	    </td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+
+<hr>
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<p>These are ideas and techniques you can use to make using your Tormek faster and easier.  These ideas are not free, but they are also not overly expensive.
+
+<p>You can click on any of the pictures to see a larger version.
+
+<p>The items here are:
+	<ul>
+		<li><b>SE-77 Square Edge Jig</b>
+			<ul>
+				<li><a href="#SE77AlignmentJig">Use an Alignment Jig for the SE-77</a></li>
+				<li style="margin-bottom: 12px;"><a href="#SE77SetupJig">Use a Setup Jig for the SE-77 with Standardized Angles</a></li>
+			</ul></li>
+
+		<li><b>SVS-50 Multi-Jig</b>
+			<ul>
+				<li style="margin-bottom: 12px;"><a href="#SplitSVS50">Split Your SVS-50 in Two</a></li>
+			</ul></li>
+
+
+		<li><b>Multipurpose</b>
+			<ul>
+				<li style="margin-bottom: 12px;"><a href="#DedicatedUSBs">Get Dedicated USBs for the Two TTS-100 Settings</a></li>
+			</ul></li>
+
+		<li><b>Scrapers</b>
+			<ul>
+				<li style="margin-bottom: 12px;"><a href="#DedicatedScrapers">Dedicate an SVD-110 Platform Jig for Scrapers</a></li>
+			</ul></li>
+
+		<li><b>Skews</b>
+			<ul>
+				<li style="margin-bottom: 12px;"><a href="#DedicatedSkews">Dedicate an SVD-110 Platform Jig for Skews</a></li>
+			</ul></li>
+	</ul>
+
+<!-- ################################################### -->
+<!-- Use a Setup Jig for the SE-77 with Standardized	 -->
+<!-- Angles									        	 -->
+<!-- ################################################### -->
+<table id="SE77AlignmentJig" style="width: 100%;"><tr><td><hr class="style1"></td></tr></table>
+<h2 style="margin-top: 12px; margin-bottom: 6px;">Use an Alignment Jig for the SE-77</h2>
+
+<div style="float: right; width: 350px; 
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 12px; margin-bottom: 5px; 
+		padding-left: 5px; padding-right: 0px; 
+		padding-top: 5px; padding-bottom: 0px; 
+		border: 1px solid darkgray; text-align: left;">
+    <a href="Images/SE-77_All-Components-Installed.png" target="new"><img src="Images/SE-77_All-Components-Installed.png" alt="no image file" style="width: 100%; "/></a>
+    <p class="TextSMImage"><b><i>SE-77 Jig and the Alignment Jig</i></b></p>
+</div>
+
+<p style="margin-top: 0;">Use this jig to align the SE-77 Square Edge Jig, ensuring that the skew angle is set to 0&deg;.
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">What is Needed</h3>
+<p style="margin-top: 0;">You need to 3D print (or get a friend to 3D print) this part:
+	<ul>
+		<li style="margin-bottom: 12px;"><a href="Jigs-SE-77-Alignment.html">Alignment Jig for the SE-77</a>.  That link provides the details on this.</li>
+	</ul>
+
+<p>The noted link above also provides instructions on the usage of this alignment jig.
+
+<!-- ################################################### -->
+<!-- Use a Setup Jig for the SE-77 with Standardized	 -->
+<!-- Angles									        	 -->
+<!-- ################################################### -->
+<table id="SE77SetupJig" style="width: 100%;"><tr><td><hr class="style1"></td></tr></table>
+<h2 style="margin-top: 12px; margin-bottom: 6px;">Use a Setup Jig for the SE-77 with Standardized Angles</h2>
+
+<div style="float: right; width: 250px; 
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 12px; margin-bottom: 5px; 
+		padding-left: 5px; padding-right: 5px; 
+		padding-top: 5px; padding-bottom: 0px; 
+		border: 1px solid darkgray; text-align: left;">
+    <a href="Images/TTS-100-ProjectionJig-v2.png" target="new"><img src="Images/TTS-100-ProjectionJig-v2.png" alt="no image file" style="width: 100%; "/></a>
+    <p class="TextSMImage"><b><i>Projection Jig for the TTS-100</i></b>
+</div>
+
+<p style="margin-top: 0;">Setting everything up to use the SE-77 Square Edge Jig to sharpen a chisel or plane blade can be a bit onerous.  Oftentimes, the Sharpie method ends up being used.
+
+<p>An alternate approach is to apply the same ideas as used in sharpening turning tools.  The idea is to set the distance from the USB to the grinding stone using the B setting on the TTS-100 Turning Tool Setter, and then use calculated projections for the tool as held in the SE-77.  This dramatically reduces the time required to start sharpening the tool
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">What is Needed</h3>
+<p style="margin-top: 0;">You need to 3D print (or get a friend to 3D print) this part:
+	<ul>
+		<li style="margin-bottom: 12px;"><a href="Jigs-ProjectionTTS-100.html">Projection Jig for the TTS-100</a>.  That link provides the details on this.</li>
+	</ul>
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">Setting Everything Up</h3>
+<p style="margin-top: 0;">Once you have the Projection Jig:
+
+	<ol>
+		<li style="margin-bottom: 12px;">Set the USB&rsquo;s height using the B setting on the TTS-100.  (Or, use the <a href="#DedicatedUSBs">dedicated USB</a> for this.)</li>
+
+		<li style="margin-bottom: 12px;">Set the tool&rsquo;s projection in the SE-77 using the projection jig.</li>
+	</ol>
+
+<!-- ################################################### -->
+<!-- Split Your SVS-50 in two				       		 -->
+<!-- ################################################### -->
+<table id="SplitSVS50" style="width: 100%;"><tr><td><hr class="style1"></td></tr></table>
+<h2 style="margin-top: 12px; margin-bottom: 6px;">Split Your SVS-50 in Two</h2>
+
+<table style="width: 350px;  border-collapse: collapse; float: right;">
+	<tr style="vertical-align: bottom; ">
+		<td style="width: 47%;
+			    padding-left: 5px; padding-right: 5px; 
+	    		padding-top: 5px; padding-bottom: 0px; 
+				border: 1px solid darkgray; 
+			    text-align: center;">
+		    <a href="ShowPicture.html?ImgNm=Images/SVS-50-OpenSeat-2.png"><img src="Images/SVS-50-OpenSeat-2.png" alt="no image file" style="width: 100%;" ></a>
+			<p class="TextSMImage"><b><i>Open Seat</i></b></p>
+	    </td>
+		<td style="border: 0px solid darkgray; ">
+			&nbsp;
+	    </td>
+		<td style="
+			    padding-left: 5px; padding-right: 5px; 
+	    		padding-top: 5px; padding-bottom: 0px; 
+				border: 1px solid darkgray; 
+			    text-align: center;">
+		    <a href="ShowPicture.html?ImgNm=Images/SVS-50-ClosedSeat.png"><img src="Images/SVS-50-ClosedSeat.png" alt="no image file" style="width: 100%;" ></a>
+			<p class="TextSMImage"><b><i>Closed Seat</i></b></p>
+	    </td>
+	</tr>
+	<tr>
+		<td colspan=3 style="border: 0px solid darkgray; ">
+			&nbsp;
+	    </td>
+	</tr>
+	<tr style="vertical-align: bottom; ">
+		<td colspan=3 style="
+			    padding-left: 5px; padding-right: 5px; 
+	    		padding-top: 5px; padding-bottom: 0px; 
+				border: 1px solid darkgray; 
+			    text-align: center;">
+			<a href="ShowPicture.html?ImgNm=Images/SVS-50-Parts.png"><img src="Images/SVS-50-Parts.png" alt="no image file" style="width: 100%;" /></a>
+			<p class="TextSMImage"><b><i>SVS-50 Parts Breakdown</i></b> <i>(from the Tormek diagram)</i></p>
+	    </td>
+	</tr>
+</table>
+
+<p style="margin-top: 0;">Switching the SVS-50 Multi-Jig between the Open Seat and the Closed Seat is painful: I spent more time trying to figure out how to get it setup correctly than I did using the jig.  
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">What is Needed</h3>
+<p style="margin-top: 0;">The good news is that you can order a few parts and make this jig into two separate tools, eliminating the need to swap the seats within the housing.  You need these parts:
+	<ul>
+		<li style="margin-bottom: 12px;">Housing, part number 2200 (number 1 in the lower diagram to the right), and</li>
+		
+		<li style="margin-bottom: 12px;">Locking Screw, part number 7090 (number 6 in the lower diagram to the right).</li> 
+	</ul>
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">Setting Everything Up</h3>
+<p style="margin-top: 0;">Once you have these two parts, you can assemble both the open seat and the closed seat as if they were two separate jigs.
+
+<p>The full parts breakdown for the SVS-50 is available on the Tormek web site and shows these parts.
+
+<!-- ################################################### -->
+<!-- Dedicated USBs								         -->
+<!-- ################################################### -->
+<table id="DedicatedUSBs" style="width: 100%;"><tr><td><hr class="style1"></td></tr></table>
+<div style="float: right; width: 200px; 
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 12px; margin-bottom: 5px; 
+		padding-left: 5px; padding-right: 5px; 
+		padding-top: 5px; padding-bottom: 0px; 
+		border: 1px solid darkgray; text-align: left;">
+	<a href="ShowPicture.html?ImgNm=Images/USB-Collar.png"><img src="Images/USB-Collar.png" alt="no image file" style="width: 100%;" /></a>
+	<p class="TextSMImage"><b><i>USB with collar</i></b></p>
+</div>
+
+<h2 style="margin-top: 12px; margin-bottom: 6px;">Get Dedicated USBs for the Two TTS-100 Settings</h2>
+<p style="margin-top: 0;">You can quickly get to sharpening, and then back to woodworking, by using dedicated Universal Support Bars (USBs).   
+ 
+<p>For many woodturning tools, the TTS-100 Turning Tool Setter is used to set the distance between USB and the grinding wheel using either the A or B setting.
+If you have pre-set USBs ready to go, one set for the TTS-100&rsquo;s A setting, and another for the B setting, then you can quickly get to sharpening, which gets you back to turning faster.
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">What is Needed</h3>
+<p style="margin-top: 0;">The parts needed are:
+
+	<ul>
+		<li style="margin-bottom: 12px;">Two USBs. I recommend the US-103 USBs as they are less expensive.  The top bar is 10mm shorter than the US-105 USB, but that is not an issue for the woodturner.  And you may be able to save some more money by getting them without the micro adjust nut (as it is not needed for this).</li>
+
+		<li style="margin-bottom: 12px;">Two 12mm collars (e.g., p/n 9506T6 from McMaster-Carr). One is shown as the red part on the USB's leg in the picture to the right.</li>
+	</ul>
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">Setting it Up</h3>
+<p style="margin-top: 0;">Once everything is in the correct position,
+
+	<ol>
+		<li style="margin-bottom: 12px;">Lock each USB&rsquo;s height in place using the collar.</li>
+
+		<li style="margin-bottom: 12px;">Label each USB as either A or B, corresponding to the TTS-100 setting.</li>
+	</ol>
+
+
+<!-- ################################################### -->
+<!-- Dedicated SVD-110 for Scrapers				         -->
+<!-- ################################################### -->
+<table id="DedicatedScrapers" style="width: 100%;"><tr><td><hr class="style1"></td></tr></table>
+<div style="float: right; width: 200px; 
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 12px; margin-bottom: 5px; 
+		padding-left: 5px; padding-right: 5px; 
+		padding-top: 5px; padding-bottom: 0px; 
+		border: 1px solid darkgray; text-align: right;">
+	<a href="ShowPicture.html?ImgNm=Images/USB-SVD-110-Collar.png"><img src="Images/USB-SVD-110-Collar.png" alt="no image file" style="width: 100%;" /></a>
+	<p class="TextSMImage"><b><i>USB with dedicated SVD-110</i></b></p>
+</div>
+
+<h2 style="margin-top: 12px; margin-bottom: 6px;">Dedicate an SVD-110 for Scrapers</h2>
+<p style="margin-top: 0;">This is another technique which allows you to quickly get to sharpening, and then back to woodworking.
+
+<p>Dedicate a Universal Support Bar (USB) and SVD-110 Platform Jig to sharpening scrapers.  This works exceptionally well for negative rake scrapers where the upper and lower angles are the same.
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">What is Needed</h3>
+<p style="margin-top: 0;">The parts needed are:
+
+	<ul>
+		<li style="margin-bottom: 12px;">One USB. As noted above, I recommend the US-103 USB as they are less expensive.  The top bar is 10mm shorter than the US-105 USB, but that is not an issue for the woodturner.  And you may be able to save some more money by getting them without the micro adjust nut.</li>
+
+		<li style="margin-bottom: 12px;">One 12mm collar (e.g., p/n 9506T6 from McMaster-Carr). One is shown as the red part on the USB's leg in the picture to the right.</li>
+
+		<li style="margin-bottom: 12px;">One SVD-110 Platform Jig.  I purchased an additional one just for this purpose as I also use the SVD-110 Platform Jig for other sharpening other tools.</li>
+	</ul>
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">Setting it Up</h3>
+<p style="margin-top: 0;">Once everything is in the correct position,
+
+	<ol>
+		<li style="margin-bottom: 12px;">Lock the USB&rsquo;s height in place using the collar.</li>
+
+		<li style="margin-bottom: 12px;">Lock the SVD-110&rsquo;s position.  I removed the knob screw and replaced it with a set screw as that made it less likely to have the position changed.</li>
+
+		<li style="margin-bottom: 12px;">And as usual, label each this  USB/Jig combo so you can quickly see what you need to pull from the drawer.
+	</ol>
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">Using This USB/Jig Combo</h3>
+<p style="margin-top: 0;">Now, when I want to sharpen a scraper, I grab the USB/Jig combo and drop it onto the Tormek. I sharpen the top side (if needed), and then the bottom.  You need to sharpen the bottom last so that the burr will be left towards the top of the scraper.
+
+<!-- ################################################### -->
+<!-- Dedicated SVD-110 for Skews				         -->
+<!-- ################################################### -->
+<table id="DedicatedSkews" style="width: 100%;"><tr><td><hr class="style1"></td></tr></table>
+<div style="float: right; width: 200px; 
+		margin-left: 0px; margin-right: 5px;
+		margin-top: 12px; margin-bottom: 5px; 
+		padding-left: 5px; padding-right: 5px; 
+		padding-top: 5px; padding-bottom: 0px; 
+		border: 1px solid darkgray; text-align: right;">
+	<a href="ShowPicture.html?ImgNm=Images/USB-SVD-110-Collar.png"><img src="Images/USB-SVD-110-Collar.png" alt="no image file" style="width: 100%;" /></a>
+	<p class="TextSMImage"><b><i>USB with dedicated SVD-110</i></b></p>
+</div>
+
+<h2 style="margin-top: 12px; margin-bottom: 6px;">Dedicate an SVD-110 for Skews</h2>
+<p style="margin-top: 0;">If you want to sharpen skews with flat sides, this works well.  It works especially well for the Alan Lacer type of skews as it is easy to keep the same edge angle on the curved part of the edge.  And as above, it allows you to quickly get to sharpening, and then back to woodworking.
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">What is Needed</h3>
+<p style="margin-top: 0;">The parts needed are:
+
+	<ul>
+		<li style="margin-bottom: 12px;">One USB. As noted above, I recommend the US-103 USB as they are less expensive.  The top bar is 10mm shorter than the US-105 USB, but that is not an issue for the woodturner.  And you may be able to save some more money by getting them without the micro adjust nut.</li>
+
+		<li style="margin-bottom: 12px;">One 12mm collar (e.g., p/n 9506T6 from McMaster-Carr). One is shown as the red part on the USB's leg in the picture to the right.</li>
+
+		<li style="margin-bottom: 12px;">One SVD-110 Platform Jig.  I purchased an additional one just for this purpose as I also use the SVD-110 Platform Jig for other sharpening other tools.</li>
+	</ul>
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">Setting it Up</h3>
+<p style="margin-top: 0;">Once everything is in the correct position,
+
+	<ol>
+		<li style="margin-bottom: 12px;">Lock the USB&rsquo;s height in place using the collar.</li>
+
+		<li style="margin-bottom: 12px;">Lock the SVD-110&rsquo;s position.  I removed the knob screw and replaced it with a set screw as that made it less likely to have the position changed.</li>
+
+		<li style="margin-bottom: 12px;">And as usual, label each this  USB/Jig combo so you can quickly see what you need to pull from the drawer.
+	</ol>
+
+<h3 style="margin-top: 12px; margin-bottom: 6px;">Using This USB/Jig Combo</h3>
+<p style="margin-top: 0;">Now, when I want to sharpen a scraper, I grab the USB/Jig combo and drop it onto the Tormek. Everything is ready to use, so I get to sharpening.
+
+
+
+<p>Dedicate a Universal Support Bar (USB) and SVD-110 Platform Jig to sharpening skews.  You can drop this onto the Tormek, sharpen the one side, and sharpen the other.
+
+
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
