@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 		 -->
+<!-- server					        					 -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+    	<td style="text-align: center; vertical-align: middle; ">
+	        <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+    	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+    	<td style="vertical-align: text-top;  text-align: center; ">
+	    	<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Pick Mattock &amp; Pickax</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<hr>
+
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<div style=" float: right; Width: 450px; 
+        margin-left: 5px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 5px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 1px solid darkgray; text-align: left;  ">
+    <img src="Images/PickAdz_PickAx.png" alt="no image file" style="width: 100%; " />
+    <p class="TextSMImage"><i><b>Pick Mattock</b> (left) &amp; <b>PickAx</b> (right)</i></p>
+</div>
+
+<p>A <b>Pick Mattock</b> is a commonly used tool at the home, and its use is usually followed by the use of some form of pain relief.
+
+<p>These are all commonly called a <b>pickax</b>; however there are two separate tools.  Both have a pick on one side, but the other side is what differentiates these two.
+
+    <ul>
+        <li style="margin-bottom: 12px;">The <b>pick mattock</b>'s side opposite the pick is an adze.  This is shown in the picture to the right as the left tool.</li>
+        <li>The <b>pickax</b>'s side opposite the pick is a crude version of an axe.  This is shown in the picture to the right as the right tool.</li>
+    </ul>
+
+<p>The angles for each edge are shown below.
+
+<div style=" float: left; Width: 100px; 
+        margin-left: 0px; margin-right: 10px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 0px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 0px solid black; text-align: left;  ">
+        
+    <a href="SharpnessScale.html" style="text-decoration: none;"><img src="Images/SharpnessScale_3.png" alt="no image file" style="width: 100%; " /></a>
+    <p style="text-align: center; margin-top: 0px; margin-bottom: 3px; font: 10px Arial; "><i>Click to read more</i></p>
+</div>
+
+<table style="width: 285px; float: right; 
+		border: 1px solid grey; 
+		border-collapse: collapse;
+		background-color:#DFD7C8;
+		margin-top: 12px; margin-bottom: 10px;
+		margin-left: 5px; margin-right: 0px; ">
+	<tr>
+		<td>
+			<p style="margin-top: 0; margin-bottom: 0; padding: 3px;"><i>A man says a lot of things in Summer he doesn't mean in Winter.</I>
+				<p style="margin-top: 0; margin-bottom: 0; 
+				        padding-left: 33pt; padding-right: 3px; 
+				        padding-top: 3px; padding-bottom: 3px;
+				        ">
+				    Patricia Briggs</p>
+		</td>
+	</tr>
+</table>
+
+<p>There is a strong liklihood that this tool will be impacting bricks, rocks, or other construction debris.  They do not need to be terribly sharp (thusly, the <a href="SharpnessScale.html">sharpness scale</a> rating of 3).  Also, if you miss and hit yourself, you will want to mimimize the damage to your leg.
+
+<!-- ################################################### -->
+<!-- General Guidelines -->
+<table style="width: 100%; margin-top: 12px;
+		border-collapse: collapse; ">
+    <tr style="background-color: moccasin;
+				vertical-align: bottom;">
+		<th colspan=4 style=" 
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: thick; 
+				">
+	    	<p class="TextTableHdrLg"><b>General Guidelines</b></p>
+		</th>
+    </tr>    
+    <tr style="background-color: moccasin;
+				vertical-align: bottom;">
+		<th style="width: 150px;
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thin;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				">
+		    <p class="TextTableHdrNorm"><b>End</b></p>
+		</th>
+		<th style="width: 50px; 
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thin; 
+				">
+		    <span style="color: #191970; font: 32px Garamond; "><b>&alpha;</b></span>
+		</th>
+		<th style="width: 75px; 
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium;
+				border-left-width: thin; 
+				border-right-width: medium; 
+				">
+		    <p class="TextTableHdrNorm"><b>Range</b></p>
+		</th>
+		<th style="
+				background-color: moccasin;
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+		    <p class="TextTableHdrNorm"><b>Comments</b></p>
+		</th>
+    </tr>
+
+<!-- ################################################### -->
+<!-- Pick                                                -->
+<!-- ################################################### -->
+    <tr style="background-color: White;
+				vertical-align: middle;">
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: thin; 
+				">
+			<a href="ShowPicture.html?ImgNm=Images/Pick.png"><img src="Images/Pick.png" alt="no image file" 
+			        style="width: 95%; float: left;
+			        padding-left: 0px; padding-right: 15px; 
+                    padding-top: 5px; padding-bottom: 0px; 
+                    " /></a>
+            <p class="TextSMImage"><b>Pick</b></p>
+            <p class="TextSMImage"><i>side view</i></p>
+        </td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thin; 
+				">
+			<b>25&deg;</b>
+        </td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thin; 
+				border-right-width: medium; 
+				">
+			20&deg; - 35&deg;
+        </td>
+		<td style="
+				vertical-align: top;
+				text-align: left;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+            <p style="margin-top: 0; margin-bottom: 0; ">Be sure to round off the point.  A radius around &frac18;&rdquo; is recommended.
+        </td>
+    </tr>
+    
+<!-- ################################################### -->
+<!-- Adze                                                -->
+<!-- ################################################### -->
+    <tr style="background-color: #DCDCDC;
+				vertical-align: middle;">
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: thin; 
+				">
+			<a href="ShowPicture.html?ImgNm=Images/PickAdz.png"><img src="Images/PickAdz.png" alt="no image file" 
+			        style="width: 95%; float: left;
+			        padding-left: 0px; padding-right: 15px; 
+                    padding-top: 5px; padding-bottom: 0px; 
+                    " /></a>
+            <p class="TextSMImage"><b>Adze</b></p>
+            <p class="TextSMImage"><i>side view</i></p>
+        </td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thin; 
+				">
+			<b>35&deg;</b>
+        </td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thin; 
+				border-right-width: medium; 
+				">
+			30&deg; - 50&deg;
+        </td>
+		<td style="
+				vertical-align: top;
+				text-align: left;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+            <div style=" float: right; Width: 50px; 
+                    margin-left: 5px; margin-right: 0px; 
+                    margin-top: 0px; margin-bottom: 5px; 
+                    padding-left: 5px; padding-right: 0px; 
+                    padding-top: 5px; padding-bottom: 0px; 
+                    border: 1px solid darkgray; 
+                    text-align: left;  ">
+    			<a href="ShowPicture.html?ImgNm=Images/PickAdz_RoundedCorners.png"><img src="Images/PickAdz_RoundedCorners.png" alt="no image file" style="width: 100%;" /></a>
+            </div>
+
+            <p style="margin-top: 0; ">This end is sharpened on the operator&rsquo;s side of the edge angle, just as adze is.  The noted angle for <span style="color: #191970; font: 16px Garamond; "><b>&alpha;</b></span> is a bevel angle, and should be denoted as <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span>; however this was noted this way for convience. (50% an included angle).
+            
+            <p style="margin-bottom: 0; ">As noted in the picture to the right, the corners of the axe end should be rounded off. <i>(This is a top view of the tool; click on the picture to see a larger version.)</i>
+        </td>
+    </tr>
+    
+<!-- ################################################### -->
+<!-- Axe                                                 -->
+<!-- ################################################### -->
+    <tr style="background-color: White;
+				vertical-align: middle;">
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: thick; 
+				border-right-width: thin; 
+				">
+			<a href="ShowPicture.html?ImgNm=Images/PickAx.png"><img src="Images/PickAx.png" alt="no image file" 
+			        style="width: 95%; float: left;
+			        padding-left: 0px; padding-right: 15px; 
+                    padding-top: 5px; padding-bottom: 0px; 
+                    " /></a>
+            <p class="TextSMImage"><b>Axe</b></p>
+            <p class="TextSMImage"><i>top view</i></p>
+        </td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: thin; 
+				">
+			<b>40&deg;</b>
+        </td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: thin; 
+				border-right-width: medium; 
+				">
+			30&deg; - 50&deg;
+        </td>
+		<td style="
+				vertical-align: top;
+				text-align: left;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+            <div style=" float: right; Width: 50px; 
+                    margin-left: 5px; margin-right: 0px; 
+                    margin-top: 0px; margin-bottom: 5px; 
+                    padding-left: 5px; padding-right: 0px; 
+                    padding-top: 5px; padding-bottom: 0px; 
+                    border: 1px solid darkgray; 
+                    text-align: left;  ">
+    			<a href="ShowPicture.html?ImgNm=Images/PickAx_RoundedCorners.png"><img src="Images/PickAx_RoundedCorners.png" alt="no image file" style="width: 100%;" /></a>
+            </div>
+
+            <p style="margin-top: 0; ">This end is sharpened on both sides of the edge angle, just as an axe is.  The noted angle for <span style="color: #191970; font: 16px Garamond; "><b>&alpha;</b></span> is an included angle.
+            
+            <p style="margin-bottom: 0; ">As noted in the picture to the right, the top and bottom corners of the axe end should be rounded off. <i>(This is a side view of the tool; click on the picture to see a larger version.)</i>
+        </td>
+    </tr>
+</table>
+
+
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<h2>Notes &amp; Comments</h2>
+
+<div style="float: right; width:150px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
+    <a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="no image file" style="width: 100%;" ></a>
+    <a href="Grindstones.html">Information regarding Grindstones</a>
+</div>
+
+<p>The comments regarding rounding off the corners on the adze and axe ends relate to the reality that this tool is sure be found impacting stuff which was not the intended target (e.g., a building&rsquo;s side).  This is particularly prone to happen towards the end of the working session when the user is tired.
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-GT-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<!-- 
+<hr class="style1">
+<h2>More Information</h2>
+ -->
+
+<!-- 
+<h3>Books &amp; Papers</h3>
+	<ul>
+        <li style="margin-bottom: 12px;"></li>
+ 	</ul>
+ -->
+
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+ -->
+
+
+<!-- 
+<h3>Published Articles</h3>
+	<ul>
+		<li></li>
+	</ul>
+ -->
+
+<!-- 
+<h3>Web Sites</h3>
+	<ul>
+        <li></li>
+	</ul>
+ -->
+
+<!-- 
+<h3>Other</h3>
+	<ul>
+		<li></li>
+	</ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
