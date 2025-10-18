@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+    	<td style="text-align: center; vertical-align: middle; ">
+	        <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+    	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+    	<td style="vertical-align: text-top;  text-align: center; ">
+	    	<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Break-in Jig</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<hr>
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<h1>Overview</h1>
+
+<div style="float: right; width: 350px; 
+		margin-top: 0px; margin-bottom: 0px; 
+		margin-left: 5px; margin-right: 0px; 
+		padding-top: 0px; padding-bottom: 5px; 
+		padding-left: 5px; padding-right: 0px; 
+		border:1px solid darkgray; text-align: left;">
+    <img src="Images/Break-in-Jig.png" alt="no image file" style="width: 100%;" />
+    <p class="TextSMImage"><b><i>Break-in Jig</i></b></p>
+</div>
+
+<p style="margin-top: 6px;">The break-in jig was requested by TormekMan, Ken Schroeder.  His idea is that this gets used for new diamond or CBN grinding wheels to "break" them in, reducing the aggressiveness seen on new grinding wheels.
+
+<p>The jig is held on your machine's universal support bar (red part), and can be used in the vertical or horizontal position to break in a new grinding wheel (green part).
+
+<p>Very light pressure is used.
+<!-- *************************************************** -->
+<!-- Additional pictures of this jig -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Additional Pictures of this Jig</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Usage Notes -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Usage Notes</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- How it works -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">How it Works</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Sources for buying one -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Sources for Buying One</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Notes on making one -->
+<!-- *************************************************** -->
+<!--
+<table width="100%"><tr><td>&nbsp;</td></tr></table>
+-->
+<hr class="style2">
+<h1>Notes on Making One</h1>
+
+<p style="margin-top: 0;">The 3D printing file is available as an STL.
+
+<table style="border-collapse: collapse;  ">
+    <tr style="background-color: Moccasin; ">
+		<th style="
+		        text-align: center; 
+		        vertical-align: bottom;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+	    		border-right-width: medium; 
+	    		width: 200px;">
+    	    <p class="TextTableHdrNorm"><b>Part</b></p>
+		</th>
+		<th style="
+    		    text-align: center; 
+    		    vertical-align: bottom;
+	    	    border-style: solid; 
+	    	    border-color: black; 
+		    	border-top-width: medium; 
+			    border-bottom-width: medium; 
+    			border-left-width: medium; 
+	    		border-right-width: medium; 
+	    		width: 225px;">
+    	    <p class="TextTableHdrNorm"><b>STL File</b></p>
+		</th>
+    </tr>
+
+    <tr>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+  				border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; ">
+		    Break-in Jig Handle
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+    			border-top-width: medium; 
+	    		border-bottom-width: medium; 
+		    	border-left-width: medium; 
+			    border-right-width: medium; ">
+	    	<a href="Images/Break-In-Jig_Handle.stl" download>Break-In-Jig_Handle.stl</a>
+		</td>
+    </tr>
+</table>
+
+<h2>Other Parts Needed</h2>
+<p style="margin-top: 0;">The other parts needed are:
+
+<table style="border-collapse: collapse;  ">
+    <tr style="background-color: Moccasin; ">
+		<th style="
+		        text-align: center; 
+		        vertical-align: bottom;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+	    		border-right-width: medium; 
+	    		width: 45%;">
+    	    <p class="TextTableHdrNorm"><b>Part</b></p>
+		</th>
+		<th style="
+    		    text-align: center; 
+    		    vertical-align: bottom;
+	    	    border-style: solid; 
+	    	    border-color: black; 
+		    	border-top-width: medium; 
+			    border-bottom-width: medium; 
+    			border-left-width: medium; 
+	    		border-right-width: medium; 
+	    		width: 25px;">
+    	    <p class="TextTableHdrNorm"><b>Qty</b></p>
+		</th>
+		<th style="
+    		    text-align: center; 
+    		    vertical-align: bottom;
+	    	    border-style: solid; 
+	    	    border-color: black; 
+		    	border-top-width: medium; 
+			    border-bottom-width: medium; 
+    			border-left-width: medium; 
+	    		border-right-width: medium; 
+	    		">
+    	    <p class="TextTableHdrNorm"><b>Comments</b></p>
+		</th>
+    </tr>
+
+    <tr>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+  				border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; ">
+		    Low-Carbon Steel Bar, &frac18;&rdquo; thick, 2&rdquo; wide, 3-4&rdquo; long
+		</td>
+		<td style="
+    		    text-align: center; 
+    		    vertical-align: middle;
+		        border-style: solid; 
+		        border-color: black; 
+  				border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; ">
+		    1
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+    			border-top-width: medium; 
+	    		border-bottom-width: medium; 
+		    	border-left-width: medium; 
+			    border-right-width: medium; ">
+	    	McMaster-Carr p/n 8910K399.  McMaster-Carr offers other metal bars of this size.
+		</td>
+    </tr>
+
+    <tr>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+  				border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; ">
+		    Button Head Hex Drive Screw, 18-8 Stainless Steel, M6-1.0, 25mm Long
+		</td>
+		<td style="
+    		    text-align: center; 
+    		    vertical-align: middle;
+		        border-style: solid; 
+		        border-color: black; 
+  				border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; ">
+		    2
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+    			border-top-width: medium; 
+	    		border-bottom-width: medium; 
+		    	border-left-width: medium; 
+			    border-right-width: medium; ">
+	    	McMaster-Carr p/n 92095A242
+		</td>
+    </tr>
+    <tr>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+  				border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; ">
+		    Medium-Strength Thin-Profile Hex Nut, M6-1.0 Thread
+		</td>
+		<td style="
+    		    text-align: center; 
+    		    vertical-align: middle;
+		        border-style: solid; 
+		        border-color: black; 
+  				border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; ">
+		    2
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+    			border-top-width: medium; 
+	    		border-bottom-width: medium; 
+		    	border-left-width: medium; 
+			    border-right-width: medium; ">
+	    	McMaster-Carr p/n 90695A038
+		</td>
+    </tr>
+</table>
+
+<!-- *************************************************** -->
+<!-- More Information -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">More Information</font></h1>
+-->
+
+<!-- *************************************************** -->
+<!-- Published Articles -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Published Articles</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Books & Papers -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Books &amp; Papers</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Web Sites -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Web Sites</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Presentations -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Presentations</font></h2>
+	<ul>
+		<li><a href="https://youtu.be/ZCKXeXTWl0o?si=h4cndf-UyRK_gEzf" target="new">FVB for cleaver sharpening on Tormek</a> (YouTube video).  Knife Grinders Australia instructional video on using Frontal Vertical Base (FVB) for Tormek.</li>
+	</ul>
+-->
+
+
+<!-- *************************************************** -->
+<!-- Other -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Other</font></h2>
+<p>
+-->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
