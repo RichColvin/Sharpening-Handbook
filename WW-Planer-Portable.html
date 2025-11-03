@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 		 -->
+<!-- server					        					 -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+    	<td style="text-align: center; vertical-align: middle; ">
+	        <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+    	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+    	<td style="vertical-align: text-top;  text-align: center; ">
+	    	<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Portable Planers</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<hr>
+
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<div style=" float: right; Width: 300px; 
+        margin-left: 5px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 0px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 1px solid darkgray; text-align: left;  ">
+    <img src="Images/AngleR.png" alt="no image file" style="width: 100%;" />
+    <p class="TextSMImage"><b><i>Edge Angle</i></b></p>
+</div>
+
+<table style="width: 250px; float: left; 
+		margin-top: 0px;
+		margin-bottom: 10px;
+		margin-left: 0px;
+		margin-right: 10px;
+		border: 1px solid grey; 
+		border-collapse: collapse;
+		background-color:#DFD7C8; 
+		">
+    <tr>
+		<td>
+		    <p style="margin-top: 0; margin-bottom: 0; "><i>Woodworking is not about making things perfect. It&rsquo;s about making mistakes, learning from them, and creating something unique.</i>
+	    	    <p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Anonymous
+		</td>
+    </tr>
+</table>
+
+<p style="margin-top: 0px;">These tools are often used for rough carpentry work, but a sharp edge on the blades will make this effort easier and safer.
+
+<p>Guidelines shown below are for <b>Primary Bevel Angles</b>.  
+
+A <a href="MicroBevels.html">micro / secondary bevel</a> is not recommended as it would have very limited value and would not be worth the effort.
+
+
+<!-- ################################################### -->
+<!-- General Guidelines -->
+<table style="width: 100%; margin-top: 12px;
+		border-collapse: collapse; ">
+    <tr style="background-color: moccasin;
+				vertical-align: bottom;">
+		<th colspan=3 style=" 
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: thick; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: thick; 
+				">
+	    	<p class="TextTableHdrLg"><b>General Guidelines</b></p>
+		</th>
+    </tr>    
+    <tr style="background-color: moccasin;
+				vertical-align: bottom;">
+		<th style="width: 75px; 
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				">
+		    <p class="TextTableHdrNorm"><b>Use</b></p>
+		</th>
+		<th style="width: 75px;
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				">
+		    <span style="color: #191970; font: 32px Garamond; "><b>&alpha;</b></span>
+		</th>
+		<th style="
+				background-color: moccasin;
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+		    <p class="TextTableHdrNorm"><b>Comments</b></p>
+		</th>
+    </tr>
+
+    <tr style="background-color: White;
+				vertical-align: middle;">
+		<td style="
+				text-align: left;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: thick; 
+				border-right-width: medium; 
+				">
+			General Purpose
+        </td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: medium; 
+				">
+			60&deg;
+		</td>
+		<td style="
+				vertical-align: top;
+				text-align: left;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: medium; 
+				border-right-width: thick; 
+				">
+		    <p style="margin-top: 0; margin-bottom: 0;">&nbsp;
+		</td>
+	</tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<h2>Notes &amp; Comments</h2>
+
+<div style="float: right; width:150px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
+    <a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="no image file" style="Width: 100%"></a>
+    <a href="Grindstones.html">Information regarding Grindstones</a>
+</div>
+
+<h3 style="margin-bottom: 3px;">Grinding Wheels</h3>
+<p style="margin-top: 0;">If sharpening blades which are high speed steel (HSS), any of these Tormek grinding wheels should work well:
+    <ul>
+        <li>SG Original Grindstone,</li>
+        <li>SB Blackstone Silicon Grinding Wheel, or</li>
+        <li>DF Diamond Fine Grinding Wheel.</li>
+    </ul>
+
+<p>If the blade is tungsten carbide, 
+    <ul>
+        <li>the DF Diamond Fine Grinding Wheel should work well,</li>
+        <li>the SB Blackstone Silicon Grinding Wheel might work, but will not be as fast as the diamond grinding wheel, and</li>
+        <li>the SG Original Grindstone will be tedious to use.</li>
+    </ul>
+
+<hr class="style2">
+
+<h3 style="margin-bottom: 3px;">Tormek Jigs</h3>
+<p style="margin-top: 0;">The Tormek scissors jigs (SC-60 or SVX-150) are excellent for this.  The SC-60 has a 60&deg; setup built into it, so this makes it a perfect fit.
+
+<hr class="style2">
+
+<h3 style="margin-bottom: 3px;">Severly Nicked Blades</h3>
+<p style="margin-top: 0;">Many of these blades are typically not very wide, so there is not much there to remove (a common size is 5.5mm / 0.217&rdquo;).
+
+If there are significant nicks in the blade, it is probably best to use the other edge (if possible) or swap out the blade.
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-WW-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<!-- 
+<hr class="style1">
+<h2>More Information</h2>
+ -->
+
+<!-- 
+<h3>Books &amp; Papers</h3>
+    <ul>
+        <li><u>Taunton's Complete Illustrated Guide to Sharpening</u> (book), by Thomas Lie-Nielsen</li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+    <ul>
+		<li style="margin-bottom: 12px;"></li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Published Articles</h3>
+    <ul>
+		<li></li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Web Sites</h3>
+    <ul>
+    	<li></li>
+    </ul>
+ -->
+
+<!-- 
+<h3>Other</h3>
+    <ul>
+		<li></li>
+    </ul>
+ -->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
