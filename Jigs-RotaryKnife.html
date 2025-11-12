@@ -13,8 +13,8 @@
 <body style="background-color: #E6E6E6; font: 16px Arial; ">
 
 <!-- ################################################### -->
-<!-- Code for Including Standard HTML files on the 	 -->
-<!-- server					         -->
+<!-- Code for Including Standard HTML files on the 	     -->
+<!-- server					                             -->
 <!-- ################################################### -->
 <script src="library.js"></script>
 
@@ -84,21 +84,33 @@ includeHTML();
 <!-- ################################################### -->
 <!-- Body                                                -->
 <!-- ################################################### -->
-<h1>Overview</h1>
+<h style="margin-bottom: 3px;"1>Overview</h1>
 
+<div style="float: right; width: 250px; 
+        margin-top: 0px; margin-bottom: 5px;
+        margin-left: 5px; margin-right: 0px;
+        padding-top: 5px; padding-bottom: 5px;
+        padding-left: 5px; padding-right: 5px;
+        border: 1px solid darkgray;
+        text-align: left; background-color:#E6E6E6">
+    <img src="Images/Rotary-Cutter-Sharpener-1.png" width="100%">
+    <img src="Images/Rotary-Cutter-Sharpener-2.png" width="100%">
+    <i><font size="2"><b>Rotary Cutter Jig</b>, shown with a rotary cutter blade</font></i>
+</div>
+
+<!--
 <div style="float: right; width: 500px; margin: 0 0 5px 5px; padding: 5px; border: 1px solid darkgray; text-align: center;">
     <img src="Images/GT-Rotary-Cutter.png" alt="no image file" style="width: 100%;" />
     <p class="TextSMImage"><b>Rotary Knife Jig - Drawing</b></p>
-<!--
     <br><img src="Images/GT-Rotary_Cutter_1.jpeg" alt="no image file" style="width: 100%;" />
     <br><b>Rotary Knife Jig - Side View</b>
 
     <br><img src="Images/GT-Rotary_Cutter_3.jpeg" alt="no image file" style="width: 100%;" />
     <br><b>Rotary Knife Jig - Parts Exploded</b>
--->
 </div>
+-->
 
-<p style="margin-top: 6px;">I made this set of add-on parts for the <a href="https://www.tormek.com/" target="new">Tormek</a> SVD-185 / <a href="https://www.tormek.com/usa/en/grinding-jigs/svd-186-gouge-jig-svd-185/" target="new">SVD-186</a> Jig so I could sharpen rotary knives for my wife.
+<p style="margin-top: 3px;">I made the original version of this set as add-on parts for the <a href="https://www.tormek.com/" target="new">Tormek</a> SVD-185 / <a href="https://www.tormek.com/usa/en/grinding-jigs/svd-186-gouge-jig-svd-185/" target="new">SVD-186</a> Jig so I could sharpen rotary knives for my wife.
 
 <p>The pieces added are
     <ol>
@@ -107,6 +119,8 @@ includeHTML();
 		<li>the fender washers.</li>
     </ol>
 
+<hr class="style2">
+<p>Since then, I've created one using mostly 3D-printed parts as shown in the pictures to the right.
 
 <!-- *************************************************** -->
 <!-- Additional pictures of this jig -->
@@ -120,11 +134,27 @@ includeHTML();
 <!-- *************************************************** -->
 <!-- Usage Notes -->
 <!-- *************************************************** -->
-<!--
 <hr class="style2">
-<h1><font color="DarkBlue">Usage Notes</font></h1>
--->
+<h1 style="margin-bottom: 3px;">Usage Notes</font></h1>
+<p style="margin-top: 0;">I find that the most effective sharpening process is:
 
+<ol>
+    <li style="margin-bottom: 6px;">Sharpen the blade using the DE-250 grinding wheel (1,200 grit).  These blades are typically quite hard steel, so the diamond wheel is useful for setting the edge.
+    
+    <p>Based on how the blade is held, when using the USB in the horizontal position, this is edge-leading grinding.</li>
+
+    <li style="margin-bottom: 6px;">If honing is desired, paper wheels on a bench grinder work well.  Hone the blade&rsquo;s edge using
+    
+        <ol type="a">
+            <li style="margin-top: 3px; margin-bottom: 3px;">5&micro;m diamond paste on one paper wheel, followed by</li>
+            <li style="margin-bottom: 3px;">0.5&micro;m diamond paste on the other paper wheel.</li>
+        </ol>
+        
+        <p>You can hold the blade using a 10mm bolt with a nut, and rotating it with a battery-operated drill.  This is shown in the video noted below.
+    </li>
+</ol>
+
+<p><span style="color: red">When cleaning the honing compound off the blade, DO NOT do that whilst rotating the blade in the drill.</span> You may get lucky a few times, but at some point, the spining blade will somehow cut you badly.  <b>It is not worth the risk.</b>
 
 <!-- *************************************************** -->
 <!-- How it works -->
@@ -138,28 +168,229 @@ includeHTML();
 <!-- *************************************************** -->
 <!-- Sources for buying one -->
 <!-- *************************************************** -->
-<!--
 <hr class="style2">
-<h1><font color="DarkBlue">Sources for Buying One</font></h1>
-<p>
--->
+<h1 style="margin-bottom: 6px;">Sources for Buying One</h1>
+<p style="margin-top: 6px;">You can purchase one from <a href="https://www.colvintools.com/" target="new">Colvin Tools</a>.
 
 <!-- *************************************************** -->
 <!-- Notes on making one -->
 <!-- *************************************************** -->
-<!--
-<table width="100%"><tr><td>&nbsp;</td></tr></table>
--->
-<!--
 <hr class="style2">
-<h1><font color="DarkBlue">Notes on Making One</font></h1>
--->
+<h1 style="margin-bottom: 6px;">Notes on Making One</font></h1>
+<p style="margin-top: 6px;">You can 3D print your own parts.  The components are:
+
+    <ol>
+        <li style="margin-bottom: 6px;"><a href="Rotary-Cutter-Sharpener-Sleeve.3mf" download>Rotary-Cutter-Sharpener-Sleeve.3mf</a> (the blue part in the pictures above)</li>
+        
+        <li style="margin-bottom: 6px;"><a href="Rotary-Cutter-Sharpener-Shaft.3mf" download>Rotary-Cutter-Sharpener-Shaft.3mf</a> (the yellow part in the pictures above)</li>
+        
+        <li style="margin-bottom: 6px;"><a href="Rotary-Cutter-Sharpener-Handle.3mf" download>Rotary-Cutter-Sharpener-Handle.3mf</a> (the green part in the pictures above)</li>
+
+        <li style="margin-bottom: 6px;"><a href="Rotary-Cutter-Sharpener-Handle-Knob.3mf" download>Rotary-Cutter-Sharpener-Handle-Knob.3mf</a> (the brown part in the pictures above)</li>
+        
+        <li><a href="Rotary-Cutter-Sharpener-Adapter-10mm.3mf" download>Rotary-Cutter-Sharpener-Adapter-10mm.3mf</a> (the red part in the pictures above)</li>
+    </ol>
+
+<p>You will also need these parts:
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: bottom; background: moccasin;">
+	    <th style="width: 300px;
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: thick; 
+	            ">
+            Item
+        </th>
+	    <th style="width: 125px;
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            Source
+        </th>
+	    <th style="width: 100px;
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            Part Number
+        </th>
+	    <th style="
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: thick; border-left-width: medium; 
+	            ">
+            Comments
+        </th>
+    </tr>
+    
+    <tr style="vertical-align: top; background: lightgray;">
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: thick; 
+	            ">
+            Flanged Button Head Screw, M6-1.0 mm Thread, 10 mm Long, 18-8 Stainless Steel
+        </td>
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            McMaster-Carr
+        </td>
+	    <td style="
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            97654A379
+        </td>
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: thick; border-left-width: medium; 
+	            ">
+            Used to attach the Sharpener Adapter (red part) & blade to the Shaft (yellow part).
+        </td>
+    </tr>
+    
+    <tr style="vertical-align: top; background: white;">
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: thick; 
+	            ">
+            Socket Head Screw, M6-1.0 mm Thread, 16 mm Long, Black Oxide
+        </td>
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            McMaster-Carr
+        </td>
+	    <td style="
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            91290A321
+        </td>
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: thick; border-left-width: medium; 
+	            ">
+            Used to attach the Handle (green part) to the Shaft (yellow part).
+        </td>
+    </tr>
+
+    <tr style="vertical-align: top; background: lightgray;">
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: thick; 
+	            ">
+            Thin Hex Nut, M6-1.0 mm Thread Size, 3.2 mm High, Brass
+        </td>
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            McMaster-Carr
+        </td>
+	    <td style="
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            93187A250
+        </td>
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: thick; border-left-width: medium; 
+	            ">
+            Used to attach the Handle Knob (brown part) to the Handle (green part).  This nut is tightened on the screw against the Handle, and is adjusted to allow the Handle Knob to spin freely.
+        </td>
+    </tr>
+
+    <tr style="vertical-align: top; background: white;">
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: medium; border-left-width: thick; 
+	            ">
+            Socket Head Screw, M6-1.0 mm Thread, 55 mm Long, Partially Threaded, Black Oxide
+        </td>
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            McMaster-Carr
+        </td>
+	    <td style="
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            91290A342
+        </td>
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: thick; border-left-width: medium; 
+	            ">
+            Used to attach the Handle Knob (brown part) to the Handle (green part).
+        </td>
+    </tr>
+</table>
+
+<h3 style="margin-bottom: 6px;">Tools Needed</h1>
+<p style="margin-top: 6px;">These tools are needed:
+    <ul>
+        <li style="margin-bottom: 0px;">6mm-1.0 tap (e.g., McMaster-Carr p/n 8305A17) and 
+        <li style="margin-bottom: 6px;">Tap wrench (e.g., McMaster-Carr p/n 2546A23)</li>
+
+        <li style="margin-bottom: 6px;">5mm Allen wrench (e.g., McMaster-Carr p/n 6958A15)</li>
+
+        <li style="margin-bottom: 6px;">4mm Allen wrench (e.g., McMaster-Carr p/n 7289A15)</li>
+    </ul>
+
+<p style="margin-top: 6px;">These tools are recommended:
+    <ul>
+        <li style="margin-bottom: 6px;">A thin 10mm wrench (e.g., McMaster-Carr p/n 54755A53 or 8393A49) is useful for tightening the brass nut against the handle.  The nut is only 3.2mm thick, so a standard wrench does not have adequate space to fit.</li>
+    </ul>
 
 <!-- *************************************************** -->
 <!-- More Information -->
 <!-- *************************************************** -->
 <hr class="style2">
-<h1>More Information</h1>
+<h1 style="margin-bottom: 6px;">More Information</h1>
 
 <!-- *************************************************** -->
 <!-- Published Articles -->
