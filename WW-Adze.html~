@@ -85,7 +85,7 @@ includeHTML();
 	        &nbsp;
     	</td>
     	<td style="vertical-align: text-top;  text-align: center; ">
-	    	<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Stone Carving Point Tool</b></p>
+	    	<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Adze</b></p>
     	</td>
     	<td style="text-align: right; width: 10%; ">
 	        &nbsp;
@@ -94,49 +94,90 @@ includeHTML();
 </table>
 
 <!-- ################################################### -->
-<!-- Body                                                                                               -->
+<!-- Body                                                -->
 <!-- ################################################### -->
-    <hr>
+<hr>
 
 <!-- ################################################### -->
 <!-- Guidance Information -->
+<p>The <b>Adze</b> is a tool which is swung about a pivot point when used, and has two key angles, <span style="color: #191970; font: 16px Garamond; "><b>&alpha;</b></span> and <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span>.
 
-<div style=" float: right; Width: 350px; 
+<div style=" float: right; Width: 150px; 
         margin-left: 5px; margin-right: 0px; 
         margin-top: 0px; margin-bottom: 5px; 
-        padding-left: 0px; padding-right: 5px; 
+        padding-left: 5px; padding-right: 0px; 
         padding-top: 5px; padding-bottom: 0px; 
         border: 1px solid darkgray; text-align: left;  ">
-    <img src="Images/MW-Punch-Prick.png" alt="no image file" style="Width: 100%;" />
+    <img src="Images/Adze1.png" alt="no image file" style="width: 100%;" />
     <p class="TextSMImage"><b><i>Edge Angle</i></b></p>
 </div>
 
-<p>Guidelines shown below are for the cutting edge angle.
+<div style=" float: left; Width: 25px; 
+        margin-left: 0px; margin-right: 5px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 0px; padding-right: 0px; 
+        padding-top: 0px; padding-bottom: 0px; 
+        border: 0px solid darkgray; text-align: left;  ">
+	<span style="color: #191970; font: 36px Garamond; "><b>&alpha;</b></span>
+</div>
 
-<p>Point tools generally use a sharper angle, in the lower end of the range.  Also, point tools are typically ground with an overall convex grind.
+<p style="margin-top: 0;">The effective angle at the cutting edge.  The inside and outside edges will probably be cleaned up and polished; however this is the effective angle between those edges.
 
-<p>Frequent sharpening is recommended to maintain the tool's shape, and is needed for safe performance of the tool.
+<p>When resharpening, try to to not change the <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span> angle:
+	<ul style="margin-top: 0; margin-bottom: 0;">
+		<li>Only resharpen the tool on the inside edge (the upper part in the picture to the left), and</li>
+		<li>Hone/strop both the inside and outside edges.</li>
+	</ul>
 
-<table style="float: left; width: 350px; margin-bottom: 12px;
+<hr class="style2">
+
+<div style=" float: right; Width: 200px; 
+        margin-left: 5px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 0px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 1px solid darkgray; text-align: left;  ">
+    <img src="Images/Adze2.png" alt="no image file" style="width: 100%;" />
+    <p class="TextSMImage"><b><i>Handle Angle</i></b></p>
+</div>
+
+<div style=" float: left; Width: 25px; 
+        margin-left: 0px; margin-right: 5px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 0px; padding-right: 0px; 
+        padding-top: 0px; padding-bottom: 0px; 
+        border: 0px solid darkgray; text-align: left;  ">
+	<span style="color: #191970; font: 36px Garamond; "><b>&beta;</b></span>
+</div>
+
+<p style="margin-top: 0;">The angle between the handle and the cutting edge.  As the adze is a tool which is swung about some pivot point, this angle has a great impact on the usability of the tool.
+	<ul>
+		<li>If <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span> is too large, the area behind the cutting edge will impact the wood before the cutting edge.</li>
+		<li>If <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span> is too small, then the cutting edge will dig into the wood.</li>
+	</ul>
+
+<p>The angle needed for <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span> is out of scope of the Sharpening Handbook, however, there are articles below which address how this can be determined, and how to set it.
+
+<table style="float: left; width: 350px; 
 		border: 1px solid grey; 
 		border-collapse: collapse;  
-		background-color:LightGray ">
+		background-color:#DFD7C8; ">
 	<tr>
 		<td>
-			<p style="margin-top: 0; margin-bottom: 0; "><i>The marble not yet carved can hold the form of every thought the greatest artist has.</I>
-				<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Michelangelo
+			<p style="margin-top: 0; margin-bottom: 0; "><i>It requires a genuine fight to produce one well-designed object of relatively permanent value.</I>
+				<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">George Nakashima
 		</td>
 	</tr>
 </table>
-
+   
 <!-- ################################################### -->
-<!-- General Guidelines									 -->
+<!-- General Guidelines -->
 
-<table style="width: 100%; margin-top: 12px;
+<table style="width: 100%; 
 		border-collapse: collapse; ">
     <tr style="background-color: moccasin;
 				vertical-align: bottom;">
-		<th colspan=4 style=" 
+		<th colspan=5 style=" 
 				text-align: center;
 				border-style: solid; 
 				border-color: black; 
@@ -148,10 +189,9 @@ includeHTML();
 	    	<p class="TextTableHdrLg"><b>General Guidelines</b></p>
 		</th>
     </tr>
-    
     <tr style="background-color: moccasin;
 				vertical-align: bottom;">
-		<th style="width: 275px; 
+		<th rowspan=2 style="width: 175px; 
 				text-align: center;
 				border-style: solid; 
 				border-color: black; 
@@ -160,20 +200,20 @@ includeHTML();
 				border-left-width: thick; 
 				border-right-width: medium; 
 				">
-		    <p class="TextTableHdrNorm"><b>Material</b></p>
+		    <p class="TextTableHdrNorm"><b>Tool Usage</b></p>
 		</th>
-		<th style="width: 100px;
+		<th colspan=2 style="
 				text-align: center;
 				border-style: solid; 
 				border-color: black; 
 				border-top-width: medium; 
-				border-bottom-width: medium;
+				border-bottom-width: thin;
 				border-left-width: medium; 
 				border-right-width: medium; 
 				">
-		    <span style="color: #191970; font: 24px Garamond; "><b>&beta;</b></span>
+		    <span style="color: #191970; font: 32px Garamond; "><b>&alpha;</b></span>
 		</th>
-        <th style="width: 50px;
+      <th rowspan=2 style="width: 50px;
                 text-align: center;
                 padding-left: 5px; padding-right: 5px;
                 border-style: solid;
@@ -185,8 +225,9 @@ includeHTML();
                 ">
             <p class="TextTableHdrNorm"><b>Sharp
             <br>ness</b></p>
-        </th>
-		<th style="
+      </th>
+		<th rowspan=2 style="
+				background-color: moccasin;
 				text-align: center;
 				border-style: solid; 
 				border-color: black; 
@@ -198,7 +239,32 @@ includeHTML();
 		    <p class="TextTableHdrNorm"><b>Comments</b></p>
 		</th>
     </tr>
-    
+    <tr style="background-color: moccasin;
+				vertical-align: bottom;">
+		<th style="width: 85px; 
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium;
+				border-left-width: medium; 
+				border-right-width: thin; 
+				">
+		    <p class="TextTableHdrNorm"><b>Range</b></p>
+		</th>
+		<th style="width: 75px; 
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: thin; 
+				border-bottom-width: medium;
+				border-left-width: thin; 
+				border-right-width: medium; 
+				">
+		    <p class="TextTableHdrNorm"><b>Recom.</b></p>
+		</th>
+    </tr>
+
     <tr style="background-color: White;
 				vertical-align: top;">
 		<td style="
@@ -210,7 +276,8 @@ includeHTML();
 				border-left-width: thick; 
 				border-right-width: medium; 
 				">
-			<b>Softer stone</b><br>(e.g., chalk, soapstone, & pumice)
+			<b>Softer woods</b> &nbsp; &nbsp; or
+			<br><b>Finishing cuts</b>
 		</td>
 		<td style="
 				text-align: center;
@@ -219,12 +286,24 @@ includeHTML();
 				border-top-width: medium; 
 				border-bottom-width: medium;
 				border-left-width: medium; 
-				border-right-width: medium; 
+				border-right-width: thin; 
 				">
-            25&deg; - 35&deg;<br>
+			25&deg; - 35&deg;
 		</td>
+		<td style="background-color: #d8ecff;
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: medium;
+				border-left-width: thin; 
+				border-right-width: thin; 
+				">
+			25&deg;
+        </td>
         <td style="
                 text-align: center;
+                vertical-align: middle;
                 padding-left: 5px;
                 padding-right: 5px;
                 border-style: solid;
@@ -250,7 +329,7 @@ includeHTML();
                             border-right-width: thin;
                             ">
                         <span style="color: white; font-size: 20px;"><b>
-                        5
+                        7
                         </b></span>
                     </td>
                 </tr>
@@ -266,10 +345,10 @@ includeHTML();
 				border-left-width: medium; 
 				border-right-width: thick; 
 				">
-            &nbsp;
+			<p style="margin-top: 0; margin-bottom: 0;">I've seen recommendations for <span style="color: #191970; font: 18px Garamond; "><b>&alpha;</b></span> as low as 20&deg; however this could be too shallow unless the user is working on very soft woods.
 		</td>
 	</tr>
-
+	
     <tr style="background-color: LightGrey;
 				vertical-align: top;">
 		<td style="
@@ -277,25 +356,38 @@ includeHTML();
 				border-style: solid; 
 				border-color: black; 
 				border-top-width: medium; 
-				border-bottom-width: medium;
+				border-bottom-width: thick;
 				border-left-width: thick; 
 				border-right-width: medium; 
 				">
-			<b>General stone</b><br>(e.g., limestone & marble)
-		</td>
+			<b>Hard woods</b> &nbsp; &nbsp; or
+			<br><b>Roughing out cuts</b>
+        </td>
 		<td style="
 				text-align: center;
 				border-style: solid; 
 				border-color: black; 
 				border-top-width: medium; 
-				border-bottom-width: medium;
+				border-bottom-width: thick;
 				border-left-width: medium; 
-				border-right-width: medium; 
+				border-right-width: thin; 
 				">
-            30&deg; - 40&deg;<br>
+			25&deg; - 35&deg;
 		</td>
+		<td style="background-color: #d8ecff;
+				text-align: center;
+				border-style: solid; 
+				border-color: black; 
+				border-top-width: medium; 
+				border-bottom-width: thick;
+				border-left-width: thin; 
+				border-right-width: thin; 
+				">
+			30&deg;
+        </td>
         <td style="
                 text-align: center;
+                vertical-align: middle;
                 padding-left: 5px;
                 padding-right: 5px;
                 border-style: solid;
@@ -321,78 +413,7 @@ includeHTML();
                             border-right-width: thin;
                             ">
                         <span style="color: white; font-size: 20px;"><b>
-                        4
-                        </b></span>
-                    </td>
-                </tr>
-            </table>
-            </a>
-        </td>
-		<td style="
-				text-align: left;
-				border-style: solid; 
-				border-color: black; 
-				border-top-width: medium; 
-				border-bottom-width: medium;
-				border-left-width: medium; 
-				border-right-width: thick; 
-				">
-            &nbsp;
-		</td>
-	</tr>
-
-    <tr style="background-color: White;
-				vertical-align: top;">
-		<td style="
-				text-align: left;
-				border-style: solid; 
-				border-color: black; 
-				border-top-width: medium; 
-				border-bottom-width: thick;
-				border-left-width: thick; 
-				border-right-width: medium; 
-				">
-			<b>Harder Stone</b><br>(e.g., granite & basalt)
-		</td>
-		<td style="
-				text-align: center;
-				border-style: solid; 
-				border-color: black; 
-				border-top-width: medium; 
-				border-bottom-width: thick;
-				border-left-width: medium; 
-				border-right-width: medium; 
-				">
-            40&deg; - 60&deg;<br>
-		</td>
-        <td style="
-                text-align: center;
-                padding-left: 5px;
-                padding-right: 5px;
-                border-style: solid;
-                border-color: black;
-                border-top-width: medium;
-                border-bottom-width: thick;
-                border-left-width: medium;
-                border-right-width: medium;
-                ">
-            <a href="SharpnessScale.html" style="text-decoration: none;">
-            <table style="width: 30px;
-                    text-align: center;
-                    margin: auto;
-                    border-collapse: collapse; ">
-                <tr>
-                    <td style="
-                            background-color: #6f7681;
-                            border-style: solid;
-                            border-color: darkgray;
-                            border-top-width: thin;
-                            border-bottom-width: thin;
-                            border-left-width: thin;
-                            border-right-width: thin;
-                            ">
-                        <span style="color: white; font-size: 20px;"><b>
-                        4
+                        6
                         </b></span>
                     </td>
                 </tr>
@@ -408,7 +429,7 @@ includeHTML();
 				border-left-width: medium; 
 				border-right-width: thick; 
 				">
-            Carbide inserts are usually embedded in the tips of these tools.
+			Use a higher <span style="color: #191970; font: 18px Garamond; "><b>&alpha;</b></span> when working on dry hard woods.
 		</td>
 	</tr>
 </table>
@@ -417,34 +438,27 @@ includeHTML();
 <!-- Notes & Comments -->
 <h2>Notes &amp; Comments</h2>
 
-<div style="float: right; width:150px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
-    <a href="Grindstones.html"><IMG SRC="Images/Grindstones.png" alt="no image file" style="width: 100%;" ></a>
-    <a href="Grindstones.html">Information regarding Grindstones</a>
+<!-- ################################################### -->
+<!-- Resharpen the Inside Edge -->
+<h3 style="margin-bottom: 0;">Resharpen the Inside Edge</h3>
+<p style="margin-top: 0;">When resharpening, it is best to only work on the inside part of the bevel.  Modifications to the outside part of the bevel (the back bevel) could adjust the <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span> angle, also known as the &ldquo;hang&rdquo; of the adze.
+			
+<p>Having a bevel on the outside of the tool allows it to be better used for shallow scalloping work.  The article by Dave Fisher in &ldquo;Fine Woodworking&rdquo; magazine shows this well.
+	<ul>
+		<li>This back bevel should be around 2&deg;, and certainly not exceed 5&deg;.</li>
+		<li>  It is usually a convex edge (vs. flat or concave).  Once this is set, it is best to not modify the outside edge.</li>
+	</ul>
+
+<!-- ################################################### -->
+<!-- Sharpen a Lipped Adze -->
+<hr class="style2">
+<div style="float: right; width:125px; margin-left: 5px; margin-right: 0px; margin-top: 0px; margin-bottom: 5px; padding: 5px; border: 1px solid darkgray; text-align: center;">
+    <IMG SRC="Images/WW-Adz-Lipped.png" alt="no image file" style="width: 100%;" >
+    <p class="TextSMImage"><b><i>Lipped Adze</i></b></p>
 </div>
 
-<p>Use larger angles for roughing out, and sharper (more acute) angles for finishing cuts.
-
-<hr class="style3">
-
-<p><b>Special Notes for Tools with Carbide Inserts</b>: <span style="color: Red;">Do not cool by dipping in water :</span>  this will generate shocks in the metal, and cause the carbide to crack.
-
-<hr class="style3">
-
-<p>When sharpening, one of the following options is recommended.
-    <ol>
-        <li style="margin-bottom: 12px;">Leave corners slightly beveled, or</li>
-        
-        <li>Edge up on the final grind.
-            <ul>
-                <li>Leave the final 1.5 mm (1/16 inch) unground.  This is because the rough grinding of the carbide introduces cracks and makes the edge more brittle. By stopping short of the edge, this is minimized.</li>
-                <li>Then, use a high grit wheel should be used to make the edge smooth with minimal cracks.</li>
-                <li>A very high grit grindstone should be used if a very smooth carving surface is needed, or if the material is very soft.</li>
-            </ul></li>
-    </ol>
-
-<hr class="style3">
-
-<p>Special thanks to Oleg Lobykin at StoneSculpt - Custom Stone Carving for providing the guidance.
+<h3 style="margin-bottom: 0;">Sharpen a Lipped Adz</h3>
+<p style="margin-top: 0;">To sharpen a lipped adze (also known as a shipwright's adze, and used for cutting across the grain), see the instructions in <u>The Complete Guide to Sharpening</u> by Leonard Lee.  The recommended <span style="color: #191970; font: 16px Garamond; "><b>&alpha;</b></span> angles follow those noted above; however the directions are a bit difficult to describe.
 
 <!-- ################################################### -->
 <!-- Ongoing Maintenance -->
@@ -452,6 +466,52 @@ includeHTML();
 <script>
 includeHTML();
 </script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<hr class="style1">
+<h2>More Information</h2>
+
+<h3>Books &amp; Papers</h3>
+	<ul>
+		<li><u>The Complete Guide to Sharpening</u> by Leonard Lee</li>
+ 	</ul>
+
+<!-- 
+<h3>Videos &amp; Presentations</h3>
+	<ul>
+		<li><a href="https://youtu.be/zFmGfDULpiQ" target="_new"><b>Tormek AngleMaster WM-200</b></a> (YouTube video)</li>
+	</ul>
+ -->
+
+
+<h3>Published Articles</h3>
+	<ul>
+		<li style="margin-bottom: 12px;">Nic Westerman of <a href="https://www.HewnAndHone.co.uk" target="new">Hewn &amp; Hone</a> wrote a great series about the adze which was published in &ldquo;Wood Carving&rdquo; magazine.  It was published in 3 parts.
+			<ul>
+				<li>Part 1 - Issue 190, page 60.  This addresses the <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span> angle and why it matters.</li>
+				<li>Part 2 - Issue 191, page 70.  This also addresses the <span style="color: #191970; font: 16px Garamond; "><b>&beta;</b></span> angle, and how to adjust it.</li>
+				<li>Part 3 - Issue 192, page 60.  This addresses the <span style="color: #191970; font: 16px Garamond; "><b>&alpha;</b></span> angle and a few other points.</li>
+			</ul></li>
+
+		<li><a href="https://davidffisher.com" target="new">Dave Fisher</a> wrote an article for <a href="https://www.finewoodworking.com/2021/01/19/how-to-sharpen-an-adze" target="new">Fine Woodworking</a> where he overviews how to tune-up an adze.  The web link excerpted here was part of the article where he discussed what to look for when purchasing an Adze.  &ldquo;Fine Woodworking&rdquo; magazine, issue 285, Nov/Dec 2020, pg. 24
+		
+		<p>Note:  Dave was not merely resharpening the tool; rather he had to do some fairly significant reshaping to the tool's cutting edge.  If you do such do such modifications to a tool, be sure to manage the heat so that you don't lose the temper in the metal.</li>
+	</ul>
+
+<!-- 
+<h3>Web Sites</h3>
+	<ul>
+            <li>Jan &Scaron;vancara posted a design for using a <b>knife sharpening platform</b> in 2015 on the <a href="https://www.tormek.com/forum/index.php" target="_new">Tormek Forum</a>.  This is certainly worth reading, and there are also pictures of this in the <a href="indexJigs.html">jigs</a> section.</li>
+	</ul>
+ -->
+
+<!-- 
+<h3>Other</h3>
+	<ul>
+		<li></li>
+	</ul>
+ -->
 
 <!-- ################################################### -->
 <!-- Footer                                              -->
