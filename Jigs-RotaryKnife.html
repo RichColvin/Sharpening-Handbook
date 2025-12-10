@@ -99,16 +99,26 @@ includeHTML();
 <!-- ################################################### -->
 <h style="margin-bottom: 3px;"1>Overview</h1>
 
-<div style="float: right; width: 250px; 
+<div style="float: right; width: 200px; 
         margin-top: 0px; margin-bottom: 5px;
         margin-left: 5px; margin-right: 0px;
         padding-top: 5px; padding-bottom: 5px;
         padding-left: 5px; padding-right: 5px;
         border: 1px solid darkgray;
         text-align: left; background-color:#E6E6E6">
-    <img src="Images/Rotary-Cutter-Sharpener-1.png" width="100%">
-    <img src="Images/Rotary-Cutter-Sharpener-2.png" width="100%">
-    <i><font size="2"><b>Rotary Cutter Jig</b>, shown with a rotary cutter blade</font></i>
+    <a href="ShowPicture.html?ImgNm=Images/Rotary-Cutter-Sharpener-1.png"><img src="Images/Rotary-Cutter-Sharpener-1.png" width="100%"></a>
+    <i><font size="2"><b>Rotary Cutter Jig</b></font></i>
+    
+    <p style="margin-top: 12px;"><a href="ShowPicture.html?ImgNm=Images/Rotary-Cutter-Sharpener-60mm.png"><img src="Images/Rotary-Cutter-Sharpener-60mm.png" width="100%"></a>
+    <i><font size="2"><b>Sharpening a 60mm blade</b></font></i>
+    
+    <p style="margin-top: 12px;"><a href="ShowPicture.html?ImgNm=Images/Rotary-Cutter-Sharpener-45mm.png"><img src="Images/Rotary-Cutter-Sharpener-45mm.png" width="100%"></a>
+    <i><font size="2"><b>Sharpening a 45mm blade</b></font></i>
+    
+    <p style="margin-top: 12px; margin-bottom: 0;"><a href="ShowPicture.html?ImgNm=Images/Rotary-Cutter-Sharpener-28mm.png"><img src="Images/Rotary-Cutter-Sharpener-28mm.png" width="100%"></a>
+    <i><font size="2"><b>Sharpening a 28mm blade</b></font></i>
+    
+    <p style="margin-top: 6px; margin-bottom: 0;"><i><font size="2">Click on pictures to see larger images</i></font>
 </div>
 
 <!--
@@ -193,15 +203,27 @@ includeHTML();
 <p style="margin-top: 6px;">You can 3D print your own parts.  The components are:
 
     <ol>
-        <li style="margin-bottom: 6px;"><a href="Rotary-Cutter-Sharpener-Sleeve.3mf" download>Rotary-Cutter-Sharpener-Sleeve.3mf</a> (the blue part in the pictures above)</li>
+        <li><b>Common Parts</b>
+            <ol type="a">
+                <li style="margin-bottom: 6px;"><a href="3D-Printing/Rotary-Cutter-Sharpener-Sleeve.3mf" download>Rotary-Cutter-Sharpener-Sleeve.3mf</a> (the blue part in the pictures above)</li>
         
-        <li style="margin-bottom: 6px;"><a href="Rotary-Cutter-Sharpener-Shaft.3mf" download>Rotary-Cutter-Sharpener-Shaft.3mf</a> (the yellow part in the pictures above)</li>
-        
-        <li style="margin-bottom: 6px;"><a href="Rotary-Cutter-Sharpener-Handle.3mf" download>Rotary-Cutter-Sharpener-Handle.3mf</a> (the green part in the pictures above)</li>
+                <li style="margin-bottom: 6px;"><a href="3D-Printing/Rotary-Cutter-Sharpener-Handle.3mf" download>Rotary-Cutter-Sharpener-Handle.3mf</a> (the green part in the pictures above)</li>
 
-        <li style="margin-bottom: 6px;"><a href="Rotary-Cutter-Sharpener-Handle-Knob.3mf" download>Rotary-Cutter-Sharpener-Handle-Knob.3mf</a> (the brown part in the pictures above)</li>
+                <li style="margin-bottom: 6px;"><a href="3D-Printing/Rotary-Cutter-Sharpener-Handle-Knob.3mf" download>Rotary-Cutter-Sharpener-Handle-Knob.3mf</a> (the brown part in the pictures above)</li>
+            </ol></li>
+
+        <li style="margin-top: 12px;"><b>Parts Used for 45 &amp; 60mm Blades</b>
+            <ol type="a">
+                <li style="margin-bottom: 6px;"><a href="3D-Printing/Rotary-Cutter-Sharpener-Shaft-45-60mm.3mf" download>Rotary-Cutter-Sharpener-Shaft-45-60mm.3mf</a> (the yellow part in the pictures above)</li>
         
-        <li><a href="Rotary-Cutter-Sharpener-Adapter-10mm.3mf" download>Rotary-Cutter-Sharpener-Adapter-10mm.3mf</a> (the red part in the pictures above)</li>
+                <li style="margin-bottom: 6px;"><a href="3D-Printing/Rotary-Cutter-Sharpener-Adapters-45-60mm.3mf" download>Rotary-Cutter-Sharpener-Adapters-45-60mm.3mf</a> (the red part in the pictures above)</li>
+            </ol></li>
+
+        <li style="margin-top: 12px;"><b>Parts Used for 28mm Blades</b>
+            <ol type="a">
+                <li style="margin-bottom: 6px;"><a href="3D-Printing/Rotary-Cutter-Sharpener-Shaft-28mm.3mf" download>Rotary-Cutter-Sharpener-Shaft-28mm.3mf</a> (the yellow part in the pictures above)</li>
+                <li style="margin-bottom: 6px;">Insted of an adapter, an M6-1.0 screw is used to hold the blade in place (McMaster-Carr p/n 97654A379)</li>
+            </ol></li>
     </ol>
 
 <p>You will also need these parts:
@@ -273,7 +295,7 @@ includeHTML();
 	            border-top-width: medium; border-bottom-width: medium;
 	            border-right-width: thick; border-left-width: medium; 
 	            ">
-            Used to attach the Sharpener Adapter (red part) & blade to the Shaft (yellow part).
+            Used to attach the Sharpener Adapter (red part) & blade to the Shaft (yellow part).  Also used to hold the 28mm blade to the shaft used for that blade.
         </td>
     </tr>
     
