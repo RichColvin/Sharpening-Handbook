@@ -3,12 +3,15 @@
 <!-- ################################################### -->
 <!-- HTML5 Compliant                                     -->
 <!-- ################################################### -->
-
 <head>
     <title>Sharpening Handbook</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
+
+<!-- ################################################### -->
+<!-- Style Sheet for MathJax                                                                 -->
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!-- ##################################################	-->
 <!-- Google Analytics Tag               				-->
@@ -100,7 +103,7 @@ includeHTML();
 <h1>Overview</h1>
 
 <div style="float: right; width: 500px; margin: 0 0 5px 5px; padding: 5px; border: 1px solid darkgray; text-align: center;">
-    <img src="Images/LaserGoniometer.png" alt="no image file" style="width: 100%;" />
+    <a href="ShowPicture.html?ImgNm=Images/LaserGoniometer.png" target="new"><img src="Images/LaserGoniometer.png" alt="no image file" style="width: 100%;" /></a>
     <p class="TextSMImage"><b>Laser Goniometer</b><p>
 </div>
 
@@ -108,7 +111,87 @@ includeHTML();
 
 <p>This device makes those measurements very precise.  And his use of kids toys (<a href="https://en.wikipedia.org/wiki/Erector_Set" target="new">Erector Set</a>) to make it lends to a bit of fun.
 
-                
+<table style="margin-top: 0px; margin-bottom: 0px;
+        background-color: #fadadd;">
+    <tr>
+        <td style="vertical-align: top;">
+			<div style="float: right; width: 100px; 
+					margin-top: 0px; 
+					margin-bottom: 5px; 
+					margin-left: 5px; 
+					margin-right: 0px; 
+					padding: 0px;
+					border: 0px solid gray; 
+					text-align: center; ">
+        		<img src="Images/LaserWarning1.png" style="width: 100%;" alt="no image file">	
+        		<img src="Images/LaserWarning2.png" style="width: 100%;" alt="no image file">	
+			</div>
+
+            <span style="color: red; font-size: 20px;"><b><u>CAUTION</u></b>: Lasers are not toys</span>
+
+                <ol>
+                    <li style="margin-bottom: 12px; color: red;"><span style="color: red;"><b>Do not point any laser toward a person&rsquo;s eye or a pet&rsquo;s eye.</b>  This laser has a very real risk of causing eye damage within a very short time (possibly as short as a blink reflex). Staring into such a beam for several seconds is likely to cause damage to the eye.</span></li>
+        
+                    <li style="margin-bottom: 12px; color: red;"><span style="color: red;"><b>Do not point any laser toward civil or military aviation.</b>  This can cause temporary blindness in the aviators, and is illegal in most locations.</span></li>
+                    
+                    <li style="margin-bottom: 0px; color: red;"><span style="color: red;"><b>Do not point a laser toward a person&rsquo;s body.</b>  Pointing a laser at a person&rsquo;s body could be perceived by that person as coming from a weapon&rsquo;s laser sighting system. That person may be armed and fire their weapon at you.</span></li>
+                </ol>
+        </td>
+    </tr>
+</table>
+
+<table style="width: 100%;"><tr><td><hr class="style2"></td></tr></table>
+
+<!-- ################################################### -->
+<!-- Alternate Version - 3D printed                      -->
+<!-- ################################################### -->
+
+<div style="float: right; width: 300px; 
+        margin-top: 0px; margin-bottom: 5px;
+        margin-left: 5px; margin-right: 0px; 
+        padding: 5px; 
+        border: 1px solid darkgray; 
+        text-align: left;">
+    <a href="ShowPicture.html?ImgNm=Images/Goniometer-Assembled.png" target="new"><img src="Images/Goniometer-Assembled.png" alt="no image file" style="width: 100%;" /></a>
+    <p class="TextSMImage"><b>3D-printed laser goniometer</b><p>
+    
+    <hr>
+    
+    <a href="ShowPicture.html?ImgNm=Images/Goniometer-Assembled-Bottom.png" target="new"><img src="Images/Goniometer-Assembled-Bottom.png" alt="no image file" style="width: 100%;" /></a>
+    <p class="TextSMImage"><b>Bottom of laser goniometer</b><p>
+</div>
+
+<h2 style="margin-top: 6px; margin-bottom: 0px;">Alternate Version</h2>
+<p style="margin-top: 6px;">I've developed a 3D-printed design using a laser easily sourced from Amazon (and possibly available from other sources as well).  
+
+<p>The jig consists of 3 pieces:
+
+	<ol>
+		<li style="margin-bottom: 12px;"><b>Scale</b>: used for reading the angles (the white part in the picture to the right).
+		    <ul>
+		        <li style="margin-bottom: 4px;">There is a hole built into the scale for hanging it.  This is shown in the lower right part of the first picture.</li>
+		    </ul>
+		</li>
+		
+		<li style="margin-bottom: 12px;"><b>Laser</b>: a strong, rechargeable laser (the red part in the picture to the right; <i>the selected one is actually coloured black</i>).
+		    <ul>
+		        <li style="margin-bottom: 4px;">A thumb screw holds the laser in place on the scale.</li>
+		        
+		        <li style="margin-bottom: 4px;">The laser has a rechargeable lithium ion battery, and uses a USB charger to recharge the laser&rsquo;s battery.  Such a charger is not included.</li>
+		    </ul>
+		</li>
+		
+		<li><b>Magnet Tool Holder</b>: a part which uses magnets to hold the knife being measured (the blue part in the picture). 
+		    <ul>
+		        <li style="margin-bottom: 4px;">The magnets are mounted so that they and the retaining screws&rsquo; heads are below the surface of the bracket, helping to reduce the chances for scratching the knife&rsquo;s surface.</li>
+		        
+		        <li style="margin-bottom: 4px;">Two thumb screws hold the tool holder in position against the scale, and allow it to be realigned as necessary.</li>
+		    </ul>
+        </li>
+	</ol>
+
+<p>The lower picture to the right shows the bottom side of this tool.  The two black thumb screws are used to hold the bracket (blue part) against the scale (white part).  The bracket can be adjusted to better align the knife&rsquo;s edge relative to the laser which is held in a fixed position in the scale.
+
 <!-- *************************************************** -->
 <!-- Additional pictures of this jig -->
 <!-- *************************************************** -->
@@ -121,41 +204,681 @@ includeHTML();
 <!-- *************************************************** -->
 <!-- Usage Notes -->
 <!-- *************************************************** -->
-<!--
 <hr class="style2">
-<h1><font color="DarkBlue">Usage Notes</font></h1>
--->
+<h1 style="margin-bottom: 0px;"><font color="DarkBlue">Usage Notes</font></h1>
+<div style="float: left; width: 150px; 
+        margin-top: 0px; margin-bottom: 5px;
+        margin-left: 0px; margin-right: 5px; 
+        padding: 5px; 
+        border: 1px solid darkgray; 
+        text-align: left;">
+    <a href="ShowPicture.html?ImgNm=Images/Goniometer-Rotate-Laser.png" target="new"><img src="Images/Goniometer-Rotate-Laser.png" alt="no image file" style="width: 100%;" /></a>
+    <p class="TextSMImage"><b>Rotating the laser</b><p>
+</div>
 
+<p style="margin-top: 0px;">You may find that you need to rotate the laser within the hole on the scale (the white part in the picture above).  It may not be perfectly aligned with 0 on the scale.
+
+<p>The rotation of the laser is shown in the picture to the left with blue arrows.
+
+<p>&nbsp;
+
+<h3 style="margin-bottom: 0px;"><font color="DarkBlue">Aligning the Knife</font></h3>
+
+<table style="float: right; width: 660px; 
+        margin-top: 0px; margin-bottom: 5px;
+        margin-left: 5px; margin-right: 0px; 
+        padding: 5px; 
+        ">
+    <tr>
+        <td colspan=2 style="width: 165px; text-align: center;
+                vertical-align: bottom;
+                border: 0px solid darkgray;">
+            <p style="margin-top: 0px; margin-bottom: 0px;"><b>Double-bevel Blade</b>
+        </td>
+        <td style="width: 10px; text-align: center;
+                vertical-align: bottom;
+                border: 0px solid darkgray;">
+            <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;
+        </td>
+        <td colspan=2 style="width: 165px; text-align: center;
+                vertical-align: bottom;
+                border: 0px solid darkgray;">
+            <p style="margin-top: 0px; margin-bottom: 0px;"><b>Single-bevel Blade</b>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 165px; text-align: center;
+                vertical-align: bottom;
+                border: 0px solid darkgray;">
+            <p style="margin-top: 0px; margin-bottom: 0px;"><span style="color: darkgreen;"><b>Properly Aligned</b></span>
+        </td>
+        <td style="width: 165px; text-align: center;
+                vertical-align: bottom;
+                border: 0px solid darkgray;">
+            <p style="margin-top: 0px; margin-bottom: 0px;"><span style="color: darkred;"><b>Improperly Aligned</b></span>
+        </td>
+        <td style="text-align: center;
+                vertical-align: bottom;
+                border: 0px solid darkgray;">
+            <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;
+        </td>
+        <td style="width: 165px; text-align: center;
+                vertical-align: bottom;
+                border: 0px solid darkgray;">
+            <p style="margin-top: 0px; margin-bottom: 0px;"><span style="color: darkgreen;"><b>Properly Aligned</b></span>
+        </td>
+        <td style="width: 165px; text-align: center;
+                vertical-align: bottom;
+                border: 0px solid darkgray;">
+            <p style="margin-top: 0px; margin-bottom: 0px;"><span style="color: darkred;"><b>Improperly Aligned</b></span>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: left;
+                border: 1px solid darkgray;
+                background-color: #d0f0c0;">
+            <a href="ShowPicture.html?ImgNm=Images/Goniometer-BladeAlignment-DoubleBevel-Good.png" target="new"><img src="Images/Goniometer-BladeAlignment-DoubleBevel-Good.png" alt="no image file" style="width: 100%;" /></a>
+        </td>
+        <td style="text-align: left;
+                border: 1px solid darkgray;
+                background-color: #fadadd;">
+            <a href="ShowPicture.html?ImgNm=Images/Goniometer-BladeAlignment-DoubleBevel-Wrong.png" target="new"><img src="Images/Goniometer-BladeAlignment-DoubleBevel-Wrong.png" alt="no image file" style="width: 100%;" /></a>
+        </td>
+        <td style="text-align: center;
+                vertical-align: bottom;
+                border: 0px solid darkgray;">
+            <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;
+        </td>
+        <td style="text-align: left;
+                border: 1px solid darkgray;
+                background-color: #d0f0c0;">
+            <a href="ShowPicture.html?ImgNm=Images/Goniometer-BladeAlignment-SingleBevel-Good.png" target="new"><img src="Images/Goniometer-BladeAlignment-SingleBevel-Good.png" alt="no image file" style="width: 100%;" /></a>
+        </td>
+        <td style="text-align: left;
+                border: 1px solid darkgray;
+                background-color: #fadadd;">
+            <a href="ShowPicture.html?ImgNm=Images/Goniometer-BladeAlignment-SingleBevel-Wrong.png" target="new"><img src="Images/Goniometer-BladeAlignment-SingleBevel-Wrong.png" alt="no image file" style="width: 100%;" /></a>
+        </td>
+    </tr>
+    <tr style="vertical-align: top;">
+        <td style="text-align: center;
+                border: 0px solid darkgray; 
+                padding-left: 5px; padding-right: 5px;">
+            <p style="margin-top: 0px; margin-bottom: 12px;">Light beams equi-distant from the 0&deg; mark
+        </td>
+        <td style="text-align: center;
+                border: 0px solid darkgray; 
+                padding-left: 5px; padding-right: 5px;">
+            <p style="margin-top: 0px; margin-bottom: 12px;">Light beams unequal distance from the 0&deg; mark
+        </td>
+        <td style="text-align: center;
+                vertical-align: bottom;
+                border: 0px solid darkgray;">
+            <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;
+        </td>
+        <td style="text-align: center;
+                border: 0px solid darkgray; 
+                padding-left: 5px; padding-right: 5px;">
+            <p style="margin-top: 0px; margin-bottom: 0px;">Left light beam at the 0&deg; mark.
+        </td>
+        <td style="text-align: center;
+                border: 0px solid darkgray; 
+                padding-left: 5px; padding-right: 5px;">
+            <p style="margin-top: 0px; margin-bottom: 0px;">Left light beam away from the 0&deg; mark.
+        </td>
+    </tr>
+</table>
+        
+<p style="margin-top: 0px;">When aligning the knife in the scale, you need to rotate the knife in the scale until you have proper alignment of the reflected laser beams.  This is especially key when measuring a single-bevel knife. 
+
+<p>The pictures to the right show blade alignments which are both correct and incorrect.
 
 <!-- *************************************************** -->
 <!-- How it works -->
 <!-- *************************************************** -->
-<!--
-<hr class="style2">
-<h1><font color="DarkBlue">How it Works</font></h1>
-<p>
--->
+<table style="width: 100%;"><tr><td><hr class="style2"></td></tr></table>
+<h1 style="margin-bottom: 0px;"><font color="DarkBlue">How it Works</font></h1>
+
+<p style="margin-top: 0px;">The laser light reflects off the blade&rsquo;s sharpened edge, and shows the blade&rsquo;s edge angle on the scale.  
+There are two laser reflections shown, one on each side of the scale.  Those represent the edge angle (<span style="font: 16px Garamond; color: darkblue; "><i><b>&beta;</b></i></span>) for that side.  The sum of the edge angles is the included angle (<span style="font: 16px Garamond; color: darkblue; "><i><b>&alpha;</b></i></span>).
+
+<p>When using this, you will probably also see extra laser dots around 0&deg;.  These are the result of the laser&rsquo;s beam being wider than the knife&rsquo;s blade.  Please ignore those.
+
+<h2 style="margin-bottom: 0px;"><font color="DarkBlue">Double-Bevel Knife Edge Notes</font></h2>
+<div style="float: left; width: 350px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        margin-left: 5px; margin-right: 5px; 
+        padding-top: 5px; padding-bottom: 5px; 
+        padding-left: 0px; padding-right: 0px;
+        border: 1px solid Darkgray; text-align: left; background-color: #e5e4e2;">
+    <a href="ShowPicture.html?ImgNm=Images/GoniometerEdgeLaser.png" target="new"><img src="Images/GoniometerEdgeLaser.png" alt="no image file" style="width: 100%;"></a>
+    <p class="TextSMImage"><i><b>Double bevel knife edge</b></i></p>
+</div>
+
+<p style="margin-top: 0px;">For knives which have a double-bevel edge, there is a real probability that the blade may be held in a manner where it is not aligned correctly relative to the laser&rsquo;s light beam.  If this is the case, one side may reflect a different measured angle than the other side.
+
+<p>This not a problem.
+
+<h4 style="margin-bottom: 0px;"><font color="DarkBlue">Example Calculations</font></h4>
+<p style="margin-top: 0px;">If the left side measures 12&deg; and the right side measures 16&deg;.  We can average these two angles to determine the actual bevel angles (<span style="font: 16px Garamond; color: darkblue; "><i><b>&beta;</b></i></span>) for the knife.  
+
+<p>These calculations are:
+
+\begin{align*}
+\tag{1}
+&beta; &=  \frac {12&deg; + 16&deg;} {2}\\
+&=  14&deg;\\
+&nbsp; \\
+\tag{2}
+&alpha; &=  2 \times &beta;\\
+&= 28&deg;\\
+\end{align*}
+
+<p>As a side note, there could be a knife where the two bevel angles are not equal.  In that case, you may need to be more dilligent in measuring the separate bevel angles.
+
+<h2 style="margin-bottom: 0px;"><font color="DarkBlue">Single-Bevel Knife Edge Notes</font></h2>
+<div style="float: left; width: 350px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        margin-left: 5px; margin-right: 5px; 
+        padding-top: 5px; padding-bottom: 5px; 
+        padding-left: 0px; padding-right: 0px;
+        border: 1px solid Darkgray; text-align: left; background-color: #e5e4e2;">
+    <a href="ShowPicture.html?ImgNm=Images/GoniometerEdgeLaser-SingleBevel.png" target="new"><img src="Images/GoniometerEdgeLaser-SingleBevel.png" alt="no image file" style="width: 100%;"></a>
+    <p class="TextSMImage"><i><b>Single bevel knife edge</b></i></p>
+</div>
+
+<p style="margin-top: 0px;">For knives which only have one beveled edge, the angle measurement is different.  Japanese marking knives are like this, as are the Felco/Swiss Army gardening knives.
+
+<p>As you would expect, there are two separate bevel angles.  These are denoted as <span style="font: 16px Garamond; color: darkblue; "><i>&beta;<sub>1</sub></i></span> and <span style="font: 16px Garamond; color: darkblue; "><i>&beta;<sub>2</sub></i></span> for this discussion.
+
+<p>As expected with knife blades like this, one side should be 0&deg;, and no averaging of the angles is required.  However, in the case where one angle is not 0&deg;, you will need add the two measured angles to determine the bevel angle.
+
+<h4 style="margin-bottom: 0px;"><font color="DarkBlue">Example Calculations</font></h4>
+<p style="margin-top: 0px;">If the left side measures 12&deg; and the right side measures 2&deg;, the bevel angle (<span style="font: 16px Garamond; color: darkblue; "><i><b>&beta;</b></i></span>) is determined by adding the two measured angles.
+
+\begin{align*}
+\tag{3}
+&beta;_1 &=  12&deg; + 2&deg;\\
+&=  14&deg;\\
+&nbsp; \\
+\tag{4}
+&beta;_2 &=  0&deg;\\
+&nbsp; \\
+\tag{5}
+&alpha; &=  &beta;_1\\
+&= 14&deg;\\
+\end{align*}
 
 <!-- *************************************************** -->
 <!-- Sources for buying one -->
 <!-- *************************************************** -->
-<!--
 <hr class="style2">
 <h1><font color="DarkBlue">Sources for Buying One</font></h1>
-<p>
--->
+<p style="margin-top: 0;">You can purchase one of the 3D-printed versions from <a href="https://www.colvintools.com/" target="new">Colvin Tools</a>.
 
 <!-- *************************************************** -->
 <!-- Notes on making one -->
 <!-- *************************************************** -->
-<!--
-<table width="100%"><tr><td>&nbsp;</td></tr></table>
--->
-<!--
+<!-- 
+<table width="100%"><tr><td><hr class="style2"></td></tr></table>
+ -->
 <hr class="style2">
-<h1><font color="DarkBlue">Notes on Making One</font></h1>
--->
 
+<h1><font color="DarkBlue">Notes on Making One</font></h1>
+<p style="margin-top: 0;">The jig I made is comprised of two 3D-printed pieces, with a laser and a few other parts attached.
+
+The Fusion 360 file (f3d) is also supplied in case you would like to modify this design for different sizes or styles of lasers.  
+<p>Right-click on the links below to save the noted files.
+
+<table style="border-collapse: collapse; ">                
+    <tr style="background-color: Moccasin; ">
+		<th colspan=4 style="
+    		    text-align: center; 
+    		    vertical-align: bottom;
+	    	    border-style: solid; 
+		        border-color: black; 
+			    border-top-width: medium; 
+    			border-bottom-width: medium; 
+	    		border-left-width: medium; 
+		    	border-right-width: medium; ">
+	    	<p class="TextTableHdrLg"><b>Files</b></p>
+		</th>
+    </tr>
+    <tr style="background-color: Moccasin; ">
+		<th style="
+		        text-align: center; 
+		        vertical-align: bottom;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+	    		border-right-width: medium; 
+	    		width: 200px;">
+    	    <p class="TextTableHdrNorm"><b>Part</b></p>
+		</th>
+		<th style="
+    		    text-align: center; 
+    		    vertical-align: bottom;
+	    	    border-style: solid; 
+	    	    border-color: black; 
+		    	border-top-width: medium; 
+			    border-bottom-width: medium; 
+    			border-left-width: medium; 
+	    		border-right-width: medium; 
+	    		width: 250px;">
+    	    <p class="TextTableHdrNorm"><b>3MF File</b></p>
+		</th>
+		<th style="
+    		    text-align: center; 
+    		    vertical-align: bottom;
+	    	    border-style: solid; 
+	    	    border-color: black; 
+		    	border-top-width: medium; 
+			    border-bottom-width: medium; 
+    			border-left-width: medium; 
+	    		border-right-width: medium; 
+	    		width: 250px;">
+    	    <p class="TextTableHdrNorm"><b>STL File</b></p>
+		</th>
+		<th style="
+    		    text-align: center; 
+    		    vertical-align: bottom;
+	    	    border-style: solid; 
+	    	    border-color: black; 
+		    	border-top-width: medium; 
+			    border-bottom-width: medium; 
+    			border-left-width: medium; 
+	    		border-right-width: medium; 
+	    		width: 250px;">
+    	    <p class="TextTableHdrNorm"><b>F3D File</b></p>
+		</th>
+    </tr>
+
+    <tr>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+  				border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+		    Goniometer Scale
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+    			border-top-width: medium; 
+	    		border-bottom-width: medium; 
+		    	border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+	    	<a href="Images/Goniometer-Scale.3mf" download>Goniometer-Scale.3mf</a>
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+    			border-top-width: medium; 
+	    		border-bottom-width: medium; 
+		    	border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+	    	<a href="Images/Goniometer-Scale.stl" download>Goniometer-Scale.stl</a>
+		</td>
+		<td rowspan=2 style="
+    		    text-align: left; 
+    		    vertical-align: middle;
+		        border-style: solid; 
+		        border-color: black; 
+    			border-top-width: medium; 
+	    		border-bottom-width: medium; 
+		    	border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+	    	<a href="Images/Goniometer.f3d" download>Goniometer.f3d</a>
+		</td>
+    </tr>
+
+    <tr>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+  				border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+		    Goniometer Knife Holder
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+    			border-top-width: medium; 
+	    		border-bottom-width: medium; 
+		    	border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+	    	<a href="Images/Goniometer-KnifeHolder.3mf" download>Goniometer-KnifeHolder.3mf</a>
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+    			border-top-width: medium; 
+	    		border-bottom-width: medium; 
+		    	border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+	    	<a href="Images/Goniometer-KnifeHolder.stl" download>Goniometer-KnifeHolder.stl</a>
+		</td>
+    </tr>
+</table>
+
+<p>The following parts are also needed.  For the Amazon-sourced parts, links are provided to the currently-available parts.
+
+<table style="border-collapse: collapse; ">                
+    <tr style="background-color: Moccasin; ">
+		<th style="
+		        text-align: center; 
+		        vertical-align: bottom;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+	    		">
+    	    <p class="TextTableHdrNorm"><b>Part</b></p>
+		</th>
+		<th style="
+    		    text-align: center; 
+    		    vertical-align: bottom;
+	    	    border-style: solid; 
+	    	    border-color: black; 
+		    	border-top-width: medium; 
+			    border-bottom-width: medium; 
+    			border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+	    		width: 50px;">
+    	    <p class="TextTableHdrNorm"><b>Number Req&rsquo;d</b></p>
+		</th>
+		<th style="
+    		    text-align: center; 
+    		    vertical-align: bottom;
+	    	    border-style: solid; 
+	    	    border-color: black; 
+		    	border-top-width: medium; 
+			    border-bottom-width: medium; 
+    			border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+	    		width: 200px;">
+    	    <p class="TextTableHdrNorm"><b>Source</b></p>
+		</th>
+		<th style="
+    		    text-align: center; 
+    		    vertical-align: bottom;
+	    	    border-style: solid; 
+	    	    border-color: black; 
+		    	border-top-width: medium; 
+			    border-bottom-width: medium; 
+    			border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+	    		width: 100px;">
+    	    <p class="TextTableHdrNorm"><b>Part Number</b><br>(or web link)</p>
+		</th>
+    </tr>
+
+    <tr>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+		    Rechargeable Red Laser Pointer High Power Red Beam Laser Light Long Distance Range,
+		    0.75&rdquo; diameter x 5 &frac38;&rdquo; long
+		</td>
+		<td style="
+    		    text-align: center; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+        		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+	    	1
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+		    Amazon
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+		    <a href="https://www.amazon.com/dp/B0BY48MMZH?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1">Laser</a>
+		</td>
+    </tr>
+
+    <tr>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+            Round, countersunk disc magnets &frac38;&rdquo; x &frac18;&rdquo; (10mm x 3mm), #4 screw hole - rare earth neodymium magnetic fasteners for crafts, cabinet closures, &amp; workshop
+		</td>
+		<td style="
+    		    text-align: center; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+        		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+	    	2
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+		    Amazon
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+            <a href="https://www.amazon.com/dp/B0788Z23ZY/?coliid=I27IDAJYF2GU5&colid=29KPGOCAOI6V&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it_im">Magnets</a>
+		</td>
+    </tr>
+
+    <tr>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+            Plastic-head, knurled thumb screws, M6 x 1 mm thread, 10 mm long, 19 mm head diameter
+		</td>
+		<td style="
+    		    text-align: center; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+        		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+	    	3
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+		    McMaster-Carr
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+            96016A353
+		</td>
+    </tr>
+
+    <tr>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+            18-8 stainless steel Phillips flat head screws for metal, no. 4 size, <span style="font-size:66%;"><b><sup>5</sup>/<sub>16</sub></b></span>&rdquo; long
+		</td>
+		<td style="
+    		    text-align: center; 
+    		    vertical-align: top;
+		        border-style: solid; 
+		        border-color: black; 
+        		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+	    	2
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+		    McMaster-Carr
+		</td>
+		<td style="
+    		    text-align: left; 
+    		    vertical-align: top;
+    		    border-style: solid; 
+    		    border-color: black; 
+	    		border-top-width: medium; 
+		    	border-bottom-width: medium; 
+			    border-left-width: medium; 
+			    border-right-width: medium; 
+			    padding-left: 5px; padding-right: 5px;
+			    ">
+            90065A107
+		</td>
+    </tr>
+</table>
+
+<p>The following tools are needed to tap the holes in the scale (white part) for the thumb screws.
+
+    <ol>
+        <li>Tap, M6 x 1 mm thread</li>
+        <li>Tap wrench to hold the tap</li>
+    </ol>
 
 <!-- *************************************************** -->
 <!-- More Information -->
