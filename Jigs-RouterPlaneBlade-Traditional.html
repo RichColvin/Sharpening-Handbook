@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<!-- ##################################################	-->
+<!-- Google Analytics Tag               				-->
+<!-- ##################################################	-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4WJRKD8E5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q4WJRKD8E5');
+</script>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+    	<td style="text-align: center; vertical-align: middle; ">
+	        <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+    	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+    	<td style="vertical-align: text-top;  text-align: center; ">
+	    	<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Traditional Router Plane Blade <br>Sharpening Jig</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<hr>
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<h1>Overview</h1>
+
+<table style="float: right;
+		margin-top: 0px; margin-bottom: 10px;
+		margin-left: 10px; margin-right: 0px;
+		border-collapse: collapse;">
+	<tr style=" vertical-align: bottom;">
+		<td colspan=2 style="w
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 0;
+				">
+    		<p class="TextSMImage"><b><i>Alan Budden's 3D-printed jigs</i></b></p>
+		</td>
+	</tr>
+	<tr style=" vertical-align: top;">
+		<td style="width: 200px;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 0;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-RouterPlane-Jig-1.jpg" target="new"><img src="Images/WW-RouterPlane-Jig-1.jpg" alt="no image file" style="width: 100%;" /></a>
+    		<p class="TextSMImage"><b><i>Grinding the blade&rsquo;s bottom side</i></b></p>
+		</td>
+		<td style="width: 185px;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 0;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-RouterPlane-Jig-2.jpg" target="new"><img src="Images/WW-RouterPlane-Jig-2.jpg" alt="no image file" style="width: 100%;" /></a>
+    		<p class="TextSMImage"><b><i>Grinding the blade&rsquo;s top side on the side of the grinding wheel</i></b></p>
+		</td>
+	</tr>
+</table>
+
+
+<p style="margin-top: 0;">Alan Budden (Dr.AI on the Tormek Forum) posted links in 2023 to some jigs which can be 3D-printed and used for sharping the traditional blades.
+
+<p style="margin-bottom: 0px;">Alan created two versions of these jigs: 
+	<ol style="margin-top: 0px;">
+		<li>the style shown to the right for sharpening on the Tormek, and</li> 
+		<li>a different version for sharpening on traditional bench stones using an Eclipse style honing guide.
+	</ol>
+
+<p>Links to the Printables.com web site where Alan published these designs are below.
+
+<!-- *************************************************** -->
+<!-- Additional pictures of this jig -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Additional Pictures of this Jig</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Usage Notes -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Usage Notes</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- How it works -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">How it Works</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Sources for buying one -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Sources for Buying One</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Notes on making one -->
+<!-- *************************************************** -->
+<hr class="style2">
+<h1>Notes on Making One</h1>
+<p>The files needed to print Alan Budden's 3D-printable sharpening jigs are available at <a href="https://www.printables.com/" target="new">Printables.com</a>:
+			<ul>
+				<li style="margin-top: 12px; margin-bottom: 12px;"><a href="https://www.printables.com/model/332395-tormek-router-plane-sharpening-jig" target="new">Tormek Router Plane Sharpening Jig</a> for use with a Tormek grinder</li>
+				
+				<li style="margin-top: 12px; margin-bottom: 12px;"><a href="https://www.printables.com/model/535546-router-plane-blade-sharpening-jigs" target="new">Router Plane Blade Sharpening Jigs</a> for use on traditional bench stones</li>
+		
+	</ul>
+
+
+<!-- *************************************************** -->
+<!-- More Information -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">More Information</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Published Articles -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Published Articles</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Books & Papers -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Books &amp; Papers</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Web Sites -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Web Sites</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Presentations -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Presentations</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Other -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Other</font></h2>
+<p>
+-->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
