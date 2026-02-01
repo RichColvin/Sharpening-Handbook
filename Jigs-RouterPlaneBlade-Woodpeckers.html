@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<!-- ##################################################	-->
+<!-- Google Analytics Tag               				-->
+<!-- ##################################################	-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4WJRKD8E5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q4WJRKD8E5');
+</script>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+    	<td style="text-align: center; vertical-align: middle; ">
+	        <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+    	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+    	<td style="vertical-align: text-top;  text-align: center; ">
+	    	<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Woodpeckers Router Plane Blades <br>Blade Holder Sharpening Jig</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<hr>
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<h1 style="margin-bottom: 3px;">Overview</h1>
+
+<table style="float: right;
+		margin-top: 0px; margin-bottom: 10px;
+		margin-left: 10px; margin-right: 0px;
+		border-collapse: collapse;">
+	<tr style=" vertical-align: top;">
+		<td style="width: 300px;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-StraightHolder-InSE-77.png" target="new"><img src="Images/WW-Jig-WPRP-StraightHolder-InSE-77.png" alt="no image file" style="width: 100%;" /></a>
+    		<p class="TextSMImage"><b><i>Straight blade in blade holder sharpening jig, held in SE-77</i></b></p>
+		</td>
+		<td style="width: 300px;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-SpearPointHolder-InSE-77ab.png" target="new"><img src="Images/WW-Jig-WPRP-SpearPointHolder-InSE-77ab.png" alt="no image file" style="width: 100%;" /></a>
+    		<p class="TextSMImage"><b><i>Spear point blade in blade holder sharpening jig, held in SE-77</i></b></p>
+		</td>
+	</tr>
+</table>
+
+<p style="margin-top: 0;">The Woodpeckers router plane has blades which are removable from the blade holder shaft.  These blades can then be sharpened on the Tormek grinder using a blade holder sharpening jig held in the Tormek SE-77 Square Edge jig.
+
+<p>Pictures of this approach are to the right.  The blade holder sharpening jig is shown as the red part.
+
+<p>These blade holder sharpening jigs are designed for quick setup of the Tormek using the Tormek TTS-100 Turning Tool Setter.  That means the process is fast, and the craftsman can get back to work sooner.  (The <a href="#UsageNotes">work process</a> is outlined below.)
+
+<p style="margin-bottom: 3px;">There are two versions of the blade holder sharpening jigs:
+	<ol style="margin-top: 3px;">
+		<li>one for the straight blade, and</li> 
+		<li>one for the spear point blade.</li> 
+	</ol>
+
+<p>The two blade holder sharpening jigs are designed to be 3D-printed, and the designs are provided below.
+
+<p><i>You can click on any of the pictures to see a larger version.</i>
+
+<p><b>Note:</b> The <a href="Jigs-SE-77-Alignment.html">Alignment Jig for the SE-77</a> may be helpful to ensure this jig works as expected.
+
+<!-- *************************************************** -->
+<!-- Additional pictures of this jig -->
+<!-- *************************************************** -->
+<hr class="style2">
+<h1 style="margin-bottom: 3px;">Additional Pictures of this Tool Holder</h1>
+<table style="Width: 100%;
+		margin-top: 0px; margin-bottom: 10px;
+		margin-left: 10px; margin-right: 0px;
+		border-collapse: collapse;">
+	<tr style=" vertical-align: top;">
+		<td style="width: 10%;
+		        vertical-align: middle;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    &nbsp;
+		</td>
+		<td style="width: 22.5%;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <b>Top view</b>
+		</td>
+		<td style="width: 22.5%;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <b>Bottom view</b>
+		</td>
+		<td style="width: 22.5%;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <b>Bottom view, with blade installed</b>
+		</td>
+		<td style="width: 22.5%;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <b>Registration face (blue)</b>
+		</td>
+	</tr>
+	<tr style=" vertical-align: top;">
+		<td style="
+		        vertical-align: middle;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <b>Straight blade holder sharpening jig</b>
+		</td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-StraightHolder-Top.png" target="new"><img src="Images//WW-Jig-WPRP-StraightHolder-Top.png" alt="no image file" style="width: 80%;" /></a>
+		</td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-StraightHolder-Bottom.png" target="new"><img src="Images/WW-Jig-WPRP-StraightHolder-Bottom.png" alt="no image file" style="width: 80%;" /></a>
+		</td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-StraightHolder-withBlade.png" target="new"><img src="Images/WW-Jig-WPRP-StraightHolder-withBlade.png" alt="no image file" style="width: 80%;" /></a>
+		</td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-StraightHolder-Registration.png" target="new"><img src="Images/WW-Jig-WPRP-StraightHolder-Registration.png" alt="no image file" style="width: 80%;" /></a>
+		</td>
+	</tr>
+	<tr style=" vertical-align: top;">
+		<td style="width: 10%;
+		        vertical-align: middle;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <b>Spear point blade holder sharpening jig</b>
+		</td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-SpearPointHolder-Top.png" target="new"><img src="Images//WW-Jig-WPRP-SpearPointHolder-Top.png" alt="no image file" style="width: 80%;" /></a>
+		</td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-SpearPointHolder-Bottom.png" target="new"><img src="Images/WW-Jig-WPRP-SpearPointHolder-Bottom.png" alt="no image file" style="width: 80%;" /></a>
+		</td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-SpearPointHolder-withBlade.png" target="new"><img src="Images/WW-Jig-WPRP-SpearPointHolder-withBlade.png" alt="no image file" style="width: 80%;" /></a>
+		</td>
+		<td style="
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-SpearPointHolder-Registration.png" target="new"><img src="Images/WW-Jig-WPRP-SpearPointHolder-Registration.png" alt="no image file" style="width: 40%;" /></a>
+		</td>
+	</tr>
+</table>
+
+<!-- *************************************************** -->
+<!-- Usage Notes -->
+<!-- *************************************************** -->
+<hr class="style2">
+<h1 style="margin-bottom: 3px;" id="UsageNotes">Usage Notes</h1>
+<p style="margin-top: 3px;">The blades supplied by Woodpeckers should only need to be honed periodically.  If re-sharpening is required, then this tool holder should work, but the grinding should not be aggressive.
+
+<table style="float: right; width: 600px;
+		margin-top: 0px; margin-bottom: 10px;
+		margin-left: 10px; margin-right: 0px;
+		border-collapse: collapse;">
+	<tr style=" vertical-align: top;">
+		<td colspan=3 style="width: 33%;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+    		<p class="TextSMImage"><b><i>Blade holder sharpening jigs held in SE-77</i></b></p>
+		</td>
+	</tr>
+	<tr style=" vertical-align: 33%">
+		<td style="width: 150px;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/W-Jig-WPRP-StraightHolder-InSE-77-Top.png" target="new"><img src="Images/WW-Jig-WPRP-StraightHolder-InSE-77-Top.png" alt="no image file" style="width: 100%;" /></a>
+    		<p class="TextSMImage"><b><i>Straight blade</i></b></p>
+		</td>
+		<td style="width: 33%;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-SpearPointHolder-InSE-77a-Top.png" target="new"><img src="Images/WW-Jig-WPRP-SpearPointHolder-InSE-77a-Top.png" alt="no image file" style="width: 100%;" /></a>
+    		<p class="TextSMImage"><b><i>Spear point blade<br>right side</i></b></p>
+		</td>
+		<td style="width: 150px;
+				text-align: center;
+				border-style: solid; 
+				border-color: darkgray; 
+				border-top-width: 1px; 
+				border-bottom-width: 1px;
+				border-left-width: 1px; 
+				border-right-width: 1px; 
+				padding: 5px;
+				">
+		    <a href="ShowPicture.html?ImgNm=Images/WW-Jig-WPRP-SpearPointHolder-InSE-77b-Top.png" target="new"><img src="Images/WW-Jig-WPRP-SpearPointHolder-InSE-77b-Top.png" alt="no image file" style="width: 100%;" /></a>
+    		<p class="TextSMImage"><b><i>Spear point blade<br>left side</i></b></p>
+		</td>
+	</tr>
+</table>
+
+<p>The process is:
+    <ol>
+        <li style="margin-bottom: 6px;">Set the Tormek&rsquo;s Universal Support Bar (USB) using the B setting on the Tormek TTS-100 jig.  
+        
+        <p style="margin-top: 6px; margin-bottom: 12px;">The horizontal, edge-trailing position is necessary for use on honing wheels, and is recommended when using the Japanese waterstone (SJ).</li>
+        
+        <li style="margin-bottom: 12px;">Remove the blade from the Woodpeckers router plane&rsquo;s blade holder shaft.</li>
+        
+        <li style="margin-bottom: 12px;">Attach the blade to the blade holder sharpening jig (the red part).  Be sure to use the appropriate jig for the blade you are sharpening.</li>
+        
+        <li style="margin-bottom: 6px;">Insert the blade holder sharpening jig into SE-77 jig.
+
+            <ol type="a">
+                <li style="margin-bottom: 6px;">The blade should be on the bottom, towards the grindstone.  That is the position shown in the pictures to the right.</li>
+                
+                <li style="margin-bottom: 6px;">Ensure the registration face is flush against the bottom bar on the SE-77 jig. The pictures at the top of this page show that placement.
+                
+                <p style="margin-top: 6px; margin-bottom: 12px;">Do note that the spear point blade holder has two registration faces:  one for each side of the blade&rsquo;s edge.  You will need to hone one side, and then reposition the blade holder sharpening jig for the other side and hone it.</li>
+            </ol>
+        </li>
+        
+        <li style="margin-bottom: 12px;">Use particular care when polishing the back side of the blade to remove the burr.  This side was polished at the factory, and you do not want to alter the blade&rsquo;s geometry.</li>
+        
+        <li style="margin-bottom: 6px;">Once the blade is honed, remove it from the blade holder sharpening jig, and then it can be re-attached to the Woodpeckers router plane&rsquo;s blade holder shaft.</li>
+    </ol>
+
+<!-- *************************************************** -->
+<!-- How it works -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1 style="margin-bottom: 3px;">How it Works</h1>
+<p style="margin-top: 3px;">
+-->
+
+<!-- *************************************************** -->
+<!-- Sources for buying one -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1 style="margin-bottom: 3px;">Sources for Buying One</h1>
+<p style="margin-top: 3px;">
+-->
+
+<!-- *************************************************** -->
+<!-- Notes on making one -->
+<!-- *************************************************** -->
+<hr class="style2">
+<h1 style="margin-bottom: 3px;">Notes on Making One</h1>
+<p style="margin-top: 3px;">The files needed to below.
+
+<table style="width: 100%; text-align: center; 
+        border-collapse: collapse; 
+        margin-top: 0px; margin-bottom: 10px;
+		margin-left: 0px; margin-right: 0px;
+		border-collapse: collapse;">
+	<tr style=" vertical-align: bottom; background-color: moccasin;">
+		<th style="width: 300px;
+				text-align: center;
+				padding: 5px;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: thick; 
+				">
+		    <b>Blade Holder Sharpening Jig</b>
+		</th>
+		<th style="
+				text-align: center;
+				padding: 5px;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+				">
+		    <b>3MF</b>
+		</th>
+		<th style="
+		        text-align: center;
+				padding: 5px;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: thick; border-left-width: medium; 
+				">
+		    <b>STL</b>
+		</th>
+	</tr>
+	
+	<tr style=" vertical-align: middle; background-color: white;">
+		<td style="
+				text-align: left;
+				padding: 5px;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: thick; 
+				">
+		    Straight Blade Holder Sharpening Jig
+		</td>
+		<td style="
+				text-align: left;
+				padding: 5px;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+				">
+		    (to be added)
+		</td>
+		<td style="
+				text-align: left;
+				padding: 5px;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: medium;
+	            border-right-width: thick; border-left-width: medium; 
+				">
+		    (to be added)
+		</td>
+	</tr>
+	
+	<tr style=" vertical-align: middle; background-color: white; ">
+		<td style="
+				text-align: left;
+				padding: 5px;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: medium; border-left-width: thick; 
+				">
+		    Spear Point Blade Holder Jig
+		</td>
+		<td style="
+				text-align: left;
+				padding: 5px;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: medium; border-left-width: medium; 
+				">
+		    (to be added)
+		</td>
+		<td style="
+				text-align: left;
+				padding: 5px;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: thick; border-left-width: mecium; 
+				">
+		    (to be added)
+		</td>
+	</tr>
+</table>
+
+<p>You will also need these parts:
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: bottom; background: moccasin;">
+	    <th style="width: 300px;
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: thick; 
+	            ">
+            Item
+        </th>
+	    <th style="width: 125px;
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            Source
+        </th>
+	    <th style="width: 100px;
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            Part Number
+        </th>
+	    <th style="
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: thick; border-bottom-width: medium;
+	            border-right-width: thick; border-left-width: medium; 
+	            ">
+            Comments
+        </th>
+    </tr>
+    
+    <tr style="vertical-align: top; background: white;">
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: medium; border-left-width: thick; 
+	            ">
+            18-8 Stainless Steel Button Head Hex Drive Screw, 6-32 Thread Size, &frac58;&rdquo; Long
+        </td>
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            McMaster-Carr
+        </td>
+	    <td style="
+	            text-align: center;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: medium; border-left-width: medium; 
+	            ">
+            92949A150
+        </td>
+	    <td style="
+	            text-align: left;
+	            border-style: solid; border-color: black; 
+	            border-top-width: medium; border-bottom-width: thick;
+	            border-right-width: thick; border-left-width: medium; 
+	            ">
+            Used to attach the blade to the blade holder sharpening jig.
+        </td>
+    </tr>
+    </table>
+
+<h3 style="margin-bottom: 6px;">Tools Needed</h1>
+<p style="margin-top: 6px;">These tools are needed:
+    <ul>
+        <li style="margin-bottom: 0px;">#6-32 tap (e.g., McMaster-Carr p/n 2522A667) and 
+        <li style="margin-bottom: 6px;">Tap wrench (e.g., McMaster-Carr p/n 2546A23)</li>
+    </ul>
+
+
+<!-- *************************************************** -->
+<!-- More Information -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1 style="margin-bottom: 3px;">More Information</h1>
+<p style="margin-top: 3px;">
+-->
+
+<!-- *************************************************** -->
+<!-- Published Articles -->
+<!-- *************************************************** -->
+<!--
+<h2>Published Articles</h2>
+<p style="margin-top: 3px;">
+-->
+
+<!-- *************************************************** -->
+<!-- Books & Papers -->
+<!-- *************************************************** -->
+<!--
+<h2>Books &amp; Papers</h2>
+<p style="margin-top: 3px;">
+-->
+
+<!-- *************************************************** -->
+<!-- Web Sites -->
+<!-- *************************************************** -->
+<!--
+<h2>Web Sites</h2>
+<p style="margin-top: 3px;">
+-->
+
+<!-- *************************************************** -->
+<!-- Presentations -->
+<!-- *************************************************** -->
+<!--
+<h2>Presentations</h2>
+<p style="margin-top: 3px;">
+-->
+
+<!-- *************************************************** -->
+<!-- Other -->
+<!-- *************************************************** -->
+<!--
+<h2>Other</h2>
+<p style="margin-top: 3px;">
+-->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
