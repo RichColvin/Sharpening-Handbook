@@ -8,6 +8,17 @@
     <title>Sharpening Handbook</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+
+<style>
+	tr:nth-child(odd) {
+		background-color: #DBE9FA;
+		}
+	tr:nth-child(even) {
+		background-color: #DBF9DB;
+		}
+	td {padding: 5px;}
+</style>
+
 </head>
 
 <!-- ##################################################	-->
@@ -26,8 +37,8 @@
 <body style="background-color: #E6E6E6; font: 16px Arial; ">
 
 <!-- ################################################### -->
-<!-- Code for Including Standard HTML files on the 	 -->
-<!-- server					         -->
+<!-- Code for Including Standard HTML files on the 		 -->
+<!-- server					        					 -->
 <!-- ################################################### -->
 <script src="library.js"></script>
 
@@ -72,15 +83,15 @@ includeHTML();
 <!-- Header                                              -->
 <!-- ################################################### -->
 <table style="width: 100%; ">
-    <tr>
-	<td style="text-align: center; vertical-align: bottom; ">
-	    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
-	</td>
+    <tr style="background-color: transparent;">
+		<td style="text-align: center; vertical-align: bottom; ">
+		    <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+		</td>
     </tr>
 </table>
 
 <table style="width: 100%; text-align: center; border-collapse: collapse; ">
-    <tr style="vertical-align: bottom; ">
+    <tr style="vertical-align: bottom; background-color: transparent; ">
     	<td style="text-align: left; width: 10%; ">
 	        &nbsp;
     	</td>
@@ -100,19 +111,30 @@ includeHTML();
 
 <!-- ################################################### -->
 <!-- Recommended Books, Videos, & Web Sites -->
+
 <table style="width: 100%; 
-		border-collapse: collapse; " >
-    <tr style="vertical-align: top; 
-    		background-color: White;">
-        <td style="width: 450px;
+		border-collapse: collapse; 
+		">
+		
+<!-- *************************************************** -->
+    <tr style="vertical-align: top; ">
+        <td style="width: 250px;
                 border-style: solid;
             	border-color: black; 
     			border-top-width: thin; 
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <b><a href="https://youtu.be/JsbbsSyT6M0" target="new">Accu-Finish Sharpening</a></b> <span style="font: 14px Arial; ">(YouTube video)</span>
-            <br>by Aaron McMichael
+            <b><a href="https://youtu.be/JsbbsSyT6M0" target="new">Accu-Finish Sharpening</a></b> <span style="font-size: 13px; ">(YouTube video)</span>
+        </td>
+        <td style="width: 150px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Aaron McMichael
         </td>
         <td style="
                 border-style: solid;
@@ -121,35 +143,12 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Aaron McMichael demonstrates how to use the <a href="https://accu-finish.com" target="new">Accu-Finish</a> machine to achieve precise and polished cutting edges on a variety of cutting tools.  Presented during Pecha Kucha sessions at the  2018 <a href="http://ornamentalturners.com" target="new">Ornamental Turners International</a> biennial symposium in Seattle, WA.
-        </td>
-    </tr>
-
-    <tr style="vertical-align: top; 
-    		background-color: LightGray;">
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <u><b><i>The Complete Guide to Sharpening</i></b></u>, 1996 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Leonard Lee
-        </td>
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; "><span style="color:darkred;">This is the <i>bible</i> for sharpening woodworking and general tools.</span>  Very good reference about how to sharpen a boat load of tools.
+            <p style="margin-top: 0; margin-bottom: 0; ">Aaron McMichael demonstrates how to use the <a href="https://accu-finish.com" target="new">Accu-Finish</a> machine to achieve precise and polished cutting edges on a variety of cutting tools.  This was presented during a Pecha Kucha sessions at the  2018 <a href="http://ornamentalturners.com" target="new">Ornamental Turners International</a> biennial symposium in Seattle, WA.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -157,8 +156,55 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="http://www.newmantools.com/machines/drillpoint.html" target="new"><b>Drill Bit Geometry</b></a> <span style="font: 14px Arial; ">(PDF)</span>
-            <br>Joseph Mazoff
+            <b><i>The Complete Guide to Sharpening</i></b>, 1996 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Leonard Lee
+        </td>
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        		
+        	<div style="float: left; width: 40px; 
+        	        margin-top: 0px; margin-bottom: 0px;
+        	        margin-left: 5px; margin-right: 0px;
+        	        border: 0px solid darkgray; text-align: center; ">
+            	<span style="font-size: 25px;">&#11088;</span>
+            </div>
+
+            <p style="margin-top: 0; margin-bottom: 0; "><span style="color:darkred;">This is the <i><u>bible</u></i> for sharpening woodworking and general tools.</span>  It is a very good reference about how to sharpen a boat load of tools.
+        </td>
+    </tr>
+
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <a href="http://www.newmantools.com/machines/drillpoint.html" target="new"><b>Drill Bit Geometry</b></a> <span style="font-size: 13px; ">(PDF)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Joseph Mazoff
         </td>
         <td style="
                 border-style: solid;
@@ -171,8 +217,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -180,8 +226,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <b><i>Design and Use of Cutting Tools</i></b>, 1952 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Leo J. St. Clair
+            <b><i>Design and Use of Cutting Tools</i></b>, 1952 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Leo J. St. Clair
         </td>
         <td style="
                 border-style: solid;
@@ -190,14 +244,21 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
+        	<div style="float: left; width: 40px; 
+        	        margin-top: 0px; margin-bottom: 0px;
+        	        margin-left: 5px; margin-right: 0px;
+        	        border: 0px solid darkgray; text-align: center; ">
+            	<span style="font-size: 25px;">&#11088;</span>
+            </div>
+
             <p style="margin-top: 0; "><span style="color:darkred;">This is the definitive source for sharpening metal lathe tools, especially carbide ones.</span>  St. Clair was working in the industry as it was changing from HSS to carbide, so both are covered well. His experimental data helps validate or disprove many theories.
             
             <p style="margin-bottom: 0; ">Unfortunately, this book is very hard to find.  I recommend the sharpener borrow it from their local library via an inter-library loan for reading.  Universities which teach mechanical engineering usually have a copy, and it is easiest to read that way.  (The publisher has no more copies:  I asked.)
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -205,8 +266,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <b><a href="Images/Experiments_on_Knife_Sharpening.pdf">Experiments on Knife Sharpening</a></b>, 2004 <span style="font: 14px Arial; ">(PDF)</span>
-            <br>John D. Verhoeven
+            <b><a href="Images/Experiments_on_Knife_Sharpening.pdf">Experiments on Knife Sharpening</a></b>, 2004 <span style="font-size: 13px; ">(PDF)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	John D. Verhoeven
         </td>
         <td style="
                 border-style: solid;
@@ -219,8 +288,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -228,8 +297,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="https://vimeo.com/126307973" target="new"><b>Fine Tune a Back Iron</b></a> <span style="font: 14px Arial; ">(Vimeo video)</span>
-            <br>Christopher Schwarz
+            <a href="https://vimeo.com/126307973" target="new"><b>Fine Tune a Back Iron</b></a> <span style="font-size: 13px; ">(Vimeo video)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Christopher Schwarz
         </td>
         <td style="
                 border-style: solid;
@@ -238,41 +315,12 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Nicely done document on back irons for planes.
-        </td>
-    </tr>
-
-    <tr style="vertical-align: top; 
-    		background-color: White;">
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <a href="https://vimeo.com/111139564" target="new"><b>Fundamentals of Sharpening</b></a> <span style="font: 14px Arial; ">(Vimeo video)</span>
-            <br><a href="https://www.woodturner.org" target="new">American Association of Woodturners</a>
-        </td>
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">AAW Skill Building Series, this 90 minute DVD features some of the best talent in woodturning today:
-                <ul>
-                    <li>Bonnie Klein,</li>
-                    <li>Alan Lacer,</li>
-                    <li>John Jordan, and</li>
-                    <li>Bill Johnston.</li>
-                </ul>
+            <p style="margin-top: 0; margin-bottom: 0; ">This is a very nicely done document on back irons for planes.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -280,8 +328,47 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="GT-Knives-DutchmanGuide.html" target="new"><b>Grinding Angle Adjustment for the Tormek</b></a>, 2014 <span style="font: 14px Arial; ">(PDF)</span>
-            <br>Ton Nillesen
+            <a href="https://vimeo.com/111139564" target="new"><b>Fundamentals of Sharpening</b></a> <span style="font-size: 13px; ">(Vimeo video)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	<a href="https://www.woodturner.org" target="new">American Association of Woodturners</a>
+        </td>
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <p style="margin-top: 0; margin-bottom: 0; ">AAW Skill Building Series, this 90 minute DVD features some of the best talent in woodturning:  Bonnie Klein, Alan Lacer, John Jordan, and Bill Johnston.
+        </td>
+    </tr>
+
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <a href="GT-Knives-DutchmanGuide.html" target="new"><b>Grinding Angle Adjustment for the Tormek</b></a>, 2014 <span style="font-size: 13px; ">(PDF)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Ton Nillesen
         </td>
         <td style="
                 border-style: solid;
@@ -294,8 +381,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -303,8 +390,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="https://www.antiquetools.com/sharp/" target="new"><b>A Guide to Honing and Sharpening</b></a>. <span style="font: 14px Arial; ">(web site)</span>
-            <br>Museum of Woodworking Tools
+            <a href="https://www.antiquetools.com/sharp/" target="new"><b>A Guide to Honing and Sharpening</b></a>, <span style="font-size: 13px; ">(web site)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	The Museum of Woodworking Tools
         </td>
         <td style="
                 border-style: solid;
@@ -317,8 +412,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -326,7 +421,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-				<b><i>The Handyman's Book</i></b>, 1903 <span style="font: 14px Arial; ">(Book)</span>.
+				<b><i>The Handyman's Book</i></b>, 1903 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Paul N. Hasluck
         </td>
         <td style="
                 border-style: solid;
@@ -339,9 +443,8 @@ includeHTML();
         </td>
     </tr>
 
-
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -349,8 +452,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <b><i>How to Sharpen Every Blade in Your Workshop</i></b>, 1994 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Don Geary
+            <b><i>How to Sharpen Every Blade in Your Workshop</i></b>, 1994 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Don Geary
         </td>
         <td style="
                 border-style: solid;
@@ -359,36 +470,12 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Good book, especially showing jigs you can make yourself to guide the sharpening process.
-        </td>
-    </tr>
-
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <a href="https://vimeo.com/158558759" target="new"><b>Influence of the Cap-iron on Hand Plane</b></a> <span style="font: 14px Arial; ">(Vimeo video)</span>
-            <br>Prof. Yasunori Kawai &amp; 
-            <br>Prof. Chutaro Kato
-        </td>
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Educational Video from the faculty of Education, Art and Science, at the Yamagata University.  Really shows the effect of cap iron angles.
+            <p style="margin-top: 0; margin-bottom: 0; ">This is a good book which shows a number of things, including jigs you can make yourself to guide the sharpening process.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -396,8 +483,18 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <i><b>Japanese Woodworking Tools</b>:  Their Tradition, Spirit, and Use</i>, 1998 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Toshio Odate
+            <a href="https://vimeo.com/158558759" target="new"><b>Influence of the Cap-iron on Hand Plane</b></a> <span style="font-size: 13px; ">(Vimeo video)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Prof. Yasunori Kawai
+        	<br>
+        	Prof. Chutaro Kato
         </td>
         <td style="
                 border-style: solid;
@@ -406,12 +503,12 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Great reference about Japanese carpentry tools.  Toshio includes a number of tools, taking out the confusion we Westerners often have.
+            <p style="margin-top: 0; margin-bottom: 0; ">This is a good educational video from the faculty of Education, Art and Science, at the Yamagata University.  It really shows the effect of cap iron angles.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -419,8 +516,47 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="https://vimeo.com/111139564" target="new">John Lucas Sharpening</a> <span style="font: 14px Arial; ">(Vimeo video)</span>
-            <br><a href="https://www.woodturner.org" target="new">American Association of Woodturners</a>
+            <i><b>Japanese Woodworking Tools</b>:  Their Tradition, Spirit, and Use</i>, 1998 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Toshio Odate
+        </td>
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <p style="margin-top: 0; margin-bottom: 0; ">This is a great reference about Japanese carpentry tools.  Toshio includes a number of tools, taking out the confusion we Westerners often have.
+        </td>
+    </tr>
+
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <a href="https://vimeo.com/111139564" target="new">John Lucas Sharpening</a> <span style="font-size: 13px; ">(Vimeo video)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	<a href="https://www.woodturner.org" target="new">American Association of Woodturners</a>
         </td>
         <td style="
                 border-style: solid;
@@ -433,8 +569,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -442,8 +578,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <i><b>Keeping the Cutting Edge</b>: Setting and Sharpening Hand and Power Saws</i>, 2006 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Harold H. Payson
+            <i><b>Keeping the Cutting Edge</b>: Setting and Sharpening Hand and Power Saws</i>, 2006 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Harold H. Payson
         </td>
         <td style="
                 border-style: solid;
@@ -452,12 +596,12 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Good book as the author learned from his father who sharpened saws for others.
+            <p style="margin-top: 0; margin-bottom: 0; ">This is a good book as the author learned from his father who sharpened saws for others.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -465,8 +609,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <i><b>Knife Deburring</b>: Science Behind the Lasting Razor Edge</i> <span style="font: 14px Arial; ">(Book)</span>
-            <br>Dr. Vadim Kraichuk
+            <i><b>Knife Deburring</b>: Science Behind the Lasting Razor Edge</i> <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Dr. Vadim Kraichuk
         </td>
         <td style="
                 border-style: solid;
@@ -475,14 +627,21 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
+        	<div style="float: left; width: 40px; 
+        	        margin-top: 0px; margin-bottom: 0px;
+        	        margin-left: 5px; margin-right: 0px;
+        	        border: 0px solid darkgray; text-align: center; ">
+            	<span style="font-size: 25px;">&#11088;</span>
+            </div>
+
             <p style="margin-top: 0; ">Dr. Kraichuk's book is based on the sharpening method developed by his company. And unlike other sharpeners, Dr. Kraichuk has researched the results from using this method, and has proof that it works. His company's work, sharpening the knives of butchers, has repeatedly shown that his method is sound.
 
             <p style="margin-bottom: 0;">If you are wanting to get your tools really sharp, you should read this book and make it a part of your library.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -490,8 +649,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <i><b>Knife Engineering</b>: Steel, Heat Treating, and Geometry</i>, 2025 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Dr. Larrin Thomas
+            <i><b>Knife Engineering</b>: Steel, Heat Treating, and Geometry</i>, 2025 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Dr. Larrin Thomas
         </td>
         <td style="
                 border-style: solid;
@@ -500,35 +667,12 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Lots of great information in this book, especially regarding the metallurgy of steels.
-        </td>
-    </tr>
-
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <a href="https://forums.egullet.org/topic/26036-knife-maintenance-and-sharpening/" target="new"><b>Knife Maintenance and Sharpening</b></a> <span style="font: 14px Arial; ">(Internet Forum)</span>
-            <br>Society for Culinary Arts and Letters
-        </td>
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Nice overview of knife sharpening.
+            <p style="margin-top: 0; margin-bottom: 0; ">There is a lot of great information in this book, especially regarding the metallurgy of steels.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -536,8 +680,47 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <b>LearnEngineering.org</b> <span style="font: 14px Arial; ">(web site)</span>
-            <br>Sabin Mathew
+            <a href="https://forums.egullet.org/topic/26036-knife-maintenance-and-sharpening/" target="new"><b>Knife Maintenance and Sharpening</b></a> <span style="font-size: 13px; ">(Internet Forum)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	The Society for Culinary Arts and Letters
+        </td>
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <p style="margin-top: 0; margin-bottom: 0; ">This is a nice overview of knife sharpening.
+        </td>
+    </tr>
+
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <b>LearnEngineering.org</b> <span style="font-size: 13px; ">(web site)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Sabin Mathew
         </td>
         <td style="
                 border-style: solid;
@@ -550,8 +733,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -559,8 +742,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="Documents/TM%209-867%20Care%20and%20Use%20of%20Hand%20Tools.pdf" target="new"><b>Maintenance and Care of Hand Tools</b></a>, 1945 Edition <span style="font: 14px Arial; ">(PDF)</span>
-            <br>U.S. War Department
+            <a href="Documents/TM%209-867%20Care%20and%20Use%20of%20Hand%20Tools.pdf" target="new"><b>Maintenance and Care of Hand Tools</b></a>, 1945 Edition <span style="font-size: 13px; ">(PDF)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	U.S. War Department
         </td>
         <td rowspan=3 style="
                 border-style: solid;
@@ -569,24 +760,22 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <p style="margin-top: 0; ">Chief Warrant Officer (ret) Rick Laws sent an email to me in which he noted that he "<i>... used this manual for soldier training and information. It is a little dated, but so are most tools used by most people.</i>"  
-            
-            <p>He is right:  I have tools I've inherited from both my grandfathers, and the techniques noted in these manuals still apply.
+            <p style="margin-top: 0; ">Chief Warrant Officer (ret) Rick Laws sent an email to me in which he noted that he &ldquo;<i>... used this manual for soldier training and information. It is a little dated, but so are most tools used by most people.</i>&rdquo;  He is right:  I have tools I've inherited from both my grandfathers, and the techniques noted in these manuals still apply.
                 
-            <p>After World War II, this became also known by these designations:
-                <ul>
+            <p style="margin-bottom: 0px;">After World War II, this became also known by these designations:
+                <ul style="margin-top: 0px; margin-bottom: 0px;">
                     <li>Air Force TO 32-1-101</li>
                     <li>Army TM 9-243</li>
                     <li>Navy M6290-AJ-MAN-1010</li>
                     <li>Marine Corps  TM 10209-10/1</li>
                 </ul>
                         
-            <p style="margin-bottom: 0; ">(No Space Force designation is known at this time ...)
+            <p style="margin-top: 0px; margin-bottom: 0px; ">(No Space Force designation is known at this time ...)
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -594,13 +783,21 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="Documents/TM%209-243%20Care%20and%20Use%20of%20Hand%20and%20Measuring%20Tools%202004.pdf" target="new"><b>Use and Care of Hand Tools and Measuring Tools</b></a>, 2004 Edition <span style="font: 14px Arial; ">(PDF)</span>
-            <br>U.S. Dept. of Defense
+            <a href="Documents/TM%209-243%20Care%20and%20Use%20of%20Hand%20and%20Measuring%20Tools%202004.pdf" target="new"><b>Use and Care of Hand Tools and Measuring Tools</b></a>, 2004 Edition <span style="font-size: 13px; ">(PDF)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	U.S. Dept. of Defense
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -608,13 +805,20 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="Documents/TM%209-243%20Care%20and%20Use%20of%20Hand%20and%20Measuring%20Tools%202020.pdf" target="new"><b>Use and Care of Hand Tools and Measuring Tools</b></a>, 2020 Edition <span style="font: 14px Arial; ">(PDF)</span>
-            <br>U.S. Dept. of Defense
+            <a href="Documents/TM%209-243%20Care%20and%20Use%20of%20Hand%20and%20Measuring%20Tools%202020.pdf" target="new"><b>Use and Care of Hand Tools and Measuring Tools</b></a>, 2020 Edition <span style="font-size: 13px; ">(PDF)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	U.S. Dept. of Defense
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -622,8 +826,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="http://www.hocktools.com/products/perfectedge.html" target="new"><b>The Perfect Edge</b>:  The Ultimate Guide to Sharpening for Wood Workers</a>, 2009 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Ron Hock
+            <a href="http://www.hocktools.com/products/perfectedge.html" target="new"><b>The Perfect Edge</b>:  The Ultimate Guide to Sharpening for Wood Workers</a>, 2009 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Ron Hock
         </td>
         <td style="
                 border-style: solid;
@@ -636,8 +848,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -645,8 +857,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="https://archive.org/details/razoredgebookofs0000jura" target="new"><b>The Razor Edge Book of Sharpening</b></a> <span style="font: 14px Arial; ">(PDF)</span>
-            <br>John Juranitch
+            <a href="https://archive.org/details/razoredgebookofs0000jura" target="new"><b>The Razor Edge Book of Sharpening</b></a> <span style="font-size: 13px; ">(PDF)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	John Juranitch
         </td>
         <td style="
                 border-style: solid;
@@ -655,36 +875,14 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">From Amazon.com's description:  Universally recognized as "The Bible of The Cutting Edge", this book belongs in the library of anyone who is serious about sharpening. Written by Guinness world record holder John Juranitch, it contains all the knowledge and insights gained during his more than 40 years in the sharpening industry. The 145 page book is crammed with photos, illustrations and cutting edge secrets you won't find anywhere else. Its 14 chapters cover topics like how to choose a knife, sharpening theories and applications, steeling, using a hone and much, much more. You'll get answers to the most asked questions. You'll learn the truth about common myths like why you should never use oil on a hone. And you'll get the insights necessary to put a great edge on knives, axes, fish hooks, arrowheads, chain saws and other tools. It's a history, a handbook, a reference manual that is the simplest, most complete way to give yourself a razor edge on sharpening.
-        </td>
-    </tr>
-
-    <tr style="vertical-align: top; 
-    		background-color: White;">
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <a href="Documents/AW2903p18-19.pdf" target="new"><b>Rethinking Sharpening</b></a> <span style="font: 14px Arial; ">(PDF of magazine article)</span>
-            <br>Terry Martin
-            <p style="margin-bottom: 0;"><a href="https://www.woodturner.org" target="new">American Association of Woodturners</a>' &ldquo;American Woodturner&rdquo;, June 2014
-        </td>
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Terry discusses the value of using a wet sharpening system for sharpening.
+            <p style="margin-top: 0; margin-bottom: 0; ">From Amazon.com&rsquo;s description:  
+            
+            <p style="margin-top: 0; margin-bottom: 0; margin-left: 30px; "><i>Universally recognized as &ldquo;The Bible of The Cutting Edge&rdquo;, this book belongs in the library of anyone who is serious about sharpening. Written by Guinness world record holder John Juranitch, it contains all the knowledge and insights gained during his more than 40 years in the sharpening industry. The 145 page book is crammed with photos, illustrations and cutting edge secrets you won't find anywhere else. Its 14 chapters cover topics like how to choose a knife, sharpening theories and applications, steeling, using a hone and much, much more. You'll get answers to the most asked questions. You'll learn the truth about common myths like why you should never use oil on a hone. And you'll get the insights necessary to put a great edge on knives, axes, fish hooks, arrowheads, chain saws and other tools. It's a history, a handbook, a reference manual that is the simplest, most complete way to give yourself a razor edge on sharpening.</i>
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -692,7 +890,50 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="https://ScienceofSharp.wordpress.com" target="new"><b>Science of Sharp</b></a> <span style="font: 14px Arial; ">(web site)</span>
+            <a href="Documents/AW2903p18-19.pdf" target="new"><b>Rethinking Sharpening</b></a> <span style="font-size: 13px; ">(PDF of magazine article)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Terry Martin
+        </td>
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <p style="margin-top: 0; ">Terry discusses the value of using a wet sharpening system for sharpening.
+
+            <p style="margin-bottom: 0;">This is available in the <a href="https://www.woodturner.org" target="new">American Association of Woodturners</a>' &ldquo;American Woodturner&rdquo;, June 2014
+        </td>
+    </tr>
+
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <a href="https://ScienceofSharp.wordpress.com" target="new"><b>Science of Sharp</b></a> <span style="font-size: 13px; ">(web site)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	&nbsp;
+        </td>
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -706,8 +947,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -715,8 +956,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <i><b>Set & File</b>: A Practical Guide to Saw Sharpening</i>, 2024 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Matt Cianci (AKA, <a href="https://www.thesawwright.com" target="new">the Saw Wright</a>)
+            <i><b>Set & File</b>: A Practical Guide to Saw Sharpening</i>, 2024 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Matt Cianci (AKA, <a href="https://www.thesawwright.com" target="new">the Saw Wright</a>)
         </td>
         <td style="
                 border-style: solid;
@@ -725,14 +974,21 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
+        	<div style="float: left; width: 40px; 
+        	        margin-top: 0px; margin-bottom: 0px;
+        	        margin-left: 5px; margin-right: 0px;
+        	        border: 0px solid darkgray; text-align: center; ">
+            	<span style="font-size: 25px;">&#11088;</span>
+            </div>
+
             <p style="margin-top: 0;"><span style="color:darkred;">This is the recommended go-to book for sharpening hand saws.</span>
             
             <p style="margin-bottom: 0;">Matt addresses the fundamentals of maintaining backsaws and handsaws: how to file and joint your saws with the correct rake, fleam and pitch to keep them sharp for cutting. He also addresses how to deal with saw teeth which are in good shape but dull, and how to successfully fix teeth which have been abused.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -740,8 +996,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <b><i>Sharpen This</i></b>, 2022 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Christopher Schwarz
+            <b><i>Sharpen This</i></b>, 2022 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Christopher Schwarz
         </td>
         <td style="
                 border-style: solid;
@@ -754,8 +1018,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -763,8 +1027,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="https://www.amazon.com/Sharpening-Made-Easy-Primer-Knives/dp/0940362198?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-osx-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0940362198" target="new"><b>Sharpening Made Easy</b>: A Primer on Sharpening Knives and Other Edged Tools</a>, 2010 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Steve Bottorff
+            <a href="https://www.amazon.com/Sharpening-Made-Easy-Primer-Knives/dp/0940362198?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&tag=duckduckgo-osx-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0940362198" target="new"><b>Sharpening Made Easy</b>: A Primer on Sharpening Knives and Other Edged Tools</a>, 2010 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td rowspan=2 style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Steve Bottorff
 
         </td>
         <td rowspan=2 style="
@@ -778,8 +1050,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -787,12 +1059,11 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="http://sharpeningmadeeasy.com" target="new"><b>Sharpening Made Easy</b></a> <span style="font: 14px Arial; ">(web site)</span>
+            <a href="http://sharpeningmadeeasy.com" target="new"><b>Sharpening Made Easy</b></a> <span style="font-size: 13px; ">(web site)</span>
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -800,8 +1071,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <i><b>Sharpening Techniques for Better Woodworking</b>  (The Workshop Companion)</i>, 1994 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Nick Engler
+            <i><b>Sharpening Techniques for Better Woodworking</b>  (The Workshop Companion)</i>, 1994 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Nick Engler
         </td>
         <td style="
                 border-style: solid;
@@ -810,35 +1089,12 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Good book, especially showing jigs you can make yourself to guide the sharpening process.
-        </td>
-    </tr>
-
-    <tr style="vertical-align: top; 
-    		background-color: White;">
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <i><b>Taunton's Complete Illustrated Guide to Sharpening</b></i>, 2004 <span style="font: 14px Arial; ">(Book)</span>
-            <br>Thomas Lie-Nielsen
-        </td>
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Good book, especially showing jigs you can make yourself to guide the sharpening process.  Probably the best for showing these jigs.
+            <p style="margin-top: 0; margin-bottom: 0; ">This is a good book, especially showing jigs you can make yourself to guide the sharpening process.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -846,8 +1102,47 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <i><b>Tormek Handbook</b></i> <span style="font: 14px Arial; ">(book)</span>
-            <br><a href="https://www.Tormek.com"  target="new">Tormek</a>
+            <i><b>Taunton's Complete Illustrated Guide to Sharpening</b></i>, 2004 <span style="font-size: 13px; ">(Book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Thomas Lie-Nielsen
+        </td>
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <p style="margin-top: 0; margin-bottom: 0; ">This is a good book, especially showing jigs you can make yourself to guide the sharpening process.  Probably the best for showing these jigs.
+        </td>
+    </tr>
+
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <i><b>Tormek Handbook</b></i> <span style="font-size: 13px; ">(book)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	<a href="https://www.Tormek.com"  target="new">Tormek</a>
         </td>
         <td style="
                 border-style: solid;
@@ -860,8 +1155,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -869,8 +1164,16 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <i><b>Turning and Mechanical Manipulation, Vol. 2</b> - Construction, Action, and Application of Cutting Tools</i>, 1846 <span style="font: 14px Arial; ">(Book / <a href="https://archive.org/details/turningmechanica02holtuoft" target="new">eBook</a>)</span>
-            <br><a href="https://en.wikipedia.org/wiki/Holtzapffel" target="new">Charles Holtzapffel</a>
+            <i><b>Turning and Mechanical Manipulation, Vol. 2</b> - Construction, Action, and Application of Cutting Tools</i>, 1846 <span style="font-size: 13px; ">(Book / <a href="https://archive.org/details/turningmechanica02holtuoft" target="new">eBook</a>)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	<a href="https://en.wikipedia.org/wiki/Holtzapffel" target="new">Charles Holtzapffel</a>
         </td>
         <td style="
                 border-style: solid;
@@ -879,35 +1182,12 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Great historical knowledge, especially about honing and sharpening abrasives.
-        </td>
-    </tr>
-
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <i><b>Turning and Mechanical Manipulation, Vol. 3</b> - Abrasive and Other Processes not Accomplished with Cutting Tools</i>, 1850 <span style="font: 14px Arial; ">(Book / <a href="https://archive.org/details/turningmechanica03holtuoft" target="new">eBook</a>)</span>
-            <br><a href="https://en.wikipedia.org/wiki/Holtzapffel" target="new">Charles Holtzapffel</a>
-        </td>
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: thin; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; ">Great historical knowledge, especially about honing and sharpening abrasives.
+            <p style="margin-top: 0; margin-bottom: 0; ">There is great historical knowledge, especially about honing and sharpening abrasives.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -915,8 +1195,47 @@ includeHTML();
         		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
-            <a href="http://www.goldturners.org/resources/Documents/Miscellaneous/woodturning_notes1.pdf" target="new"><b>Woodturning Notes</b></a> <span style="font: 14px Arial; ">(PDF document)</span>
-            <br>Alan Batty
+            <i><b>Turning and Mechanical Manipulation, Vol. 3</b> - Abrasive and Other Processes not Accomplished with Cutting Tools</i>, 1850 <span style="font-size: 13px; ">(Book / <a href="https://archive.org/details/turningmechanica03holtuoft" target="new">eBook</a>)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	<a href="https://en.wikipedia.org/wiki/Holtzapffel" target="new">Charles Holtzapffel</a>
+        </td>
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <p style="margin-top: 0; margin-bottom: 0; ">There is great historical knowledge, especially about honing and sharpening abrasives.
+        </td>
+    </tr>
+
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
+        <td style="
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+            <a href="http://www.goldturners.org/resources/Documents/Miscellaneous/woodturning_notes1.pdf" target="new"><b>Woodturning Notes</b></a> <span style="font-size: 13px; ">(PDF document)</span>
+        </td>
+        <td style="width: 100px;
+                border-style: solid;
+            	border-color: black; 
+    			border-top-width: thin; 
+        		border-bottom-width: thin; 
+		        border-left-width: thin; 
+        		border-right-width: thin; ">
+        	Alan Batty
 
         </td>
         <td style="
@@ -939,8 +1258,9 @@ includeHTML();
 
 <table style="width: 100%; 
 		border-collapse: collapse; " >
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="width: 300px;
                 border-style: solid;
             	border-color: black; 
@@ -961,8 +1281,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -985,8 +1305,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1007,8 +1327,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1030,8 +1350,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1050,24 +1370,25 @@ includeHTML();
         		border-right-width: thin; ">
             <p style="margin-top: 0; margin-bottom: 0; ">S&egrave;bastian and Wolfgang show the sharpening of chisels and plane irons. They also go through Tormek's different grinding wheels; SG-250 Original Grindstone, SB-250 Blackstone Silicion, SJ-250 Japanese Waterstone and Tormek's three Diamond Wheels DC-250, DF-250 and DE-250. They give you their recommendations for usage and tools.
 
-                <ul>
-                    <li style="margin-bottom: 12px;">At 00:46, there is a great explanation of sharpening a tool with a radiused end using the <a href="https://www.tormek.com/" target="new">Tormek</a> <a href="https://www.tormek.com/usa/en/grinding-jigs/se-77-square-edge-jig/" target="new">SE-77 Square Edge Jig</a>.</li>
-
+                <ul style="margin-top: 0px; margin-bottom: 0px;">
+                    <li>At 00:46, there is a great explanation of sharpening a tool with a radiused end using the <a href="https://www.tormek.com/" target="new">Tormek</a> <a href="https://www.tormek.com/usa/en/grinding-jigs/se-77-square-edge-jig/" target="new">SE-77 Square Edge Jig</a>.</li>
                     <li>At 00:52, there is a great explanation of how to use the <a href="https://www.tormek.com/" target="new">Tormek</a> MB-100 Multi Base.</li>
                 </ul>
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
     			border-top-width: thin; 
-        		border-bottom-width: 0; 
+        		border-bottom-width: thin; 
 		        border-left-width: thin; 
         		border-right-width: thin; ">
             <a href="https://youtu.be/M9S-VfdbR0Q" target="new">Part 4 - Carving Knife & Carving Tools</a>
+
+            <p style="margin-bottom: 0; padding-left: 33pt;"><a href="https://youtu.be/7eCDSZ2PHU0" target="new">Sharpen knives and hatchets for hunting & outdoor | Tormek T-4 Bushcraft</a>
         </td>
         <td style="
                 border-style: solid;
@@ -1077,33 +1398,16 @@ includeHTML();
 		        border-left-width: thin; 
         		border-right-width: thin; ">
             <p style="margin-top: 0; margin-bottom: 0; ">Wolfgang and S&egrave;bastian from Tormek go through the sharpening of carving knives and various carving tools such as v-tools, carving gouges and short wood chisels.
-
-                <ul>
+                <ul style="margin-top: 0px; margin-bottom: 0px;">
                     <li>At 10:40, there is a great explanation about setup of the <a href="https://www.tormek.com/" target="new">Tormek</a> <a href="https://www.tormek.com/International/en/grinding-jigs/svm-00-small-knife-holder/" target="new">SVM-00 Small Knife Holder Jig</a>.</li>
                 </ul>
+
+            <p style="margin-bottom: 0; ">For everyone who hunts, fish or just spend time outdoors, it's vital to have sharp tools. A sharp knife or axe is easier to use, more fun to work with, and reduces the risk of injuries. In this sharpening class we show you how to sharpen a wide variety of outdoor and hunting knives, such as the skinner's knife, the hook knife and the pocket knife. We also show the sharpening of a small hatchet.
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
-        <td style="
-                border-style: solid;
-            	border-color: black; 
-    			border-top-width: 0; 
-        		border-bottom-width: thin; 
-		        border-left-width: thin; 
-        		border-right-width: thin; ">
-            <p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;"><a href="https://youtu.be/7eCDSZ2PHU0" target="new">Sharpen knives and hatchets for hunting & outdoor | Tormek T-4 Bushcraft</a>
-
-        </td>
-        <td style="text-align: left;">
-            <p style="margin-top: 0; margin-bottom: 0; ">For everyone who hunts, fish or just spend time outdoors, it's vital to have sharp tools. A sharp knife or axe is easier to use, more fun to work with, and reduces the risk of injuries. In this sharpening class we show you how to sharpen a wide variety of outdoor and hunting knives, such as the skinner's knife, the hook knife and the pocket knife. We also show the sharpening of a small hatchet.
-
-        </td>
-    </tr>
-
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1119,8 +1423,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1141,8 +1445,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1163,8 +1467,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1185,8 +1489,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1207,8 +1511,8 @@ includeHTML();
 
             <p style="margin-bottom: 0;">Regardless of what might be the reason to want a flat bevel, S&egrave;bastian and Wolfgang show how to achieve it with your Tormek wet sharpening system,  They will also touch upon the differences between the different types of bevels 
                     
-            <table style="width: 100%; ">
-                <tr>
+            <table style="width: 100%; margin-top: 10px;">
+                <tr style=" background-color: transparent;">
                     <td style="text-align: center;">
                         <img src="Images/GT-Knives-Grind-Concave.png" alt="no image file" style="height: 35px;" />
                         <p style="margin-top: 0; margin-bottom: 0;"><b>Concave</b>
@@ -1223,13 +1527,11 @@ includeHTML();
                     </td>
                 </tr>
             </table>
-            
-            <p style="margin-top: 0; margin-bottom: 0; ">&nbsp;
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1252,8 +1554,7 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1275,8 +1576,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1299,8 +1600,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1321,8 +1622,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1347,8 +1648,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1369,8 +1670,7 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1393,8 +1693,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1415,8 +1715,8 @@ includeHTML();
     	</td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1439,8 +1739,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1460,7 +1760,7 @@ includeHTML();
             <p style="margin-top: 0; ">In this episode we only have your questions on the agenda! We asked our social media community what you&rsquo;d want to ask the Sharpening Doctor Wolfgang and got a huge variety of questions. Wolfgang answers them along with any questions that comes in during the livestream. 
 
             <p style="margin-bottom: 0;">Some of the questions posed that the Sharpening Doctor answers:
-                <ul>
+                <ul style="margin-top: 0px; margin-bottom: 0px;">
                     <li>How do you know what is the correct angle to sharpen a knife?</li>
                     <li>Why is the leather honing wheel smaller than the grinding wheel?</li>
                     <li>How much pressure should I use when adjusting the grit with the SP-650 Stone Grader on the Original Grindstone?.
@@ -1471,8 +1771,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1493,8 +1793,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1517,8 +1817,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1536,7 +1836,7 @@ includeHTML();
 		        border-left-width: thin; 
         		border-right-width: thin; ">
             <p style="margin-top: 0; margin-bottom: 0; ">In this sharpening class we will discuss pressure. More precisely, we'll learn how to use pressure for different applications when sharpening and honing different tools and how to work with pressure on different grinding wheels. We'll answer questions such as;
-                <ul>
+                <ul style="margin-top: 0px; margin-bottom: 0px;">
                     <li>How much pressure should I use when sharpening?</li>
                     <li>How much pressure should I use when honing?</li>
                     <li>How much pressure can a Tormek machine tolerate?</li>
@@ -1547,8 +1847,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1571,8 +1871,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1602,8 +1902,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1624,8 +1924,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1646,8 +1946,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1668,8 +1968,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1690,8 +1990,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1712,8 +2012,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1734,8 +2034,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1766,8 +2066,9 @@ includeHTML();
 
 <table style="width: 100%; 
 		border-collapse: collapse; " >
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+		
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="width: 300px;
                 border-style: solid;
             	border-color: black; 
@@ -1788,8 +2089,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: Lightgrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1810,8 +2111,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1832,8 +2133,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1854,8 +2155,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1876,8 +2177,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1898,8 +2199,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1920,8 +2221,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: LightGrey;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
@@ -1942,8 +2243,8 @@ includeHTML();
         </td>
     </tr>
 
-    <tr style="vertical-align: top; 
-    		background-color: White;">
+<!-- *************************************************** -->
+    <tr style="vertical-align: top;">
         <td style="
                 border-style: solid;
             	border-color: black; 
