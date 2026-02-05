@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<!-- ##################################################	-->
+<!-- Google Analytics Tag               				-->
+<!-- ##################################################	-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4WJRKD8E5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q4WJRKD8E5');
+</script>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the       -->
+<!-- server                                              -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions                                -->
+<div w3-include-html="include-SiteStandards.html"></div>
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+        <td style="text-align: center; vertical-align: middle; ">
+            <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+        </td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+        <td style="text-align: left; width: 10%; ">
+            &nbsp;
+        </td>
+        <td style="vertical-align: text-top;  text-align: center; ">
+            <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Re-shaping the Folding Blade on Pocket Knives</b></p>
+        </td>
+        <td style="text-align: right; width: 10%; ">
+            &nbsp;
+        </td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<hr>
+
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<div style="float: right; width:150px; margin: 5px 5px 5px 5px; padding: 5px; border: 1px solid black; text-align: center;">
+    <IMG SRC="Images/GT-Knife-Blade-ReShaping-1.png" alt="no image file" style="width: 100%;">
+    <p class="TextSMImage"><b>Image 1</b></p>
+    <br>
+    <hr style="margin-top: 0; ">
+    <IMG SRC="Images/GT-Knife-Blade-ReShaping-2.png" alt="no image file" style="width: 100%;">
+    <p class="TextSMImage"><b>Image 2</b></p>
+    <br>
+    <hr style="margin-top: 0; ">
+    <IMG SRC="Images/GT-Knife-Blade-ReShaping-3.png" alt="no image file" style="width: 100%;">
+    <p class="TextSMImage"><b>Image 3</b></p>
+    <br>
+    <hr style="margin-top: 0; ">
+    <IMG SRC="Images/GT-Knife-Blade-ReShaping-4.png" alt="no image file" style="width: 100%;">
+    <p class="TextSMImage"><b>Image 4</b></p>
+</div>
+
+<p style="margin-top: 0;"><b><u>Image 1</u></b>: As the blade is resharpened over time, the blade's point will be raised.  This is shown graphically in the image's progressively darker pink-to-red lines.  Those lines show the metal being removed during the sharpening processes over time.  And over that same time, the blade's point will be made to be above the knife's sides (the brown background) when the blade is closed into the handle.  This is especially the case on drop point &amp; spey point blades.
+
+<p style="margin-top: 0; margin-bottom: 0;"><hr style="margin-top: 0; margin-bottom: 0;" class="style3">
+<p><b><u>Image 2</u></b>: This image shows the blade's point now above the knife's sides.  This situation is problematic:  I have pierced my thumb on the exposed point, and caught it on my trouser pocket.
+
+<p style="margin-top: 0; margin-bottom: 0;"><hr style="margin-top: 0; margin-bottom: 0;" class="style3">
+<p><b><u>Image 3</u></b>: The solution to this problem is to reshape the top of the blade by grinding off some of the metal towards the blade's point.  This is shown as the removal of the blue parts.
+
+<p>This picture shows a few things of note.  Firstly, the 1<sup>st</sup> resharpening did not require a reshaping of the top as it did not take the blade's point above the side.  But, as the blade is resharpened more, reshaping becomes also necessary.  Maybe not every time, but certainly more than once.
+
+<p>Such steel removal (and repositioning of the blade's point) can often be the case when the blade requires great reshaping after damage to the cutting edge (e.g., when your father-in-law uses your knife to open a paint can).
+
+<p>With some drop point blades like the ones on a stockman pocket knife, this is a concave surface, so more care will need to be taken to ensure the resulting shape is good.
+
+<p style="margin-top: 0; margin-bottom: 0;"><hr style="margin-top: 0; margin-bottom: 0;" class="style3">
+<p><b><u>Image 4</u></b>: After grinding down the top of the blade, the blade's point is now below the knife's sides.
+
+<p style="margin-top: 0; margin-bottom: 0;"><hr style="margin-top: 0; margin-bottom: 0;" class="style3">
+<p>The YouTube video from Tormek, <a href="https://youtu.be/oUnosmAngJw" target="new">Tormek Live Sharpening Class - Part 15. Repair a damaged knife</a>, shows this process and the video is worth viewing if this process is new to you.
+
+<p><span style="color: red;"><b>Safety Note:</b></span> Be careful when grinding down the top of the blade.  You cannot push down on the blade's cutting edge to make it happen.
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div>
+<script>
+includeHTML();
+</script>
+</body>
+</html>
