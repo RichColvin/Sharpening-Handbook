@@ -3,12 +3,15 @@
 <!-- ################################################### -->
 <!-- HTML5 Compliant                                     -->
 <!-- ################################################### -->
-
 <head>
     <title>Sharpening Handbook</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
 </head>
+
+<!-- ################################################### -->
+<!-- Style Sheet for MathJax                                                                 -->
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!-- ##################################################	-->
 <!-- Google Analytics Tag               				-->
@@ -155,7 +158,7 @@ includeHTML();
     </tr>
     <tr>
         <th rowspan=2 style="
-        		width: 100px;
+        		width: 75px;
         		background-color: Moccasin;
         		border-style: solid; 
         		border-color: black; 
@@ -182,7 +185,7 @@ includeHTML();
 			<p class="TextTableHdrNorm"><b>Diameter</b></p>
         </th>
         <th rowspan=2 style="
-        		width: 100px;
+        		width: 80px;
         		background-color: Moccasin;
         		border-style: solid; 
         		border-color: black; 
@@ -196,7 +199,7 @@ includeHTML();
 			<p class="TextTableHdrNorm"><b>Width</b></p>
         </th>
         <th rowspan=2 style="
-        		width: 100px;
+        		width: 90px;
         		background-color: Moccasin;
         		border-style: solid; 
         		border-color: black; 
@@ -210,7 +213,7 @@ includeHTML();
 			<p class="TextTableHdrNorm"><b>Useful Life</b></p>
         </th>
         <th rowspan=2 style="
-        		width: 100px;
+        		width: 80px;
         		background-color: Moccasin;
         		border-style: solid; 
         		border-color: black; 
@@ -226,7 +229,7 @@ includeHTML();
     </tr>
     <tr>
         <th style="
-        		width: 100px;
+        		width: 80px;
         		background-color: Moccasin;
         		border-style: solid; 
         		border-color: black; 
@@ -240,7 +243,7 @@ includeHTML();
 			<p class="TextTableHdrNorm"><b>Starting</b></p>
         </th>
         <th style="
-        		width: 100px;
+        		width: 80px;
         		background-color: Moccasin;
         		border-style: solid; 
         		border-color: black; 
@@ -469,6 +472,47 @@ includeHTML();
 <p>When sharpening knives with long blades on a grindstone which has too small of a diameter, the side-to-side movement of the knife will be limited by the honing wheel or some other part on the Tormek machine's base.  This happens when pulling the knife towards the honing wheel (the LA-220 Honing Wheel is 220 mm in diameter).
 
 <p style="margin-bottom: 0;">On the larger units (T-8, T-7, & T-2000) there is a minimum size limit of 180 mm.  This is driven by the fact that, the Micro Adjust nut on the US-105 Universal Support prevents the TT-50 Truing Tool from being used on grindstones smaller than 180 mm.
+
+</td></tr>
+
+<tr><td>
+<h3 style="margin-bottom: 0;">Smaller Stones = Slower Grinding</h3>
+<div style=" float: right; Width: 500px; 
+        margin-left: 10px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 5px; 
+        padding-left: 5px; padding-right: 5px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 1px solid darkgray; text-align: left;  ">
+    <a href="ShowPicture.html?ImgNm=Images/EffectiveGrindingSpeeds.png" target="new"><img src="Images/EffectiveGrindingSpeeds.png" alt="no image file" style="Width: 100%; " /></a>
+    <p class="TextSMImage"><b><i>Grinding speed decreases with grindstone diameter</i></b>
+    <br><i><span style="font-size: 13px;">(click on the image to see a larger version)</span></i></p>
+</div>
+
+<p style="margin-top: 0;">A word of note:  As the grindstone gets smaller, it takes longer to sharpen an edge.  This is because the grinding speed is related to the grindstone&rsquo;s diameter according to this equation:
+
+\begin{align*}
+Grinding \, Speed &= Grindstone \, Diameter \times \pi \times Grinder \, Speed\\
+\end{align*}
+
+<p>The Tormek T-8 grinder runs at 100 rpm.  Using that, we can compare a 250 mm grindstone (equation 1 below) to a one which has been ground down to 180 mm (equation 2).
+
+\begin{align*}
+\tag{1}
+Grinding \, Speed_{250mm} &= 250 \; mm \times \pi \times 100 \; rpm \\
+&= 78,539.8 \; mm/min\\
+&\approx 4.3 \; ft/sec\\
+&nbsp; \\
+\tag{2}
+Grinding \, Speed_{180mm} &= 180 \; mm \times \pi \times 100 \; rpm \\
+&= 56,548.7 \; mm/min\\
+&\approx 3.1 \; ft/sec\\
+\end{align*}
+
+<p>This is not a huge difference, but there is one sharpener who replaces his grindstones when they get to 220mm.
+
+As shown in the chart to the right, at 220mm, the speed is down to 88%.  
+
+<p>By the time the grindstone has worn down to 180mm, it is 72% of the speed that it was when new.
 
 </td></tr>
 
@@ -822,7 +866,7 @@ includeHTML();
 		            <li>The grindstone is not simply collecting dust in my shop ... instead it is providing many more years of proud use to another sharpener.</li>
         		</ol>
 
-<p>The video below is from Dan at <a href="http://www.exactblade.com" target="new">Exact Blade</a>.  This video shows the use of his worn down SG-250 grindstones on his T-3. Dan does note that he will only take the stones down to the label (about 140 mm),  Even at that, he's extracting another 503 cm<sup>3</sup> (43%) out of his grindstone investment.
+            <p>The video below is from Dan at <a href="http://www.exactblade.com" target="new">Exact Blade</a>.  This video shows the use of his worn down SG-250 grindstones on his T-3. Dan does note that he will only take the stones down to the label (about 140 mm),  Even at that, he's extracting another 503 cm<sup>3</sup> (43%) out of his grindstone investment.
 		    <div style="float: left; width: 570px; margin: 5px 5px 5px 5px; padding: 0px; border: 0px solid black; text-align: center;">
         		<iframe width="560" height="315" src="https://www.youtube.com/embed/BtzQlv8P-Pk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-style: none;"></iframe>
 		    </div>
