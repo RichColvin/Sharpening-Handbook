@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+<title>Sharpening Handbook</title>
+<link rel="shortcut icon" type="image/ico" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+
+<!-- ##################################################	-->
+<!-- Style Sheet for lists					            -->
+<!-- ##################################################	-->
+<style>
+ul {
+	margin-top: 0; 
+	margin-bottom: 0; 
+	position: relative;
+	left: -18px; 
+}
+
+li {
+	margin-top: 5px; 
+	margin-bottom: 5px; 
+	margin-left: 1em; 
+	padding-left: 1.5em; 
+	text-indent: -1.5em;
+}
+</style>
+
+<!-- ##################################################	-->
+<!-- Style Sheet for text columns	 		            -->
+<!-- ##################################################	-->
+<style>
+td.colstext {
+    text-align: left;
+    vertical-align: top;
+	width:33%; 
+}
+td.colsspace {
+    text-align: left;
+    vertical-align: top;
+	width:0.5%; 
+}
+</style>
+
+<!-- ##################################################	-->
+<!-- Style Sheet for category boxes 		            -->
+<!-- ##################################################	-->
+<style>
+table.catbox {
+}
+\
+tr.catbox {
+}
+
+td.catbox {
+	padding-left: 5px;
+}
+
+p.catbox {
+    color: #191970;
+	font-family: 'Big Caslon'; 
+	font-size: 32px;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    margin-left: 0; 
+    margin-right: 0; 
+    padding-top: 3px; 
+    padding-bottom: 3px; 
+    padding-left: 3pt; 
+    padding-right: 3pt; 
+}
+</style>
+
+<!-- ##################################################	-->
+<!-- Style Sheet for circle i divs 			            -->
+<!-- ##################################################	-->
+<style>
+div.circleibox {
+    border: 0px solid black; 
+    float: right;
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 0px; 
+    padding-top: 3px; 
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 0px; 
+    text-align: center; 
+	width: 25px; 
+}
+
+div.circleilist {
+    border: 0px solid black; 
+    float: right;
+    margin-top: 0px; 
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: -23px; 
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px; 
+    text-align: center; 
+	width: 25px; 
+}
+</style>
+
+</head>
+
+<!-- ##################################################	-->
+<!-- Google Analytics Tag               				-->
+<!-- ##################################################	-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4WJRKD8E5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q4WJRKD8E5');
+</script>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files from the     -->
+<!-- server					                             -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard site-wide definitions         	         -->
+<!-- ################################################### -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+    includeHTML();
+</script> 
+
+
+<!-- ################################################### -->
+<!-- Header -->
+<!-- ################################################### -->
+<table style="width:100%; ">
+    <tr>
+        <td style="
+        		vertical-align: top; text-align: center;
+        		">
+            <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width:100%; " class="Image"></a>
+        </td>
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Body -->
+<!-- ################################################### -->
+<hr>
+<table style="width:100%; ">
+    <tr>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%% Column 1 %%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<td class="colstext">
+	<p style="
+    	font-family: 'Big Caslon';
+        font-size: 16px;
+        margin-top: 0px; 
+        margin-bottom: 0px; 
+        ">If the iron is blunt, and one does not whet the edge, then more strength must be exerted; but wisdom helps one to succeed.</b></p>
+   <p style="float: right; 
+   		font-family: 'Big Caslon'; 
+   		font-size: 14px;
+   		margin-top: 0px; 
+   		margin-bottom: 3px;
+   		">Ecclesiastes 10:10 <span style="font-size: 12px;">NRSV</span></p>
+
+<!-- ################################################### -->
+<!-- ##                       A                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+    <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">A</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="WW-Adze.html">Adzes</a></li>
+    <li><a href="GT-Axe.html">Axes</a></li>
+    <li><a href="GT-DrillBits-Auger.html">Auger drills</a></li>
+</ul>
+
+
+<!-- ################################################### -->
+<!-- ##                       B                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">B</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="WW-Bedan.html">Bedan tools</a></li>
+    <li><a href="WW-BowlGouge.html">Bowl gouges</a><i>, for woodturning</i></li>
+    <li><a href="GT-Billhook.html">Billhooks</a></li>
+    <li><a href="indexBooksVideosWebSites.html">Books, videos, and websites</a></li>
+    <li><a href="MW-Lathe-Tools-BoringBars.html">Boring bars</a><i>, for use on a metal lathe</i></li>
+    <li><a href="GT-DrillBits-BradPoint.html">Brad point drills</a></li>
+    <li><a href="GT-BulbPlanter.html">Bulb planters</a></li>
+    <li><a href="SW-Bushing-Chisel.html">Bushing chisels</a><i>, for stone carving</i></li>
+    <li><span style="color: #808080;">Bypass pruners <i>- see </span><a href="GT-Pruner.html">Secateurs</a></i></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       C                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">C</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="indexCalc.html" target="iMain">Calculators</a></li>
+    <li><a href="GT-Knives-Carving.html">Carving knives</a></li>
+    <li><span style="color: #808080;">Chainsaws <i>- see</span> <a href="WW-Chainsaws.html">Saw chains</a></i></li>
+                
+    <li><b>Chisels</b></li>
+		<ul>
+		    <li><a href="WW-Chisels.html">Bench</a></li>
+		    <li><a href="SW-Bushing-Chisel.html">Bushing</a<i>, for stone carving</i></li>
+		    <li><a href="MW-Cold-Chisel.html">Cold</a></li>
+		    <li><a href="WW-Chisels-Japanese.html">Japanese bench</a></li>
+		    <li><a href="WW-LockMortiseChisel.html">Lock mortise</a></li>
+		    <li><a href="SW-Chisel.html">Stone carving</a></li>
+		    <li><a href="WW-Chisels-Carving.html">Wood carving</a></li>
+		</ul>
+    <li><a href="GT-CombCutters.html">Comb cutters</a></li>
+    <li><a href="GT-FirefighterCombiTool.html">Combi-tool</a> - pick &amp; shovel</li>
+    <li><a href="GT-CrackWeeder.html">Crack weeders</a></li>
+    <li><span style="color: #808080;">Cultivators <i>- see </span><a href="GT-CrackWeeder.html">crack weeders</a></i></li>
+    <li><a href="MW-Lathe-Tools-Cutoff.html">Cutoff tools</a><i>, for use on a metal lathe</i></li>
+    <li><a href="GT-Bonsai-Cutter.html">Cutters</a><i>, bonsai</i></li>
+    <li><a href="WW-RoseEngineFixedToolCutter.html">Cutters for fixed tool work</a><i>, for use on a rose engine</i></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       D                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">D</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="WW-SpindleGouge.html">Detail gouges</a><i>, for woodturning</i></li>
+    <li><a href="Dictionary.html">Dictionary of sharpening terms</a></li>
+    <li><a href="WW-DrawKnives.html">Draw knives</a></li>
+    <li><b>Drill bits</b></li>
+	    <ul>
+    	    <li><a href="GT-DrillBits-Auger.html">Auger</a></li>
+    	    <li><a href="GT-DrillBits-BradPoint.html">Brad point</a></li>
+    	    <li><a href="GT-DrillBits-Forstner.html">Forstner</a></li>
+    	    <li><a href="GT-DrillBits-Masonry.html">Masonry</a></li>
+    	    <li><a href="GT-DrillBits-Spade.html">Spade</a></li>
+    	    <li><a href="GT-DrillBits-Twist.html">Twist</a></li>
+        </ul>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       E                       ## -->
+<!-- ################################################### -->
+<!-- 
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">E</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+</ul>
+-->
+
+<!-- ################################################### -->
+<!-- ##                       F                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">F</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="Files.html">Files &amp; filing</a></li>
+    <li><a href="GT-FirefighterRake.html">Fire rake</a></li>
+    <li><a href="WW-FingerGripTool.html">Finger grip tools</a><i>, for woodturning</i></li>
+    <li><a href="GT-FirefighterShovel.html">Firefighter&rsquo;s shovel</a></li>
+    <li><a href="WW-FlutelessGouge.html">Fluteless gouges</a><i>, for woodturning</i></li>
+    <li><b>Fly cutters</b><i>, for use on a rose engine</i></li>
+	    <ul>
+		    <li><a href="WW-RoseEngineFlyCutter-Rod.html">Round rod</a></li>
+    		<li><a href="WW-RoseEngineFlyCutter-Traditional.html">Traditional</a></li>
+		</ul>
+    <li><a href="GT-DrillBits-Forstner.html">Forstner drills</a></li>
+    <li><a href="WW-Froe.html">Froes</a></li>
+    <li><a href="SW-Frosting-Tool.html">Frosting tools</a><i>, for stone carving</i></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       G                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">G</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="GT-Garden-Auger.html">Garden augers</a></li>
+    <li><a href="GT-Gardening-Hoe-and-Tiller-Japanese.html">Garden hoe/tillers</a>, Japanese</li>
+    <li><span style="color: #808080;">Gardening knives - <i>see <a href="GT-Knives-OutdoorPocket.html">Outdoor &amp; pocket knives</a></i></li>
+    <li><span style="color: #808080;">Gardening trowels <i>- see </span><a href="GT-Shovel.html">Shovels</a></i></li>
+    <li><a href="WW-CarvingGouge.html">Gouges</a><i>, for wood carving</i></li>
+    <li><a href="GrindProfiles.html">Grind profiles</a></li>
+    <li><a href="Grindstones-Tormek.html">Grinding wheels (Tormek)</a></li>
+    <li><a href="Grindstones.html">Grindstones and other sharpening media</a></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       H                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">H</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><span style="color: #808080;">Hand axes - <i>see <a href="GT-Axe.html">Axes</a></i></li>
+    <li style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; text-indent: -1em; "><span style="color: #808080;">Hand mattock - <i>see Japanese <a href="GT-Gardening-Hoe-and-Tiller-Japanese.html">Garden hoe/tillers</a></i></li>
+    <li><a href="Hand-File-Identification.html" target="new">Hand file identification</a></li>
+    <li><span style="color: #808080;">Hand pruners <i>- see </span><a href="GT-Pruner.html">Secateurs</a></i></li>
+    <li><a href="GT-Knives-Harvest.html">Harvest knives</a></li>
+    <li><span style="color: #808080;">Hatchets - <i>see <a href="GT-Axe.html">Axes</a></i></li>
+    <li><a href="GT-HedgeShears.html">Hedge shears</a></li>
+    <li><a href="GT-HiveTools.html">Hive tools</a></li>
+    <li><a href="GT-Hoe.html">Hoes</a>, garden &amp; other</li>
+    <li><a href="WW-HollowChiselMortisingBits.html">Hollow chisel mortising bits</a></li>
+    <li><a href="GT-Knives-HoriHori.html">Hori Hori knives</a></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       I                       ## -->
+<!-- ################################################### -->
+<!-- 
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">I</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+</ul>
+ -->
+
+</td>
+
+<td class="colsspace">
+	&nbsp;
+</td>
+                
+<td class="colstext">
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%% Column 2 %%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- ################################################### -->
+<!-- ##                       J                      ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">J</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="indexJigs.html">Jigs, fixtures, &amp; modifications</a></li>
+    <li><a href="PurchasedAnOldTormek.html">Just purchased an old Tormek?</a></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       K                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">K</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+	<li><a href="GT-Knives-Research.html">Knife sharpening research</a></li>
+    <li><b>Knives</b></li>
+		<ul>
+		    <li><a href="GT-Knives-Gardening.html">Gardening</a><i>, for propagating, pruning, and grafting</i></li>
+		    <li><a href="GT-Knives-Harvest.html">Harvest</a></li>
+		    <li><a href="GT-Knives-HoriHori.html">Hori Hori</a></li>
+		    <li><a href="GT-Knives-Kitchen.html">Kitchen</a></li>
+		    <li><a href="GT-Knives-Serrated.html">Kitchen, serrated edge</a></li>
+		    <li><a href="GT-Knives-Marking.html">Marking</a></li>
+    <li><a href="GT-Knives-OutdoorPocket.html">Outdoor &amp; Pocket</a></li>
+		    <li><a href="GT-Knives-Carving.html">Wood carving</a></li>
+        <ul>
+            <li><i>See also, <a href="GT-Knives-ReshapingtheFoldingBlade.html">Reshaping the folding blade</a></i></li>
+            <li><i>See also, <a href="WW-Saws-Hand.html">Saws</a> (for saw blades)</i></li>
+        </ul></li>
+		    <li><a href="GT-Knives-OutdoorPocket.html">Pocket knives</a></li>
+		</ul>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       L                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">L</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="GT-LawnMower.html">Lawn edger blades</a></li>
+    <li><a href="GT-LawnMower.html">Lawn mower blades</a></li>
+    <li><span style="color: #808080;">Loppers <i>- see guidance for </span><a href="GT-Pruner.html">Secateurs</a></i></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       M                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">M</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="GT-Machete.html">Machetes</a></li>
+    <li><a href="GT-Knives-Marking.html">Marking knives</a></li>
+    <li><a href="GT-DrillBits-Masonry.html">Masonry drills</a></li>
+    <li><a href="GT-McLeodTool.html">McLeod tTool</a></li>
+    <li><b>Metal lathe tools</b></li>
+		<ul>
+		    <li><a href="MW-Lathe-Tools-BoringBars.html">Boring bars</a></li>
+		    <li><a href="MW-Lathe-Tools-Cutoff.html">Cutoff tools</a></li>
+		    <li>Single Point Cutting Tools
+		        <ul>
+        		    <li><a href="MW-Lathe-Tools-Carbide.html">Cemented carbide</a></li>
+        		    <li><a href="MW-Lathe-Tools-HSS.html">High speed steel (HSS)</a></li>
+		        </ul></li>
+        	<li><a href="MW-Lathe-Tools-Threading.html">Thread tools</a></li>
+		</ul>
+    <li><a href="MicroBevels.html">Micro bevels</a></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       N                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">N</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="WW-Scraper-NRS.html">Negative rake scrapers</a><i>, for woodturning</i></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       O                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">O</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="PurchasedAnOldTormek.html">Old Tormek information</li>
+    <li><a href="GT-Knives-OutdoorPocket.html">Outdoor &amp; pocket knives</a></li>
+        <ul>
+            <li><i>See also, <a href="GT-Knives-ReshapingtheFoldingBlade.html">Reshaping the folding blade</a></i></li>
+            <li><i>See also, <a href="WW-Saws-Hand.html">Saws</a> (for saw blades)</i></li>
+        </ul></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       P                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">P</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="WW-Parting-Tool-Diamond.html">Parting tools, diamond</a><i>, for woodturning</i></li>
+    <li><a href="WW-Parting-Tool-Slim-Fluted.html">Parting tools, slim fluted</a><i>, for woodturning</i></li>
+    <li><a href="GT-Peelers.html">Peelers</a><i>, for use in the kitchen</i></li>
+    <li><a href="WW-PenMill.html">Pen mill</a></li>
+    <li><a href="GT-PickMattock_PickAx.html">Pickax / pick axe</a></li>
+    <li><a href="GT-PickMattock_PickAx.html">Pick mattock</a></li>
+    <li><a href="GT-Scissors-PinkingShears.html">Pinking shears scissors</a></li>
+    <li><a href="WW-Planer-Portable.html">Planers, portable</a> (handheld)</li>
+    <li><a href="WW-Plane.html">Planes</a><i>, for wordworking</i></li>
+    <li><a href="GT-Knives-OutdoorPocket.html">Pocket knives</a></li>
+    <li><a href="SW-Point-Tool.html">Point tools</a><i>, for stone carving</i></li>
+    <li><span style="color: #808080;">Pole pruners <i>- see guidance for </span><a href="GT-Pruner.html">Secateurs</a> <span style="color: #808080;">or</span> <a href="WW-Saws-Hand.html">Saws</a></i></li>
+    <li><a href="GT-PostHoleDigger.html">Post hole diggers</a></i></li>
+    <li><a href="GT-PruningKnifeTrees.html">Pruning knives for trees</a></li>
+    <li><span style="color: #808080;">Pruning shears <i>- see </span><a href="GT-Pruner.html">Secateurs</a></i></li>
+    <li><a href="MW-Punch.html">Punches</a></li>
+    <li><a href="GT-Putty%20Knife.html">Putty knives</a></li>
+    <li><a href="WW-PointTool.html">Pyramid point tools</a><i>, for woodturning</i></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       Q                       ## -->
+<!-- ################################################### -->
+<!-- 
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">Q</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+</ul>
+ -->
+
+<!-- ################################################### -->
+<!-- ##                       R                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">R</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="GT-Knives-Research.html">Research</a> (knife sharpening)</li>
+    <li><a href="GT-Bonsai-Repotting-Sickle.html">Repotting sickles</a><i>, for use with Bonsai</i></li>
+    <li><a href="GT-RhinoTool.html">Rhino tool</a></li>
+    <li><a href=" WW-RingTool.html">Ring tools</a><i>, for woodturning</i></li>
+    <li><span style="color: #808080;">Root knives - <i>see <a href="GT-Knives-Serrated.html">Serrated Edge Kitchen Knives</a></i></li>
+    <li><b>Rose engine tools</b></li>
+		<ul>
+		    <li><a href="WW-RoseEngineFixedToolCutter.html">Cutters for fixed tool work</a></li>
+		    <li><a href="WW-RoseEngineFlyCutter-Rod.html">Fly cutters, round rod</a></li>
+		    <li><a href="WW-RoseEngineFlyCutter-Traditional.html">Fly cutters, traditional</a></li>
+		</ul>
+    <li><a href="GT-Rotary-Cutter.html">Rotary cutters</a><i>, for sewing</i></li>
+    <li><a href="WW-Router-Plane.html">Router planes</a><i>, for woodworking</i></li>
+</ul>
+
+
+</td>
+                
+<td class="colsspace">
+	&nbsp;
+</td>
+                
+<td class="colstext">
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%% Column 3 %%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- ################################################### -->
+<!-- ##                       S                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">S</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="WW-Chainsaws.html">Saw chains</a> (for chainsaws)</li>
+    <li><b>Saws</b></li>
+		<ul>
+		    <li><a href="WW-Saws-Hand.html">Compass</a></li>
+		    <li><a href="WW-Saws-Hand.html">Handsaws</a></li>
+		    <li><a href="GT-Gardening-SawFolding-Japanese.html">Japanese folding</a><i>, for gardening</i></li>
+		    <li><a href="WW-Saws-Japanese.html">Japanese handsaws</a><i>, for woodworking bench work</i></li>
+		    <li><a href="WW-Saws-Hand.html">Reciprocating</a></li>
+		</ul>
+    <li><span style="color: #808080;">Scarifiers <i>- see </span><a href="GT-Hoe.html">Hoes</a></i></li>
+    <li><a href="https://scienceofsharp.com" target="new">Science of Sharp</a> <span style="color: #808080;"><i>(link to that web site)</i></span></li>
+    <li><b>Scissors</b></li>
+		<ul>
+		    <li><a href="GT-Bonsai-Scissors.html">Bonsai</a></li>
+		    <li><a href="GT-Scissors-General.html">General</a></li>
+		    <li><a href="GT-Scissors-Kitchen.html">Kitchen</a></li>
+		    <li><a href="GT-Scissors-PinkingShears.html">Pinking shears</a></li>
+		    <li><a href="GT-Scissors-Sewing.html">Sewing</a></li>
+		</ul>
+    <li><b>Scrapers</b><i>, for woodturning</i></li>
+		<ul>
+    		<li><a href="WW-Scraper-NRS.html">Negative rake</a></li>
+		    <li><a href=" WW-Scrape-Blade.html">Scraper blades</a></li>
+		    <li><a href="GT-Scraper.html">Traditional</a></li>
+		</ul>
+    <li><a href="GT-ScrewDrivers.html">Screwdrivers</a> (slotted)</li>
+    <li><a href="GT-Pruner.html">Secateurs</a></li>
+    <li><b>Sewing</b></li>
+		<ul>
+		    <li><a href="GT-Scissors-PinkingShears.html">Pinking shears</a></li>
+		    <li><a href="GT-Rotary-Cutter.html">Rotary cutters</a></li>
+		    <li><a href="GT-Scissors-Sewing.html">Scissors</a></li>
+		</ul>
+    <li><a href="indexPictures.html">Sharpening pictures</a></li>
+    <li><a href="SharpnessScale.html">Sharpness scale</a></li>
+    <li><a href="GT-Shovel.html">Shovels</a></li>
+    <li><a href="GT-Shovel-Square.html">Shovels, square</a></li>
+    <li>Single point cutting tools<i>, for a metal lathe</i>
+        <ul>
+            <li><a href="MW-Lathe-Tools-Carbide.html">Cemented  carbide</a></li>
+            <li><a href="MW-Lathe-Tools-HSS.html">High speed steel (HSS)</a></li>
+        </ul></li>
+    <li><a href="WW-SkewChisel.html">Skew chisels</a><i>, for woodturning</i></li>
+		<ul>
+		    <li><a href="WW-SkewLacer.html">Lacer-style</a></li>
+		</ul>
+    <li><span style="color: #808080;">Skewchigouges <i>- see </span><a href="WW-FlutelessGouge.html">Fluteless gouges</a></i></li>
+    <li><span style="color: #808080;">Sod knives <i>- see </span><a href="GT-Knives-HoriHori.html">Hori Hori knives</a> <span style="color: #808080;">(or</span> <a href="GT-Knives-Serrated.html">Serrated edge kitchen knives</a><span style="color: #808080;">)</span></i></li>
+    <li><a href="GT-SodLifter.html">Sod lifters</a></i></li>
+    <li><span style="color: #808080;">Soil knives <i>- see </span><a href="GT-Knives-HoriHori.html">Hori Hori Knives</a></i></li>
+    <li><span style="color: #808080;">Spades <i>- see </span><a href="GT-Shovel.html">Shovels</a></i></li>
+    <li><span style="color: #808080;">Sorby Spindle Master <i>- see </span></span><a href="WW-FlutelessGouge.html">Fluteless gouges</a></i></li>
+    <li><a href="GT-DrillBits-Spade.html">Spade drills</a></li>
+    <li><a href=" WW-SpearPoint.html">Spear point tools</a><i>, for woodturning</i></li>
+    <li><a href="WW-SpindleGouge.html">Spindle gouges</a><i>, for woodturning</i></li>
+    <li><a href="WW-SpindleRoughingGouge.html">Spindle roughing gouges</a><i>, for woodturning</i></li>
+    <li><a href="WW-SpirallingTool.html">Spiralling & texturing tools</a><i>, for woodturning</i></li>
+    <li><a href="WW-Spokeshave.html">Spoke shaves</a></li>
+    <li><b>Stone carving</b></li>
+		<ul>
+		    <li><a href="SW-Bushing-Chisel.html">Bushing chisels</a></li>
+		    <li><a href="SW-Chisel.html">chisels</a></li>
+		    <li><a href="SW-Frosting-Tool.html">Frosting tools</a></li>
+		    <li><a href="SW-Point-Tool.html">Point tools</a></li>
+		</ul>
+    <li><a href="GT-Strawberry-Pruner.html">Strawberry pruners</a></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       T                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">T</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="WW-Termite.html">Termite end grain tools</a><span style="color: #808080;"> - <i>see also, </span><a href=" WW-RingTool.html">Ring tools</a></i></li>
+    <li><a href="WW-ThreadChasingTool.html">Thread chasing tools</a><i>, for woodturning</i></li>                    
+    <li><a href="MW-Lathe-Tools-Threading.html">Thread tools</a><i>, for a metal lathe</i></li>
+    <li><a href="TimeSavingTipsForTheTormek.html">Time saving tips for the Tormek</a></li>
+    <li><a href="indexToolMaintenance.html">Tool maintenance</a></li>
+    <li><b>Tormek</b></li>
+		<ul>
+		    <li><a href="PurchasedAnOldTormek.html">Jigs &amp; parts</a></li>
+		    <li><a href="indexTormekMaintenance.html">Maintenance</a></li>
+		    <li><a href="TormekTipsTricksTechniques.html">Tips, tricks, &amp; techniques</a></li>
+		</ul>
+    <li><a href="WW-Travisher.html">Travishers</a></li>
+    <li><a href="GT-Trenching-Hoe-Japanese.html">Trenching hoes</a>, Japanese</li>
+    <li><span style="color: #808080;">Trowels <i>- see </span><a href="GT-Shovel.html">Shovels</a></i></li>
+    <li><a href="GT-DrillBits-Twist.html">Twist drills</a></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       U                       ## -->
+<!-- ################################################### -->
+<!-- 
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">U</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+</ul>
+ -->
+
+<!-- ################################################### -->
+<!-- ##                       V                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">V</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="WW-V-Tool.html">V-tools</a><i>, for wood carving</i></li>
+    <li><a href="WW-VeiningTool.html">Veining tools</a><i>, for wood carving</i></li>
+     <li><a href="indexBooksVideosWebSites.html">Videos, books, &amp; websites</a></li>
+    <li><a href=" WW-Vortex.html">Vortex tools</a><i>, for woodturning</i></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       W                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">W</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="GT-Hoe.html">Warren hoes</a></li>
+    <li><a href="indexBooksVideosWebSites.html">Websites, books, &amp; videos</a></li>
+    <li><a href="GT-Weeding-Sickle-Japanese.html">Weeding sickles</a>, Japanese</li>
+    <li><a href="PurchasedAnOldTormek.html">What are these Tormek jigs &amp; parts?</a></li>
+     <li><a href="WW-Chisels-Carving.html">Wood carving chisels</a></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       X                       ## -->
+<!-- ################################################### -->
+<!-- 
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">X</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+</ul>
+ -->
+
+<!-- ################################################### -->
+<!-- ##                       Y                       ## -->
+<!-- ################################################### -->
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">Y</p>
+        </td>
+    </tr>
+</table>
+
+<ul>
+    <li><span style="color: #808080;">Yankee weeder <i>- see </span><a href="GT-Weeding-Sickle-Japanese.html">Japanese weeding sickles</a></i></li>
+</ul>
+
+<!-- ################################################### -->
+<!-- ##                       Z                       ## -->
+<!-- ################################################### -->
+<!-- 
+<table class="catbox">
+   <tr class="catbox">
+        <td class="catbox">
+            <p class="catbox">Z</p>
+        </td>
+
+    </tr>
+
+</table>
+
+ -->
+
+
+    </tr>
+</table>
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<hr>
+
+<p style="margin-top: 0; margin-bottom: 4px; text-align: center;  font: 16px Arial; "><a href="indexAbout.html" target="new">About this site</a></p>
+<table style="width: 250px; float: right; margin-left: 10px; border-collapse: collapse; border: 0px solid grey;">
+	<tr>
+		<td style="width: 100%; text-align: center;">
+			<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="SharpeningHandbook" data-color="#181a70" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee?" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+		</td>
+	</tr>
+	<tr>
+		<td>
+            <p style="margin-top: 0; margin-bottom: 0; margin-left: 12px; margin-right: 12px; font: 13px Arial;">I am retired now, but I still appreciate a good cup of coffee. Maybe it is the Army training.</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-top: 0; margin-bottom: 12px; text-align: left;  font: 14px Arial; "><b><u>Remember</u></b>:  <i>The goal of sharpening is to produce sharp tools, and these tools can injure you if mishandled.  Safety measures should be followed to protect yourself and those in your shop.  Be sure to read and follow all instructions from the manufacturer, and and utilize proper safety equipment. Never consume alcohol or anything that could impair your judgement before sharpening tools, or using sharp tools.</i></p>
+
+<p style="margin-top: 0; margin-bottom: 0; text-align: left;  font: 14px Arial; ">Comments can be sent via eMail at <a href="mailto:SharpeningHandbook@Gmail.com?Subject=Sharpening%20Handbook" target="new">SharpeningHandbook@Gmail.com</a>.</p>
+</html>
+</body>
+</html>
