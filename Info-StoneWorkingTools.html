@@ -61,6 +61,25 @@ function includeHTML() {
 }
 </script> 
 
+<!-- ##################################################	-->
+<!-- Style Sheet for lists					            -->
+<!-- ##################################################	-->
+<style>
+ul {
+	margin-top: 0; 
+	margin-bottom: 0; 
+	position: relative;
+	left: -18px; 
+}
+
+li {
+	margin-top: 5px; 
+	margin-bottom: 5px; 
+	padding-left: 1.5em; 
+	text-indent: -1.5em;
+}
+</style>
+
 <!-- ################################################### -->
 <!-- Standard horizontal rule definitions		  		 -->
 <div w3-include-html="include-SiteStandards.html"></div> 
@@ -113,7 +132,7 @@ includeHTML();
 <!-- ################################################### -->
 <hr class="style1">
 
-<div style="float: right; width: 350px; 
+<div style="float: right; width: 450px; 
 		background-color: LightGrey;
 		border: 1px solid black; 
 		text-align: left; 
@@ -123,53 +142,54 @@ includeHTML();
 		padding-left: 5px; padding-right: 5px;
         font: 13px Arial; 
 		">
-    <p style="margin-top: 0; margin-bottom: 0; text-align: center; color: darkgreen"><b>Typical Grinding Media Used</b></p>
-    <ul>
-   		<li><b>250+ micron abrasives</b>
-    	<li>Tormek
-           	<ul>
-           		<li>SB-250 Original Grindstone, graded course</li>
-                <li>DC-250 Diamond Wheel Course</li>
-            </ul></li>
+    <p style="margin-top: 0; margin-bottom: 0; text-align: center; color: darkgreen; font-size: 18px;"><b>Typical Grinding Media Used</b></p>
 
-        <li>Sorby ProEdge
-            <ul>
-                <li>60 grit ProEdge Zirconium Belt</li>
-            </ul></li>
+ 	<p style="margin-bottom: 0px;"><b>250+ micron abrasives</b>
 
-        <li>Bench Speed Grinder
-            <ul>
-                <li>CBN wheel :  &lt;100 grit</li>
-                <li>Very friable grindstone :  &lt;100 grit</li>
-            </ul></li>
-            
-         <li>Other
-            <ul>
-                <li>Sandpaper :   &lt;100 grit</li>
-        	</ul></li>
-	</ul>
+	<table style="width: 100%; margin-top: 0px;">
+		<tr style="vertical-align: top;">
+			<td style="width: 50%; text-align: left;">
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Tormek</b></p>
+		           	<ul>
+        		   		<li>SB-250 Original Grindstone, graded course</li>
+		                <li>DC-250 Diamond Wheel Course</li>
+        		    </ul>
+
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Sorby ProEdge</b></p>
+		           	<ul>
+        		        <li>60 grit ProEdge Zirconium Belt</li>
+		            </ul>
+			</td>
+			<td style="width: 50%; text-align: left;">
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Benchtop High Speed Grinder</b></p>
+		           	<ul>
+        		        <li>CBN wheel :  &lt;100 grit</li>
+                		<li>Very friable grindstone :  &lt;100 grit</li>
+		            </ul>
+			</td>
+		</tr>
+	</table>
 </div>
 
 <h3><b>Shaping the Tool</b></h3>
 Stone working tools are reshaped based on their need (as dictated by the material to be carved).
 
-<p>Notes regarding shaping of <u>tools with carbide inserts</u>, when using a high speed grinder with a friable grindstone :
-    <ol>
-        <li><div style=" float: right;  width: 40px;
-			        margin-left: 00px; 
-			        margin-right: 10px; 
-			        margin-top: 0px; 
-			        margin-bottom: 5px; 
-			        padding-left: 0px; 
-			        padding-right: 0px; 
-			        padding-top: 0px; 
-			        padding-bottom: 0px; 
-			        border: 0px solid gray; 
-			        text-align: left;  ">
-			    <img src="Razor%20Pictures/razor-blade-red.png" alt="no image file" style="width: 100%; " />
-			</div><span style="color: Red;"><b>DO NOT cool by dipping in water</b>.</span>  This will cause the carbide to crack due to shocks.</li>
-        <li>It is also recommended that you don't grind up to the final tool edge.  The rough grit of the grindstone can create edges on the carbide which is easily susceptible to fractures.</li>
-    </ol>
+<p><div style=" float: left;  width: 30px;
+		margin-left: 00px; 
+		margin-right: 10px; 
+		margin-top: 0px; 
+		margin-bottom: 5px; 
+		padding-left: 0px; 
+		padding-right: 0px; 
+		padding-top: 0px; 
+		padding-bottom: 0px; 
+		border: 0px solid gray; 
+		text-align: left;  ">
+	<img src="Razor%20Pictures/razor-blade-red.png" alt="no image file" style="width: 100%; " />
+</div>
+
+Notes regarding shaping of <u>tools with carbide inserts</u>, when using a high speed grinder with a friable grindstone:
+			<span style="color: Red;"><b>DO NOT cool by dipping in water</b>.</span>  This will cause the carbide to crack due to shocks. It is also recommended that you don't grind up to the final tool edge.  The rough grit of the grindstone can create edges on the carbide which is easily susceptible to fractures.
 
 </td></tr>
 
@@ -179,7 +199,7 @@ Stone working tools are reshaped based on their need (as dictated by the materia
 <!-- ################################################### -->
 <hr class="style1">
 
-<div style="float: right; width: 350px; 
+<div style="float: right; width: 450px; 
 		background-color: LightGrey;
 		border: 1px solid black; 
 		text-align: left; 
@@ -189,52 +209,56 @@ Stone working tools are reshaped based on their need (as dictated by the materia
 		padding-left: 5px; padding-right: 5px;
         font: 13px Arial; 
 		">
-    <p style="margin-top: 0; margin-bottom: 0; text-align: center; color: darkgreen"><b>Typical Grinding Media Used</b></p>
-    <ul>
-   		<li><b>40-250 micron abrasives</b></li>
-   		<li>Tormek
-   			<ul>
-   				<li>SB-250 Black Grindstone, graded fine</li>
-   				<li>DF-250 Diamond Wheel Fine</li>
-            </ul></li>
+    <p style="margin-top: 0; margin-bottom: 0; text-align: center; color: darkgreen; font-size: 18px;"><b>Typical Grinding Media Used</b></p>
 
-		<li>Sorby ProEdge
-			<ul>
-				<li>120 grit ProEdge Zirconium Belt</li>
-				<li>Pedia ProEdge Diamond Belt</li>
-				<li>600 grit ProEdge Trizact Belt</li>
-				<li>1,200 grit ProEdge Trizact Belt</li>
-			</ul></li>
-			
-		<li>Bench Speed Grinder
-			<ul>
-				<li>CBN wheel :  150-180 grit</li>
-				<li>Very friable grindstone :  150-180 grit</li>
-			</ul></li>
-			
-		<li>Other
-			<ul>
-				<li>Sandpaper :  150 - 250 grit</li>
-			</ul></li>
-	</ul>
+ 	<p style="margin-bottom: 0px;"><b>40 - 250 micron abrasives</b>
+
+	<table style="width: 100%; margin-top: 0px;">
+		<tr style="vertical-align: top;">
+			<td style="width: 50%; text-align: left;">
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Tormek</b></p>
+              		<ul>
+		   				<li>SB-250 Black Grindstone, graded fine</li>
+   						<li>DF-250 Diamond Wheel Fine</li>
+		            </ul>
+
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Benchtop High Speed Grinder</b></p>
+		           	<ul>
+						<li>CBN wheel :  150-180 grit</li>
+						<li>Very friable grindstone :  150-180 grit</li>
+					</ul>
+			</td>
+			<td style="width: 50%; text-align: left;">
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Sorby ProEdge</b></p>
+		           	<ul>
+						<li>120 grit ProEdge Zirconium Belt</li>
+						<li>Pedia ProEdge Diamond Belt</li>
+						<li>600 grit ProEdge Trizact Belt</li>
+						<li>1,200 grit ProEdge Trizact Belt</li>
+					</ul>
+			</td>
+		</tr>
+	</table>
 </div>
 
 <h3><b>Sharpening the Tool</b></h3>
 Stone working tools should be resharpened at the start of the day, and as needed.
 
-<p><div style=" float: left;  width: 40px;
-			        margin-left: 00px; 
-			        margin-right: 10px; 
-			        margin-top: 0px; 
-			        margin-bottom: 5px; 
-			        padding-left: 0px; 
-			        padding-right: 0px; 
-			        padding-top: 0px; 
-			        padding-bottom: 0px; 
-			        border: 0px solid gray; 
-			        text-align: left;  ">
-			    <img src="Razor%20Pictures/razor-blade-red.png" alt="no image file" style="width: 100%; " />
-			</div>As with shaping of <u>tools with carbide inserts</u>, when using a high speed grinder with a friable grindstone, <span style="color: Red; "><b>DO NOT cool by dipping in water</b>.</span>  This will cause the carbide to crack due to shocks.
+<p><div style=" float: left;  width: 30px;
+		margin-left: 00px; 
+		margin-right: 10px; 
+		margin-top: 0px;
+		margin-bottom: 5px; 
+		padding-left: 0px; 
+		padding-right: 0px; 
+		padding-top: 0px; 
+		padding-bottom: 0px; 
+		border: 0px solid gray; 
+		text-align: left;  ">
+   <img src="Razor%20Pictures/razor-blade-red.png" alt="no image file" style="width: 100%; " />
+</div>
+
+As with shaping of <u>tools with carbide inserts</u>, when using a high speed grinder with a friable grindstone, <span style="color: Red; "><b>DO NOT cool by dipping in water</b>.</span>  This will cause the carbide to crack due to shocks.
 
 </td></tr>
 
@@ -244,7 +268,7 @@ Stone working tools should be resharpened at the start of the day, and as needed
 <!-- ################################################### -->
 <hr class="style1">
 
-<div style="float: right; width: 350px; 
+<div style="float: right; width: 450px; 
 		background-color: LightGrey;
 		border: 1px solid black; 
 		text-align: left; 
@@ -254,40 +278,46 @@ Stone working tools should be resharpened at the start of the day, and as needed
 		padding-left: 5px; padding-right: 5px;
         font: 13px Arial; 
 		">
-    <p style="margin-top: 0; margin-bottom: 0; text-align: center; color: darkgreen"><b>Typical Grinding Media Used</b></p>
-    <ul>
-   		<li><b>11 - 40 micron abrasives</b>
-   		<li>Tormek
-   			<ul>
-   				<li>DE-250 Diamond Wheel Extra Fine</li>
-   				<li>CW-220 Composite Honing Wheel</li>
-   				<li>LA-220 Leather Honing Wheel with the honing compound</li>
-   				<li>SJ-250 Japanese Waterstone</li>
-   			</ul></li>
+    <p style="margin-top: 0; margin-bottom: 0; text-align: center; color: darkgreen; font-size: 18px;"><b>Typical Grinding Media Used</b></p>
+
+ 	<p style="margin-bottom: 0px;"><b>11 - 40 micron abrasives</b>
+
+	<table style="width: 100%; margin-top: 0px;">
+		<tr style="vertical-align: top;">
+			<td style="width: 50%; text-align: left;">
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Tormek</b></p>
+              		<ul>
+		   				<li>DE-250 Diamond Wheel Extra Fine</li>
+   						<li>CW-220 Composite Honing Wheel</li>
+		   				<li>LA-220 Leather Honing Wheel with the honing compound</li>
+   						<li>SJ-250 Japanese Waterstone</li>
+   					</ul>
+			</td>
+			
+			<td style="width: 50%; text-align: left;">
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Sorby ProEdge</b></p>
+	              	<ul>
+   						<li>3,000 grit ProEdge Trizact Belt</li>
+   					</ul>
    			
-   		<li>Sorby ProEdge
-   			<ul>
-   				<li>3,000 grit ProEdge Trizact Belt</li>
-   			</ul></li>
-   		
-   		<li>Bench Speed Grinder
-            <ul>
-                <li>CBN wheel :  500+ grit</li>
-			</ul></li>
-    </ul>
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Benchtop High Speed Grinder</b></p>
+		           	<ul>
+        		        <li>CBN wheel :  500+ grit</li>
+					</ul>
+			</td>
+		</tr>
+	</table>
 </div>
 
 <h3><b>Honing the Tool</b></h3>
 Stone working tools should be honed when carving soft stones, especially before the final cuts.
 
-<div style="float: left; width: 250px; margin: 5px 5px 5px 5px; padding: 5px; border: 1px solid gray; text-align: center; ">
+<p><div style="float: left; width: 250px; margin: 5px 5px 5px 5px; padding: 5px; border: 1px solid gray; text-align: center; ">
 	<a href="ShowPicture.html?ImgNm=Images//Burr.png" target="new"><img src="Images/Burr.png" alt="no image file" style="width: 100%; "/></a>
-    <br>
-    <b>Honing and Stropping
-    <br>to remove the burr</b>
+	<p class="TextSMImage"><b><i>Honing and stropping to remove the burr</i></b></p>
 </div>
 
-<p><b><u>Note</u>:</b> When honing or stropping, the side to start on is the one where the grinding was last done.  If you start on the other side, the burr will get ripped off and you will probably have to re-grind the edge.
+<b><u>Note</u>:</b> When honing or stropping, the side to start on is the one where the grinding was last done.  If you start on the other side, the burr will get ripped off and you will probably have to re-grind the edge.
 
 <p>Dr. Larrin Thomas&rsquo; book, <i>Knife Engineering: Steel, Heat Treating, and Geometry</i> (2025), discusses burr removal quite well.
 </td></tr>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <!-- ################################################### -->
 <!-- HTML5 Compliant                                     -->
@@ -61,6 +61,25 @@ function includeHTML() {
 }
 </script> 
 
+<!-- ##################################################	-->
+<!-- Style Sheet for lists					            -->
+<!-- ##################################################	-->
+<style>
+ul {
+	margin-top: 0; 
+	margin-bottom: 0; 
+	position: relative;
+	left: -18px; 
+}
+
+li {
+	margin-top: 5px; 
+	margin-bottom: 5px; 
+	padding-left: 1.5em; 
+	text-indent: -1.5em;
+}
+</style>
+
 <!-- ################################################### -->
 <!-- Standard horizontal rule definitions		  		 -->
 <div w3-include-html="include-SiteStandards.html"></div> 
@@ -113,7 +132,7 @@ includeHTML();
 <!-- ################################################### -->
 <hr class="style1">
 
-<div style="float: right; width: 350px; 
+<div style="float: right; width: 450px; 
 		background-color: LightGrey;
 		border: 1px solid black; 
 		text-align: left; 
@@ -123,26 +142,29 @@ includeHTML();
 		padding-left: 5px; padding-right: 5px;
         font: 13px Arial; 
 		">
-    <p style="margin-top: 0; margin-bottom: 0; text-align: center; color: darkgreen"><b>Typical Grinding Media Used</b></p>
-    <ul>
-   		<li><b>250+ micron abrasives</b>
-    	<li>Tormek
-           	<ul>
-           		<li>SB-250 Original Grindstone, graded course</li>
-                <li>DC-250 Diamond Wheel Course</li>
-            </ul></li>
+    <p style="margin-top: 0; margin-bottom: 0; text-align: center; color: darkgreen; font-size: 18px;"><b>Typical Grinding Media Used</b></p>
 
-        <li>Bench Speed Grinder
-            <ul>
-                <li>CBN wheel :  &lt;100 grit</li>
-                <li>Very friable grindstone :  &lt;100 grit</li>
-            </ul></li>
-            
-         <li>Other
-            <ul>
-                <li>Sandpaper :   &lt;200 grit</li>
-        	</ul></li>
-	</ul>
+ 	<p style="margin-bottom: 0px;"><b>250+ micron abrasives</b>
+
+	<table style="width: 100%; margin-top: 0px;">
+		<tr style="vertical-align: top;">
+			<td style="width: 50%; text-align: left;">
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Tormek</b></p>
+		           	<ul>
+        		   		<li>SB-250 Original Grindstone, graded course</li>
+		                <li>DC-250 Diamond Wheel Course</li>
+        		    </ul>
+			</td>
+
+			<td style="width: 50%; text-align: left;">
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Benchtop High Speed Grinder</b></p>
+		           	<ul>
+        		        <li>CBN wheel :  &lt;100 grit</li>
+        		        <li><span style="color: #b22222;">Very friable grindstone :  &lt;100 grit (<u>not recommended</u>)</span></li>
+		            </ul>
+			</td>
+		</tr>
+	</table>
 </div>
 
 <h3><b>Shaping the Tool</b></h3>
@@ -157,7 +179,7 @@ Scissors are reshaped <u><i>very</i></u> rarely.  That could be done when the sc
 <!-- ################################################### -->
 <hr class="style1">
 
-<div style="float: right; width: 350px; 
+<div style="float: right; width: 450px; 
 		background-color: LightGrey;
 		border: 1px solid black; 
 		text-align: left; 
@@ -167,29 +189,36 @@ Scissors are reshaped <u><i>very</i></u> rarely.  That could be done when the sc
 		padding-left: 5px; padding-right: 5px;
         font: 13px Arial; 
 		">
-    <p style="margin-top: 0; margin-bottom: 0; text-align: center; color: darkgreen"><b>Typical Grinding Media Used</b></p>
-    <ul>
-   		<li><b>40-250 micron abrasives</b></li>
-   		<li>Tormek
-   			<ul>
-   				<li>SB-250 Black Grindstone, graded fine</li>
-   				<li>DF-250 Diamond Wheel Fine</li>
-   				<li>DE-250 Diamond Wheel Extra Fine</li>
-            </ul></li>
+    <p style="margin-top: 0; margin-bottom: 0; text-align: center; color: darkgreen; font-size: 18px;"><b>Typical Grinding Media Used</b></p>
+    
+ 	<p style="margin-bottom: 0px;"><b>40 - 250 micron abrasives</b>
 
-		<li>Sorby ProEdge
-			<ul>
-				<li>120 grit ProEdge Zirconium Belt</li>
-				<li>Pedia ProEdge Diamond Belt</li>
-				<li>600 grit ProEdge Trizact Belt</li>
-				<li>1,200 grit ProEdge Trizact Belt</li>
-			</ul></li>
-			
-		<li>Bench Speed Grinder
-			<ul>
-				<li>CBN wheel :  150-180 grit</li>
-			</ul></li>
-	</ul>
+	<table style="width: 100%; margin-top: 0px;">
+		<tr style="vertical-align: top;">
+			<td style="width: 50%; text-align: left;">
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Tormek</b></p>
+    		       	<ul>
+	   					<li>SB-250 Black Grindstone, graded fine</li>
+		   				<li>DF-250 Diamond Wheel Fine</li>
+   						<li>DE-250 Diamond Wheel Extra Fine</li>
+		            </ul>
+			</td>
+			<td style="width: 50%; text-align: left;">
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Sorby ProEdge</b></p>
+		           	<ul>
+						<li>120 grit ProEdge Zirconium Belt</li>
+						<li>Pedia ProEdge Diamond Belt</li>
+						<li>600 grit ProEdge Trizact Belt</li>
+						<li>1,200 grit ProEdge Trizact Belt</li>
+					</ul>
+
+				<p style="margin-bottom: 0px; margin-left: -0.5em; font-size: 14px; color: #191970; "><b>Benchtop High Speed Grinder</b></p>
+		           	<ul>
+						<li>CBN wheel :  150-180 grit</li>
+					</ul>
+			</td>
+		</tr>
+	</table>
 </div>
 
 <h3><b>Sharpening the Tool</b></h3>
