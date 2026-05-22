@@ -26,8 +26,8 @@
 <body style="background-color: #E6E6E6; font: 16px Arial; hyphens: auto;" onload='hideTotal()'>
 
 <!-- ################################################### -->
-<!-- Code for Including Standard HTML files on the 	 -->
-<!-- server					         -->
+<!-- Code for Including Standard HTML files on the  	 -->
+<!-- server					                             -->
 <!-- ################################################### -->
 <script src="library.js"></script>
 
@@ -62,14 +62,14 @@ function includeHTML() {
 </script> 
 
 <!-- ################################################### -->
-<!-- Standard horizontal rule definitions		 -->
+<!-- Standard horizontal rule definitions		         -->
 <div w3-include-html="include-SiteStandards.html"></div> 
 <script>
 includeHTML();
 </script> 
 
 <!-- ################################################### -->
-<!-- Header                                                                                           -->
+<!-- Header                                              -->
 <!-- ################################################### -->
 <table style="width: 100%;">
     <tr>
@@ -108,7 +108,7 @@ includeHTML();
 <hr>
 
 <!-- ################################################### -->
-<!-- Get the values needed -->
+<!-- Get the values needed                               -->
 <script>
     function calcValues()    {
 	    var x = document.getElementById("frm1");
@@ -190,94 +190,86 @@ includeHTML();
 <!-- Body                                                -->
 <!-- ################################################### -->
 
-
-Use this page to lookup the values for use on saw chain grinders.
-
-<p>Input fields are <span style="background-color: #FFEE9C"><b>&nbsp;colored&nbsp;</b></span>.
+<p>Use this page to lookup the values for use on saw chain grinders.
 
 <form id="frm1">
 <table style="width: 100%; border-collapse: collapse; ">
-
-    <tr>
-    	<th colspan=2 style="background-color: #d3d3d3; 
+    <tr style="background-color: #FFE4B5; ">
+    	<th colspan=4 style="
         		vertical-align: bottom; text-align: center; 
     	        border-style: solid; border-color: black; 
 	        	border-top-width: thick; border-bottom-width: medium; 
 		        border-right-width: thick; border-left-width: thick; ">
-    	    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextLG"><b>Fixed Values</b></p>
+    	    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextLG"><b>Fixed Values for the Saw Chain</b></p>
     	</th>
     </tr>
 
     <tr>
-        <td style="background-color: #FFEE9C; 
-        width: 175px;
-        
-        		vertical-align: middle; text-align: left; 
-		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: medium; border-bottom-width: medium; 
-        		border-right-width: medium; border-left-width: thick; ">
-			Saw chain pitch
-		</td>
-
-        <td style="background-color: #FFEE9C; 
-        		vertical-align: middle; text-align: left; 
-		        padding-left: 5px; padding-right: 5px; 
-        		border-style: solid; border-color: black; 
-		        border-top-width: medium; border-bottom-width: medium; 
-        		border-right-width: thick; border-left-width: medium; ">
-        		
-                <input type="radio" id="Pitch250" name="Pitch" value="0.250">
-                <label for="Pitch250"><sup>1</sup>/<sub>4</sub>&rdquo;</label>
-                    
-                <input type="radio" id="Pitch325" name="Pitch" value="0.325">
-                <label for="Pitch325">0.325&rdquo;</label>
-                    
-                <input type="radio" id="Pitch375" name="Pitch" value="0.375">
-                <label for="Pitch375"><sup>3</sup>/<sub>8</sub>&rdquo;</label>
-                    
-                <input type="radio" id="Pitch37590" name="Pitch" value="0.37590">
-                <label for="Pitch37590"><sup>3</sup>/<sub>8</sub>&rdquo; (90&deg;)</label>
-                    
-                <input type="radio" id="Pitch404" name="Pitch" value="0.404">
-                <label for="Pitch404">0.404&rdquo;</label>
-                    
-                <input type="radio" id="Pitch750" name="Pitch" value="0.750">
-                <label for="Pitch750"><sup>3</sup>/<sub>4</sub>&rdquo;</label>
- 			</td>
-		</tr>
-
-    <tr>
-        <td style="background-color: #FFEE9C; 
+        <td style="background-color: #FFE4B5; width: 50px;
         		vertical-align: middle; text-align: left; 
 		        padding-left: 5px; padding-right: 5px; 
         		border-style: solid; border-color: black; 
 		        border-top-width: medium; border-bottom-width: thick; 
-        		border-right-width: medium; border-left-width: thick; ">
-				Saw chain gauge
+        		border-right-width: thin; border-left-width: thick; ">
+			<b>Pitch</b>
 		</td>
-        <td style="background-color: #FFEE9C; 
+
+        <td style="background-color: #ffffff; 
         		vertical-align: middle; text-align: left; 
 		        padding-left: 5px; padding-right: 5px; 
         		border-style: solid; border-color: black; 
 		        border-top-width: medium; border-bottom-width: thick; 
-        		border-right-width: thick; border-left-width: medium; ">
+        		border-right-width: medium; border-left-width: thin;
+        		">
+            <input type="radio" id="Pitch250" name="Pitch" value="0.250">
+            <label for="Pitch250">&frac14;&rdquo;</label>
+            <br>
+            <input type="radio" id="Pitch325" name="Pitch" value="0.325">
+            <label for="Pitch325">0.325&rdquo;</label>
+            <br>
+            <input type="radio" id="Pitch375" name="Pitch" value="0.375">
+            <label for="Pitch375">&frac38;&rdquo;</label>
+            <br>
+            <input type="radio" id="Pitch37590" name="Pitch" value="0.37590">
+            <label for="Pitch37590">&frac38;&rdquo; (90&deg;)</label>
+            <br>
+            <input type="radio" id="Pitch404" name="Pitch" value="0.404">
+            <label for="Pitch404">0.404&rdquo;</label>
+            <br>
+            <input type="radio" id="Pitch750" name="Pitch" value="0.750">
+            <label for="Pitch750">&frac34;&rdquo;</label>
+ 		</td>
+
+        <td style="background-color: #FFE4B5; width: 50px;
+        		vertical-align: middle; text-align: left; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: thick; 
+        		border-right-width: thin; border-left-width: medium; ">
+			<b>Gauge</b>
+		</td>
+        <td style="background-color: #ffffff; 
+        		vertical-align: middle; text-align: left; 
+		        padding-left: 5px; padding-right: 5px; 
+        		border-style: solid; border-color: black; 
+		        border-top-width: medium; border-bottom-width: thick; 
+        		border-right-width: thick; border-left-width: thin; ">
         		
             <input type="radio" id="043" name="Gauge" value="0.043">
             <label for="043">0.043&rdquo; / 1.1mm</label>
-                    
+            <br>
             <input type="radio" id="050" name="Gauge" value="0.050">
             <label for="050">0.050&rdquo; / 1.3mm</label>
-                    
+            <br>
             <input type="radio" id="058" name="Gauge" value="0.058">
-            <label for="058">0.058&rdquo; / 1.5mm</label><br>
-                    
+            <label for="058">0.058&rdquo; / 1.5mm</label>
+            <br>
             <input type="radio" id="063" name="Gauge" value="0.063">
             <label for="063">0.063&rdquo; / 1.6mm</label>
-                    
+            <br>
             <input type="radio" id="080" name="Gauge" value="0.080">
             <label for="080">0.080&rdquo; / 2.0mm</label>
-                    
+            <br>
             <input type="radio" id="122" name="Gauge" value="0.122">
             <label for="122">0.122&rdquo; / 3.1mm</label>
 		</td>
@@ -288,8 +280,8 @@ Use this page to lookup the values for use on saw chain grinders.
 
 <table style="width: 100%; border-collapse: collapse; ">
 
-    <tr>
-    	<th colspan=6 style="background-color: #FFE4B5; 
+    <tr style="background-color: #FFE4B5; ">
+    	<th colspan=6 style="
         		vertical-align: bottom; text-align: center; 
     	        border-style: solid; border-color: black; 
 	        	border-top-width: thick; border-bottom-width: medium; 
@@ -297,9 +289,8 @@ Use this page to lookup the values for use on saw chain grinders.
     	    <p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextLG"><b>Grinder Setup Values</b></p>
     	</th>
     </tr>
-    <tr>
-        <th rowspan=2 style="width: 90px;
-	       	 	background-color: #FFE4B5; 
+    <tr style="background-color: #FFE4B5; ">
+        <th rowspan=2 style="width: 80px;
         		vertical-align: bottom; 
         		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
@@ -310,10 +301,9 @@ Use this page to lookup the values for use on saw chain grinders.
         		border-left-width: thick; 
         		border-right-width: medium; 
         		">
-            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Grindwheel Thickness</b></p>
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Grindwheel<br>Thickness</b></p>
         </th>
         <th style="width: 90px;
-      	  		background-color: #FFE4B5; 
         		vertical-align: bottom; 
         		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
@@ -327,7 +317,6 @@ Use this page to lookup the values for use on saw chain grinders.
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Fleam</b></p>
         </th>
         <th style="width: 90px;
-	       	 	background-color: #FFE4B5; 
 		        vertical-align: bottom; 
 		        text-align: center; 
         		padding-left: 5px; padding-right: 5px; 
@@ -338,12 +327,11 @@ Use this page to lookup the values for use on saw chain grinders.
 		        border-left-width: medium; 
 		        border-right-width: medium; 
 		        ">
-            <p style="width: 90px;
+            <p style="
 	       	 	margin-top: 0; margin-bottom: 0; 
 	       	 	font: 16px Arial; color: #191970"><b>Drop</b></p>
         </th>
         <th style="width: 90px;
-	       	 	background-color: #FFE4B5; 
         		vertical-align: bottom; 
         		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
@@ -357,7 +345,6 @@ Use this page to lookup the values for use on saw chain grinders.
             <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Rake</b></p>
         </th>
         <th style="width: 90px;
-	       	 	background-color: #FFE4B5; 
         		vertical-align: bottom; 
         		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
@@ -368,10 +355,9 @@ Use this page to lookup the values for use on saw chain grinders.
         		border-left-width: medium; 
         		border-right-width: medium; 
         		">
-            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Chip Thickness</b></p>
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>Chip<br>Thickness</b></p>
         </th>
-        <th rowspan=2 style="width: 90px;
-	       	 	background-color: #FFE4B5; 
+        <th rowspan=2 style="
         		vertical-align: bottom; 
         		text-align: center; 
 		        padding-left: 5px; padding-right: 5px; 
@@ -398,7 +384,8 @@ Use this page to lookup the values for use on saw chain grinders.
         		border-left-width: medium; 
         		border-right-width: medium; 
         		">
-            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">A - Vise Rotate Angle</p>
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>A</b></p>
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">Vise Rotate Angle</p>
         </td>
         <td style="background-color: #c4deea; 
         		vertical-align: bottom; 
@@ -411,7 +398,8 @@ Use this page to lookup the values for use on saw chain grinders.
         		border-left-width: medium; 
         		border-right-width: medium; 
         		">
-            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">B - Down Angle</p>
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>B</b></p>
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">Down<br>Angle</p>
         </td>
         <td style="background-color: #c4deea; 
         		vertical-align: bottom; 
@@ -424,7 +412,8 @@ Use this page to lookup the values for use on saw chain grinders.
         		border-left-width: medium; 
         		border-right-width: medium; 
         		">
-            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">C - Head Tilt Angle</p>
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>C</b></p>
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">Head Tilt Angle</p>
         </td>
         <td style="background-color: #c4deea; 
         		vertical-align: bottom; 
@@ -437,7 +426,8 @@ Use this page to lookup the values for use on saw chain grinders.
         		border-left-width: medium; 
         		border-right-width: medium; 
         		">
-            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">D - Depth Gauge</p>
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970"><b>D</b></p>
+            <p style="margin-top: 0; margin-bottom: 0; font: 16px Arial; color: #191970">Depth Gauge</p>
         </td>
     </tr>
 
