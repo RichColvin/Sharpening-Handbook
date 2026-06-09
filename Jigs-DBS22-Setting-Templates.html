@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<!-- ##################################################	-->
+<!-- Google Analytics Tag               				-->
+<!-- ##################################################	-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4WJRKD8E5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q4WJRKD8E5');
+</script>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; hyphens: auto; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 	 -->
+<!-- server					        					 -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+    	<td style="text-align: center; vertical-align: middle; ">
+	        <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+    	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+    	<td style="vertical-align: text-top;  text-align: center; ">
+	    	<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Setting Templates for the Tormek DBS-22</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<hr>
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<div style="float: right; width: 300px; margin: 0 0 5px 5px; padding: 5px; border: 1px solid darkgray; text-align: left;">
+    <b>Template for 9&deg; clearance angle</b>
+    <a href="ShowPicture.html?ImgNm=Images/DBS-22-Setting-Template-9deg.png" target="new"><img src="Images/DBS-22-Setting-Template-9deg.png" alt="no image file" style="width: 100%;" /></a>
+    <p class="TextSMImage" style="margin-top: 0px; margin-bottom: 10px;"><i><b>Primary facets</b></i></p>
+    <a href="ShowPicture.html?ImgNm=Images/DBS-22-Setting-Template-22deg.png" target="new"><img src="Images/DBS-22-Setting-Template-22deg.png" alt="no image file" style="width: 100%;" /></a>
+    <p class="TextSMImage" style="margin-top: 0px; margin-bottom: 10px;"><i><b>Secondary facets</b></i></p>
+    <a href="ShowPicture.html?ImgNm=Images/DBS-22-Setting-Template-54deg.png" target="new"><img src="Images/DBS-22-Setting-Template-54deg.png" alt="no image file" style="width: 100%;" /></a>
+    <p class="TextSMImage" style="margin-top: 0px; margin-bottom: 0px;"><i><b>Tertiary facets</b> (viewed from other side)</i></p>
+</div>
+
+<h1>Overview</h1>
+
+<p>Dan Heil took the ideas for using the Tormek DBS-22 on the page for <a href="GT-DrillBits-Twist.html">sharpening twist drill bits</a>, and came up with a very innovative alternative to the DBS-22&rsquo;s Setting Template.  His idea is to select the desired clearance angle, and then use the template for that angle to set the:
+
+	<ol>
+		<li>primary facet,</li>
+		<li>secondary facet (= primary facet angle + 13&deg;), and</li>
+		<li>tertiary facet ( = secondary facet angle + 32&deg;).</li>
+	</ol>
+
+<p>The great value to this approach is the ease in setting the secondary (and tertiary) facets in a very repeatable manner.  Additionally, it is easier and faster to use this method than the approach outlined in the DBS-22 user manual (pg. 11).
+
+<p>This really comes into play when resharpening a number of drills at one time.
+
+<hr class="style3">
+
+<p>Dan went a step further, and has provided templates for clearance angles from 5&deg; to 15&deg;, in 1&deg; increments.
+            
+<!-- *************************************************** -->
+<!-- Additional pictures of this jig -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Additional Pictures of this Jig</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Usage Notes -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Usage Notes</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- How it works -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">How it Works</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Sources for buying one -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Sources for Buying One</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Notes on making one -->
+<!-- *************************************************** -->
+<hr class="style2">
+<h1 style="margin-bottom: 0px;">Notes on Making One</h1>
+<table style="float: left; 
+		border-collapse: collapse;
+		margin-top: 0px; margin-bottom: 10px;
+		margin-left: 0px; margin-right: 10px;
+		">
+    <tr style="vertical-align: bottom;
+    		background-color: Moccasin;
+		    ">
+		<td style="width: 75px; 
+				text-align: center;
+				border-style: solid;
+                text-align: center;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p class="TextTableHdrNorm"><b>Clearance Angle</b></p>
+		</td>
+		<td style="width: 175px; 
+				text-align: center;
+				border-style: solid;
+                text-align: center;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p class="TextTableHdrNorm"><b>3D Printing File</b></p>
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: White;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">5&deg;
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_5_degree.stl" download>Tormek_5_degree.stl</a>
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: LightGrey;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">6&deg;
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_6_degree.stl" download>Tormek_6_degree.stl</a>
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: White;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">7&deg; <sup><span style="font-size: 10px;">&#9312;</span></sup>
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_7_degree.stl" download>Tormek_7_degree.stl</a> 
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: LightGrey;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">8&deg;
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_8_degree.stl" download>Tormek_8_degree.stl</a>
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: White;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">9&deg; <sup><span style="font-size: 10px;">&#9312;</span></sup>
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_9_degree.stl" download>Tormek_9_degree.stl</a>
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: LightGrey;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">10&deg;
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_10_degree.stl" download>Tormek_10_degree.stl</a>
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: White;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">11&deg; <sup><span style="font-size: 10px;">&#9312;</span></sup>
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_11_degree.stl" download>Tormek_11_degree.stl</a>
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: LightGrey;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">12&deg;
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_12_degree.stl" download>Tormek_12_degree.stl</a>
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: White;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">13&deg;
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_13_degree.stl" download>Tormek_13_degree.stl</a>
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: LightGrey;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">14&deg; <sup><span style="font-size: 10px;">&#9312;</span></sup>
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_14_degree.stl" download>Tormek_14_degree.stl</a>
+		</td>
+	</tr>
+    <tr style="vertical-align: top; 
+    		background-color: White;">
+		<td style="text-align: center;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;">15&deg;
+		</td>
+		<td style="text-align: left;
+				border-style: solid;
+                border-color: black;
+                border-top-width: thin;
+                border-bottom-width: thin;
+                border-left-width: thin;
+                border-right-width: thin; ">
+			<p style="margin-top: 0; margin-bottom: 0;"><a href="/3D-Printing/Tormek_15_degree.stl" download>Tormek_15_degree.stl</a>
+		</td>
+	</tr>
+</table>
+	
+<p style="margin-top: 3px;">The 3D-print designs for this are the linked files to the left; use the ones you need for your 3D printer.
+
+<p><b>Notes:</b>
+<p>&#9312; These are the angles provisioned for on the Tormek DBS-22&rsquo;s Setting Template.
+
+<table style="width: 100%"><tr><td><hr class="style3"></td></tr></table>
+<p>These are copies of Dan&rsquo;s designs from his <a href="https://www.thingiverse.com/thing:7365248" target="new">Thingiverse.com</a> page.  Though I have copied his files here, they are still covered by the Creative Commons license he has selected:
+
+<p style="margin-left: 25px;"><i>Designs by <a href="https://www.thingiverse.com/Macksvoltage/designs" target="new">Macksvoltage</a> are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="new">Creative Commons - Attribution - Non-Commercial - Share Alike</a> license.</i></p>
+
+<table style="width: 100%"><tr><td>&nbsp;</td></tr></table>
+<!-- *************************************************** -->
+<!-- More Information -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">More Information</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Published Articles -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Published Articles</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Books & Papers -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Books &amp; Papers</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Web Sites -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Web Sites</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Presentations -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Presentations</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Other -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Other</font></h2>
+<p>
+-->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>

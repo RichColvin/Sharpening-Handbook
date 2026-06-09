@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+</head>
+
+<!-- ##################################################	-->
+<!-- Google Analytics Tag               				-->
+<!-- ##################################################	-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4WJRKD8E5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q4WJRKD8E5');
+</script>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; hyphens: auto; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; ">
+    <tr>
+    	<td style="text-align: center; vertical-align: middle; ">
+	        <a href="index.html"><IMG SRC="Images/SharpeningHandbookLogo.png" alt="Sharpening Handbook Logo" style="width: 100%;" class="Image"></a>
+    	</td>
+    </tr>
+</table>
+
+<table style="width: 100%; text-align: center; border-collapse: collapse; ">
+    <tr style="vertical-align: middle; ">
+    	<td style="text-align: left; width: 10%; ">
+	        &nbsp;
+    	</td>
+    	<td style="vertical-align: text-top;  text-align: center; ">
+	    	<p style="margin-top: 0; margin-bottom: 0; color: #191970; " class="TextXL"><b>Taller Tilt Feet</b></p>
+    	</td>
+    	<td style="text-align: right; width: 10%; ">
+	        &nbsp;
+    	</td>
+    </tr>
+</table>
+
+<hr>
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<h1>Overview</h1>
+
+<div style="float: right; width: 200px; margin: 0 0 5px 5px; padding: 5px; border: 1px solid darkgray; text-align: center;">
+    <img src="Images/Riser-Foot.png" alt="no image file" style="width: 100%;" />
+    <p class="TextSMImage"><b>Taller tilt foot</b></p>
+</div>
+
+<p>Dan Heil has designed taller feet for the Tormk. Two of these can be used on the left side of the machine to tilt the whole machine in order to route water from the cutting stone to the right and more effectively into the water tray when sharpening various tools. More details are available at the Thinigiverse page.
+
+<p>One set is 2x the height of the standard TF-22 Tilt Feet; the other is 3x the height.
+
+<!-- *************************************************** -->
+<!-- Additional pictures of this jig -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Additional Pictures of this Jig</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Usage Notes -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Usage Notes</font></h1>
+-->
+
+
+<!-- *************************************************** -->
+<!-- How it works -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">How it Works</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Sources for buying one -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">Sources for Buying One</font></h1>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Notes on making one -->
+<!-- *************************************************** -->
+<!--
+<table width="100%"><tr><td>&nbsp;</td></tr></table>
+-->
+<hr class="style2">
+<h1 style="margin-bottom: 0px;">Notes on Making One</h1>
+<p style="margin-top: 3px; margin-bottom: 20px;">The design can be found on <a href="https://www.thingiverse.com" target="new">Thingiverse.com</a> at <a href="https://www.thingiverse.com/thing:4042638/files" target="new">Triple_Height_Tormek_Riser_foot</a>.
+
+<!-- *************************************************** -->
+<!-- More Information -->
+<!-- *************************************************** -->
+<!--
+<hr class="style2">
+<h1><font color="DarkBlue">More Information</font></h1>
+-->
+
+<!-- *************************************************** -->
+<!-- Published Articles -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Published Articles</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Books & Papers -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Books &amp; Papers</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Web Sites -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Web Sites</font></h2>
+<p>
+-->
+
+<!-- *************************************************** -->
+<!-- Presentations -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Presentations</font></h2>
+	<ul>
+		<li><a href="https://youtu.be/SO4bBOTTI20?si=KjbxJXP6SrV0bNDi" target="new">Sharpening Rotary Cutter, Part 1</a> (YouTube video). Using the Tormek SG-250 wheel to sharpen the blade</li>
+	</ul>
+-->
+
+
+<!-- *************************************************** -->
+<!-- Other -->
+<!-- *************************************************** -->
+<!--
+<h2><font color="DarkBlue">Other</font></h2>
+<p>
+-->
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>

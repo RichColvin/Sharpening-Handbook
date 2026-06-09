@@ -105,6 +105,14 @@ includeHTML();
     </tr>
 </table>
 
+
+
+
+<style>
+  .striped-table tr:nth-child(even) {background-color: #ffffff;}
+  .striped-table tr:nth-child(odd) {background-color: #e0e0e0;}
+</style>
+
 <!-- ################################################### -->
 <!-- Body                                                -->
 <!-- ################################################### -->
@@ -137,7 +145,7 @@ includeHTML();
 
 <hr class="style2">
 
-<p>Some hoes have more than one edge to be sharpened.  In those cases, each edge can be sharpened at a different angle, and thusly there is more than one angle specified on this page (i.e., <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>1</sub>, <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub>, &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>3</sub>). The use of differing angles is not necessary, but is recommended, and notes are given for the recommendations.
+<p>Some hoes have more than one edge to be sharpened.  In those cases, each edge can be sharpened at a different angle, and thusly there is more than one angle specified on this page (i.e., <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">1</span></sub>, <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub>, &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">3</span></sub>). The use of differing angles is not necessary, but is recommended, and notes are given for the recommendations.
 
 <hr class="style2">
 
@@ -161,9 +169,10 @@ includeHTML();
             <td style="width:33%;">
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#CapeCodWeeder">Cape Cod Weeder</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#CobraHeadHoe">Cobra Head Hoe</a></p>
-                <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#GardenHoe">Collinear Hoe</a></p>
+                <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#CollinearHoe">Collinear Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#DiamondWeeder">Diamond Weeder</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#GardenHoe">Drag Hoe</a></p>
+                <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#GardenHoe">Draw Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#CapeCodWeeder">Drill Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#StirrupHoe">Dutch Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#GardenHoe">Floral Hoe</a></p>
@@ -171,16 +180,17 @@ includeHTML();
 
             <td style="width:33%">
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#ScuffleHoe">Floral Scuffle Hoe</a></p>
+                <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#HoopHoe">Garden Bandit Loop Weeder</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#GardenHoe">Garden Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#GrubbingHoe">Grubbing Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#HoopHoe">Hoop Hoe</a></p>
-                <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#HoopHoe">Loop Hoe</a></p>
+                <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#LoopHoe">Loop Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#MortarHoe">Mason&rsquo;s Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#MortarHoe">Mortar Hoe</a></p>
-                <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#OnionHoe">Onion Hoe</a></p>
             </td>
 
             <td style="width:33%">
+                <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#OnionHoe">Onion Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#MortarHoe">Plaster&rsquo;s Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#CapeCodWeeder">Pointed Cultivator Hoe</a></p>
                 <p style="margin-top: 0px; margin-bottom: 6px; margin-left: 15px; text-indent: -15px; font-size: 15px;"><a href="#ScuffleHoe">Scuffle Hoe</a></p>
@@ -205,11 +215,13 @@ includeHTML();
 
 <!-- ################################################### -->
 <!-- General Guidelines -->
-<table style="width: 100%; border-collapse: collapse; ">
-    <tr style="background-color: Moccasin; ">
+<table class="striped-table"
+	   style="width: 100%; border-collapse: collapse; ">
+    <tr style="background-color: Moccasin; 
+    		vertical-align: bottom;">
         <th colspan="7" style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: bottom;
+                text-align: center; 
                 border-top-width: thick;
                 border-bottom-width: medium;
                 border-left-width: thick;
@@ -217,19 +229,20 @@ includeHTML();
             <span style="font: 24px Arial; color: #191970;"><b>General Guidelines</b></span>
         </th>
     </tr>
-    <tr style="background-color: Moccasin; ">
+    <tr style="background-color: Moccasin; 
+		    vertical-align: bottom;">
         <th style="width: 150px; border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: bottom;
+                text-align: center;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thick;
                 border-right-width: medium; ">
             <span style="font: 20px Arial; color: #191970;"><b>Purpose</b></span>
         </th>
-        <th style="width: 50px; border-style: solid;
+        <th style="width: 100px; border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: bottom;
+                text-align: center;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
@@ -238,25 +251,27 @@ includeHTML();
         </th>
         <th style="width: 50px; border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: bottom;
+                text-align: center;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             <span style="font: 30px Garamond; color: #191970;"><b>&alpha;</b></span><sub>1</sub>
         </th>
         <th style="width: 50px; border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: bottom;
+                text-align: center;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             <span style="font: 30px Garamond; color: #191970;"><b>&alpha;</b></span><sub>2</sub>
         </th>
         <th style="width: 50px; border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: bottom;
+                text-align: center;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
@@ -278,7 +293,7 @@ includeHTML();
         </th>
         <th style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: bottom;
+                text-align: center;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
@@ -289,7 +304,7 @@ includeHTML();
 
 <!-- *************************************************** -->
 <!-- Cape Cod Weeder -->
-    <tr id="CapeCodWeeder" style="background-color: #e0e0e0; ">
+    <tr id="CapeCodWeeder" style="vertical-align: top;">
         <td style="border-style: solid;
                 border-color: black;
                 text-align: left; vertical-align: top;
@@ -299,42 +314,53 @@ includeHTML();
                 border-right-width: medium; ">
             <b>Cape Cod Weeder</b>
 
-            <p style="margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-CapeCodeWeeder.png" alt="Image not found" style="width: 75%; " /></p>
+            <p style="margin-bottom: 20; text-align: center; "><img src="Images/GT-Hoe-CapeCodeWeeder.png" alt="Image not found" style="width: 75%; " /></p>
+
+			<hr class="style2">
+            <p style="font-size: 14px; margin-bottom: 0px;">Also known as:</p>        
+            	<ul style="margin-top: 3px;">
+            		<li style="margin-left: -15px; margin-top: 0px; margin-bottom: 6px;"><span style="font-size: 14px;"><b>Drill Hoe</b></span></li>
+            		<li style="margin-left: -15px;"><span style="font-size: 14px;"><b>Pointed Cultivator Hoe</b></span></li>
+            	</ul>
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             Pull
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             35&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="
@@ -346,7 +372,8 @@ includeHTML();
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium;
+                border-right-width: medium; 
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -395,15 +422,124 @@ includeHTML();
 
             <p>These can be found with a long handle for use when standing, or with a shorter handle for use when kneeling or seated.  If sharpening the shorter handled hoe, consider sharpening the under side if the angle for use of this hoe merits it.</p>
 
-            <p>Depending on the user's handedness (left vs. right), the values for <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>1</sub> &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub> could be swapped for easier use.</p>
+            <p style="margin-bottom: 0px;">Depending on the user's handedness (left vs. right), the values for <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">1</span></sub> &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub> could be swapped for easier use.</p>
+        </td>
+    </tr>
 
-            <p style="margin-bottom: 0;"><span style="color: darkblue; "><b>Also Known As:</b></span> <b>Drill Hoe</b> or <b>Pointed Cultivator Hoe</b>.
+<!-- *************************************************** -->
+<!-- Collinear Hoe -->
+    <tr id="CollinearHoe" style="vertical-align: top;">
+        <td style="
+                border-style: solid; border-color: black;
+                text-align: left; vertical-align: top;
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: thick;
+                border-right-width: medium; ">
+            <b>Collinear Hoe</b>
+
+            <p style="margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-Collinear.png" alt="Image not found" style="width: 95%; " /></p>
+        </td>
+        <td style="border-style: solid;
+                border-color: black;
+                text-align: center; 
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: medium;
+                border-right-width: medium; 
+                padding-top: 10px; ">
+            Side-to-side Sweeping
+        </td>
+        <td style="border-style: solid;
+                border-color: black;
+                text-align: center; 
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: medium;
+                border-right-width: thin; 
+                padding-top: 10px; ">
+            25&deg;
+        </td>
+        <td style="border-style: solid;
+                border-color: black;
+                text-align: center; 
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: thin;
+                border-right-width: thin; 
+                padding-top: 10px; ">
+            <span style="color: #a8a8a8;"><i>n/a</i></span>
+        </td>
+        <td style="border-style: solid;
+                border-color: black;
+                text-align: center; 
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: thin;
+                border-right-width: medium; 
+                padding-top: 10px; ">
+            <span style="color: #a8a8a8;"><i>n/a</i></span>
+        </td>
+        <td style="
+                text-align: center;
+                padding-left: 5px;
+                padding-right: 5px;
+                border-style: solid;
+                border-color: black;
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: medium;
+                border-right-width: medium; 
+                padding-top: 10px; 
+                ">
+            <a href="SharpnessScale.html" style="text-decoration: none;">
+            <table style="width: 30px;
+                    text-align: center;
+                    margin: auto;
+                    border-collapse: collapse; ">
+                <tr>
+                    <td style="
+                            background-color: #6f7681;
+                            border-style: solid;
+                            border-color: darkgray;
+                            border-top-width: thin;
+                            border-bottom-width: thin;
+                            border-left-width: thin;
+                            border-right-width: thin;
+                            ">
+                        <span style="color: white; font-size: 20px;"><b>
+                        5
+                        </b></span>
+                    </td>
+                </tr>
+            </table>
+            </a>
+        </td>
+        <td style="
+                border-style: solid; border-color: black;
+                text-align: left; vertical-align: top;
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: medium;
+                border-right-width: thick; ">
+            <div style=" float: left; Width: 110px;
+                    margin-left: 0px; margin-right: 10px;
+                    margin-top: 0px; margin-bottom: 0px;
+                    padding-left: 5px; padding-right: 5px;
+                    padding-top: 5px; padding-bottom: 5px;
+                    border: 1px solid darkgray; text-align: center;  ">
+                <img src="Images/GT-Hoe-01.png" alt="Image not found" style="width: 100%; " />
+            </div>
+
+            <p style="margin-top: 0; ">This tool is a lighter weight hoe. It is a <a href="#Scarifiers">scarifier</a>, used for cutting the weeds close to surface of the dirt.</p>
+
+            <p>This could be as high as 30&deg;; however that is not usually necessary.</p>
         </td>
     </tr>
 
 <!-- *************************************************** -->
 <!-- CobraHead Hoe -->
-    <tr id="CobraHeadHoe" style="background-color: White;">
+    <tr id="CobraHeadHoe" style="vertical-align: top;">
         <td style="border-style: solid;
                 border-color: black;
                 text-align: left; vertical-align: top;
@@ -417,38 +553,42 @@ includeHTML();
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             Swung
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             35&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             35&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="
@@ -461,6 +601,7 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -511,7 +652,7 @@ includeHTML();
 
 <!-- *************************************************** -->
 <!-- Diamond Weeder -->
-    <tr id="DiamondWeeder" style="background-color: #e0e0e0;">
+    <tr id="DiamondWeeder" style="vertical-align: top;">
         <td style="border-style: solid;
                 border-color: black;
                 text-align: left; vertical-align: top;
@@ -522,41 +663,51 @@ includeHTML();
             <b>Diamond Weeder</b>
 
             <p style="margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-DiamondWeeder.png" alt="Image not found" style="width: 80%; " /></p>
+
+			<hr class="style2">
+            <p style="font-size: 14px; margin-bottom: 0px;">Also known as:</p>        
+            	<ul style="margin-top: 3px;">
+            		<li style="margin-left: -15px;"><span style="font-size: 14px;"><b>Diamond Shuffle Weeder</b></span></li>
+            	</ul>
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             Pull &amp; Push
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="
@@ -569,6 +720,7 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -609,15 +761,17 @@ includeHTML();
                 <img src="Images/GT-Hoe-09.png" alt="Image not found" style="width: 100%; " />
             </div>
 
-            <p style="margin-top: 0;">This tool is a <a href="#Scarifiers">scarifier</a>, used for cutting the weeds close to the dirt.</p>
+            <p style="margin-top: 0;">This tool is a <a href="#Scarifiers">scarifier</a>, used for cutting the weeds close to surface of the dirt.</p>
 
-            <p style="margin-bottom: 0;">These can be found with a long handle for use when standing, or with a shorter handle for use when kneeling or seated.  The shorter handled version can have higher values, up to 40&deg;, but the longer handled vershion should not have such a dull angle.</p>
+            <p><i>Diamond Shuffle Weeders</i> typically have a long handle for use when standing.</p>
+
+            <p style="margin-bottom: 0;"><i>Diamond Weeders</i> typically have a shorter handle for use when kneeling or seated.  This shorter handled version can have higher values, up to 40&deg;, but the longer handled vershion should not have such a dull angle.</p>
         </td>
     </tr>
 
 <!-- *************************************************** -->
 <!-- Garden Hoe -->
-    <tr id="GardenHoe" style="background-color: #d8ecff; ">
+    <tr id="GardenHoe" style="vertical-align: top;">
         <td style="
                 border-style: solid; border-color: black;
                 text-align: left; vertical-align: top;
@@ -627,42 +781,54 @@ includeHTML();
                 border-right-width: medium; ">
             <b>Garden Hoe</b>
 
-            <p style="margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-GardenHoe.png" alt="Image not found" style="width: 75%; " /></p>
+            <p style="margin-top: 3px; margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-GardenHoe.png" alt="Image not found" style="width: 65%; " /></p>
+
+			<hr class="style2">
+            <p style="font-size: 14px; margin-bottom: 0px;">Also known as:</p>        
+            	<ul style="margin-top: 3px;">
+            		<li style="margin-left: -15px; margin-top: 0px; margin-bottom: 6px;"><span style="font-size: 14px;"><b>Drag Hoe</b></span></li>
+            		<li style="margin-left: -15px; margin-top: 0px; margin-bottom: 6px;"><span style="font-size: 14px;"><b>Draw Hoe</b></span></li>
+            		<li style="margin-left: -15px;"><span style="font-size: 14px;"><b>Floral Hoe</b></span></li>
+            	</ul>
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             Pull
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="
@@ -675,6 +841,7 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -717,29 +884,13 @@ includeHTML();
 
             <p style="margin-top: 0; ">This is a good selection for weeding in the garden.  It is sharp enough that it shears the weeds well at the ground level.</p>
 
-            <div style=" float: right; Width: 100px;
-                    margin-left: 5px; margin-right: 0px;
-                    margin-top: 0px; margin-bottom: 0px;
-                    padding-left: 5px; padding-right: 0px;
-                    padding-top: 5px; padding-bottom: 5px;
-                    border: 1px solid darkgray; text-align: center;  ">
-                    <img src="Images/GT-Hoe-Collinear.png" alt="Image not found" style="width: 100%; " />
-                <p class="TextSMImage"><b><i>Collinear Hoe</i></b></p>
-            </div>
-
-            <p>This could be as high as 30&deg;; however that is not usually necessary.</p>
-
-            <p><span style="color: darkblue; "><b>Also Known As:</b></span> <b>Drag Hoe</b> or <b>Floral Hoe</b>.
-
-            <hr class="style3">
-
-            <p style="margin-bottom: 0;">The <b>Collinear Hoe</b> is an interesting, lighter weight variation of this hoe.  Use the same sharpening guidance.</p>
+            <p style="margin-bottom: 0px;">This could be as high as 30&deg;; however that is not usually necessary.</p>
         </td>
     </tr>
 
 <!-- *************************************************** -->
 <!-- Grubbing Hoe -->
-    <tr id="GrubbingHoe" style="background-color: #e0e0e0; ">
+    <tr id="GrubbingHoe" style="vertical-align: top;">
         <td style="border-style: solid;
                 border-color: black;
                 text-align: left; vertical-align: top;
@@ -753,42 +904,45 @@ includeHTML();
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             Down Swing
             <br>&amp; Pull
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             40&deg;
             <br>-<br>
             45&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                background-color: #e0e0e0;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="
@@ -801,6 +955,7 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -850,7 +1005,7 @@ includeHTML();
 
 <!-- *************************************************** -->
 <!-- Hoop Hoe -->
-    <tr id="HoopHoe" style="background-color: #ffffff; ">
+    <tr id="HoopHoe" style="vertical-align: top;">
         <td style="border-style: solid;
                 border-color: black;
                 text-align: left; vertical-align: top;
@@ -861,41 +1016,51 @@ includeHTML();
             <b>Hoop Hoe</b>
 
             <p style="margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-HoopHoe.png" alt="Image not found" style="width: 85%; " /></p>
+
+			<hr class="style2">
+            <p style="font-size: 14px; margin-bottom: 0px;">Handheld version known as:</p>        
+            	<ul style="margin-top: 3px;">
+            		<li style="margin-left: -15px;"><span style="font-size: 14px;"><b>Garden Bandit Loop Weeder</b></span></li>
+            	</ul>
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             Pull
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             15&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="
@@ -908,6 +1073,7 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -952,27 +1118,17 @@ includeHTML();
 
             <p>These can be found with a long handle for use when standing, or with a shorter handle for use when kneeling or seated.  If sharpening the shorter handled hoe, keep the same sharpening approach as for the longer handled version (sharpen the inside of the curve).</p>
 
-            <div style=" float: right; Width: 75px;
-                    margin-left: 5px; margin-right: 0px;
-                    margin-top: 0px; margin-bottom: 0px;
-                    padding-left: 5px; padding-right: 0px;
-                    padding-top: 5px; padding-bottom: 5px;
-                    border: 1px solid darkgray; text-align: center;  ">
-                <img src="Images/GT-Hoe-LoopHoe.png" alt="Image not found" style="width: 100%; " />
-                <p class="TextSMImage"><b><i>Loop Hoe</i></b></p>
-            </div>
-
             <p>It is important to not sharpen too far up on the circle as that part is used to push plants back when hoeing.</p>
+            
+			<hr class="style2">
 
-            <hr class="style3">
-
-            <p style="margin-bottom: 0;">There is a variation of this known as a <b>Loop Hoe</b> where the circle is somewhat flattened into a triangular shape (but the triangle&rsquo;s vertices do not come to a point and are rounded).  Use the same sharpening guidance as for the hoop hoe.</p>
+			<p style="margin-bottom: 0px;">Lee Valley sells a <b>Garden Bandit Loop Weeder</b> which is a hand-held version of this tool.  Use the same sharpening guidance.</p>
         </td>
     </tr>
 
 <!-- *************************************************** -->
-<!-- Mortar Hoe -->
-    <tr id="MortarHoe" style="background-color: #e0e0e0; ">
+<!-- Loop Hoe -->
+    <tr id="LoopHoe" style="vertical-align: top;">
         <td style="border-style: solid;
                 border-color: black;
                 text-align: left; vertical-align: top;
@@ -980,44 +1136,48 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: thick;
                 border-right-width: medium; ">
-            <b>Mortar Hoe</b>
+            <b>Loop Hoe</b>
 
-            <p style="margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-MortarHoe.png" alt="Image not found" style="width: 85%; " /></p>
+            <p style="margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-LoopHoe.png" alt="Image not found" style="width: 75%; " /></p>
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
-            Pull &amp; Push
+                border-right-width: medium; 
+                padding-top: 10px; ">
+            Side-to-side Sweeping
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
-            45&deg;
+                border-right-width: thin; 
+                padding-top: 10px; ">
+            25&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
-            <span style="color: #a8a8a8;"><i>n/a</i></span>
+                border-right-width: thin; 
+                padding-top: 10px; ">
+            25&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="
@@ -1030,6 +1190,123 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
+                ">
+            <a href="SharpnessScale.html" style="text-decoration: none;">
+            <table style="width: 30px;
+                    text-align: center;
+                    margin: auto;
+                    border-collapse: collapse; ">
+                <tr>
+                    <td style="
+                            background-color: #6f7681;
+                            border-style: solid;
+                            border-color: darkgray;
+                            border-top-width: thin;
+                            border-bottom-width: thin;
+                            border-left-width: thin;
+                            border-right-width: thin;
+                            ">
+                        <span style="color: white; font-size: 20px;"><b>
+                        5
+                        </b></span>
+                    </td>
+                </tr>
+            </table>
+            </a>
+        </td>
+        <td style="border-style: solid;
+                border-color: black;
+                text-align: left; vertical-align: top;
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: medium;
+                border-right-width: thick; ">
+            <div style=" float: left; Width: 110px;
+                    margin-left: 0px; margin-right: 10px;
+                    margin-top: 0px; margin-bottom: 0px;
+                    padding-left: 5px; padding-right: 5px;
+                    padding-top: 5px; padding-bottom: 5px;
+                    border: 1px solid darkgray; text-align: center;  ">
+                <img src="Images/GT-Hoe-06.png" alt="Image not found" style="width: 100%; " />
+            </div>
+
+            <p style="margin-top: 0; ">This tool is a <a href="#Scarifiers">scarifier</a>, used for cutting the weeds close to surface of the dirt.</p>
+        </td>
+    </tr>
+
+<!-- *************************************************** -->
+<!-- Mortar Hoe -->
+    <tr id="MortarHoe" style="vertical-align: top;">
+        <td style="border-style: solid;
+                border-color: black;
+                text-align: left; vertical-align: top;
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: thick;
+                border-right-width: medium; ">
+            <b>Mortar Hoe</b>
+
+            <p style="margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-MortarHoe.png" alt="Image not found" style="width: 85%; " /></p>
+
+			<hr class="style2">
+            <p style="font-size: 14px; margin-bottom: 0px;">Also known as:</p>        
+            	<ul style="margin-top: 3px;">
+            		<li style="margin-top: 0px; margin-bottom: 6px; margin-left: -15px;"><span style="font-size: 14px;"><b>Mason&rsquo;s Hoe</b></span></li>
+            		<li style="margin-left: -15px;"><span style="font-size: 14px;"><b>Plaster&rsquo;s Hoe</b></span></li>
+            	</ul>
+        </td>
+        <td style="border-style: solid;
+                border-color: black;
+                text-align: center; 
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: medium;
+                border-right-width: medium; 
+                padding-top: 10px; ">
+            Pull &amp; Push
+        </td>
+        <td style="border-style: solid;
+                border-color: black;
+                text-align: center; 
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: medium;
+                border-right-width: thin; 
+                padding-top: 10px; ">
+            45&deg;
+        </td>
+        <td style="border-style: solid;
+                border-color: black;
+                text-align: center; 
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: thin;
+                border-right-width: thin; 
+                padding-top: 10px; ">
+            <span style="color: #a8a8a8;"><i>n/a</i></span>
+        </td>
+        <td style="border-style: solid;
+                border-color: black;
+                text-align: center; 
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: thin;
+                border-right-width: medium; 
+                padding-top: 10px; ">
+            <span style="color: #a8a8a8;"><i>n/a</i></span>
+        </td>
+        <td style="
+                text-align: center;
+                padding-left: 5px;
+                padding-right: 5px;
+                border-style: solid;
+                border-color: black;
+                border-top-width: medium;
+                border-bottom-width: medium;
+                border-left-width: medium;
+                border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -1072,15 +1349,13 @@ includeHTML();
 
             <p style="margin-top: 0; ">This is a good selection if the hoe is used for purposes other than weeding.  The higher angle will help keep it from dulling quickly.  This could be as high as 60&deg;.  Consider this approach if using your hoe for activities such as mixing concrete in your wheel barrow.
 
-            <p>Mortar hoes usually have holes in the blade to allow the material to flow through it, making the mixing easier.  Ensure these are clear of dried up concrete or other obstructions.
-
-            <p style="margin-bottom: 0;"><span style="color: darkblue; "><b>Also Known As:</b></span> <b>Mason&rsquo;s Hoe</b>, or <b>Plaster&rsquo;s Hoe</b></p>
+            <p style="margin-bottom: 0px;">Mortar hoes usually have holes in the blade to allow the material to flow through it, making the mixing easier.  Ensure these are clear of dried up concrete or other obstructions.
         </td>
     </tr>
 
 <!-- *************************************************** -->
 <!-- Onion Hoe -->
-    <tr id="OnionHoe" style="background-color: #ffffff; ">
+    <tr id="OnionHoe" style="vertical-align: top;">
         <td style="border-style: solid;
                 border-color: black;
                 text-align: left; vertical-align: top;
@@ -1093,41 +1368,51 @@ includeHTML();
             <br>3-Sided Hoes
 
             <p style="margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-OnionHoe.png" alt="Image not found" style="width: 85%; " /></p>
+
+			<hr class="style2">
+            <p style="font-size: 14px; margin-bottom: 0px;">Also known as:</p>        
+            	<ul style="margin-top: 3px;">
+            		<li style="margin-left: -15px;"><span style="font-size: 14px;"><b>Tobacco Hoe</b></span></li>
+            	</ul>
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             Pull &amp; Side
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             35&deg;
         </td>
         <td style="
@@ -1140,6 +1425,7 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -1182,23 +1468,21 @@ includeHTML();
 
             <p style="margin-top: 0; margin-bottom: 0;">These hoes have 3 sides which get sharpened.
 
-            <p style="margin-bottom: 0px; "><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>1</sub>: The bottom is sharpened for typical use.
+            <p style="margin-bottom: 0px; "><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">1</span></sub>: The bottom is sharpened for typical use.
             
-            <p style="margin-top: 0px; margin-bottom: 0px; "><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub>: The left side is sharpened to the same angle as the bottom, and is used when the gardener needs to flip the tool on edge to get into a narrow space.
+            <p style="margin-top: 0px; margin-bottom: 0px; "><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub>: The left side is sharpened to the same angle as the bottom, and is used when the gardener needs to flip the tool on edge to get into a narrow space.
             
-            <p style="margin-top: 0px;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>3</sub>: The right side has a greater angle to make this a usable tool for also breaking up soil.
+            <p style="margin-top: 0px;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">3</span></sub>: The right side has a greater angle to make this a usable tool for also breaking up soil.
 
             <p>These can be found with a long handle for use when standing, or with a shorter handle for use when kneeling or seated.  If sharpening the shorter handled hoe, consider sharpening the under side if the angle for use of this hoe merits it.</p>
 
-            <p style="margin-bottom: 0;">Depending on the user's handedness (left vs. right), the values for <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub> &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>3</sub> could be swapped for easier use.
-
-            <p style="margin-bottom: 0;"><span style="color: darkblue; "><b>Also Known As:</b></span> <b>Tobacco Hoe</b></p>
+            <p style="margin-bottom: 0;">Depending on the user's handedness (left vs. right), the values for <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub> &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">3</span></sub> could be swapped for easier use.
         </td>
     </tr>
 
 <!-- *************************************************** -->
 <!-- Scuffle Hoe -->
-    <tr id="ScuffleHoe" style="background-color: #e0e0e0; ">
+    <tr id="ScuffleHoe" style="vertical-align: top;">
         <td style="
                 border-style: solid; border-color: black;
                 text-align: left; vertical-align: top;
@@ -1212,41 +1496,51 @@ includeHTML();
 <!--
             <p style="margin-bottom: 0; margin-top: 0; text-align: center; "><img src="Images/GT-Hoe-ScuffleHoe2.png" alt="Image not found" style="width: 95%; " /></p>
  -->
+
+			<hr class="style2">
+            <p style="font-size: 14px; margin-bottom: 0px;">Also known as:</p>        
+            	<ul style="margin-top: 3px;">
+            		<li style="margin-left: -15px;"><span style="font-size: 14px;"><b>Floral Scuffle Hoe</b></span></li>
+            	</ul>
             </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             Pull &amp; Push
         </td>
         <td style="
                 border-style: solid; border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="
                 border-style: solid; border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="
                 border-style: solid; border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             30&deg;
         </td>
         <td style="
@@ -1259,6 +1553,7 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -1300,19 +1595,17 @@ includeHTML();
                 <img src="Images/GT-Hoe-04.png" alt="Image not found" style="width: 100%; " />
             </div>
 
-            <p style="margin-top: 0;">This tool is a <a href="#Scarifiers">scarifier</a>, used for cutting the weeds close to the dirt.</p>
+            <p style="margin-top: 0;">This tool is a <a href="#Scarifiers">scarifier</a>, used for cutting the weeds close to surface of the dirt.</p>
 
             <p style="margin-bottom: 0;">One style of this hoe has 3 sides in a triangular shape, and all 3 sides can be sharpened differently.
             
-            <p style="margin-bottom: 0px; "><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>1</sub>: The user side is sharpened for typical use.
+            <p style="margin-bottom: 0px; "><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">1</span></sub>: The user side is sharpened for typical use.
             
-            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub>: The left side is sharpened to the same angle as the user side, and is used when the gardener needs to use the tool with a push stroke.
+            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub>: The left side is sharpened to the same angle as the user side, and is used when the gardener needs to use the tool with a push stroke.
 
-            <p style="margin-top: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>3</sub>: The right side has a greater angle to make this a usable tool for also breaking up soil.  If this tool is used only for scarification, then this angle should also be 25&deg;.
+            <p style="margin-top: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">3</span></sub>: The right side has a greater angle to make this a usable tool for also breaking up soil.  If this tool is used only for scarification, then this angle should also be 25&deg;.
 
-            <p style="margin-bottom: 0;">Depending on the user's handedness (left vs. right), the values for <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub> &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>3</sub> could be swapped for easier use.
-
-            <p style="margin-bottom: 0;"><span style="color: darkblue; "><b>Also Known As:</b></span> <b>Floral Scuffle Hoe</b></p>
+            <p style="margin-bottom: 0;">Depending on the user's handedness (left vs. right), the values for <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub> &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">3</span></sub> could be swapped for easier use.
 
             <hr class="style2">
 
@@ -1328,19 +1621,19 @@ includeHTML();
 
             An uncommon style of this hoe has 4 sides in a similar shape, but with 4 sides which are sharpened, and all 4 sides can be sharpened differently.  Do note that this hoe is used in a push motion.
             
-            <p style="margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>1a</sub>: The leading edge side is sharpened for typical use.
+            <p style="margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">1a</span></sub>: The leading edge side is sharpened for typical use.
             
-            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>1b</sub>: The other leading edge side is also sharpened for typical use, but can be different from <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>1a</sub> if desired.
+            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">1b</span></sub>: The other leading edge side is also sharpened for typical use, but can be different from <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">1a</span></sub> if desired.
 
-            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub>: The left side is sharpened to the same angle as the user side, and is used when the gardener needs to use the tool with a push stroke.
+            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub>: The left side is sharpened to the same angle as the user side, and is used when the gardener needs to use the tool with a push stroke.
             
-            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>3</sub>: The right side has a greater angle to make this a usable tool for also breaking up soil.  If this tool is used only for scarification, then this angle should also be 25&deg;.
+            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">3</span></sub>: The right side has a greater angle to make this a usable tool for also breaking up soil.  If this tool is used only for scarification, then this angle should also be 25&deg;.
         </td>
     </tr>
 
 <!-- *************************************************** -->
 <!-- Stirrup Hoe -->
-    <tr id="StirrupHoe" style="background-color: #ffffff; ">
+    <tr id="StirrupHoe" style="vertical-align: top;">
         <td style="border-style: solid;
                 border-color: black;
                 text-align: left; vertical-align: top;
@@ -1351,41 +1644,51 @@ includeHTML();
             <b>Stirrup Hoe</b>
 
             <p style="margin-bottom: 0; text-align: center; "><img src="Images/GT-Hoe-StirrupHoe.png" alt="Image not found" style="width: 85%; " /></p>
+
+			<hr class="style2">
+            <p style="font-size: 14px; margin-bottom: 0px;">Also known as:</p>        
+            	<ul style="margin-top: 3px;">
+            		<li style="margin-left: -15px;"><span style="font-size: 14px;"><b>Dutch Hoe</b></span></li>
+            	</ul>
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             Pull &amp; Push
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: thin;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             30&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: thin;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: thin;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="
@@ -1398,6 +1701,7 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -1438,13 +1742,12 @@ includeHTML();
                 <img src="Images/GT-Hoe-06.png" alt="Image not found" style="width: 100%; " />
             </div>
 
-            <p style="margin-top: 0;">This tool is typically used as a <a href="#Scarifiers">scarifier</a>, cutting the weeds close to the dirt.</p>
+            <p style="margin-top: 0;">This tool is typically used as a <a href="#Scarifiers">scarifier</a>, cutting the weeds close to surface of the dirt.</p>
 
             <p style="margin-top: 0; margin-bottom: 0;">These hoes have 2 sides which can be sharpened differently.  If the gardener desires two separate angles, these are recommended
 
-            <p style="margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>1</sub>: The near side is sharpened with a larger angle so the tool can be used for clearing out bigger weeds using the pull stroke.
-            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub>: The far side is sharpened to the at a smaller angle to make the push stroke easier when removing typical weeds.
-            <p>Some gardeners choose to keep the push and pull sides the same as they use a scarifing or shuffling motion to weed the garden or walk.
+            <p style="margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">1</span></sub>: The near side is sharpened with a larger angle so the tool can be used for clearing out bigger weeds using the pull stroke.
+            <p style="margin-top: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub>: The far side is sharpened to the at a smaller angle to make the push stroke easier when removing typical weeds.
 
             <div style=" float: right; Width: 100px;
                     margin-left: 5px; margin-right: 0px;
@@ -1456,15 +1759,15 @@ includeHTML();
                 <p class="TextSMImage"><b><i>Alternate Dutch Hoe Design</i></b></p>
             </div>
 
-            <p>These can be found with a long handle for use when standing, or with a shorter handle for use when kneeling or seated.  If sharpening the shorter handled hoe, consider sharpening the under side if the angle for use of this hoe merits it.</p>
+            <p>Some gardeners choose to keep the push and pull sides the same as they use a scarifing or shuffling motion to weed the garden or walk.
 
-            <p style="margin-bottom: 0;"><span style="color: darkblue; "><b>Also Known As:</b></span> <b>Dutch Hoe</b>.  In some cases, the design is not exactly the same, but it is sharpened the same way.</p>
+            <p style="margin-bottom: 0;">These can be found with a long handle for use when standing, or with a shorter handle for use when kneeling or seated.  If sharpening the shorter handled hoe, consider sharpening the under side if the angle for use of this hoe merits it.</p>
         </td>
     </tr>
 
 <!-- *************************************************** -->
 <!-- Swoe (Lee Valley) -->
-    <tr id="Swoe" style="background-color: #e0e0e0; ">
+    <tr id="Swoe" style="vertical-align: top;">
         <td style="border-style: solid;
                 text-align: left; vertical-align: top;
                 border-color: black;
@@ -1478,38 +1781,42 @@ includeHTML();
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             Pull, Push, &amp; Side
         </td>
         <td style="border-style: solid;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-color: black;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             30&deg;
             </td>
         <td style="border-style: solid;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-color: black;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="border-style: solid;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-color: black;
                 border-top-width: medium;
                 border-bottom-width: medium;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="
@@ -1522,6 +1829,7 @@ includeHTML();
                 border-bottom-width: medium;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -1564,19 +1872,21 @@ includeHTML();
 
             <p style="margin-top: 0; margin-bottom: 0;">These hoes have 3 sides in a form of a triangular shape, and all 3 sides can be sharpened differently.  There is a triangular shape towards the user, and a flat side away from the user.
             
-            <p style="margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>1</sub>: The shorter edge on the user's left side is sharpened for a heavier use.
+            <p style="margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">1</span></sub>: The shorter edge on the user's left side is sharpened for a heavier use.
             
-            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub>: The user's right side is sharpened for typical use.
+            <p style="margin-top: 0; margin-bottom: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub>: The user's right side is sharpened for typical use.
 
-            <p style="margin-top: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>3</sub>: The side away from the user is sharpened the same as as <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub>.  This side is used much like the far side on the stirrup hoe.
+            <p style="margin-top: 0;"><span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">3</span></sub>: The side away from the user is sharpened the same as as <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub>.  This side is used much like the far side on the stirrup hoe.
             
-            <p style="margin-bottom: 0;">Depending on the user's handedness (left vs. right), the values for  &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub> could be swapped for easier use.
+            <p>Depending on the user's handedness (left vs. right), the values for  &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub> could be swapped for easier use.
+            
+            <p style="margin-bottom: 0;">This tool is typically used for weeding plants with medium depth roots.
         </td>
     </tr>
 
 <!-- *************************************************** -->
 <!-- Warren Hoe -->
-    <tr id="WarrenHoe" style="background-color: #ffffff; ">
+    <tr id="WarrenHoe" style="vertical-align: top;">
         <td style="border-style: solid;
                 text-align: left; vertical-align: top;
                 border-color: black;
@@ -1590,38 +1900,42 @@ includeHTML();
         </td>
         <td style="border-style: solid;
                 border-color: black;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-top-width: medium;
                 border-bottom-width: thick;
                 border-left-width: medium;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px;">
             Pull
         </td>
         <td style="border-style: solid;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-color: black;
                 border-top-width: medium;
                 border-bottom-width: thick;
                 border-left-width: medium;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             25&deg;
         </td>
         <td style="border-style: solid;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-color: black;
                 border-top-width: medium;
                 border-bottom-width: thick;
                 border-left-width: thin;
-                border-right-width: thin; ">
+                border-right-width: thin; 
+                padding-top: 10px; ">
             35&deg;
         </td>
         <td style="border-style: solid;
-                text-align: center; vertical-align: middle;
+                text-align: center; 
                 border-color: black;
                 border-top-width: medium;
                 border-bottom-width: thick;
                 border-left-width: thin;
-                border-right-width: medium; ">
+                border-right-width: medium; 
+                padding-top: 10px; ">
             <span style="color: #a8a8a8;"><i>n/a</i></span>
         </td>
         <td style="
@@ -1634,6 +1948,7 @@ includeHTML();
                 border-bottom-width: thick;
                 border-left-width: medium;
                 border-right-width: medium;
+                padding-top: 10px; 
                 ">
             <a href="SharpnessScale.html" style="text-decoration: none;">
             <table style="width: 30px;
@@ -1676,7 +1991,7 @@ includeHTML();
 
             <p style="margin-top: 0; ">Warren hoes are typically used for weeding or creating a furrow for planting.  This hoe has two edges to be sharpened, opening up some nice opportunities for the gardener as one side can be at a different angle than the other.  My experience has been that sharpening one side at the recommended 25&deg; and the other at 35&deg; makes it a more versatile tool.
 
-            <p style="margin-bottom: 0;">Depending on the user's handedness (left vs. right), the values for <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>1</sub> &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub>2</sub> could be swapped for easier use.
+            <p style="margin-bottom: 0;">Depending on the user's handedness (left vs. right), the values for <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">1</span></sub> &amp; <span style="font: 18px Garamond; "><b>&alpha;</b></span><sub><span style="font-size: 10px;">2</span></sub> could be swapped for easier use.
         </td>
     </tr>
 </table>
