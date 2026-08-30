@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<!-- ##################################################	-->
+<!-- Google Analytics Tag               				-->
+<!-- ##################################################	-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4WJRKD8E5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q4WJRKD8E5');
+</script>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; hyphens: auto; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 		 -->
+<!-- server					        					 -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; margin-top: 0px; margin-bottom: 0px;">
+    <tr>
+    	<td style="text-align: left;">
+        	<p style="margin-top: 0; margin-bottom: 0; hyphens: none;line-height: 0.7;"><a href="index.html" style="text-decoration: none;"><span style="font-family: 'Cinzel', serif; font-size: 60px; color: #191970;">S</span><span style="font-family: 'Cinzel', serif; font-size: 50px; color: #191970;">harpening </span><span style="font-family: 'Cinzel', serif; font-size: 60px; color: #191970;">H</span><span style="font-family: 'Cinzel', serif; font-size: 50px; color: #191970;">andbook</span></a></p>
+       	</td>
+    	<td style="text-align: right;">
+        	<p style="margin-top: 0px; margin-bottom: 0px; text-align: right; line-height: 1;"><span style="font-family: 'Cormorant Garamond', serif; font-size: 16px; color: #191970;">Because <i>sharp enough</i></span></p>
+        	<p style="margin-top: 0px; margin-bottom: 0px; text-align: right; line-height: 1;"><span style="font-family: 'Cormorant Garamond', serif; font-size: 16px; color: #191970;">... usually is not</span></p>
+    	</td>
+    </tr>
+</table>
+
+<p style="margin-top: 5px; margin-bottom: 0; margin-left: 5px; color: #191970; " class="TextXL"><b>Lock Mortise Chisel</b></p>
+    
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<hr>
+
+<!-- ################################################### -->
+<!-- Guidance Information -->
+
+<div style=" float: right; Width: 400px; 
+        margin-left: 10px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 10px; 
+        padding-left: 5px; padding-right: 0px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 1px solid darkgray; text-align: left;  ">
+    <img src="Images/WW-LockMortiseChisel.png" alt="no image file" style="width: 100%;" />
+    <p class="TextSMImage"><b><i>Bevel face alignment with the handle</i></b></p>
+</div>
+
+<p>The <b>Lock Mortise Chisel</b> is essentially a scraping chisel.
+
+<div style=" float: left; Width: 80px;
+	margin-left: 0px; margin-right: 10px;
+	margin-top: 0px; margin-bottom: 10px;
+	padding-left: 5px; padding-right: 5px;
+	padding-top: 5px; padding-bottom: 0px;
+	border: 0px solid black; text-align: left;  ">
+    <a href="SharpnessScale.html" style="text-decoration: none;"><img src="Images/SharpnessScale_5.png" alt="no image file" style="width: 100%; " /></a>
+    <p style="font-size: 10px; margin-top: 0px; margin-bottom: 0px;"><i>click on the gray block to see more</i></p>
+</div>
+
+<p>Hone the bevel face in line with the handle by rubbing a diamond file against it.
+
+<p>&nbsp;
+<p>&nbsp;
+
+<table style="width: 400px; 
+		float: left; margin-left: 0px; margin-right: 10px; margin-bottom: 10px; 
+		border: 1px solid grey; 
+		border-collapse: collapse;
+		background-color:#DFD7C8;
+		">
+	<tr>
+	    <td style="padding: 3px;">
+			<p style="margin-top: 0; margin-bottom: 0; "><i>Show us a man who never makes a mistake and we will show a man who never makes anything. The capacity for occasional blundering is inseparable from the capacity to bring things to pass.</I>
+			    <p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Herman Lincoln Wayland
+	    </td>
+	</tr>
+</table>
+	
+<table style="width: 100%;"><tr><td>&nbsp;</td></tr></table>
+
+<!-- ################################################### -->
+<!-- Replacing Wooden Handles -->
+<p><hr class="style2">
+
+<h3 style="margin-bottom: 0;">Replacing Wooden Handles</h3>
+
+<p>A good source for the shape of a handle is <a href="https://books.google.com/books?id=jNw3AAAAMAAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=twopage&q&f=false" target="new">The Wood Turner's Handy Book</a> (1887), by Paul N Hasluck (see pg. 67, fig. 39).
+
+<p>Other good sources are:
+	<ol>
+		<li style="margin-bottom: 12px;"><a href="https://www.finewoodworking.com/2025/09/03/making-a-new-chisel-handle-for-tired-hands-part-1" target="new">Making a New Chisel Handle for Tired Hands: Part 1</a>, by Aaron Keim and published on the <a href="https://www.finewoodworking.com/" target="new">Fine Woodworking</a> website.  (Part 2 is also on the web site now.)</li>
+
+		<li style="margin-bottom: 12px;"><a href="https://www.woodturner.org/Woodturner/Woodturner/Resources/Woodturning-Fundamentals--Publication-/2026/Socket-Chisel-Handle.aspx?_zs=HjCib&_zl=gRM35&WebsiteKey=c9100f02-c77e-4177-a9bc-7d3eb0216238" target="new">Socket Chisel Handle</a>, by Tom Caspar and published on the <a href="https://www.woodturner.org/" target="new">AAW</a> website on the &ldquo;Woodturning Fundamentals&rdquo; eMagazine.</i>
+		</li>
+	</ol>
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-WW-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- More Information -->
+<hr class="style1">
+<h2>More Information</h2>
+
+<h3>Books &amp; Papers</h3>
+    <ul>
+		<li style="margin-bottom: 12px"><u>The Handyman's Book</u>, a book by Paul N. Hasluck.  My copy is the 1903 edition and is quite useful.</li>
+    </ul>
+
+<h3>Published Articles</h3>
+	<ul>
+		<li style="margin-bottom: 12px;"><a href="https://www.finewoodworking.com/2025/09/03/making-a-new-chisel-handle-for-tired-hands-part-1" target="new">Making a New Chisel Handle for Tired Hands: Part 1</a>, by Aaron Keim and published on the <a href="https://www.finewoodworking.com/" target="new">Fine Woodworking</a> website.  (Part 2 is also on the web site now.) Aaron noted, 
+		
+		<p style="margin-left: 33px; margin-right: 33px;"><i>Some of the most important tools in my shop are my chisels. Whether I am chopping, carving, or paring, they are in my hands all day. As I have gotten older and my arthritis/tendonitis has gotten worse, my needs have changed. In this blog, I will talk about my preferred chisel handle and show how I make a replacement handle to suit my needs.</i>
+		</li>
+
+		<li style="margin-bottom: 12px;"><a href="https://www.woodturner.org/Woodturner/Woodturner/Resources/Woodturning-Fundamentals--Publication-/2026/Socket-Chisel-Handle.aspx?_zs=HjCib&_zl=gRM35&WebsiteKey=c9100f02-c77e-4177-a9bc-7d3eb0216238" target="new">Socket Chisel Handle</a>, by Tom Caspar and published on the <a href="https://www.woodturner.org/" target="new">AAW</a> website on the &ldquo;Woodturning Fundamentals&rdquo; eMagazine.</i>
+		</li>
+	</ul>
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<!-- ##################################################	-->
+<!-- Google Analytics Tag               				-->
+<!-- ##################################################	-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4WJRKD8E5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q4WJRKD8E5');
+</script>
+
+<body style="background-color: #E6E6E6; font: 16px Arial; hyphens: auto; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 		 -->
+<!-- server					        					 -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<table style="width: 100%; margin-top: 0px; margin-bottom: 0px;">
+    <tr>
+    	<td style="text-align: left;">
+        	<p style="margin-top: 0; margin-bottom: 0; hyphens: none;line-height: 0.7;"><a href="index.html" style="text-decoration: none;"><span style="font-family: 'Cinzel', serif; font-size: 60px; color: #191970;">S</span><span style="font-family: 'Cinzel', serif; font-size: 50px; color: #191970;">harpening </span><span style="font-family: 'Cinzel', serif; font-size: 60px; color: #191970;">H</span><span style="font-family: 'Cinzel', serif; font-size: 50px; color: #191970;">andbook</span></a></p>
+       	</td>
+    	<td style="text-align: right;">
+        	<p style="margin-top: 0px; margin-bottom: 0px; text-align: right; line-height: 1;"><span style="font-family: 'Cormorant Garamond', serif; font-size: 16px; color: #191970;">Because <i>sharp enough</i></span></p>
+        	<p style="margin-top: 0px; margin-bottom: 0px; text-align: right; line-height: 1;"><span style="font-family: 'Cormorant Garamond', serif; font-size: 16px; color: #191970;">... usually is not</span></p>
+    	</td>
+    </tr>
+</table>
+
+<p style="margin-top: 5px; margin-bottom: 0; margin-left: 5px; color: #191970; " class="TextXL"><b>Finger Grip Tool</b></p>
+
+<!-- ################################################### -->
+<!-- Body                                                                                               -->
+<!-- ################################################### -->
+    <hr>
+
+<!-- ################################################### -->
+<!-- Guidance Information -->
+<div style=" float: right; Width: 250px; 
+        margin-left: 10px; margin-right: 0px; 
+        margin-top: 0px; margin-bottom: 10px; 
+        padding-left: 5px; padding-right: 0px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 1px solid darkgray; text-align: left;  ">
+    <img src="Images/WW-FingerGripTool-2.png" alt="no image file" style="width: 100%;" />
+    <p class="TextSMImage"><b><i>Edge to be sharpened</i></b></p>
+</div>
+
+<p>The <b>Finger Grip Tool</b> is sharpened by rubbing a diamond file against the top of the tool.
+
+<p>This is shown in the picture to the right as the area marked red.
+
+<table style="width: 450px; float: left; margin-left: 0px; margin-right: 10px; 
+		margin-top: 35px;
+		margin-bottom: 10px;
+		border: 1px solid grey; 
+		border-collapse: collapse;
+		background-color:#DFD7C8;
+		">
+	<tr>
+		<td>
+			<p style="margin-top: 0; margin-bottom: 0; "><i>Law of the Workshop: Any tool, when dropped, will roll to the least accessible corner.</I>
+				<p style="margin-top: 0; margin-bottom: 0; padding-left: 33pt;">Unknown (but I've said it too many times)
+		</td>
+	</tr>
+</table>
+
+<table style="width: 100%;"><tr><td>&nbsp;</td></tr></table>
+<!-- ################################################### -->
+<!-- Notes & Comments -->
+<!--
+<h2>Notes &amp; Comments</h2>
+-->
+
+<!-- ################################################### -->
+<!-- Ongoing Maintenance -->
+<div w3-include-html="include-WW-OngoingMaintenance.html"></div> 
+<script>
+includeHTML();
+</script> 
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div> 
+<script>
+includeHTML();
+</script> 
+</body>
+</html>
