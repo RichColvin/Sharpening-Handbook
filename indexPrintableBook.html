@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ################################################### -->
+<!-- HTML5 Compliant                                     -->
+<!-- ################################################### -->
+
+<head>
+    <title>Sharpening Handbook</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- Libre Caslon Text Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- Bona Nova Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<!-- ##################################################	-->
+<!-- Google Analytics Tag               				-->
+<!-- ##################################################	-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4WJRKD8E5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q4WJRKD8E5');
+</script>
+
+<body style="background-color: #E6E6E6; font: 15px 'Libre Caslon Text'; hyphens: auto; ">
+
+<!-- ################################################### -->
+<!-- Code for Including Standard HTML files on the 	 -->
+<!-- server					         -->
+<!-- ################################################### -->
+<script src="library.js"></script>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script> 
+
+<!-- ################################################### -->
+<!-- Standard horizontal rule definitions		  		 -->
+<div w3-include-html="include-SiteStandards.html"></div> 
+<script>
+includeHTML();
+</script>
+
+<!-- ################################################### -->
+<!-- Header                                              -->
+<!-- ################################################### -->
+<div style="position: sticky; top: 0; z-index: 100; background-color: #E6E6E6; padding-top: 4px;">
+<table style="width: 100%; margin-top: 0px; margin-bottom: 0px;">
+    <tr>
+    	<td style="text-align: left;
+    			vertical-align: middle;">
+        	<p style="margin-top: 0; margin-bottom: 0; hyphens: none;line-height: 0.7;"><a href="index.html" style="text-decoration: none;"><span style="font-family: 'Cinzel', serif; font-size: 60px; color: #5D6532;">S</span><span style="font-family: 'Cinzel', serif; font-size: 50px; color: #5D6532;">harpening </span><span style="font-family: 'Cinzel', serif; font-size: 60px; color: #5D6532;">H</span><span style="font-family: 'Cinzel', serif; font-size: 50px; color: #5D6532;">andbook</span></a></p>
+       	</td>
+    	<td style="text-align: right;
+    			vertical-align: middle;">
+        	<p style="margin-top: 0px; margin-bottom: 0px; text-align: right; line-height: 1;"><span style="font-family: 'Cormorant Garamond', serif; font-size: 18px; color: #5D6532;">Because <i>sharp enough</i></span></p>
+        	<p style="margin-top: 0px; margin-bottom: 0px; text-align: right; line-height: 1;"><span style="font-family: 'Cormorant Garamond', serif; font-size: 18px; color: #5D6532;">... usually is not</span></p>
+    	</td>
+    	<td style="width: 40px;
+    			text-align: right;
+    			vertical-align: middle;">
+			    <img src="Razor%20Pictures/razor-blade-header.png" alt="Razor blade" style="width: 100%;" />
+    	</td>
+</tr>
+</table>
+
+<p style="margin-top: 5px; margin-bottom: 0; margin-left: 5px; color: #5D6532; font-size: 34px; font-family: 'Bona Nova';" >Printable Handbook</p>
+
+<!-- ################################################### -->
+<!-- Body                                                -->
+<!-- ################################################### -->
+<hr>
+</div>
+
+<!-- ################################################### -->
+<!-- Styles for this page                                -->
+<!-- ################################################### -->
+<style>
+table.book { border-collapse: collapse; margin: 10px 0 20px 0; }
+table.book th { background-color: Moccasin; color: #5D6532; text-align: left;
+    padding: 4px 10px; border-bottom: 2px solid #5D6532; }
+table.book td { padding: 4px 10px; border-bottom: 1px solid #c8c8b8; }
+table.book td.num { text-align: right; color: #5D6532; }
+table.book td.dl { white-space: nowrap; }
+table.book span.pp { color: #777; font-size: 13px; }
+#agreeBox { position: fixed; inset: 0; z-index: 200; display: none;
+    background: rgba(0, 0, 0, 0.45); align-items: center; justify-content: center; }
+#agreeBox .card { background: #ffffff; max-width: 620px; margin: 16px; padding: 18px 22px;
+    border: 3px solid #5D6532; max-height: 90vh; overflow-y: auto; }
+#agreeBox h2 { margin-top: 0; }
+#agreeBox li { margin-bottom: 8px; }
+#agreeBox .buttons { text-align: right; margin-top: 14px; }
+#agreeBox button { font: 16px 'Libre Caslon Text'; padding: 6px 14px; margin-left: 8px; cursor: pointer; }
+#agreeBox button.yes { background: #5D6532; color: #ffffff; border: 0; }
+</style>
+
+<p>The <b>Sharpening Handbook, 2026 Edition</b>, is the content of this web site laid out as a book to print at home.
+Each chapter is its own PDF, so you can print just the chapters you need and keep them in a 3-ring binder.
+Page numbers include the chapter number (e.g., 6-14), so a chapter can be replaced when it is updated without reprinting the others.
+Each chapter&rsquo;s first page shows the date it was last revised.</p>
+
+<p>Choose <b>Letter</b> (8&frac12;&quot; &times; 11&quot;) or <b>A4</b>.  The pages are laid out for printing on both sides,
+with a wider margin on the side for the binder holes.</p>
+
+<table class="book">
+    <tr><th>Ch.</th><th>Chapter</th><th>US Letter</th><th>A4</th></tr>
+        <tr>
+            <td class="num">1</td>
+            <td>Introduction</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch01-Introduction.pdf">Letter</a> <span class="pp">(9 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch01-Introduction.pdf">A4</a> <span class="pp">(9 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">2</td>
+            <td>Grindstones and the Tormek</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch02-Grindstones-and-the-Tormek.pdf">Letter</a> <span class="pp">(25 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch02-Grindstones-and-the-Tormek.pdf">A4</a> <span class="pp">(25 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">3</td>
+            <td>Jigs, Fixtures, and Modifications</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch03-Jigs-Fixtures-and-Modifications.pdf">Letter</a> <span class="pp">(1 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch03-Jigs-Fixtures-and-Modifications.pdf">A4</a> <span class="pp">(1 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">4</td>
+            <td>Ongoing Maintenance</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch04-Ongoing-Maintenance.pdf">Letter</a> <span class="pp">(10 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch04-Ongoing-Maintenance.pdf">A4</a> <span class="pp">(10 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">5</td>
+            <td>Beekeeping Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch05-Beekeeping-Tools.pdf">Letter</a> <span class="pp">(5 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch05-Beekeeping-Tools.pdf">A4</a> <span class="pp">(5 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">6</td>
+            <td>Bench Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch06-Bench-Tools.pdf">Letter</a> <span class="pp">(31 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch06-Bench-Tools.pdf">A4</a> <span class="pp">(31 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">7</td>
+            <td>Drills</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch07-Drills.pdf">Letter</a> <span class="pp">(14 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch07-Drills.pdf">A4</a> <span class="pp">(13 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">8</td>
+            <td>Firefighting &amp; Landscaping</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch08-Firefighting-Landscaping.pdf">Letter</a> <span class="pp">(21 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch08-Firefighting-Landscaping.pdf">A4</a> <span class="pp">(19 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">9</td>
+            <td>Gardening Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch09-Gardening-Tools.pdf">Letter</a> <span class="pp">(70 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch09-Gardening-Tools.pdf">A4</a> <span class="pp">(68 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">10</td>
+            <td>Knives &amp; Kitchen Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch10-Knives-Kitchen-Tools.pdf">Letter</a> <span class="pp">(14 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch10-Knives-Kitchen-Tools.pdf">A4</a> <span class="pp">(13 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">11</td>
+            <td>Metal Lathe Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch11-Metal-Lathe-Tools.pdf">Letter</a> <span class="pp">(17 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch11-Metal-Lathe-Tools.pdf">A4</a> <span class="pp">(16 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">12</td>
+            <td>Rose Engine Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch12-Rose-Engine-Tools.pdf">Letter</a> <span class="pp">(7 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch12-Rose-Engine-Tools.pdf">A4</a> <span class="pp">(7 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">13</td>
+            <td>Rotary Cutters</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch13-Rotary-Cutters.pdf">Letter</a> <span class="pp">(4 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch13-Rotary-Cutters.pdf">A4</a> <span class="pp">(4 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">14</td>
+            <td>Scissors</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch14-Scissors.pdf">Letter</a> <span class="pp">(10 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch14-Scissors.pdf">A4</a> <span class="pp">(10 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">15</td>
+            <td>Stone Carving Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch15-Stone-Carving-Tools.pdf">Letter</a> <span class="pp">(9 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch15-Stone-Carving-Tools.pdf">A4</a> <span class="pp">(9 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">16</td>
+            <td>Wood Carving Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch16-Wood-Carving-Tools.pdf">Letter</a> <span class="pp">(23 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch16-Wood-Carving-Tools.pdf">A4</a> <span class="pp">(23 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">17</td>
+            <td>Wood Lathe Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch17-Wood-Lathe-Tools.pdf">Letter</a> <span class="pp">(46 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch17-Wood-Lathe-Tools.pdf">A4</a> <span class="pp">(43 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">18</td>
+            <td>Woodworking Bench Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch18-Woodworking-Bench-Tools.pdf">Letter</a> <span class="pp">(24 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch18-Woodworking-Bench-Tools.pdf">A4</a> <span class="pp">(21 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">19</td>
+            <td>Woodworking Power Tools</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch19-Woodworking-Power-Tools.pdf">Letter</a> <span class="pp">(4 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch19-Woodworking-Power-Tools.pdf">A4</a> <span class="pp">(3 pp.)</span></td>
+        </tr>
+        <tr>
+            <td class="num">20</td>
+            <td>Reference Materials</td>
+            <td class="dl"><a class="pdf-link" href="Book/Letter/SH-Ch20-Reference-Materials.pdf">Letter</a> <span class="pp">(18 pp.)</span></td>
+            <td class="dl"><a class="pdf-link" href="Book/A4/SH-Ch20-Reference-Materials.pdf">A4</a> <span class="pp">(16 pp.)</span></td>
+        </tr>
+</table>
+
+<p>Some content stays on the web site only: the calculators, the jig details and 3D-print files, videos, and links to other web sites.</p>
+
+<!-- ################################################### -->
+<!-- Agreement shown before the first download           -->
+<!-- ################################################### -->
+<div id="agreeBox" role="dialog" aria-modal="true" aria-labelledby="agreeTitle">
+  <div class="card">
+    <h2 id="agreeTitle">Before you download</h2>
+    <p style="margin-top: 0;">The Sharpening Handbook PDFs are free for your own use.  By continuing, you agree that:</p>
+    <ol>
+        <li><b>Personal use only.</b>  You may print these PDFs, in whole or in part, for your own personal use.
+            You won&rsquo;t sell them, or printed copies of them, or include them in anything that is sold.</li>
+        <li><b>Use at your own risk.</b>  Sharpening, and the sharp tools that result, can cause serious injury.
+            Follow the tool and equipment makers&rsquo; instructions and use proper safety equipment.
+            The information is given as-is, without warranty, and the author is not liable for any injury or damage from its use.</li>
+        <li><b>Please share the link, not the files.</b>  This web site is always the current version, and each chapter shows its revision date.
+            Pointing people to SharpeningHandbook.info means they get the latest.</li>
+        <li><b>Other people&rsquo;s material stays theirs.</b>  Some pictures and information are used with permission
+            (for example from Tormek AB, and the image credits shown).  Those rights stay with their owners.</li>
+    </ol>
+    <p><b>Help make it better.</b>  As you use this book, if you make notes for your own use, or notice something
+       that&rsquo;s out of date, unclear, or wrong, please let me know at
+       <a href="mailto:SharpeningHandbook@Gmail.com?Subject=Sharpening%20Handbook%20book">SharpeningHandbook@Gmail.com</a>.
+       I&rsquo;ll work it into the next edition so it&rsquo;s better for everyone.</p>
+    <div class="buttons">
+        <button type="button" id="agreeNo">Cancel</button>
+        <button type="button" class="yes" id="agreeYes">I agree &ndash; show me the downloads</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var KEY = "sharpeningHandbookBookAgreed-2026";
+  var box = document.getElementById("agreeBox");
+  var pending = null;
+  function agreed() {
+    try { return localStorage.getItem(KEY) === "yes"; } catch (e) { return false; }
+  }
+  function show() { box.style.display = "flex"; document.getElementById("agreeYes").focus(); }
+  function hide() { box.style.display = "none"; }
+  document.getElementById("agreeYes").onclick = function () {
+    try { localStorage.setItem(KEY, "yes"); } catch (e) {}
+    hide();
+    if (pending) { window.location.href = pending; pending = null; }
+  };
+  document.getElementById("agreeNo").onclick = function () {
+    hide(); pending = null;
+    if (!agreed()) { window.location.href = "index.html"; }
+  };
+  var links = document.querySelectorAll("a.pdf-link");
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function (event) {
+      if (!agreed()) { event.preventDefault(); pending = this.href; show(); }
+    });
+  }
+  if (!agreed()) { show(); }
+})();
+</script>
+
+<!-- ################################################### -->
+<!-- Footer                                              -->
+<!-- ################################################### -->
+<div w3-include-html="include-Footer.html"></div>
+<script>
+includeHTML();
+</script>
+</body>
+</html>
