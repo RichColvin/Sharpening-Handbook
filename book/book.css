@@ -1,0 +1,275 @@
+/* Print styles for the Sharpening Handbook book.  The page size,
+   margins and footers are added by build_book.py (@page rules), since
+   they change with the paper size and chapter. */
+
+html, body {
+    background: white;
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 15px;
+    hyphens: auto;
+}
+
+/* The web pages are laid out for a screen about 800px wide; scaling
+   them keeps their fixed-width pictures and boxes in proportion on the
+   printed page. */
+.sheet {
+    zoom: 0.90;
+}
+
+/* ---------- Chapter title page ---------- */
+/* A whole page tall (height set by build_book.py), with the web site
+   at the foot. */
+.chapter-title-page {
+    break-after: page;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.1in;
+    text-align: center;
+}
+/* As in the web site's header: larger first letters. */
+.chapter-title-page .book-name {
+    font-family: 'Cinzel', serif;
+    font-size: 56px;
+    line-height: 1;
+    color: #5D6532;
+    margin: 0;
+}
+.chapter-title-page .book-name .cap {
+    font-size: 68px;
+}
+.chapter-title-page .tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: #5D6532;
+    margin: 10px 0 90px 0;
+}
+.chapter-title-page .web-site {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 5in;
+    text-align: left;
+    font-size: 14px;
+}
+.chapter-title-page .web-site img {
+    width: 1.1in;
+}
+.chapter-title-page .web-site p {
+    margin: 0;
+}
+.chapter-title-page .chapter-number {
+    font-family: 'Bona Nova', serif;
+    font-size: 28px;
+    color: #5D6532;
+    margin: 0;
+}
+.chapter-title-page h1 {
+    font-family: 'Bona Nova', serif;
+    font-size: 54px;
+    color: #5D6532;
+    margin: 6px 0 40px 0;
+}
+.chapter-title-page .intro {
+    max-width: 5in;
+    margin: 0 auto 30px auto;
+    text-align: left;
+}
+/* The chapter's contents: one column, or two for a long list (filled
+   down the first, then the second). */
+.chapter-contents {
+    margin: 0 auto;
+    text-align: left;
+}
+.chapter-contents.one-column {
+    width: 4.5in;
+    font-size: 17px;
+}
+.chapter-contents.two-columns {
+    width: 7.2in;
+    font-size: 15px;
+    column-count: 2;
+    column-gap: 0.45in;
+}
+.toc-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 4px 0;
+    border-bottom: 1px dotted #9a9f80;
+    break-inside: avoid;
+}
+.two-columns .toc-line {
+    padding: 2px 0;
+}
+.toc-line .page {
+    white-space: nowrap;
+}
+/* "Loppers - see guidance for Secateurs (9-31)" */
+.toc-see {
+    display: block;
+    color: #6b6b6b;
+    font-style: italic;
+}
+.toc-label {
+    font-style: italic;
+}
+.toc-heading {
+    font-weight: bold;
+    color: #5D6532;
+    margin: 12px 0 2px 0;
+    break-after: avoid;
+}
+/* Too long for the title page: the list runs on to the next page, and
+   the web site follows it. */
+.chapter-title-page.long-contents {
+    height: auto;
+    padding-top: 0.1in;
+}
+.long-contents .tagline {
+    margin-bottom: 24px;
+}
+.long-contents h1 {
+    margin-bottom: 20px;
+}
+.long-contents .toc-line {
+    padding: 1px 0;
+}
+.long-contents .chapter-contents {
+    font-size: 14px;
+}
+.long-contents .web-site {
+    margin-top: 14px;
+    font-size: 12px;
+}
+.long-contents .web-site img {
+    width: 0.75in;
+}
+
+/* ---------- Each tool page / section ---------- */
+.book-page {
+    break-before: page;
+}
+.book-page:first-of-type {
+    break-before: auto;
+}
+h1.page-title {
+    font-family: 'Bona Nova', serif;
+    font-weight: normal;
+    font-size: 34px;
+    color: #5D6532;
+    margin: 0 0 4px 0;
+    border-bottom: 2px solid #5D6532;
+}
+
+/* Where a web page pulled in a shared section, the book points to it. */
+.see-note {
+    clear: both;
+    margin: 16px 0;
+    padding: 6px 10px;
+    border-left: 4px solid #5D6532;
+    background: #F1F2EA;
+}
+/* Long notes moved out of a General Guidelines table. */
+.moved-note {
+    clear: both;
+    margin-bottom: 10px;
+}
+/* The thin solid line between one tool's (or grind's) notes and the
+   next: solid, so every PDF viewer and printer shows it. */
+hr.note-rule {
+    border: 0;
+    border-top: 1px solid #5D6532;
+    background: none;
+    height: 0;
+    margin: 12px 0 6px 0;
+}
+.moved-note h4 {
+    margin: 10px 0 0 0;
+}
+.moved-note p:first-of-type {
+    margin-top: 2px;
+}
+
+/* "Printing this book" at the top of About this Book. */
+.rights-note {
+    margin: 0 0 14px 0;
+    padding: 8px 12px;
+    border: 2px solid #5D6532;
+    background: #F1F2EA;
+}
+
+.see-note p {
+    margin: 3px 0;
+}
+.see-ref {
+    font-size: 0.9em;
+    color: #47501F;
+}
+.web-address {
+    font-size: 0.85em;
+    color: #555;
+}
+
+/* Things the build couldn't decide - only shown in the review copy. */
+.needs-review {
+    background: #FFE96B;
+    outline: 2px solid #E0B000;
+}
+
+/* Keep table rows and pictures whole across page breaks. */
+/* Keep pictures and short rows whole across page breaks.  (Not every
+   row: some pages lay out whole sections as one table row, and keeping
+   those whole left half-empty pages - Chapter 2's "Option 2".) */
+img, .see-note, table.keep-together tr, tr.keep-row {
+    break-inside: avoid;
+}
+/* A list set in two columns (Videos & Presentations); Chrome balances
+   the columns on each page the list covers. */
+.list-columns {
+    column-count: 2;
+    column-gap: 0.35in;
+}
+/* Each video stays whole; a presenter's list may run on into the next
+   column, so the columns can balance. */
+.list-columns li li {
+    break-inside: avoid;
+}
+/* ...except one with its own notes under it, which may run on into the
+   next column so the columns stay even. */
+.list-columns li li:has(ul, ol) {
+    break-inside: auto;
+}
+/* A presenter's name stays with their first video. */
+.list-columns > ul > li > b:first-child {
+    display: block;
+    break-after: avoid;
+}
+.list-columns > ul > li > ul > li:first-child {
+    break-before: avoid;
+}
+
+/* A picture's box (the picture and its caption) stays together too. */
+.sheet div:has(> img) {
+    break-inside: avoid;
+}
+
+/* Nothing wider than the page: Chrome shrinks the whole chapter to fit
+   its widest element (an 850px table made Chapter 2's text small). */
+.sheet img, .sheet table, .sheet div {
+    max-width: 100%;
+}
+table.keep-together {
+    break-inside: avoid;
+}
+h2, h3, h4 {
+    break-after: avoid;
+}
