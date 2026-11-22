@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="file:///Users/Rich/GitHub/Sharpening-Handbook/">
+<title>Sharpening Handbook - Chapter 4 - Ongoing Maintenance</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Merienda:wght@400;700&family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+h1 {
+    color: #5D6532;
+    margin-bottom: 0;
+}
+
+
+h2 {
+    color: #5D6532;
+    margin-bottom: 0;
+}
+
+
+h3 {
+    color: #5D6532;
+    margin-bottom: 0;
+}
+
+
+h4 {
+    color: #5D6532;
+    margin-bottom: 0;
+}
+
+
+h5 {
+    color: #5D6532;
+    margin-bottom: 0;
+}
+
+
+img.Image { 
+    max-width: 1000px;
+}
+
+
+.indented { 
+    padding-left: 33pt; 
+    padding-right: 33pt; 
+}
+
+
+p.TextSM { 
+    font-size: 14px;
+font-family: 'Libre Caslon Text'; 
+}
+
+
+p.TextSMImage { 
+    color: #000000;
+    font-family: 'Libre Caslon Text'; 
+    font-size: 14px;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    padding-left: 2pt; 
+    padding-right: 2pt; 
+    text-align: left;
+}
+
+
+p.TextMedSM { 
+    font-family: 'Libre Caslon Text'; 
+    font-size: 14px;
+}
+
+
+p.TextNorm { 
+    font-family: 'Libre Caslon Text'; 
+    font-size: 16px;
+}
+
+
+p.TextTableHdrNorm { 
+    color: #5D6532;
+    font-family: 'Libre Caslon Text'; 
+    font-size: 17px;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    padding-left: 5pt; 
+    padding-right: 5pt; 
+}
+
+
+p.TextMedLG { 
+    font-family: 'Libre Caslon Text'; 
+    font-size: 20px;
+}
+
+
+p.TextLG { 
+    font-family: 'Libre Caslon Text'; 
+    font-size: 24px;
+}
+
+
+p.TextTableHdrLg { 
+    color: #5D6532;
+    font-family: 'Libre Caslon Text'; 
+    font-size: 24px;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    padding-left: 5pt; 
+    padding-right: 5pt; 
+}
+
+
+p.TextBox {
+    color: #ffffff;
+    font-family: 'Libre Caslon Text'; 
+    font-size: 24px;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    margin-left: 0; 
+    margin-right: 0; 
+    padding-top: 3px; 
+    padding-bottom: 3px; 
+    padding-left: 3pt; 
+    padding-right: 3pt; 
+}
+
+
+p.TextXL {
+    font-family: 'Libre Caslon Text'; 
+    font-size: 34px;
+}
+
+
+p.TextPageTitle {
+    color: #5D6532;
+    font-family: 'Libre Caslon Text'; 
+    font-size: 34px;
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+
+hr.style0 {
+    background-image: linear-gradient(to right,
+   	rgba(93, 101, 50, 2.00),
+	rgba(93, 101, 50, 2.00),
+	rgba(93, 101, 50, 2.00));
+    border: 0;
+    height: 1px;
+}
+
+
+hr.style1 {
+    background-image: linear-gradient(to right,
+	rgba(0, 0, 0, 0),
+	rgba(93, 101, 50, 1.00),
+	rgba(0, 0, 0, 0));
+    border: 0;
+    height: 3px;
+}
+
+
+hr.style2 {
+    background-image: linear-gradient(to right,
+	rgba(0, 0, 0, 0),
+	rgba(93, 101, 50, 1.00),
+	rgba(0, 0, 0, 0));
+    border: 0;
+    height: 1.5px;
+}
+
+
+hr.style3 {
+    background-image: linear-gradient(to right,
+	rgba(0, 0, 0, 0),
+	rgba(93, 101, 50, 1.00),
+	rgba(0, 0, 0, 0));
+    border: 0;
+    height: 1px;
+}
+
+
+hr.style8 {
+    background-color:#5D6532;
+    border: 0;
+    color: #5D6532;
+    height: 1.5px;
+    margin-left: 25pt;
+    text-align: left;
+    width: 20%;
+}
+
+
+hr.style9 {
+    background-color:#5D6532;
+    border: 0;
+    color: #5D6532;
+    height: 3px;
+    margin-left: 15pt;
+    text-align: left;
+    width: 50%;
+}
+
+
+a:link {
+    color: #5D6532;
+}
+a:visited {
+    color: #47501F;
+}
+a:hover {
+    color: #47501F;
+}
+</style>
+<link href="file:///Users/Rich/GitHub/Sharpening-Handbook/book/book.css" rel="stylesheet">
+<style>
+@page {
+    size: A4;
+    margin: 0.6in 0.6in 0.75in 1.0in;
+}
+@page :right {
+    @bottom-left  { content: "Chapter 4 · Ongoing Maintenance"; font-family: 'Libre Caslon Text', serif; font-size: 9pt; color: #5D6532; }
+    @bottom-right { content: "4-" counter(page); font-family: 'Libre Caslon Text', serif; font-size: 9pt; color: #5D6532; font-size: 11pt; }
+}
+@page :left {
+    margin-left: 0.6in; margin-right: 1.0in;
+    @bottom-left  { content: "4-" counter(page); font-family: 'Libre Caslon Text', serif; font-size: 9pt; color: #5D6532; font-size: 11pt; }
+    @bottom-right { content: "Sharpening Handbook · 2026 Edition, November 2026"; font-family: 'Libre Caslon Text', serif; font-size: 9pt; color: #5D6532; }
+}
+@page :first {
+    @bottom-left  { content: "Sharpening Handbook · 2026 Edition, November 2026"; font-family: 'Libre Caslon Text', serif; font-size: 9pt; color: #5D6532; }
+    @bottom-right { content: none; }
+}
+.chapter-title-page {
+    height: 11.39in;
+}
+</style>
+</head>
+<body><div class="sheet">
+
+<div class="chapter-title-page">
+  <p class="book-name"><span class="cap">S</span>harpening <span class="cap">H</span>andbook</p>
+  <p class="tagline">Because <i>sharp enough</i> ... usually is not</p>
+  <p class="chapter-number">Chapter 4</p>
+  <h1>Ongoing Maintenance</h1>
+  <p class="intro">Most tools in this handbook share the same care once they are sharp.  Rather than repeat it on every page, it is gathered here, one section per kind of tool.  Each tool&#x27;s page says which section applies.</p>
+  <div class="chapter-contents one-column"><div class="toc-line"><span>Beekeeping Tools</span><span class="page">4-2</span></div><div class="toc-line"><span>Garden Tools</span><span class="page">4-4</span></div><div class="toc-line"><span>Knives</span><span class="page">4-8</span></div><div class="toc-line"><span>Metalworking Tools</span><span class="page">4-9</span></div><div class="toc-line"><span>Woodworking Tools</span><span class="page">4-10</span></div></div>
+  <div class="web-site">
+    <img src="Web%20QR%20Code.png" alt="SharpeningHandbook.info">
+    <p>The full handbook, and the latest version of this chapter, are on the web at
+    <b>SharpeningHandbook.info</b>.  This chapter: November 2026.</p>
+  </div>
+</div>
+<section class="book-page"><h1 class="page-title" style="position: relative;">Beekeeping Tools</h1>
+
+
+<h3>Ongoing Maintenance</h3>
+
+
+<p style="margin-top: 0;">Be sure to remove all caked-on wax and propolis.  A well-kept tool will last your lifetime, and will still be usable by your children (and maybe your grandkids).
+
+<p>I recommend trying to remove gunk mechanically first.
+    <ul>
+<li style="margin-bottom: 12px;">A wire brush or putty knife can be useful for this.  Try using a brush such as those used for cleaning rifles (and as your drill sergeant trained you, be sure to only push it through one direction:  not towards the sharpened edge).</li>
+<li style="margin-bottom: 12px;">A green or purple scrub pad works well for removing many stuck-on materials.</li>
+</ul>
+<p>Propolis can be removed using a solvent.  The recommended products to try are ranked below:
+    <ol>
+<li style="margin-bottom: 12px; margin-top: 0; ">Isopropyl alcohol  works well, and is less harsh than many other options.</li>
+<li style="margin-bottom: 12px; margin-top: 0; ">Acetone works well, but be sure to wear protective clothing as this is not kind to your body, and be sure the area is well ventilated.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 0px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em; margin-bottom: 12px;"><span style="color: darkred;">Do not use petroleum distillates like lighter fluid.</span> This just leaves a gooey mess if there are any sugars on the tool.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 0px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em;"><span style="color: darkred;">Do NOT use bleach or trisodium phosphate.</span> Both are oxidizers which will cause your tools to rust.</li>
+</ol>
+
+
+<hr class="style2"/>
+<h4>Exposure to Diseased Cells or Bees</h4>
+<p style="margin-top: 0;">If the tool was exposed to any diseased bees or cells, give it a quick wash with isopropyl alcohol.  Be sure to rinse with water and then dry afterwards.
+
+<p>As noted above, the recommendation by some for using bleach or trisodium phosphate is not followed here.  Those products can damage the metal in the tool.
+
+
+
+<hr class="style2"/>
+<div style=" float: right; margin-left: 10px; margin-right: 0px; margin-bottom: 10px; width: 75px;  padding: 5px; border: 1px solid grey; text-align: center; margin-top: 5px;">
+<img alt="no image file" src="Images/CamelliaOil.png" style="width: 100%; "/>
+<br/>
+<p class="TextSMImage"><b><i>Camellia Oil Spray Bottle</i></b></p>
+</div>
+<h4>Apply a Light Coat of Oil</h4>
+<p style="margin-top: 0;">After using any solvent, be sure to apply a thin coat of camellia oil to the tool.  I like the spray bottle of camellia oil sold by Tools for Working Wood.
+
+    <ul>
+<li style="margin-bottom: 12px;">In lieu of camellia oil, jojoba oil or cedar oil are recommended by some.  I've no experience with these, so I cannot recommend them.  And, as camellia oil is inexpensive and readily available, it is preferred.</li>
+<li style="margin-bottom: 12px;">There are some who advocate using olive oil as an alternative.  That is not recommended as olive oil, like all vegetable oils, are more attractive to dirt and dust, making a mess.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 0px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em;"><span style="color: darkred;">Do NOT use boiled linseed oil (BLO).</span> Some advocate using BLO, but BLO often has heavy metals or other bad chemicals added for drying agents, and these are not good for you to handle, nor would they be good for the plants on which you might use this tool.</li>
+</ul>
+
+
+<hr class="style2"/>
+<h4>Take Care of the Handle Too</h4>
+<p style="margin-top: 0;">If the tool’s handle is wooden, show it a little love periodically. 
+
+	<ol>
+<li style="margin-bottom: 12px; ">Clean the handle and sand any rough spots.  220 grit sandpaper is excellent for this.</li>
+<li style="margin-bottom: 12px; ">Coat the wood with a light coat of finish.  A natural oil mixed with beeswax is the best option to protect the wood and to provide that a feel.
+
+		<p>If opting for a finish containing linseed oil, Tried &amp; True’s Original Wood Polish is a great option.  They do not use heavy metals added to aid in drying.</p></li>
+<li style="margin-bottom: 12px; ">Once the oil has dried, burnish the surface.  A green or purple scrub pad works well.</li>
+</ol>
+
+
+<hr class="style1"/>
+<h3>Tools in Storage</h3>
+<p style="margin-top: 0px; margin-bottom: 0px;">Tools in storage need a thin coating of camellia oil applied to all unpainted surfaces.
+
+
+</p></p></p></p></p></p></p></p></section>
+<section class="book-page"><h1 class="page-title" style="position: relative;">Garden Tools</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>Maintenance of this Tool in the Field</h3>
+<div style=" float: left; Width: 150px; 
+        margin-left: 0px; margin-right: 10px; 
+        margin-top: 0px; margin-bottom: 10px; 
+        padding-left: 5px; padding-right: 0px; 
+        padding-top: 5px; padding-bottom: 0px; 
+        border: 1px solid darkgray; text-align: left;  ">
+<img alt="no image file" src="Images/DrawFiling.png" style="width: 100%;"/>
+<p class="TextSMImage"><i><b>Draw Filing</b></i></p>
+<p style="font-size: 12px; margin-top: 0px; margin-bottom: 0px;
+    padding-left: 2pt; "><i>Image courtesy Jordan Bunker at Make Skill Builder</i></p>
+</div>
+
+
+<p style="margin-top: 0;">Many gardening tools can be resharpened in the field using a 6" smooth cut machinist’s hand file <span class="see-ref">(see Chapter 20)</span>.  This is useful to carry with you.  Use it to resharpen the tool as needed throughout the day.
+
+<p>When using the machinist’s hand file a draw stroke is a better approach as there is less chance of rounding over the edge.
+
+
+
+<hr class="style1"/>
+<h3>Ongoing Maintenance</h3>
+
+
+<p style="margin-top: 0;">Be sure to remove all caked-on dirt and sap.  A well-kept tool will last your lifetime, and will still be usable by your children (and maybe your grandkids).
+
+<p>I recommend trying to remove gunk mechanically first.
+    <ul>
+<li style="margin-bottom: 12px;">A wire brush or putty knife can be useful for this.</li>
+<li style="margin-bottom: 12px;">A green or purple scrub pad works well for removing many stuck-on materials.</li>
+<li style="margin-bottom: 12px;">Another recommendation is to use a product like Crean Mate.  That is a small block used for cleaning resin, rust, and other gunk from your tool.  It is recommended that the cleaning block be slightly wet.</li>
+</ul>
+<p>Sap can be removed using a solvent.  The recommended products to try are ranked below:
+    <ol>
+<li style="margin-bottom: 12px; margin-top: 0; ">Isopropyl alcohol  works well, and is less harsh than many other options.</li>
+<li style="margin-bottom: 12px; margin-top: 0; ">Acetone works well, but be sure to wear protective clothing as this is not kind to your body, and be sure the area is well ventilated.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 0px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em; margin-bottom: 12px;"><span style="color: darkred;">Do not use petroleum distillates like lighter fluid.</span> This just leaves a gooey mess if there are any sugars on the tool.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 10px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<div style=" float: right;  width: 60px;
+		        margin-left: 10px; margin-right: 0px; 
+		        margin-top: 0px; margin-bottom: 10px; 
+		        padding-left: 0px; padding-right: 0px; 
+		        padding-top: 0px; padding-bottom: 0px;
+		        border: 0px solid gray; 
+		        text-align: left; ">
+<img alt="no image file" src="Images/OxidizingAgent.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em; margin-top: 20px;"><span style="color: darkred;">Do NOT use bleach or trisodium phosphate.</span> Both are oxidizers which will cause your tools to rust.</li>
+</ol>
+
+
+<p> 
+<hr class="style2"/>
+<div style=" float: right;  width: 100px;
+		margin-left: 10px; margin-right: 0px; 
+		margin-top: 0px; margin-bottom: 10px; 
+		padding-left: 0px; padding-right: 0px; 
+		padding-top: 0px; padding-bottom: 0px;
+		border: 0px solid gray; 
+		text-align: left;
+		">
+<img alt="no image file" src="Images/BioSecurity.png" style="width: 100%; "/>
+</div>
+<h3 style="margin-top: 00px; margin-bottom: 3px;">Biosecurity</h3>
+<p style="margin-top: 0;">Cleanliness of tools is key for limiting the spread of diseases. If a tool was exposed to any:
+	<ul>
+<li>diseased plants,</li>
+<li>soil which is infected with pests,</li>
+<li>animals with diseseases, or</li>
+<li>animal homes (e.g., bee hives) with diseases,</li>
+</ul>
+<p>it will need to be disinfected after the tool is clean. Studies have noted these options:
+
+<table style="margin-left: 30px;">
+<tr class="keep-row" style="vertical-align: top;">
+<td style="width: 135px;"><p style="margin-top: 0px; margin-bottom: 0px; margin-left: 20px; text-indent: -20px; font-weight: bold;">70% Ethanol</p>
+<p style="margin-left: 50px; margin-top: 6px; margin-bottom: 6px;">or</p>
+<p style="margin-top: 0px; margin-bottom: 0px; margin-left: 20px; text-indent: -20px; font-weight: bold;">70% Isopropyl Alcohol</p></td>
+<td>Alcohol can be used for most cleaning; however there are some severe diseases which alcohol cannot address.  
+		
+			<p style="margin-left: 25px; margin-bottom: 3px; font-style: italic;">Some studies have shown that rubbing alcohol may not effectively disinfect pruning tools from certain plant pathogens.  For this reason, alcohol is not recommended for use in disinfecting pruning tools used on apple trees infected with fire blight. Utilize a bleach solution instead.</p>
+<p style="margin-left: 50px; margin-top: 3px;">- Iowa State University’s Extension publication
+					
+			<div style=" float: right;  width: 60px;
+			        margin-left: 10px; margin-right: 0px; 
+			        margin-top: 0px; margin-bottom: 10px; 
+			        padding-left: 0px; padding-right: 0px; 
+			        padding-top: 0px; padding-bottom: 0px;
+			        border: 0px solid gray; 
+			        text-align: left; ">
+<img alt="no image file" src="Images/Flammable.png" style="width: 100%; "/>
+</div>
+<p style="color: #b31b1b;">🔥 Alcohol is flammable; be careful when using it in locations where it can ignite.</p>
+</p></td>
+</tr>
+<tr class="keep-row" style="vertical-align: top;">
+<td><b>Household Bleach</b>
+<br/>(5-10% solution)</td>
+<td>Chlorine compounds such as bleach are easy to obtain and are and low cost. These are effective in inactivating vegetative bacteria, fungi, lipid and non-lipid viruses, Coxiella burnetii and TB.
+
+			<p>Chlorine compounds have some effect in inactivating bacterial spores.
+				<ul>
+<li>Recommended contact time: 10 minutes</li>
+<li>Recommended working dilution: 5,000 ppm (1:10 dilution of household bleach)</li>
+</ul>
+<div style=" float: right;  width: 60px;
+			        margin-left: 10px; margin-right: 0px; 
+			        margin-top: 0px; margin-bottom: 10px; 
+			        padding-left: 0px; padding-right: 0px; 
+			        padding-top: 0px; padding-bottom: 0px;
+			        border: 0px solid gray; 
+			        text-align: left; ">
+<img alt="no image file" src="Images/OxidizingAgent.png" style="width: 100%; "/>
+</div>
+<p style="margin-bottom: 0px;">As noted above, bleach is an oxidizer which will cause your tools to rust, especially metal which are not stainless steel.  <span style="color: #b31b1b;">It is best to follow the use of bleach on a tool, with an alcohol wash of that tool.</span>
+</p></p></td>
+</tr>
+</table>
+<p style="margin-bottom: 3px;">More information is available at:
+	<ol style="margin-top: 3px;">
+<li style="margin-top: 3px; margin-bottom: 6px;">Clean and Disinfect Gardening Tools and Containers <span class="web-address">(extension.umn.edu)</span>, University of Minnesota’s Extension publication</li>
+<li style="margin-top: 3px; margin-bottom: 6px;">Disinfecting Your Garden Tools <span class="web-address">(gardeningsolutions.ifas.ufl.edu)</span>, University of Florida’s Institute of Food and Agricultural Sciences (IFAS) publication</li>
+<li style="margin-top: 3px; margin-bottom: 6px;">How Do I Sanitize My Pruning Shears? <span class="web-address">(yardandgarden.extension.iastate.edu)</span>, Iowa State University’s Extension publication</li>
+<li style="margin-top: 3px; margin-bottom: 6px;">Sanitizing Pruning Tools <span class="web-address">(extension.arizona.edu)</span>, University of Arizona’s Cooperative Extension publication</li>
+</ol>
+
+
+<hr class="style2"/>
+<div style=" float: right; margin-left: 10px; margin-right: 0px; margin-bottom: 10px; width: 75px;  padding: 5px; border: 1px solid grey; text-align: center; margin-top: 5px;">
+<img alt="no image file" src="Images/CamelliaOil.png" style="width: 100%; "/>
+<br/>
+<p class="TextSMImage"><b><i>Camellia Oil Spray Bottle</i></b></p>
+</div>
+<h4>Apply a Light Coat of Oil</h4>
+<p style="margin-top: 0;">After using any solvent, be sure to apply a thin coat of camellia oil to the tool.  I like the spray bottle of camellia oil sold by Tools for Working Wood.
+
+    <ul>
+<li style="margin-bottom: 12px;">In lieu of camellia oil, jojoba oil or cedar oil are recommended by some.  I've no experience with these, so I cannot recommend them.  And, as camellia oil is inexpensive and readily available, it is preferred.</li>
+<li style="margin-bottom: 12px;">There are some who advocate using olive oil as an alternative.  That is not recommended as olive oil, like all vegetable oils, are more attractive to dirt and dust, making a mess.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 0px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em;"><span style="color: darkred;">Do NOT use boiled linseed oil (BLO).</span> Some advocate using BLO, but BLO often has heavy metals or other bad chemicals added for drying agents, and these are not good for you to handle, nor would they be good for the plants on which you might use this tool.</li>
+</ul>
+<h4>Take Care of the Handle Too</h4>
+<p style="margin-top: 0;">If the tool’s handle is wooden, show it a little love periodically. 
+
+	<ol>
+<li style="margin-bottom: 12px; ">Clean the handle and sand any rough spots.  220 grit sandpaper is excellent for this.</li>
+<li style="margin-bottom: 12px; ">Coat the wood with a light coat of finish.  A natural oil mixed with beeswax is the best option to protect the wood and to provide that a feel.
+
+		<p>If opting for a finish containing linseed oil, Tried &amp; True’s Original Wood Polish is a great option.  They do not use heavy metals added to aid in drying.</p></li>
+<li style="margin-bottom: 12px; ">Once the oil has dried, burnish the surface.  A green or purple scrub pad works well.</li>
+</ol>
+
+
+<hr class="style1"/>
+<h3>Modify the Tool to Fit You</h3>
+<p style="margin-top: 0;">Unless your tool is a museum or collector’s piece, it can be modified.  Further, it <i>should</i> be made so that it becomes an extension of you, and makes use of it easier for you.  Here are some recommendations worth considering:
+
+	<ol>
+<div style=" float: right; margin-left: 10px; margin-right: 0px; margin-bottom: 10px; width: 325px;  padding: 5px; border: 1px solid grey; text-align: center; margin-top: 5px;">
+<img alt="no image file" src="Images/GT-HoriHori-OriginalHandle.png" style="width: 100%; "/>
+<br/>
+<p class="TextSMImage"><b><i>Hori hori knife - original handle</i></b></p>
+<img alt="no image file" src="Images/GT-HoriHori-PaintedHandle.png" style="width: 100%; "/>
+<br/>
+<p class="TextSMImage"><b><i>Hori hori knife - painted handle</i></b></p>
+<img alt="no image file" src="Images/HandRake.png" style="width: 100%; "/>
+<br/>
+<p class="TextSMImage"><b><i>Hand rake</i></b></p>
+</div>
+<li style="margin-bottom: 10px;"><b>Paint the handle.</b> Those wooden scales on my hori hori knife are pretty, but they also make the tool easier to lose in the garden.  I spray painted the handle high visibility yellow paint, and my tool is now easy to find.  The pictures to the right are not great, but you should be able to get the idea.</li>
+<li style="margin-bottom: 10px;"><b>Cut the shaft down.</b>  I have a rake which had a handle that was so long that it would not hang well in my tool shed.  By cutting off 3” of the end, it  hangs perfectly.</li>
+<li style="margin-bottom: 10px;"><b>Sand down any rough transitions.</b> The hori hori knife shown above and to the right was made easier to handle by rounding off the transitions from the sides to the edges.
+
+		<p>The hand rake shown to the right is not new; I had been using it for 5 years when this picture was taken.  And I can attest that it was not as nice as shown when it was purchased.  Instead, the cut made into the wood to hold the metal tines was quite rough as shown in the two left-most pictures below.
+		
+		<div style=" float: left; margin-left: 0px; margin-right: 10px; margin-bottom: 10px; width: 100px;  padding: 5px; border: 1px solid grey; text-align: center; margin-top: 5px;">
+<img alt="no image file" src="Images/Dremel-80-flap-wheel.png" style="width: 100%; "/>
+<br/>
+<p class="TextSMImage"><b><i>Flap wheel sanding paper</i></b></p>
+</div>
+<p>The slit cut into the wooden handle was sanded using a Foredom rotary tool (a Dremel would also work), holding an 80 grit flap wheel sanding paper.
+		
+		<p>Then, the whole handle was finished with Tried &amp; True’s Original Wood Polish.
+		
+		<p>Please note:  this tool does not get used as much as the hori hori knife, so painting the handle a bright colour is not as necessary.
+		
+		</p></p></p></p></li>
+</ol>
+<table style="width: 100%">
+<tr class="keep-row" style="vertical-align: bottom;">
+<td style="width: 25%; text-align: middle;">
+<img alt="no image file" src="Images/HandRake-1-Before.png" style="width: 100%; "/>
+</td>
+<td style="width: 25%; text-align: middle;">
+<img alt="no image file" src="Images/HandRake-2-Before-WorstCase.png" style="width: 100%; "/>
+</td>
+<td style="width: 25%; text-align: middle;">
+<img alt="no image file" src="Images/HandRake-3-AfterSanding.png" style="width: 100%; "/>
+</td>
+<td style="width: 25%; text-align: middle;">
+<img alt="no image file" src="Images/HandRake-4-Finished-TriedandTrueOil.png" style="width: 100%; "/>
+</td>
+</tr>
+<tr class="keep-row" style="vertical-align: top;">
+<td style="width: 25%; text-align: middle; padding-left: 5px; padding-right: 5px;">
+<p class="TextSMImage"><b><i>Slit cut in the handle at the factory for the rake head</i></b></p>
+</td>
+<td style="width: 25%; text-align: middle; padding-left: 5px; padding-right: 5px;">
+<p class="TextSMImage"><b><i>Worst case for the slit opening</i></b></p>
+</td>
+<td style="width: 25%; text-align: middle; padding-left: 5px; padding-right: 5px;">
+<p class="TextSMImage"><b><i>After sanding the edges of the opening</i></b></p>
+</td>
+<td style="width: 25%; text-align: middle; padding-left: 5px; padding-right: 5px;">
+<p class="TextSMImage"><b><i>Finished with Tried &amp; True’s Original Wood Polish</i></b></p>
+</td>
+</tr>
+</table>
+
+
+<hr class="style1"/>
+<h3>Replacing the Handle: Wood or Composite?</h3>
+<p style="margin-top: 0;">Wooden handles feel great and are easy to modify to fit your needs.  This is the recommendation for almost all cases.
+
+<p>Unfortunately, I have seen that replacement handles are oftentimes as expensive as a new tool, especially for shovels.  In these cases, you may just replace the tool instead of the handle.
+
+<h4>Make Your Own Tool Handles</h4>
+<p style="margin-top: 0;">If you are a woodturner, you can easily make your own wooden handles.  Rick Rich wrote a great article, “Spruce up Gardening Tools” in the American Association of Woodturner's “Woodturning Fundamentals” magazine.
+
+<h4>Replacing a Gardening Tool</h4>
+<p style="margin-top: 0;">Wooden handles are the top choice if you take care of your tools.  However, if a non-gardener in your family is prone to leave the tools outside in the weather after using them, this may not be the best choice.
+
+<p>Also, if the tool is used for prying (e.g., a shovel), then a fiberglass handle may be preferred.
+
+
+
+<hr class="style1"/>
+<h3>Tools in Storage</h3>
+<p style="margin-top: 0;">Tools in storage need a thin coating of camellia oil applied to all unpainted surfaces.
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></section>
+<section class="book-page"><h1 class="page-title" style="position: relative;">Knives</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>Ongoing Maintenance</h3>
+
+
+<p style="margin-top: 0;">Be sure to remove all caked-on gunk.  A well-kept knife will probably last your lifetime, and will still be usable by your children.
+
+<p>I recommend trying to remove gunk mechanically first.
+    <ul>
+<li style="margin-bottom: 12px;">A green or purple scrub pad works well for removing many stuck-on materials.</li>
+<li style="margin-bottom: 12px;">Another recommendation is to use a product like Crean Mate.  That is a small block used for cleaning resin, rust, and other gunk from your tool.  It is recommended that the cleaning block be slightly wet.</li>
+</ul>
+<p>Severe problems may need to be removed using a solvent.
+    <ul>
+<li style="margin-bottom: 12px;">Acetone works well, but be sure to wear protective clothing as this is not kind to your body, and be sure the area is well ventilated.</li>
+<li style="margin-bottom: 12px;">Isopropyl alcohol also works well, and is less harsh.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 0px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em;"><span style="color: darkred;">Do NOT use bleach or trisodium phosphate.</span> Both are oxidizers which will cause your tools to rust.</li>
+</ul>
+
+
+<hr class="style2"/>
+<div style=" float: right; margin-left: 10px; margin-right: 0px; margin-bottom: 10px; width: 75px;  padding: 5px; border: 1px solid grey; text-align: center; margin-top: 5px;">
+<img alt="no image file" src="Images/CamelliaOil.png" style="width: 100%; "/>
+<br/>
+<p class="TextSMImage"><b><i>Camellia Oil Spray Bottle</i></b></p>
+</div>
+<h4>Apply a Light Coat of Oil</h4>
+<p style="margin-top: 0;">After using any solvent, be sure to apply a thin coat of camellia oil to the knife.  I like the spray bottle of camellia oil sold by Tools for Working Wood.
+
+    <ul>
+<li style="margin-bottom: 12px;">In lieu of camellia oil, jojoba oil or cedar oil are recommended by some.  I've no experience with these, so I cannot recommend them.  And, as camellia oil is inexpensive and readily available, it is preferred.</li>
+<li>There are some who advocate using olive oil as an alternative.  That is not recommended as olive oil, like all vegetable oils, are more attractive to dirt and dust, making a mess.</li>
+</ul>
+
+
+<hr class="style1"/>
+<h3>Tools in Storage</h3>
+<p style="margin-top: 0;">Tools in storage need a thin coating of camellia oil applied to all unpainted surfaces.
+</p></p></p></p></p></section>
+<section class="book-page"><h1 class="page-title" style="position: relative;">Metalworking Tools</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>Ongoing Maintenance</h3>
+
+
+<p style="margin-top: 0;">Be sure to remove all caked-on gunk.  A wire brush or putty knife can be useful for this.  A well-kept tool will last your lifetime, and will still be usable by your children (and maybe your grandkids).
+
+<p>A green scrub pad also works well for removing many stuck-on materials.
+
+<p>Some gunk may need to be removed using a solvent.  
+	<ul>
+<li style="margin-bottom: 12px;">Acetone works well, but be sure to wear protective clothing as this is not kind to your body, and be sure the area is well ventilated.</li>
+<li style="margin-bottom: 12px;">Isopropyl alcohol also works well, and is less harsh.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 0px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em; margin-bottom: 12px;"><span style="color: darkred;">Do NOT use bleach or trisodium phosphate.</span> Both are oxidizers which will cause your tools to rust.</li>
+</ul>
+
+
+<hr class="style2"/>
+<h4>Apply a Light Coat of Oil</h4>
+<p style="margin-top: 0;">After using any solvent, be sure to apply a thin coat of a light oil.
+	<ul>
+<li style="margin-bottom: 12px;">I like to use 3-in-One oil or sewing machine oil.</li>
+<li style="margin-bottom: 12px;">WD-40 is not recommended as it will evaporate over time, leaving the surface unprotected.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 0px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em;"><span style="color: darkred;">Do NOT use boiled linseed oil (BLO).</span> Some advocate using BLO, but BLO often has heavy metals or other bad chemicals added for drying agents, and these are not good for you to handle, nor would they be good for the plants on which you might use this tool.</li>
+</ul>
+
+
+<hr class="style1"/>
+<h4>Tools in Storage</h4>
+<p style="margin-top: 0;">Tools in storage need a thin coating of  oil applied to all unpainted surfaces.
+</p></p></p></p></p></section>
+<section class="book-page"><h1 class="page-title" style="position: relative;">Woodworking Tools</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 id="Maintenance" style="margin-bottom: 0;">Ongoing Maintenance</h3>
+
+
+<p style="margin-top: 0;">Be sure to remove all caked-on gunk.  A wire brush or putty knife can be useful for this.  A well-kept tool will last your lifetime, and will still be usable by your children (and maybe your grandkids).
+
+<p>A green scrub pad works well for removing many stuck-on materials.
+
+<p>Some gunk may need to be removed using a solvent.  
+	<ul>
+<li style="margin-bottom: 12px;">Acetone works well, but be sure to wear protective clothing as this is not kind to your body, and be sure the area is well ventilated.</li>
+<li style="margin-bottom: 12px;">Isopropyl alcohol also works well, and is less harsh.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 0px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em;"><span style="color: darkred;">Do NOT use bleach or trisodium phosphate.</span> Both are oxidizers which will cause your tools to rust.</li>
+</ul>
+
+
+<hr class="style2"/>
+<div style=" float: right; margin-left: 10px; margin-right: 0px; margin-bottom: 10px; width: 75px;  padding: 5px; border: 1px solid grey; text-align: center; margin-top: 5px;">
+<img alt="no iage file" src="Images/CamelliaOil.png" style="width: 100%; "/>
+<br/>
+<p class="TextSMImage"><b><i>Camellia Oil Spray Bottle</i></b></p>
+</div>
+<h4 style="margin-bottom: 0;">Apply a Light Coat of Oil</h4>
+<p style="margin-top: 0;">After using any solvent, be sure to apply a thin coat of camellia oil to the tool.  
+	<ul>
+<li style="margin-bottom: 12px;">I like the spray bottle of camellia oil sold by Tools for Working Wood <span class="web-address">(toolsforworkingwood.com)</span>.  An oil applicator (a small pot with a fiber wiping pad) for camellia oil is also useful, especially for chisels and plane blades.</li>
+<div style=" float: left;  width: 30px;
+			        margin-left: 0px; 
+			        margin-right: 10px; 
+			        margin-top: 0px; 
+			        margin-bottom: 10px; 
+			        padding-left: 0px; 
+			        padding-right: 0px; 
+			        padding-top: 0px; 
+			        padding-bottom: 0px;
+			        text-indent: -2.0em;
+			        border: 0px solid gray; 
+			        text-align: left;  ">
+<img alt="no image file" src="Razor%20Pictures/razor-blade-red.png" style="width: 100%; "/>
+</div>
+<li style="padding-left: -1.5em;"><span style="color: darkred;">Do NOT use boiled linseed oil (BLO).</span> Some advocate using BLO, but BLO often has heavy metals or other bad chemicals added for drying agents, and these are not good for you to handle, nor would they be good for the plants on which you might use this tool.</li>
+</ul>
+
+
+<hr class="style1"/>
+<h3 style="margin-bottom: 0;">Tools in Storage</h3>
+<p style="margin-top: 0;">Tools in storage need a thin coating of  oil applied to all unpainted surfaces.
+</p></p></p></p></p></section>
+
+</div></body>
+</html>
